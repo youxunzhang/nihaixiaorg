@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程学习 - 倪海厦中医传承网站</title>
+    <meta name="description" content="倪海厦中医课程学习，包含经典著作、临床实践、基础理论等分类课程">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>倪海厦中医传承</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link active">课程学习</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">学习资料</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">资讯动态</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">关于我们</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">课程学习</h1>
+                <p class="page-subtitle">系统学习倪海厦老师的中医理论体系和临床经验</p>
+            </div>
+        </section>
+
+        <!-- 课程分类筛选 -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-category="all">全部课程</button>
+                    <button class="filter-tab" data-category="classic">经典著作</button>
+                    <button class="filter-tab" data-category="clinical">临床实践</button>
+                    <button class="filter-tab" data-category="basic">基础理论</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 课程列表 -->
+        <section class="courses-list-section">
+            <div class="container">
+                <div class="courses-grid" id="courses-grid">
+                    <!-- 经典著作类课程 -->
+                    <div class="course-card" data-category="classic" id="伤寒论">
+                        <div class="course-image">
+                            <div class="image-placeholder">伤寒论</div>
+                            <div class="course-badge">经典</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>《伤寒论》精讲</h3>
+                            <p>倪海厦老师对《伤寒论》的独特解读，深入讲解六经辨证的精髓，掌握外感病的诊治规律。</p>
+                            <div class="course-meta">
+                                <span class="duration">⏱️ 120课时</span>
+                                <span class="level">📊 中级</span>
+                                <span class="students">👥 2,500+ 学员</span>
+                            </div>
+                            <div class="course-outline">
+                                <h4>课程大纲：</h4>
+                                <ul>
+                                    <li>太阳病篇详解</li>
+                                    <li>阳明病篇精讲</li>
+                                    <li>少阳病篇分析</li>
+                                    <li>太阴病篇解读</li>
+                                    <li>少阴病篇讲解</li>
+                                    <li>厥阴病篇总结</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="#" class="btn btn-primary">开始学习</a>
+                                <a href="#" class="btn btn-outline">课程预览</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="classic" id="金匮要略">
+                        <div class="course-image">
+                            <div class="image-placeholder">金匮要略</div>
+                            <div class="course-badge">经典</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>《金匮要略》详解</h3>
+                            <p>系统学习杂病诊治，掌握内科疾病的辨证论治方法，提升临床诊断能力。</p>
+                            <div class="course-meta">
+                                <span class="duration">⏱️ 80课时</span>
+                                <span class="level">📊 中级</span>
+                                <span class="students">👥 1,800+ 学员</span>
+                            </div>
+                            <div class="course-outline">
+                                <h4>课程大纲：</h4>
+                                <ul>
+                                    <li>脏腑经络先后病脉证</li>
+                                    <li>痉湿暍病脉证治</li>
+                                    <li>百合狐惑阴阳毒病脉证治</li>
+                                    <li>疟病脉证并治</li>
+                                    <li>中风历节病脉证并治</li>
+                                    <li>血痹虚劳病脉证并治</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="#" class="btn btn-primary">开始学习</a>
+                                <a href="#" class="btn btn-outline">课程预览</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="classic">
+                        <div class="course-image">
+                            <div class="image-placeholder">黄帝内经</div>
+                            <div class="course-badge">经典</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>《黄帝内经》解读</h3>
+                            <p>深入解读中医理论的源头，理解阴阳五行、脏腑经络等基础理论。</p>
+                            <div class="course-meta">
+                                <span class="duration">⏱️ 100课时</span>
+                                <span class="level">📊 初级</span>
+                                <span class="students">👥 3,200+ 学员</span>
+                            </div>
+                            <div class="course-outline">
+                                <h4>课程大纲：</h4>
+                                <ul>
+                                    <li>素问·上古天真论</li>
+                                    <li>素问·四气调神大论</li>
+                                    <li>素问·阴阳应象大论</li>
+                                    <li>灵枢·九针十二原</li>
+                                    <li>灵枢·本神</li>
+                                    <li>灵枢·营卫生会</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="#" class="btn btn-primary">开始学习</a>
+                                <a href="#" class="btn btn-outline">课程预览</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 临床实践类课程 -->
+                    <div class="course-card" data-category="clinical" id="脉诊">
+                        <div class="course-image">
+                            <div class="image-placeholder">脉诊</div>
+                            <div class="course-badge">实践</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>脉诊技能精进</h3>
+                            <p>学习倪海厦老师的脉诊技巧，掌握二十八脉的识别方法，提升诊断准确率。</p>
+                            <div class="course-meta">
+                                <span class="duration">⏱️ 60课时</span>
+                                <span class="level">📊 初级</span>
+                                <span class="students">👥 1,500+ 学员</span>
+                            </div>
+                            <div class="course-outline">
+                                <h4>课程大纲：</h4>
+                                <ul>
+                                    <li>脉诊基础理论</li>
+                                    <li>浮沉迟数脉详解</li>
+                                    <li>虚实滑涩脉识别</li>
+                                    <li>弦紧洪细脉分析</li>
+                                    <li>脉诊临床实践</li>
+                                    <li>脉诊案例分析</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="#" class="btn btn-primary">开始学习</a>
+                                <a href="#" class="btn btn-outline">课程预览</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="clinical">
+                        <div class="course-image">
+                            <div class="image-placeholder">舌诊</div>
+                            <div class="course-badge">实践</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>舌诊诊断技巧</h3>
+                            <p>掌握舌诊的诊断方法，学习舌质、舌苔的变化规律，提高辨证准确性。</p>
+                            <div class="course-meta">
+                                <span class="duration">⏱️ 40课时</span>
+                                <span class="level">📊 初级</span>
+                                <span class="students">👥 1,200+ 学员</span>
+                            </div>
+                            <div class="course-outline">
+                                <h4>课程大纲：</h4>
+                                <ul>
+                                    <li>舌诊基础理论</li>
+                                    <li>舌质变化分析</li>
+                                    <li>舌苔变化识别</li>
+                                    <li>舌形舌态观察</li>
+                                    <li>舌诊临床应用</li>
+                                    <li>舌诊案例分析</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="#" class="btn btn-primary">开始学习</a>
+                                <a href="#" class="btn btn-outline">课程预览</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="clinical">
+                        <div class="course-image">
+                            <div class="image-placeholder">针灸</div>
+                            <div class="course-badge">实践</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>针灸临床实践</h3>
+                            <p>学习倪海厦老师的针灸理论和技法，掌握常用穴位的定位和主治功效。</p>
+                            <div class="course-meta">
+                                <span class="duration">⏱️ 90课时</span>
+                                <span class="level">📊 中级</span>
+                                <span class="students">👥 1,800+ 学员</span>
+                            </div>
+                            <div class="course-outline">
+                                <h4>课程大纲：</h4>
+                                <ul>
+                                    <li>经络理论详解</li>
+                                    <li>常用穴位定位</li>
+                                    <li>针刺手法技巧</li>
+                                    <li>配穴原则方法</li>
+                                    <li>针灸临床治疗</li>
+                                    <li>针灸案例分析</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="#" class="btn btn-primary">开始学习</a>
+                                <a href="#" class="btn btn-outline">课程预览</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 基础理论类课程 -->
+                    <div class="course-card" data-category="basic">
+                        <div class="course-image">
+                            <div class="image-placeholder">阴阳五行</div>
+                            <div class="course-badge">基础</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>阴阳五行理论</h3>
+                            <p>系统学习中医基础理论，理解阴阳五行的哲学思想和在医学中的应用。</p>
+                            <div class="course-meta">
+                                <span class="duration">⏱️ 50课时</span>
+                                <span class="level">📊 初级</span>
+                                <span class="students">👥 2,800+ 学员</span>
+                            </div>
+                            <div class="course-outline">
+                                <h4>课程大纲：</h4>
+                                <ul>
+                                    <li>阴阳理论详解</li>
+                                    <li>五行学说基础</li>
+                                    <li>阴阳五行关系</li>
+                                    <li>在医学中的应用</li>
+                                    <li>辨证论治基础</li>
+                                    <li>理论实践结合</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="#" class="btn btn-primary">开始学习</a>
+                                <a href="#" class="btn btn-outline">课程预览</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="basic">
+                        <div class="course-image">
+                            <div class="image-placeholder">脏腑经络</div>
+                            <div class="course-badge">基础</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>脏腑经络学说</h3>
+                            <p>深入学习脏腑经络理论，掌握五脏六腑的生理功能和病理变化规律。</p>
+                            <div class="course-meta">
+                                <span class="duration">⏱️ 70课时</span>
+                                <span class="level">📊 初级</span>
+                                <span class="students">👥 2,100+ 学员</span>
+                            </div>
+                            <div class="course-outline">
+                                <h4>课程大纲：</h4>
+                                <ul>
+                                    <li>五脏功能详解</li>
+                                    <li>六腑功能分析</li>
+                                    <li>经络系统理论</li>
+                                    <li>脏腑关系研究</li>
+                                    <li>病理变化规律</li>
+                                    <li>临床应用指导</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="#" class="btn btn-primary">开始学习</a>
+                                <a href="#" class="btn btn-outline">课程预览</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="basic">
+                        <div class="course-image">
+                            <div class="image-placeholder">病因病机</div>
+                            <div class="course-badge">基础</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>病因病机学说</h3>
+                            <p>学习中医病因病机理论，理解疾病的发生发展规律和辨证论治原则。</p>
+                            <div class="course-meta">
+                                <span class="duration">⏱️ 60课时</span>
+                                <span class="level">📊 初级</span>
+                                <span class="students">👥 1,900+ 学员</span>
+                            </div>
+                            <div class="course-outline">
+                                <h4>课程大纲：</h4>
+                                <ul>
+                                    <li>六淫病因理论</li>
+                                    <li>七情内伤学说</li>
+                                    <li>饮食劳倦病因</li>
+                                    <li>病机变化规律</li>
+                                    <li>辨证论治原则</li>
+                                    <li>临床实践应用</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="#" class="btn btn-primary">开始学习</a>
+                                <a href="#" class="btn btn-outline">课程预览</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学习路径 -->
+        <section class="learning-path-section">
+            <div class="container">
+                <h2 class="section-title">推荐学习路径</h2>
+                <div class="learning-path">
+                    <div class="path-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>基础理论阶段</h3>
+                            <p>学习阴阳五行、脏腑经络、病因病机等基础理论</p>
+                            <div class="step-courses">
+                                <span class="course-tag">阴阳五行理论</span>
+                                <span class="course-tag">脏腑经络学说</span>
+                                <span class="course-tag">病因病机学说</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>经典著作阶段</h3>
+                            <p>深入学习《黄帝内经》、《伤寒论》、《金匮要略》等经典</p>
+                            <div class="step-courses">
+                                <span class="course-tag">黄帝内经解读</span>
+                                <span class="course-tag">伤寒论精讲</span>
+                                <span class="course-tag">金匮要略详解</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>临床技能阶段</h3>
+                            <p>掌握脉诊、舌诊、针灸等临床诊断和治疗技能</p>
+                            <div class="step-courses">
+                                <span class="course-tag">脉诊技能精进</span>
+                                <span class="course-tag">舌诊诊断技巧</span>
+                                <span class="course-tag">针灸临床实践</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>倪海厦中医传承</h3>
+                    <p>传承千年医学智慧，弘扬传统中医文化</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="courses.html">课程学习</a></li>
+                        <li><a href="resources.html">学习资料</a></li>
+                        <li><a href="news.html">资讯动态</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>📧 contact@nihaiXia.com</p>
+                    <p>💬 微信：NiHaiXia_Study</p>
+                    <p>👥 QQ群：123456789</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 倪海厦中医传承网站. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
