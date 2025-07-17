@@ -301,6 +301,12 @@ body {
     box-shadow: var(--shadow-medium);
 }
 
+/* 特色区域 */
+.features-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--background-color);
+}
+
 /* 特色卡片 */
 .features-grid {
     display: grid;
@@ -334,6 +340,12 @@ body {
     color: var(--primary-color);
     margin-bottom: var(--spacing-sm);
     font-size: 1.3rem;
+}
+
+/* 课程区域 */
+.courses-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--background-light);
 }
 
 /* 课程卡片 */
