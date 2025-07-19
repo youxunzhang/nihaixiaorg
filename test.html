@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网站样式测试页面</title>
+    <title>倪海厦中医传承网站 - 功能测试</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,116 +38,114 @@
         </div>
     </nav>
 
-    <!-- 英雄区域 -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">样式测试页面</h1>
-            <p class="hero-subtitle">测试CSS样式是否正常工作</p>
-            <div class="hero-buttons">
-                <a href="index.html" class="btn btn-primary">返回首页</a>
-                <a href="#" class="btn btn-secondary">测试按钮</a>
+    <!-- 主要内容 -->
+    <main>
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">功能测试页面</h1>
+                <p class="page-subtitle">测试网站各项功能是否正常工作</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 特色区域 -->
-    <section class="features-section">
-        <div class="container">
-            <h2 class="section-title">特色功能测试</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📚</div>
-                    <h3>经典著作精讲</h3>
-                    <p>深入解读《伤寒论》、《金匮要略》等中医经典</p>
+        <!-- 本草纲目测试 -->
+        <section class="bencao-section">
+            <div class="container">
+                <div class="bencao-header">
+                    <h2 class="section-title">本草纲目功能测试</h2>
+                    <p>测试本草纲目查询、筛选、分页等功能</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🏥</div>
-                    <h3>临床实践指导</h3>
-                    <p>结合真实病例，学习临床诊断思路</p>
+                
+                <div class="bencao-search">
+                    <input type="text" placeholder="搜索本草名称、拼音、功效或分类...">
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🧠</div>
-                    <h3>理论体系构建</h3>
-                    <p>系统学习倪氏中医理论</p>
+                
+                <div class="bencao-filters">
+                    <button class="bencao-filter active" data-category="all">全部</button>
+                    <button class="bencao-filter" data-category="补气药">补气药</button>
+                    <button class="bencao-filter" data-category="补血药">补血药</button>
+                    <button class="bencao-filter" data-category="活血化瘀药">活血化瘀药</button>
+                    <button class="bencao-filter" data-category="利水渗湿药">利水渗湿药</button>
+                    <button class="bencao-filter" data-category="理气药">理气药</button>
+                    <button class="bencao-filter" data-category="化痰止咳平喘药">化痰止咳平喘药</button>
+                    <button class="bencao-filter" data-category="解表药">解表药</button>
+                    <button class="bencao-filter" data-category="清热药">清热药</button>
+                    <button class="bencao-filter" data-category="补阴药">补阴药</button>
+                </div>
+                
+                <div class="bencao-stats">共找到 15 种本草，当前显示第 1 页</div>
+                
+                <div class="bencao-grid">
+                    <!-- 本草项目将通过JavaScript动态生成 -->
+                </div>
+                
+                <div class="bencao-pagination">
+                    <!-- 分页按钮将通过JavaScript动态生成 -->
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 课程区域 -->
-    <section class="courses-section">
-        <div class="container">
-            <h2 class="section-title">课程卡片测试</h2>
-            <div class="courses-grid">
-                <div class="course-card">
-                    <div class="course-image">
-                        <div class="image-placeholder">伤寒论</div>
+        <!-- 其他功能测试 -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">其他功能测试</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>CSS样式测试</h3>
+                        <p>测试各种CSS样式是否正常显示，包括颜色、字体、布局等</p>
                     </div>
-                    <div class="course-content">
-                        <h3>《伤寒论》精讲</h3>
-                        <p>倪海厦老师对《伤寒论》的独特解读</p>
-                        <div class="course-meta">
-                            <span class="duration">⏱️ 120课时</span>
-                            <span class="level">📊 中级</span>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>JavaScript功能测试</h3>
+                        <p>测试JavaScript交互功能，包括导航、按钮、动画等</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>响应式设计测试</h3>
+                        <p>测试网站在不同设备上的显示效果</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h3>搜索功能测试</h3>
+                        <p>测试本草纲目的搜索和筛选功能</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 测试说明 -->
+        <section class="intro-section">
+            <div class="container">
+                <h2 class="section-title">测试说明</h2>
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h3>本草纲目功能测试项目：</h3>
+                        <ul>
+                            <li>✅ 搜索功能：在搜索框中输入本草名称、拼音或功效</li>
+                            <li>✅ 分类筛选：点击不同分类按钮筛选本草</li>
+                            <li>✅ 分页功能：测试分页按钮的切换</li>
+                            <li>✅ 详情查看：点击本草卡片查看详细信息</li>
+                            <li>✅ 响应式设计：在不同屏幕尺寸下测试显示效果</li>
+                        </ul>
+                        <h3>测试步骤：</h3>
+                        <ol>
+                            <li>在搜索框中输入"人参"或"黄芪"等本草名称</li>
+                            <li>点击"补气药"分类按钮进行筛选</li>
+                            <li>点击本草卡片查看详细信息</li>
+                            <li>测试分页功能（如果有多个页面）</li>
+                            <li>在移动设备上测试响应式效果</li>
+                        </ol>
+                    </div>
+                    <div class="intro-image">
+                        <div class="image-placeholder">
+                            <span>测试说明</span>
                         </div>
-                        <a href="#" class="btn btn-outline">查看详情</a>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <div class="course-image">
-                        <div class="image-placeholder">金匮要略</div>
-                    </div>
-                    <div class="course-content">
-                        <h3>《金匮要略》详解</h3>
-                        <p>系统学习杂病诊治方法</p>
-                        <div class="course-meta">
-                            <span class="duration">⏱️ 80课时</span>
-                            <span class="level">📊 中级</span>
-                        </div>
-                        <a href="#" class="btn btn-outline">查看详情</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- 资源区域 -->
-    <section class="resources-section">
-        <div class="container">
-            <h2 class="section-title">资源卡片测试</h2>
-            <div class="resources-grid">
-                <div class="resource-item">
-                    <div class="resource-icon">📖</div>
-                    <h3>电子书籍</h3>
-                    <p>倪海厦老师的著作和讲义</p>
-                    <span class="count">50+ 本</span>
-                </div>
-                <div class="resource-item">
-                    <div class="resource-icon">🎥</div>
-                    <h3>视频课程</h3>
-                    <p>高清录制的教学视频</p>
-                    <span class="count">200+ 课时</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 建议区域 -->
-    <section class="advice-section">
-        <div class="container">
-            <h2 class="section-title">建议卡片测试</h2>
-            <div class="advice-content">
-                <div class="advice-item">
-                    <h3>📚 循序渐进</h3>
-                    <p>建议从基础理论开始，逐步深入经典著作</p>
-                </div>
-                <div class="advice-item">
-                    <h3>🏥 理论结合实践</h3>
-                    <p>在学习理论的同时，要多观察、多思考</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- 页脚 -->
     <footer class="footer">
@@ -160,10 +158,17 @@
                 <div class="footer-section">
                     <h3>快速链接</h3>
                     <ul>
-                        <li><a href="index.html">首页</a></li>
                         <li><a href="courses.html">课程学习</a></li>
                         <li><a href="resources.html">学习资料</a></li>
+                        <li><a href="news.html">资讯动态</a></li>
+                        <li><a href="about.html">关于我们</a></li>
                     </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>📧 contact@nihaiXia.com</p>
+                    <p>💬 微信：NiHaiXia_Study</p>
+                    <p>👥 QQ群：123456789</p>
                 </div>
             </div>
             <div class="footer-bottom">

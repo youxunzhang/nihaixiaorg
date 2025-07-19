@@ -444,4 +444,460 @@ window.NiHaiXiaWebsite = {
     performSearch,
     initNavigation,
     initBackToTop
-}; 
+};
+
+// 本草纲目数据
+const bencaoData = [
+    {
+        id: 1,
+        name: "人参",
+        pinyin: "Rén Shēn",
+        category: "补气药",
+        nature: "甘、微苦，微温",
+        meridian: "心、肺、脾、肾经",
+        effects: "大补元气，复脉固脱，补脾益肺，生津养血，安神益智",
+        usage: "3-9g，大剂量可用至15g",
+        contraindications: "实证、热证忌服",
+        description: "人参为五加科植物人参的干燥根。主产于吉林、辽宁、黑龙江等地。具有大补元气、复脉固脱、补脾益肺、生津养血、安神益智的功效。",
+        tags: ["补气", "安神", "生津", "固脱"]
+    },
+    {
+        id: 2,
+        name: "黄芪",
+        pinyin: "Huáng Qí",
+        category: "补气药",
+        nature: "甘，微温",
+        meridian: "肺、脾经",
+        effects: "补气升阳，益卫固表，利水消肿，生津养血，行气活血，托毒排脓，敛疮生肌",
+        usage: "9-30g",
+        contraindications: "表实邪盛、气滞湿阻、食积内停、阴虚阳亢、热毒炽盛者忌服",
+        description: "黄芪为豆科植物蒙古黄芪或膜荚黄芪的干燥根。主产于内蒙古、山西、甘肃等地。具有补气升阳、益卫固表、利水消肿等功效。",
+        tags: ["补气", "固表", "利水", "托毒"]
+    },
+    {
+        id: 3,
+        name: "当归",
+        pinyin: "Dāng Guī",
+        category: "补血药",
+        nature: "甘、辛，温",
+        meridian: "心、肝、脾经",
+        effects: "补血活血，调经止痛，润燥滑肠",
+        usage: "6-15g",
+        contraindications: "湿盛中满、大便溏泄者慎服",
+        description: "当归为伞形科植物当归的干燥根。主产于甘肃、云南、四川等地。具有补血活血、调经止痛、润燥滑肠的功效。",
+        tags: ["补血", "活血", "调经", "止痛"]
+    },
+    {
+        id: 4,
+        name: "白芍",
+        pinyin: "Bái Sháo",
+        category: "补血药",
+        nature: "苦、酸，微寒",
+        meridian: "肝、脾经",
+        effects: "养血调经，敛阴止汗，柔肝止痛，平抑肝阳",
+        usage: "6-15g",
+        contraindications: "虚寒腹痛泄泻者慎服",
+        description: "白芍为毛茛科植物芍药的干燥根。主产于浙江、安徽、四川等地。具有养血调经、敛阴止汗、柔肝止痛的功效。",
+        tags: ["补血", "调经", "止痛", "敛阴"]
+    },
+    {
+        id: 5,
+        name: "川芎",
+        pinyin: "Chuān Xiōng",
+        category: "活血化瘀药",
+        nature: "辛，温",
+        meridian: "肝、胆、心包经",
+        effects: "活血行气，祛风止痛",
+        usage: "3-10g",
+        contraindications: "阴虚火旺、月经过多者慎服",
+        description: "川芎为伞形科植物川芎的干燥根茎。主产于四川、云南、贵州等地。具有活血行气、祛风止痛的功效。",
+        tags: ["活血", "行气", "祛风", "止痛"]
+    },
+    {
+        id: 6,
+        name: "丹参",
+        pinyin: "Dān Shēn",
+        category: "活血化瘀药",
+        nature: "苦，微寒",
+        meridian: "心、肝经",
+        effects: "活血祛瘀，通经止痛，清心除烦，凉血消痈",
+        usage: "10-15g",
+        contraindications: "无瘀血者慎服",
+        description: "丹参为唇形科植物丹参的干燥根及根茎。主产于四川、安徽、江苏等地。具有活血祛瘀、通经止痛、清心除烦的功效。",
+        tags: ["活血", "祛瘀", "通经", "止痛"]
+    },
+    {
+        id: 7,
+        name: "茯苓",
+        pinyin: "Fú Líng",
+        category: "利水渗湿药",
+        nature: "甘、淡，平",
+        meridian: "心、肺、脾、肾经",
+        effects: "利水渗湿，健脾，宁心",
+        usage: "9-15g",
+        contraindications: "虚寒精滑者忌服",
+        description: "茯苓为多孔菌科真菌茯苓的干燥菌核。主产于云南、安徽、湖北等地。具有利水渗湿、健脾、宁心的功效。",
+        tags: ["利水", "渗湿", "健脾", "宁心"]
+    },
+    {
+        id: 8,
+        name: "白术",
+        pinyin: "Bái Zhú",
+        category: "补气药",
+        nature: "苦、甘，温",
+        meridian: "脾、胃经",
+        effects: "健脾益气，燥湿利水，止汗，安胎",
+        usage: "6-12g",
+        contraindications: "阴虚内热、津液亏耗者慎服",
+        description: "白术为菊科植物白术的干燥根茎。主产于浙江、安徽、湖南等地。具有健脾益气、燥湿利水、止汗、安胎的功效。",
+        tags: ["健脾", "益气", "燥湿", "利水"]
+    },
+    {
+        id: 9,
+        name: "甘草",
+        pinyin: "Gān Cǎo",
+        category: "补气药",
+        nature: "甘，平",
+        meridian: "心、肺、脾、胃经",
+        effects: "补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药",
+        usage: "2-10g",
+        contraindications: "湿盛胀满、浮肿者忌服",
+        description: "甘草为豆科植物甘草、胀果甘草或光果甘草的干燥根及根茎。主产于内蒙古、甘肃、新疆等地。具有补脾益气、清热解毒等功效。",
+        tags: ["补脾", "益气", "解毒", "调和"]
+    },
+    {
+        id: 10,
+        name: "陈皮",
+        pinyin: "Chén Pí",
+        category: "理气药",
+        nature: "苦、辛，温",
+        meridian: "肺、脾经",
+        effects: "理气健脾，燥湿化痰",
+        usage: "3-10g",
+        contraindications: "阴虚燥咳、吐血者慎服",
+        description: "陈皮为芸香科植物橘及其栽培变种的干燥成熟果皮。主产于广东、福建、四川等地。具有理气健脾、燥湿化痰的功效。",
+        tags: ["理气", "健脾", "燥湿", "化痰"]
+    },
+    {
+        id: 11,
+        name: "半夏",
+        pinyin: "Bàn Xià",
+        category: "化痰止咳平喘药",
+        nature: "辛，温；有毒",
+        meridian: "脾、胃、肺经",
+        effects: "燥湿化痰，降逆止呕，消痞散结",
+        usage: "3-10g",
+        contraindications: "阴虚燥咳、血证、热痰、燥痰者慎服",
+        description: "半夏为天南星科植物半夏的干燥块茎。主产于四川、湖北、河南等地。具有燥湿化痰、降逆止呕、消痞散结的功效。",
+        tags: ["化痰", "降逆", "止呕", "消痞"]
+    },
+    {
+        id: 12,
+        name: "柴胡",
+        pinyin: "Chái Hú",
+        category: "解表药",
+        nature: "苦、辛，微寒",
+        meridian: "肝、胆经",
+        effects: "疏散退热，疏肝解郁，升举阳气",
+        usage: "3-10g",
+        contraindications: "肝阳上亢、肝风内动、阴虚火旺者慎服",
+        description: "柴胡为伞形科植物柴胡或狭叶柴胡的干燥根。主产于河北、山西、陕西等地。具有疏散退热、疏肝解郁、升举阳气的功效。",
+        tags: ["解表", "疏肝", "退热", "升阳"]
+    },
+    {
+        id: 13,
+        name: "黄连",
+        pinyin: "Huáng Lián",
+        category: "清热药",
+        nature: "苦，寒",
+        meridian: "心、脾、胃、肝、胆、大肠经",
+        effects: "清热燥湿，泻火解毒",
+        usage: "2-5g",
+        contraindications: "脾胃虚寒者忌服",
+        description: "黄连为毛茛科植物黄连、三角叶黄连或云连的干燥根茎。主产于四川、湖北、云南等地。具有清热燥湿、泻火解毒的功效。",
+        tags: ["清热", "燥湿", "泻火", "解毒"]
+    },
+    {
+        id: 14,
+        name: "金银花",
+        pinyin: "Jīn Yín Huā",
+        category: "清热药",
+        nature: "甘，寒",
+        meridian: "肺、心、胃经",
+        effects: "清热解毒，疏散风热",
+        usage: "6-15g",
+        contraindications: "脾胃虚寒者慎服",
+        description: "金银花为忍冬科植物忍冬的干燥花蕾或带初开的花。主产于河南、山东、河北等地。具有清热解毒、疏散风热的功效。",
+        tags: ["清热", "解毒", "疏散", "风热"]
+    },
+    {
+        id: 15,
+        name: "枸杞子",
+        pinyin: "Gǒu Qǐ Zǐ",
+        category: "补阴药",
+        nature: "甘，平",
+        meridian: "肝、肾经",
+        effects: "滋补肝肾，益精明目",
+        usage: "6-12g",
+        contraindications: "外感实热、脾虚有湿及泄泻者忌服",
+        description: "枸杞子为茄科植物宁夏枸杞的干燥成熟果实。主产于宁夏、甘肃、青海等地。具有滋补肝肾、益精明目的功效。",
+        tags: ["滋补", "肝肾", "明目", "益精"]
+    }
+];
+
+// 本草纲目功能
+function initBencaoSection() {
+    const bencaoSection = document.querySelector('.bencao-section');
+    if (!bencaoSection) return;
+
+    let currentPage = 1;
+    let itemsPerPage = 6;
+    let filteredData = [...bencaoData];
+    let currentCategory = 'all';
+
+    // 初始化搜索和筛选
+    const searchInput = bencaoSection.querySelector('.bencao-search input');
+    const filterButtons = bencaoSection.querySelectorAll('.bencao-filter');
+    const bencaoGrid = bencaoSection.querySelector('.bencao-grid');
+    const pagination = bencaoSection.querySelector('.bencao-pagination');
+    const stats = bencaoSection.querySelector('.bencao-stats');
+
+    // 搜索功能
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            filterBencao(query, currentCategory);
+        });
+    }
+
+    // 筛选功能
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.dataset.category;
+            currentCategory = category;
+            
+            // 更新按钮状态
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // 筛选数据
+            filterBencao(searchInput ? searchInput.value.toLowerCase() : '', category);
+        });
+    });
+
+    // 筛选本草数据
+    function filterBencao(query, category) {
+        filteredData = bencaoData.filter(item => {
+            const matchesQuery = !query || 
+                item.name.toLowerCase().includes(query) ||
+                item.pinyin.toLowerCase().includes(query) ||
+                item.effects.toLowerCase().includes(query) ||
+                item.category.toLowerCase().includes(query);
+            
+            const matchesCategory = category === 'all' || item.category === category;
+            
+            return matchesQuery && matchesCategory;
+        });
+
+        currentPage = 1;
+        renderBencaoGrid();
+        renderPagination();
+        updateStats();
+    }
+
+    // 渲染本草网格
+    function renderBencaoGrid() {
+        if (!bencaoGrid) return;
+
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const pageData = filteredData.slice(startIndex, endIndex);
+
+        if (pageData.length === 0) {
+            bencaoGrid.innerHTML = `
+                <div class="bencao-no-results">
+                    <h3>没有找到相关本草</h3>
+                    <p>请尝试其他搜索关键词或筛选条件</p>
+                </div>
+            `;
+            return;
+        }
+
+        bencaoGrid.innerHTML = pageData.map(item => `
+            <div class="bencao-item" data-id="${item.id}">
+                <div class="bencao-item-header">
+                    <h3>${item.name}</h3>
+                    <div class="pinyin">${item.pinyin}</div>
+                </div>
+                <div class="bencao-item-content">
+                    <div class="bencao-property">
+                        <h4>分类</h4>
+                        <p>${item.category}</p>
+                    </div>
+                    <div class="bencao-property">
+                        <h4>性味</h4>
+                        <p>${item.nature}</p>
+                    </div>
+                    <div class="bencao-property">
+                        <h4>功效</h4>
+                        <p>${item.effects}</p>
+                    </div>
+                    <div class="bencao-tags">
+                        ${item.tags.map(tag => `<span class="bencao-tag">${tag}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        // 添加点击事件
+        bencaoGrid.querySelectorAll('.bencao-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const id = parseInt(this.dataset.id);
+                showBencaoDetail(id);
+            });
+        });
+    }
+
+    // 渲染分页
+    function renderPagination() {
+        if (!pagination) return;
+
+        const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+        
+        if (totalPages <= 1) {
+            pagination.innerHTML = '';
+            return;
+        }
+
+        let paginationHTML = '';
+        
+        // 上一页按钮
+        paginationHTML += `
+            <button ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})">
+                上一页
+            </button>
+        `;
+
+        // 页码按钮
+        const startPage = Math.max(1, currentPage - 2);
+        const endPage = Math.min(totalPages, currentPage + 2);
+
+        for (let i = startPage; i <= endPage; i++) {
+            paginationHTML += `
+                <button class="${i === currentPage ? 'current-page' : ''}" onclick="changePage(${i})">
+                    ${i}
+                </button>
+            `;
+        }
+
+        // 下一页按钮
+        paginationHTML += `
+            <button ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})">
+                下一页
+            </button>
+        `;
+
+        pagination.innerHTML = paginationHTML;
+    }
+
+    // 更新统计信息
+    function updateStats() {
+        if (!stats) return;
+        stats.textContent = `共找到 ${filteredData.length} 种本草，当前显示第 ${currentPage} 页`;
+    }
+
+    // 切换页面
+    window.changePage = function(page) {
+        const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+        if (page >= 1 && page <= totalPages) {
+            currentPage = page;
+            renderBencaoGrid();
+            renderPagination();
+            updateStats();
+            
+            // 滚动到顶部
+            bencaoSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    // 显示本草详情
+    function showBencaoDetail(id) {
+        const item = bencaoData.find(item => item.id === id);
+        if (!item) return;
+
+        // 创建模态框
+        const modal = document.createElement('div');
+        modal.className = 'bencao-modal';
+        modal.innerHTML = `
+            <div class="bencao-modal-content">
+                <div class="bencao-modal-header">
+                    <h2>${item.name} (${item.pinyin})</h2>
+                    <button class="bencao-modal-close">&times;</button>
+                </div>
+                <div class="bencao-modal-body">
+                    <div class="bencao-detail-section">
+                        <h3>基本信息</h3>
+                        <p><strong>分类：</strong>${item.category}</p>
+                        <p><strong>性味：</strong>${item.nature}</p>
+                        <p><strong>归经：</strong>${item.meridian}</p>
+                        <p><strong>用量：</strong>${item.usage}</p>
+                    </div>
+                    <div class="bencao-detail-section">
+                        <h3>功效主治</h3>
+                        <p>${item.effects}</p>
+                    </div>
+                    <div class="bencao-detail-section">
+                        <h3>详细描述</h3>
+                        <p>${item.description}</p>
+                    </div>
+                    <div class="bencao-detail-section">
+                        <h3>使用注意</h3>
+                        <p><strong>禁忌：</strong>${item.contraindications}</p>
+                    </div>
+                    <div class="bencao-detail-section">
+                        <h3>相关标签</h3>
+                        <div class="bencao-tags">
+                            ${item.tags.map(tag => `<span class="bencao-tag">${tag}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        document.body.appendChild(modal);
+
+        // 显示模态框
+        setTimeout(() => {
+            modal.classList.add('active');
+        }, 10);
+
+        // 关闭模态框
+        const closeBtn = modal.querySelector('.bencao-modal-close');
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+            setTimeout(() => {
+                document.body.removeChild(modal);
+            }, 300);
+        });
+
+        // 点击背景关闭
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                setTimeout(() => {
+                    document.body.removeChild(modal);
+                }, 300);
+            }
+        });
+    }
+
+    // 初始化渲染
+    renderBencaoGrid();
+    renderPagination();
+    updateStats();
+}
+
+// 页面加载完成后初始化本草纲目功能
+document.addEventListener('DOMContentLoaded', function() {
+    initBencaoSection();
+}); 
