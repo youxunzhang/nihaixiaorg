@@ -25,6 +25,15 @@
                     <a href="resources.html" class="nav-link">学习资料</a>
                 </li>
                 <li class="nav-item">
+                    <a href="badajingang.html" class="nav-link">八部金刚功</a>
+                </li>
+                <li class="nav-item">
+                    <a href="baduanjin.html" class="nav-link">八段锦</a>
+                </li>
+                <li class="nav-item">
+                    <a href="zhanzhuang.html" class="nav-link">站桩</a>
+                </li>
+                <li class="nav-item">
                     <a href="news.html" class="nav-link active">资讯动态</a>
                 </li>
                 <li class="nav-item">
@@ -49,42 +58,7 @@
             </div>
         </section>
 
-        <!-- 本草纲目 -->
-        <section class="bencao-section">
-            <div class="container">
-                <div class="bencao-header">
-                    <h2 class="section-title">本草纲目</h2>
-                    <p>查询数百种中药材信息，掌握传统中药知识</p>
-                </div>
-                
-                <div class="bencao-search">
-                    <input type="text" placeholder="搜索本草名称、拼音、功效或分类...">
-                </div>
-                
-                <div class="bencao-filters">
-                    <button class="bencao-filter active" data-category="all">全部</button>
-                    <button class="bencao-filter" data-category="补气药">补气药</button>
-                    <button class="bencao-filter" data-category="补血药">补血药</button>
-                    <button class="bencao-filter" data-category="活血化瘀药">活血化瘀药</button>
-                    <button class="bencao-filter" data-category="利水渗湿药">利水渗湿药</button>
-                    <button class="bencao-filter" data-category="理气药">理气药</button>
-                    <button class="bencao-filter" data-category="化痰止咳平喘药">化痰止咳平喘药</button>
-                    <button class="bencao-filter" data-category="解表药">解表药</button>
-                    <button class="bencao-filter" data-category="清热药">清热药</button>
-                    <button class="bencao-filter" data-category="补阴药">补阴药</button>
-                </div>
-                
-                <div class="bencao-stats">共找到 15 种本草，当前显示第 1 页</div>
-                
-                <div class="bencao-grid">
-                    <!-- 本草项目将通过JavaScript动态生成 -->
-                </div>
-                
-                <div class="bencao-pagination">
-                    <!-- 分页按钮将通过JavaScript动态生成 -->
-                </div>
-            </div>
-        </section>
+
 
         <!-- 文章分类筛选 -->
         <section class="filter-section">
@@ -151,6 +125,60 @@
                             </div>
                             <div class="news-actions">
                                 <a href="#" class="btn btn-outline">阅读全文</a>
+                                <button class="btn btn-secondary share-btn">分享</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 养生保健类文章 -->
+                    <article class="news-card" data-category="health">
+                        <div class="news-image">
+                            <div class="image-placeholder">瑜伽冥想</div>
+                            <div class="news-badge">养生</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="date">📅 2024-01-20</span>
+                                <span class="category">🏷️ 养生保健</span>
+                                <span class="views">👁️ 1,800+ 阅读</span>
+                            </div>
+                            <h3><a href="articles/yoga-meditation-sleep.html">瑜伽冥想与深度睡眠：两种不同的意识状态解析</a></h3>
+                            <p>深入解析瑜伽冥想和深度睡眠的差异，探讨它们在大脑活动、生理功能和意识状态方面的不同表现，以及各自的养生价值。</p>
+                            <div class="news-tags">
+                                <span class="tag">瑜伽冥想</span>
+                                <span class="tag">深度睡眠</span>
+                                <span class="tag">意识状态</span>
+                                <span class="tag">养生保健</span>
+                            </div>
+                            <div class="news-actions">
+                                <a href="articles/yoga-meditation-sleep.html" class="btn btn-outline">阅读全文</a>
+                                <button class="btn btn-secondary share-btn">分享</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 修行方法对比文章 -->
+                    <article class="news-card" data-category="health">
+                        <div class="news-image">
+                            <div class="image-placeholder">修行方法</div>
+                            <div class="news-badge">养生</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="date">📅 2024-01-25</span>
+                                <span class="category">🏷️ 养生保健</span>
+                                <span class="views">👁️ 2,100+ 阅读</span>
+                            </div>
+                            <h3><a href="articles/meditation-comparison.html">瑜伽冥想、打坐与站桩：三种修行方法的深度解析</a></h3>
+                            <p>深入解析瑜伽冥想、打坐和站桩三种修行方法的起源、形式、目的和侧重点，探讨它们的异同点和养生价值。</p>
+                            <div class="news-tags">
+                                <span class="tag">瑜伽冥想</span>
+                                <span class="tag">打坐</span>
+                                <span class="tag">站桩</span>
+                                <span class="tag">修行方法</span>
+                            </div>
+                            <div class="news-actions">
+                                <a href="articles/meditation-comparison.html" class="btn btn-outline">阅读全文</a>
                                 <button class="btn btn-secondary share-btn">分享</button>
                             </div>
                         </div>
@@ -438,13 +466,16 @@
                 </div>
                 <div class="footer-section">
                     <h3>联系方式</h3>
-                    <p>📧 contact@nihaiXia.com</p>
-                    <p>💬 微信：NiHaiXia_Study</p>
-                    <p>👥 QQ群：123456789</p>
+                    <p>📧 zhangyouxun2024@qq.com</p>
+                    <p>💬 微信：zhangyouxun2013</p>
+                    <p>👥 QQ群：601263266</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 倪海厦中医传承网站. 保留所有权利.</p>
+                <div class="external-links">
+                    <a href="https://www.seodog.cn" target="_blank" style="color: #000; text-decoration: none; background: #fff; padding: 5px 10px; border-radius: 3px; font-size: 12px;">AI工具导航</a>
+                </div>
             </div>
         </div>
     </footer>

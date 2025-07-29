@@ -25,6 +25,15 @@
                     <a href="resources.html" class="nav-link active">学习资料</a>
                 </li>
                 <li class="nav-item">
+                    <a href="badajingang.html" class="nav-link">八部金刚功</a>
+                </li>
+                <li class="nav-item">
+                    <a href="baduanjin.html" class="nav-link">八段锦</a>
+                </li>
+                <li class="nav-item">
+                    <a href="zhanzhuang.html" class="nav-link">站桩</a>
+                </li>
+                <li class="nav-item">
                     <a href="news.html" class="nav-link">资讯动态</a>
                 </li>
                 <li class="nav-item">
@@ -49,394 +58,271 @@
             </div>
         </section>
 
-        <!-- 本草纲目 -->
-        <section class="bencao-section">
+
+
+        <!-- 中医古籍专题 -->
+        <section class="ancient-books-section">
             <div class="container">
-                <div class="bencao-header">
-                    <h2 class="section-title">本草纲目</h2>
-                    <p>查询数百种中药材信息，掌握传统中药知识</p>
+                <div class="ancient-books-header">
+                    <h2 class="section-title">中医古籍专题</h2>
+                    <p>传承千年医学智慧，收录上千本珍贵中医古籍，总计20.5GB丰富资源</p>
                 </div>
                 
-                <div class="bencao-search">
-                    <input type="text" placeholder="搜索本草名称、拼音、功效或分类...">
+                <div class="ancient-books-grid">
+                    <!-- 主要古籍专题 -->
+                    <div class="ancient-book-card featured">
+                        <div class="book-header">
+                            <h3>📚 中医古籍专题【上千本20.5GB】</h3>
+                            <span class="book-size">20.5GB</span>
+                        </div>
+                        <div class="book-content">
+                            <p>收录上千本珍贵中医古籍，涵盖历代名医著作、经典医籍、方剂集锦等，是学习中医的宝贵资源库。</p>
+                            <div class="book-features">
+                                <span class="feature">📖 上千本古籍</span>
+                                <span class="feature">🏥 历代名医</span>
+                                <span class="feature">💊 经典方剂</span>
+                                <span class="feature">📜 珍贵文献</span>
+                            </div>
+                            <div class="book-link">
+                                <a href="https://pan.quark.cn/s/170fecf1f75b" target="_blank" class="btn btn-primary">获取资源</a>
+                                <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/170fecf1f75b')">复制链接</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中医丛书系列 -->
+                    <div class="ancient-book-card">
+                        <div class="book-header">
+                            <h3>📚 中医丛书系列</h3>
+                            <span class="book-size">系列丛书</span>
+                        </div>
+                        <div class="book-content">
+                            <p>系统性的中医丛书系列，包含多个专题丛书，为系统学习中医提供完整资料。</p>
+                            <div class="book-features">
+                                <span class="feature">📚 系列丛书</span>
+                                <span class="feature">🏥 系统学习</span>
+                                <span class="feature">📖 专题分类</span>
+                            </div>
+                            <div class="book-link">
+                                <a href="https://pan.quark.cn/s/2f544cab3af3" target="_blank" class="btn btn-primary">获取资源</a>
+                                <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/2f544cab3af3')">复制链接</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中医教材经典本草类 -->
+                    <div class="ancient-book-card">
+                        <div class="book-header">
+                            <h3>🌿 中医教材经典本草类</h3>
+                            <span class="book-size">本草教材</span>
+                        </div>
+                        <div class="book-content">
+                            <p>经典本草学教材和资料，包含《神农本草经》等经典著作的详细解读和现代教材。</p>
+                            <div class="book-features">
+                                <span class="feature">🌿 本草学</span>
+                                <span class="feature">📖 经典教材</span>
+                                <span class="feature">💊 中药知识</span>
+                            </div>
+                            <div class="book-link">
+                                <a href="https://pan.quark.cn/s/b9eadd28b118" target="_blank" class="btn btn-primary">获取资源</a>
+                                <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/b9eadd28b118')">复制链接</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中医基础理论 -->
+                    <div class="ancient-book-card">
+                        <div class="book-header">
+                            <h3>🏥 中医基础理论</h3>
+                            <span class="book-size">基础理论</span>
+                        </div>
+                        <div class="book-content">
+                            <p>中医基础理论教材和资料，包含阴阳五行、脏腑经络、病因病机等核心理论内容。</p>
+                            <div class="book-features">
+                                <span class="feature">🏥 基础理论</span>
+                                <span class="feature">📖 核心概念</span>
+                                <span class="feature">🎯 理论体系</span>
+                            </div>
+                            <div class="book-link">
+                                <a href="https://pan.quark.cn/s/4a9fd4eaf8df" target="_blank" class="btn btn-primary">获取资源</a>
+                                <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/4a9fd4eaf8df')">复制链接</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中医视频和书籍 -->
+                    <div class="ancient-book-card">
+                        <div class="book-header">
+                            <h3>🎥 中医视频和书籍</h3>
+                            <span class="book-size">视频书籍</span>
+                        </div>
+                        <div class="book-content">
+                            <p>中医教学视频和配套书籍，包含名师讲座、临床演示、理论讲解等多种形式的学习资料。</p>
+                            <div class="book-features">
+                                <span class="feature">🎥 教学视频</span>
+                                <span class="feature">📖 配套书籍</span>
+                                <span class="feature">👨‍⚕️ 名师讲座</span>
+                            </div>
+                            <div class="book-link">
+                                <a href="https://pan.quark.cn/s/b42a9846cb89" target="_blank" class="btn btn-primary">获取资源</a>
+                                <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/b42a9846cb89')">复制链接</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中医外治手册 -->
+                    <div class="ancient-book-card">
+                        <div class="book-header">
+                            <h3>💆 中医外治手册</h3>
+                            <span class="book-size">外治手册</span>
+                        </div>
+                        <div class="book-content">
+                            <p>中医外治方法手册，包含推拿、按摩、艾灸、拔罐等外治技术的详细操作指南。</p>
+                            <div class="book-features">
+                                <span class="feature">💆 外治技术</span>
+                                <span class="feature">📖 操作指南</span>
+                                <span class="feature">🔥 艾灸拔罐</span>
+                            </div>
+                            <div class="book-link">
+                                <a href="https://pan.quark.cn/s/5fb139c5c910" target="_blank" class="btn btn-primary">获取资源</a>
+                                <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/5fb139c5c910')">复制链接</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中医医集医论工具类 -->
+                    <div class="ancient-book-card">
+                        <div class="book-header">
+                            <h3>🔧 中医医集医论工具类</h3>
+                            <span class="book-size">医论工具</span>
+                        </div>
+                        <div class="book-content">
+                            <p>中医医集医论和实用工具类资料，包含历代医家医论、诊断工具、实用手册等。</p>
+                            <div class="book-features">
+                                <span class="feature">🔧 实用工具</span>
+                                <span class="feature">📖 医家医论</span>
+                                <span class="feature">🏥 诊断工具</span>
+                            </div>
+                            <div class="book-link">
+                                <a href="https://pan.quark.cn/s/766b0d19b279" target="_blank" class="btn btn-primary">获取资源</a>
+                                <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/766b0d19b279')">复制链接</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中医针灸诊断方剂类 -->
+                    <div class="ancient-book-card">
+                        <div class="book-header">
+                            <h3>💉 中医针灸诊断方剂类</h3>
+                            <span class="book-size">针灸方剂</span>
+                        </div>
+                        <div class="book-content">
+                            <p>中医针灸、诊断和方剂类资料，包含针灸技术、诊断方法、经典方剂等内容。</p>
+                            <div class="book-features">
+                                <span class="feature">💉 针灸技术</span>
+                                <span class="feature">🔍 诊断方法</span>
+                                <span class="feature">💊 经典方剂</span>
+                            </div>
+                            <div class="book-link">
+                                <a href="https://pan.quark.cn/s/53b01a99a2ba" target="_blank" class="btn btn-primary">获取资源</a>
+                                <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/53b01a99a2ba')">复制链接</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="bencao-filters">
-                    <button class="bencao-filter active" data-category="all">全部</button>
-                    <button class="bencao-filter" data-category="补气药">补气药</button>
-                    <button class="bencao-filter" data-category="补血药">补血药</button>
-                    <button class="bencao-filter" data-category="活血化瘀药">活血化瘀药</button>
-                    <button class="bencao-filter" data-category="利水渗湿药">利水渗湿药</button>
-                    <button class="bencao-filter" data-category="理气药">理气药</button>
-                    <button class="bencao-filter" data-category="化痰止咳平喘药">化痰止咳平喘药</button>
-                    <button class="bencao-filter" data-category="解表药">解表药</button>
-                    <button class="bencao-filter" data-category="清热药">清热药</button>
-                    <button class="bencao-filter" data-category="补阴药">补阴药</button>
-                </div>
-                
-                <div class="bencao-stats">共找到 15 种本草，当前显示第 1 页</div>
-                
-                <div class="bencao-grid">
-                    <!-- 本草项目将通过JavaScript动态生成 -->
-                </div>
-                
-                <div class="bencao-pagination">
-                    <!-- 分页按钮将通过JavaScript动态生成 -->
-                </div>
-            </div>
-        </section>
 
-        <!-- 资料分类筛选 -->
-        <section class="filter-section">
-            <div class="container">
-                <div class="filter-tabs">
-                    <button class="filter-tab active" data-category="all">全部资料</button>
-                    <button class="filter-tab" data-category="books">电子书籍</button>
-                    <button class="filter-tab" data-category="videos">视频课程</button>
-                    <button class="filter-tab" data-category="notes">学习笔记</button>
-                    <button class="filter-tab" data-category="articles">文章资料</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- 资料列表 -->
-        <section class="resources-list-section">
-            <div class="container">
-                <div class="resources-grid" id="resources-grid">
-                    <!-- 电子书籍 -->
-                    <div class="resource-card" data-category="books">
-                        <div class="resource-image">
-                            <div class="image-placeholder">人纪</div>
-                            <div class="resource-badge">📖 电子书</div>
+                <!-- 中医大全系列 -->
+                <div class="ancient-books-series">
+                    <h3 class="series-title">📚 中医大全系列（001-161）</h3>
+                    <p class="series-description">完整的中医大全系列，按编号分类整理，包含161个专题内容</p>
+                    
+                    <div class="series-grid">
+                        <div class="series-item">
+                            <h4>中医大全（001-005）</h4>
+                            <a href="https://pan.quark.cn/s/045b05d3dd17" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/045b05d3dd17')">复制</button>
                         </div>
-                        <div class="resource-content">
-                            <h3>《人纪》完整版</h3>
-                            <p>倪海厦老师的经典著作《人纪》，包含《针灸篇》、《神农本草经篇》、《黄帝内经篇》、《伤寒论篇》、《金匮要略篇》等五大部分。</p>
-                            <div class="resource-meta">
-                                <span class="size">📄 2.5MB</span>
-                                <span class="pages">📖 800页</span>
-                                <span class="downloads">⬇️ 5,200+ 下载</span>
-                            </div>
-                            <div class="resource-info">
-                                <h4>内容简介：</h4>
-                                <ul>
-                                    <li>针灸篇：经络穴位详解</li>
-                                    <li>神农本草经篇：中药学基础</li>
-                                    <li>黄帝内经篇：中医理论源头</li>
-                                    <li>伤寒论篇：外感病诊治</li>
-                                    <li>金匮要略篇：杂病诊治</li>
-                                </ul>
-                            </div>
-                            <div class="resource-actions">
-                                <a href="#" class="btn btn-primary">下载PDF</a>
-                                <a href="#" class="btn btn-outline">在线预览</a>
-                            </div>
+                        <div class="series-item">
+                            <h4>中医大全（006-010）</h4>
+                            <a href="https://pan.quark.cn/s/0b633f2bddfc" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/0b633f2bddfc')">复制</button>
                         </div>
-                    </div>
-
-                    <div class="resource-card" data-category="books">
-                        <div class="resource-image">
-                            <div class="image-placeholder">天纪</div>
-                            <div class="resource-badge">📖 电子书</div>
+                        <div class="series-item">
+                            <h4>中医大全（011-020）</h4>
+                            <a href="https://pan.quark.cn/s/9fd451d0bf59" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/9fd451d0bf59')">复制</button>
                         </div>
-                        <div class="resource-content">
-                            <h3>《天纪》完整版</h3>
-                            <p>倪海厦老师的《天纪》系列，包含紫微斗数、易经、面相学等传统文化内容，展现中医与易学的深层联系。</p>
-                            <div class="resource-meta">
-                                <span class="size">📄 1.8MB</span>
-                                <span class="pages">📖 600页</span>
-                                <span class="downloads">⬇️ 3,800+ 下载</span>
-                            </div>
-                            <div class="resource-info">
-                                <h4>内容简介：</h4>
-                                <ul>
-                                    <li>紫微斗数基础理论</li>
-                                    <li>易经八卦详解</li>
-                                    <li>面相学入门</li>
-                                    <li>命理与医学关系</li>
-                                    <li>传统文化智慧</li>
-                                </ul>
-                            </div>
-                            <div class="resource-actions">
-                                <a href="#" class="btn btn-primary">下载PDF</a>
-                                <a href="#" class="btn btn-outline">在线预览</a>
-                            </div>
+                        <div class="series-item">
+                            <h4>中医大全（021-040）</h4>
+                            <a href="https://pan.quark.cn/s/16164b12466c" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/16164b12466c')">复制</button>
                         </div>
-                    </div>
-
-                    <div class="resource-card" data-category="books">
-                        <div class="resource-image">
-                            <div class="image-placeholder">地纪</div>
-                            <div class="resource-badge">📖 电子书</div>
+                        <div class="series-item">
+                            <h4>中医大全（041-048）</h4>
+                            <a href="https://pan.quark.cn/s/ea2c603d17ff" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/ea2c603d17ff')">复制</button>
                         </div>
-                        <div class="resource-content">
-                            <h3>《地纪》完整版</h3>
-                            <p>倪海厦老师的《地纪》系列，专注于地理风水学，探讨环境与健康的关系，体现中医的整体观念。</p>
-                            <div class="resource-meta">
-                                <span class="size">📄 1.2MB</span>
-                                <span class="pages">📖 400页</span>
-                                <span class="downloads">⬇️ 2,500+ 下载</span>
-                            </div>
-                            <div class="resource-info">
-                                <h4>内容简介：</h4>
-                                <ul>
-                                    <li>地理风水基础</li>
-                                    <li>环境与健康关系</li>
-                                    <li>居住环境调理</li>
-                                    <li>风水与医学结合</li>
-                                    <li>实用风水技巧</li>
-                                </ul>
-                            </div>
-                            <div class="resource-actions">
-                                <a href="#" class="btn btn-primary">下载PDF</a>
-                                <a href="#" class="btn btn-outline">在线预览</a>
-                            </div>
+                        <div class="series-item">
+                            <h4>中医大全（049-067）</h4>
+                            <a href="https://pan.quark.cn/s/c1dae113651f" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/c1dae113651f')">复制</button>
                         </div>
-                    </div>
-
-                    <!-- 视频课程 -->
-                    <div class="resource-card" data-category="videos">
-                        <div class="resource-image">
-                            <div class="image-placeholder">伤寒论视频</div>
-                            <div class="resource-badge">🎥 视频</div>
+                        <div class="series-item">
+                            <h4>中医大全（068-074）</h4>
+                            <a href="https://pan.quark.cn/s/4f8987576858" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/4f8987576858')">复制</button>
                         </div>
-                        <div class="resource-content">
-                            <h3>《伤寒论》视频课程全集</h3>
-                            <p>倪海厦老师亲自讲授的《伤寒论》视频课程，高清画质，详细讲解，适合深入学习。</p>
-                            <div class="resource-meta">
-                                <span class="size">🎬 15GB</span>
-                                <span class="duration">⏱️ 120课时</span>
-                                <span class="downloads">⬇️ 8,500+ 下载</span>
-                            </div>
-                            <div class="resource-info">
-                                <h4>课程内容：</h4>
-                                <ul>
-                                    <li>太阳病篇详解（30课时）</li>
-                                    <li>阳明病篇精讲（25课时）</li>
-                                    <li>少阳病篇分析（20课时）</li>
-                                    <li>太阴病篇解读（15课时）</li>
-                                    <li>少阴病篇讲解（20课时）</li>
-                                    <li>厥阴病篇总结（10课时）</li>
-                                </ul>
-                            </div>
-                            <div class="resource-actions">
-                                <a href="#" class="btn btn-primary">下载视频</a>
-                                <a href="#" class="btn btn-outline">在线观看</a>
-                            </div>
+                        <div class="series-item">
+                            <h4>中医大全（075-086）</h4>
+                            <a href="https://pan.quark.cn/s/25ce5eebc3c3" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/25ce5eebc3c3')">复制</button>
                         </div>
-                    </div>
-
-                    <div class="resource-card" data-category="videos">
-                        <div class="resource-image">
-                            <div class="image-placeholder">金匮要略视频</div>
-                            <div class="resource-badge">🎥 视频</div>
+                        <div class="series-item">
+                            <h4>中医大全（087-095）</h4>
+                            <a href="https://pan.quark.cn/s/a94b1797ff94" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/a94b1797ff94')">复制</button>
                         </div>
-                        <div class="resource-content">
-                            <h3>《金匮要略》视频课程全集</h3>
-                            <p>倪海厦老师讲授的《金匮要略》视频课程，系统讲解杂病诊治，提升临床能力。</p>
-                            <div class="resource-meta">
-                                <span class="size">🎬 12GB</span>
-                                <span class="duration">⏱️ 80课时</span>
-                                <span class="downloads">⬇️ 6,200+ 下载</span>
-                            </div>
-                            <div class="resource-info">
-                                <h4>课程内容：</h4>
-                                <ul>
-                                    <li>脏腑经络先后病脉证（15课时）</li>
-                                    <li>痉湿暍病脉证治（12课时）</li>
-                                    <li>百合狐惑阴阳毒病脉证治（10课时）</li>
-                                    <li>疟病脉证并治（8课时）</li>
-                                    <li>中风历节病脉证并治（15课时）</li>
-                                    <li>血痹虚劳病脉证并治（20课时）</li>
-                                </ul>
-                            </div>
-                            <div class="resource-actions">
-                                <a href="#" class="btn btn-primary">下载视频</a>
-                                <a href="#" class="btn btn-outline">在线观看</a>
-                            </div>
+                        <div class="series-item">
+                            <h4>中医大全（096-100）</h4>
+                            <a href="https://pan.quark.cn/s/46f5be0bd7e1" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/46f5be0bd7e1')">复制</button>
                         </div>
-                    </div>
-
-                    <div class="resource-card" data-category="videos">
-                        <div class="resource-image">
-                            <div class="image-placeholder">脉诊视频</div>
-                            <div class="resource-badge">🎥 视频</div>
+                        <div class="series-item">
+                            <h4>中医大全（101-110）</h4>
+                            <a href="https://pan.quark.cn/s/23897f599fd9" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/23897f599fd9')">复制</button>
                         </div>
-                        <div class="resource-content">
-                            <h3>脉诊技能视频教程</h3>
-                            <p>倪海厦老师脉诊技能教学视频，包含理论讲解和实际操作演示，提升脉诊水平。</p>
-                            <div class="resource-meta">
-                                <span class="size">🎬 8GB</span>
-                                <span class="duration">⏱️ 60课时</span>
-                                <span class="downloads">⬇️ 4,800+ 下载</span>
-                            </div>
-                            <div class="resource-info">
-                                <h4>课程内容：</h4>
-                                <ul>
-                                    <li>脉诊基础理论（10课时）</li>
-                                    <li>浮沉迟数脉详解（12课时）</li>
-                                    <li>虚实滑涩脉识别（12课时）</li>
-                                    <li>弦紧洪细脉分析（12课时）</li>
-                                    <li>脉诊临床实践（10课时）</li>
-                                    <li>脉诊案例分析（4课时）</li>
-                                </ul>
-                            </div>
-                            <div class="resource-actions">
-                                <a href="#" class="btn btn-primary">下载视频</a>
-                                <a href="#" class="btn btn-outline">在线观看</a>
-                            </div>
+                        <div class="series-item">
+                            <h4>中医大全（111-120）</h4>
+                            <a href="https://pan.quark.cn/s/54e9bb812cdf" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/54e9bb812cdf')">复制</button>
                         </div>
-                    </div>
-
-                    <!-- 学习笔记 -->
-                    <div class="resource-card" data-category="notes">
-                        <div class="resource-image">
-                            <div class="image-placeholder">伤寒论笔记</div>
-                            <div class="resource-badge">📝 笔记</div>
+                        <div class="series-item">
+                            <h4>中医大全（121-129）</h4>
+                            <a href="https://pan.quark.cn/s/d8963715aac2" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/d8963715aac2')">复制</button>
                         </div>
-                        <div class="resource-content">
-                            <h3>《伤寒论》学习笔记</h3>
-                            <p>精心整理的《伤寒论》学习笔记，包含重点内容、难点解析、临床应用等，便于复习巩固。</p>
-                            <div class="resource-meta">
-                                <span class="size">📄 800KB</span>
-                                <span class="pages">📖 150页</span>
-                                <span class="downloads">⬇️ 3,200+ 下载</span>
-                            </div>
-                            <div class="resource-info">
-                                <h4>笔记内容：</h4>
-                                <ul>
-                                    <li>六经辨证要点总结</li>
-                                    <li>方剂组成与功效</li>
-                                    <li>临床辨证要点</li>
-                                    <li>常见问题解答</li>
-                                    <li>复习重点提示</li>
-                                </ul>
-                            </div>
-                            <div class="resource-actions">
-                                <a href="#" class="btn btn-primary">下载笔记</a>
-                                <a href="#" class="btn btn-outline">在线查看</a>
-                            </div>
+                        <div class="series-item">
+                            <h4>中医大全（130-140）</h4>
+                            <a href="https://pan.quark.cn/s/2e90a92e9ec3" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/2e90a92e9ec3')">复制</button>
                         </div>
-                    </div>
-
-                    <div class="resource-card" data-category="notes">
-                        <div class="resource-image">
-                            <div class="image-placeholder">脉诊笔记</div>
-                            <div class="resource-badge">📝 笔记</div>
+                        <div class="series-item">
+                            <h4>中医大全（141-150）</h4>
+                            <a href="https://pan.quark.cn/s/bce17da6bebf" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/bce17da6bebf')">复制</button>
                         </div>
-                        <div class="resource-content">
-                            <h3>脉诊学习笔记</h3>
-                            <p>脉诊技能学习笔记，包含二十八脉的详细描述、鉴别要点、临床意义等实用内容。</p>
-                            <div class="resource-meta">
-                                <span class="size">📄 600KB</span>
-                                <span class="pages">📖 100页</span>
-                                <span class="downloads">⬇️ 2,800+ 下载</span>
-                            </div>
-                            <div class="resource-info">
-                                <h4>笔记内容：</h4>
-                                <ul>
-                                    <li>二十八脉详解</li>
-                                    <li>脉象鉴别要点</li>
-                                    <li>脉诊临床意义</li>
-                                    <li>常见脉象组合</li>
-                                    <li>脉诊练习方法</li>
-                                </ul>
-                            </div>
-                            <div class="resource-actions">
-                                <a href="#" class="btn btn-primary">下载笔记</a>
-                                <a href="#" class="btn btn-outline">在线查看</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 文章资料 -->
-                    <div class="resource-card" data-category="articles">
-                        <div class="resource-image">
-                            <div class="image-placeholder">倪海厦文章</div>
-                            <div class="resource-badge">📰 文章</div>
-                        </div>
-                        <div class="resource-content">
-                            <h3>倪海厦老师文章合集</h3>
-                            <p>倪海厦老师的中医理论文章合集，包含临床经验、学术观点、教学心得等丰富内容。</p>
-                            <div class="resource-meta">
-                                <span class="size">📄 2.0MB</span>
-                                <span class="pages">📖 300篇</span>
-                                <span class="downloads">⬇️ 7,500+ 下载</span>
-                            </div>
-                            <div class="resource-info">
-                                <h4>文章分类：</h4>
-                                <ul>
-                                    <li>中医理论探讨</li>
-                                    <li>临床经验分享</li>
-                                    <li>教学心得总结</li>
-                                    <li>学术观点阐述</li>
-                                    <li>医案分析</li>
-                                </ul>
-                            </div>
-                            <div class="resource-actions">
-                                <a href="#" class="btn btn-primary">下载合集</a>
-                                <a href="#" class="btn btn-outline">在线阅读</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="resource-card" data-category="articles">
-                        <div class="resource-image">
-                            <div class="image-placeholder">医案集</div>
-                            <div class="resource-badge">📰 文章</div>
-                        </div>
-                        <div class="resource-content">
-                            <h3>倪海厦医案集</h3>
-                            <p>倪海厦老师的临床医案集，包含各种疾病的诊断思路、治疗方法、用药经验等。</p>
-                            <div class="resource-meta">
-                                <span class="size">📄 1.5MB</span>
-                                <span class="pages">📖 200篇</span>
-                                <span class="downloads">⬇️ 5,800+ 下载</span>
-                            </div>
-                            <div class="resource-info">
-                                <h4>医案分类：</h4>
-                                <ul>
-                                    <li>内科疾病医案</li>
-                                    <li>妇科疾病医案</li>
-                                    <li>儿科疾病医案</li>
-                                    <li>外科疾病医案</li>
-                                    <li>疑难杂症医案</li>
-                                </ul>
-                            </div>
-                            <div class="resource-actions">
-                                <a href="#" class="btn btn-primary">下载医案</a>
-                                <a href="#" class="btn btn-outline">在线阅读</a>
-                            </div>
+                        <div class="series-item">
+                            <h4>中医大全（151-161）</h4>
+                            <a href="https://pan.quark.cn/s/9f75920bd8dd" target="_blank" class="btn btn-outline">获取资源</a>
+                            <button class="copy-btn" onclick="copyToClipboard('https://pan.quark.cn/s/9f75920bd8dd')">复制</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 使用说明 -->
-        <section class="usage-guide-section">
-            <div class="container">
-                <h2 class="section-title">资料使用说明</h2>
-                <div class="usage-guide">
-                    <div class="guide-item">
-                        <h3>📖 电子书籍</h3>
-                        <p>PDF格式，支持电脑、平板、手机阅读，建议使用专业PDF阅读器以获得最佳体验。</p>
-                    </div>
-                    <div class="guide-item">
-                        <h3>🎥 视频课程</h3>
-                        <p>MP4格式，高清画质，支持多种播放器，建议下载后离线观看。</p>
-                    </div>
-                    <div class="guide-item">
-                        <h3>📝 学习笔记</h3>
-                        <p>Word和PDF格式，可打印使用，建议结合课程视频一起学习。</p>
-                    </div>
-                    <div class="guide-item">
-                        <h3>📰 文章资料</h3>
-                        <p>HTML和PDF格式，支持在线阅读和下载，内容丰富，便于查阅。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+
     </main>
 
     <!-- 页脚 -->
@@ -458,13 +344,16 @@
                 </div>
                 <div class="footer-section">
                     <h3>联系方式</h3>
-                    <p>📧 contact@nihaiXia.com</p>
-                    <p>💬 微信：NiHaiXia_Study</p>
-                    <p>👥 QQ群：123456789</p>
+                    <p>📧 zhangyouxun2024@qq.com</p>
+                    <p>💬 微信：zhangyouxun2013</p>
+                    <p>👥 QQ群：601263266</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 倪海厦中医传承网站. 保留所有权利.</p>
+                <div class="external-links">
+                    <a href="https://www.seodog.cn" target="_blank" style="color: #000; text-decoration: none; background: #fff; padding: 5px 10px; border-radius: 3px; font-size: 12px;">AI工具导航</a>
+                </div>
             </div>
         </div>
     </footer>

@@ -25,6 +25,15 @@
                     <a href="resources.html" class="nav-link">学习资料</a>
                 </li>
                 <li class="nav-item">
+                    <a href="badajingang.html" class="nav-link">八部金刚功</a>
+                </li>
+                <li class="nav-item">
+                    <a href="baduanjin.html" class="nav-link">八段锦</a>
+                </li>
+                <li class="nav-item">
+                    <a href="zhanzhuang.html" class="nav-link">站桩</a>
+                </li>
+                <li class="nav-item">
                     <a href="news.html" class="nav-link">资讯动态</a>
                 </li>
                 <li class="nav-item">
@@ -44,8 +53,8 @@
         <!-- 页面标题 -->
         <section class="page-header">
             <div class="container">
-                <h1 class="page-title">课程学习</h1>
-                <p class="page-subtitle">系统学习倪海厦老师的中医理论体系和临床经验</p>
+                <h1 class="page-title">本草纲目</h1>
+                <p class="page-subtitle">查询数百种中药材信息，掌握传统中药知识</p>
             </div>
         </section>
 
@@ -82,6 +91,209 @@
                 
                 <div class="bencao-pagination">
                     <!-- 分页按钮将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 药物信息 -->
+        <section class="medicine-info-section">
+            <div class="container">
+                <div class="medicine-info-header">
+                    <h2 class="section-title">药物信息</h2>
+                    <p>详细的中药材信息，包含性味归经、功效主治、用法用量等</p>
+                </div>
+                
+                <div class="medicine-info-tabs">
+                    <button class="medicine-tab active" data-tab="common">常用中药</button>
+                    <button class="medicine-tab" data-tab="herbs">草本类</button>
+                    <button class="medicine-tab" data-tab="minerals">矿物类</button>
+                    <button class="medicine-tab" data-tab="animals">动物类</button>
+                </div>
+                
+                <div class="medicine-info-content">
+                    <div class="medicine-info-panel active" id="common-panel">
+                        <div class="medicine-grid">
+                            <div class="medicine-card">
+                                <div class="medicine-header">
+                                    <h3>人参</h3>
+                                    <span class="medicine-category">补气药</span>
+                                </div>
+                                <div class="medicine-details">
+                                    <div class="medicine-property">
+                                        <strong>性味归经：</strong>甘、微苦，微温。归脾、肺、心、肾经。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>功效主治：</strong>大补元气，复脉固脱，补脾益肺，生津养血，安神益智。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>用法用量：</strong>3-9g，大剂量可用至15g。单煎或入汤剂。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>注意事项：</strong>实证、热证忌服。阴虚火旺者慎用。
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="medicine-card">
+                                <div class="medicine-header">
+                                    <h3>黄芪</h3>
+                                    <span class="medicine-category">补气药</span>
+                                </div>
+                                <div class="medicine-details">
+                                    <div class="medicine-property">
+                                        <strong>性味归经：</strong>甘，微温。归脾、肺经。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>功效主治：</strong>补气升阳，益卫固表，利水消肿，生津养血，行气活血。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>用法用量：</strong>9-30g，大剂量可用至60g。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>注意事项：</strong>表实邪盛、气滞湿阻、食积内停者忌服。
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="medicine-card">
+                                <div class="medicine-header">
+                                    <h3>当归</h3>
+                                    <span class="medicine-category">补血药</span>
+                                </div>
+                                <div class="medicine-details">
+                                    <div class="medicine-property">
+                                        <strong>性味归经：</strong>甘、辛，温。归肝、心、脾经。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>功效主治：</strong>补血活血，调经止痛，润燥滑肠。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>用法用量：</strong>5-15g。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>注意事项：</strong>大便溏泄者慎用。
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="medicine-card">
+                                <div class="medicine-header">
+                                    <h3>白芍</h3>
+                                    <span class="medicine-category">补血药</span>
+                                </div>
+                                <div class="medicine-details">
+                                    <div class="medicine-property">
+                                        <strong>性味归经：</strong>苦、酸，微寒。归肝、脾经。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>功效主治：</strong>养血调经，敛阴止汗，柔肝止痛，平抑肝阳。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>用法用量：</strong>5-15g。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>注意事项：</strong>虚寒腹痛泄泻者慎用。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="medicine-info-panel" id="herbs-panel">
+                        <div class="medicine-grid">
+                            <div class="medicine-card">
+                                <div class="medicine-header">
+                                    <h3>金银花</h3>
+                                    <span class="medicine-category">清热药</span>
+                                </div>
+                                <div class="medicine-details">
+                                    <div class="medicine-property">
+                                        <strong>性味归经：</strong>甘，寒。归肺、心、胃经。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>功效主治：</strong>清热解毒，疏散风热。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>用法用量：</strong>6-15g。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>注意事项：</strong>脾胃虚寒者慎用。
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="medicine-card">
+                                <div class="medicine-header">
+                                    <h3>连翘</h3>
+                                    <span class="medicine-category">清热药</span>
+                                </div>
+                                <div class="medicine-details">
+                                    <div class="medicine-property">
+                                        <strong>性味归经：</strong>苦，微寒。归肺、心、小肠经。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>功效主治：</strong>清热解毒，消肿散结，疏散风热。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>用法用量：</strong>6-15g。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>注意事项：</strong>脾胃虚寒者慎用。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="medicine-info-panel" id="minerals-panel">
+                        <div class="medicine-grid">
+                            <div class="medicine-card">
+                                <div class="medicine-header">
+                                    <h3>石膏</h3>
+                                    <span class="medicine-category">清热药</span>
+                                </div>
+                                <div class="medicine-details">
+                                    <div class="medicine-property">
+                                        <strong>性味归经：</strong>甘、辛，大寒。归肺、胃经。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>功效主治：</strong>清热泻火，除烦止渴。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>用法用量：</strong>15-60g，先煎。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>注意事项：</strong>脾胃虚寒者忌服。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="medicine-info-panel" id="animals-panel">
+                        <div class="medicine-grid">
+                            <div class="medicine-card">
+                                <div class="medicine-header">
+                                    <h3>鹿茸</h3>
+                                    <span class="medicine-category">补阳药</span>
+                                </div>
+                                <div class="medicine-details">
+                                    <div class="medicine-property">
+                                        <strong>性味归经：</strong>甘、咸，温。归肾、肝经。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>功效主治：</strong>补肾阳，益精血，强筋骨，调冲任，托疮毒。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>用法用量：</strong>1-2g，研末冲服。
+                                    </div>
+                                    <div class="medicine-property">
+                                        <strong>注意事项：</strong>阴虚火旺者忌服。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -452,13 +664,16 @@
                 </div>
                 <div class="footer-section">
                     <h3>联系方式</h3>
-                    <p>📧 contact@nihaiXia.com</p>
-                    <p>💬 微信：NiHaiXia_Study</p>
-                    <p>👥 QQ群：123456789</p>
+                    <p>📧 zhangyouxun2024@qq.com</p>
+                    <p>💬 微信：zhangyouxun2013</p>
+                    <p>👥 QQ群：601263266</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 倪海厦中医传承网站. 保留所有权利.</p>
+                <div class="external-links">
+                    <a href="https://www.seodog.cn" target="_blank" style="color: #000; text-decoration: none; background: #fff; padding: 5px 10px; border-radius: 3px; font-size: 12px;">AI工具导航</a>
+                </div>
             </div>
         </div>
     </footer>

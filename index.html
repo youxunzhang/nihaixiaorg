@@ -3,23 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>倪海厦中医传承网站 - 传承千年医学智慧</title>
-    <meta name="description" content="倪海厦中医传承网站，致力于传承和弘扬倪海厦老师的中医学术思想，提供优质的中医学习资源">
+    <title>倪海厦中医传承网站 - 传承千年医学智慧，弘扬中医文化</title>
+    <meta name="description" content="倪海厦中医传承网站，致力于传承和弘扬倪海厦老师的中医学术思想，提供优质的中医学习资源，包括《伤寒论》、《金匮要略》等经典著作解读，八部金刚功、八段锦、站桩等传统养生功法指导">
+    <meta name="keywords" content="倪海厦,中医,传承,伤寒论,金匮要略,八部金刚功,八段锦,站桩,养生功法,中医学习">
+    <meta name="author" content="倪海厦中医传承网站">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nihaixia.org/">
+    <meta property="og:title" content="倪海厦中医传承网站 - 传承千年医学智慧">
+    <meta property="og:description" content="弘扬倪海厦老师中医学术思想，为中医学习者提供优质资源">
+    <meta property="og:image" content="https://nihaixia.org/img/微信图片_2025-07-29_114127_664.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nihaixia.org/">
+    <meta property="twitter:title" content="倪海厦中医传承网站 - 传承千年医学智慧">
+    <meta property="twitter:description" content="弘扬倪海厦老师中医学术思想，为中医学习者提供优质资源">
+    <meta property="twitter:image" content="https://nihaixia.org/img/微信图片_2025-07-29_114127_664.png">
+
+    <!-- 性能优化：预加载关键资源 -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="main.js" as="script">
+    <link rel="preload" href="img/微信图片_2025-07-29_114127_664.png" as="image">
+    
+    <!-- DNS预解析 -->
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+    
+    <!-- 样式表 -->
     <link rel="stylesheet" href="style.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8RK1N1YLD9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RK1N1YLD9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-8RK1N1YLD9');
+    </script>
 
-  gtag('config', 'G-8RK1N1YLD9');
-</script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8794607118520437"
-     crossorigin="anonymous"></script>
-
-<meta name="google-adsense-account" content="ca-pub-8794607118520437">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8794607118520437" crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-8794607118520437">
 </head>
 <body>
     <!-- 导航栏 -->
@@ -33,10 +64,19 @@
                     <a href="index.html" class="nav-link active">首页</a>
                 </li>
                 <li class="nav-item">
-                    <a href="courses.html" class="nav-link">课程学习</a>
+                    <a href="courses.html" class="nav-link">本草纲目</a>
                 </li>
                 <li class="nav-item">
                     <a href="resources.html" class="nav-link">学习资料</a>
+                </li>
+                <li class="nav-item">
+                    <a href="badajingang.html" class="nav-link">八部金刚功</a>
+                </li>
+                <li class="nav-item">
+                    <a href="baduanjin.html" class="nav-link">八段锦</a>
+                </li>
+                <li class="nav-item">
+                    <a href="zhanzhuang.html" class="nav-link">站桩</a>
                 </li>
                 <li class="nav-item">
                     <a href="news.html" class="nav-link">资讯动态</a>
@@ -55,14 +95,11 @@
 
     <!-- 主要内容 -->
     <main>
-        <!-- 英雄区域 -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">传承千年医学智慧</h1>
-                <p class="hero-subtitle">弘扬倪海厦老师中医学术思想，为中医学习者提供优质资源</p>
-                <div class="hero-buttons">
-                    <a href="courses.html" class="btn btn-primary">开始学习</a>
-                    <a href="about.html" class="btn btn-secondary">了解更多</a>
+        <!-- 首页图片展示 -->
+        <section class="hero-image-section">
+            <div class="container">
+                <div class="hero-image-container">
+                    <img src="img/微信图片_2025-07-29_114227_868.png" alt="倪海厦中医传承" class="hero-image">
                 </div>
             </div>
         </section>
@@ -77,97 +114,121 @@
                         <p>倪海厦老师致力于中医的现代化和国际化，创立了独特的"倪氏中医"理论体系，在《伤寒论》、《金匮要略》等经典著作的研究方面有独到见解。他的教学风格深入浅出，深受学生喜爱。</p>
                         <a href="articles/ni-haixia-intro.html" class="read-more">阅读完整简介 →</a>
                     </div>
-                    <div class="intro-image">
-                        <div class="image-placeholder">
-                            <span>倪海厦老师照片</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 课程特色 -->
+        <!-- 资料下载 -->
         <section class="features-section">
             <div class="container">
-                <h2 class="section-title">课程特色</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">📚</div>
-                        <h3>经典著作精讲</h3>
-                        <p>深入解读《伤寒论》、《金匮要略》等中医经典，掌握传统医学精髓</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🏥</div>
-                        <h3>临床实践指导</h3>
-                        <p>结合真实病例，学习倪海厦老师的临床诊断思路和治疗方法</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🧠</div>
-                        <h3>理论体系构建</h3>
-                        <p>系统学习倪氏中医理论，建立完整的中医思维体系</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🎯</div>
-                        <h3>实用技能培养</h3>
-                        <p>掌握脉诊、舌诊、问诊等中医诊断技能，提升临床能力</p>
+                <h2 class="section-title">资料下载</h2>
+                <div class="download-content">
+                    <div class="download-info">
+                        <div class="download-icon">📁</div>
+                        <h3>倪海厦学习资料包</h3>
+                        <p class="download-description">分享的文件：倪海厦-…等13个文件</p>
+                        
+                        <!-- 资料文件列表 -->
+                        <div class="files-preview">
+                            <h4>📚 包含资料内容</h4>
+                            <div class="files-grid">
+                                <div class="file-item">
+                                    <div class="file-icon">📖</div>
+                                    <div class="file-info">
+                                        <h5>【01】倪海厦-天纪</h5>
+                                        <p>倪海厦老师的天纪系列课程</p>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-icon">🌿</div>
+                                    <div class="file-info">
+                                        <h5>【05】倪海厦-人纪-神农本草经</h5>
+                                        <p>神农本草经精讲课程</p>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-icon">🏥</div>
+                                    <div class="file-info">
+                                        <h5>【06】倪海厦-人纪-伤寒论</h5>
+                                        <p>伤寒论经典解读</p>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-icon">💉</div>
+                                    <div class="file-info">
+                                        <h5>【03】倪海厦-人纪-针灸大成</h5>
+                                        <p>针灸大成理论与实践</p>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-icon">🔍</div>
+                                    <div class="file-info">
+                                        <h5>【09】倪海厦-八纲辨证</h5>
+                                        <p>八纲辨证法精讲</p>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-icon">💬</div>
+                                    <div class="file-info">
+                                        <h5>【10】梁冬对话倪海厦-字幕版</h5>
+                                        <p>梁冬与倪海厦深度对话</p>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-icon">📋</div>
+                                    <div class="file-info">
+                                        <h5>【08】倪海厦-临床案例</h5>
+                                        <p>真实临床案例分析</p>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-icon">🔥</div>
+                                    <div class="file-info">
+                                        <h5>【11】倪海夏-扶阳论坛</h5>
+                                        <p>扶阳理论专题讨论</p>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-icon">📖</div>
+                                    <div class="file-info">
+                                        <h5>【12】倪海厦-仲景心法传讲-字幕版</h5>
+                                        <p>仲景心法传承讲解</p>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-icon">📜</div>
+                                    <div class="file-info">
+                                        <h5>【13】倪海夏-YJ经</h5>
+                                        <p>YJ经经典解读</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="files-more">
+                                <p>还有更多精彩内容，点击下方链接获取完整资料包</p>
+                            </div>
+                        </div>
+                        
+                        <div class="download-links">
+                            <div class="link-item">
+                                <span class="link-label">链接:</span>
+                                <a href="https://pan.baidu.com/s/1FhswU8gKnEOeAmG5i49eDQ" target="_blank" class="download-link">https://pan.baidu.com/s/1FhswU8gKnEOeAmG5i49eDQ</a>
+                                <button class="copy-btn" onclick="copyToClipboard('https://pan.baidu.com/s/1FhswU8gKnEOeAmG5i49eDQ')">复制</button>
+                            </div>
+                            <div class="link-item">
+                                <span class="link-label">提取码:</span>
+                                <span class="extract-code">7p8t</span>
+                                <button class="copy-btn" onclick="copyToClipboard('7p8t')">复制</button>
+                            </div>
+                        </div>
+                        <div class="download-tips">
+                            <p>💡 提示：点击链接进入百度网盘，输入提取码即可下载完整资料包</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 热门课程 -->
-        <section class="courses-section">
-            <div class="container">
-                <h2 class="section-title">热门课程</h2>
-                <div class="courses-grid">
-                    <div class="course-card">
-                        <div class="course-image">
-                            <div class="image-placeholder">伤寒论</div>
-                        </div>
-                        <div class="course-content">
-                            <h3>《伤寒论》精讲</h3>
-                            <p>倪海厦老师对《伤寒论》的独特解读，掌握六经辨证的精髓</p>
-                            <div class="course-meta">
-                                <span class="duration">⏱️ 120课时</span>
-                                <span class="level">📊 中级</span>
-                            </div>
-                            <a href="courses.html#伤寒论" class="btn btn-outline">查看详情</a>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <div class="course-image">
-                            <div class="image-placeholder">金匮要略</div>
-                        </div>
-                        <div class="course-content">
-                            <h3>《金匮要略》详解</h3>
-                            <p>系统学习杂病诊治，掌握内科疾病的辨证论治方法</p>
-                            <div class="course-meta">
-                                <span class="duration">⏱️ 80课时</span>
-                                <span class="level">📊 中级</span>
-                            </div>
-                            <a href="courses.html#金匮要略" class="btn btn-outline">查看详情</a>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <div class="course-image">
-                            <div class="image-placeholder">脉诊</div>
-                        </div>
-                        <div class="course-content">
-                            <h3>脉诊技能精进</h3>
-                            <p>学习倪海厦老师的脉诊技巧，提升诊断准确率</p>
-                            <div class="course-meta">
-                                <span class="duration">⏱️ 60课时</span>
-                                <span class="level">📊 初级</span>
-                            </div>
-                            <a href="courses.html#脉诊" class="btn btn-outline">查看详情</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <a href="courses.html" class="btn btn-primary">查看全部课程</a>
-                </div>
-            </div>
-        </section>
+
 
         <!-- 学习资源概览 -->
         <section class="resources-section">
@@ -242,7 +303,7 @@
                 <div class="footer-section">
                     <h3>快速链接</h3>
                     <ul>
-                        <li><a href="courses.html">课程学习</a></li>
+                        <li><a href="courses.html">本草纲目</a></li>
                         <li><a href="resources.html">学习资料</a></li>
                         <li><a href="news.html">资讯动态</a></li>
                         <li><a href="about.html">关于我们</a></li>
@@ -250,13 +311,16 @@
                 </div>
                 <div class="footer-section">
                     <h3>联系方式</h3>
-                    <p>📧 contact@nihaiXia.com</p>
-                    <p>💬 微信：NiHaiXia_Study</p>
-                    <p>👥 QQ群：123456789</p>
+                    <p>📧 zhangyouxun2024@qq.com</p>
+                    <p>💬 微信：zhangyouxun2013</p>
+                    <p>�� QQ群：601263266</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 倪海厦中医传承网站. 保留所有权利.</p>
+                <div class="external-links">
+                    <a href="https://www.seodog.cn" target="_blank" style="color: #000; text-decoration: none; background: #fff; padding: 5px 10px; border-radius: 3px; font-size: 12px;">AI工具导航</a>
+                </div>
             </div>
         </div>
     </footer>

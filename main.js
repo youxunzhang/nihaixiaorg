@@ -1,4 +1,37 @@
-// 倪海厦中医传承网站主要JavaScript文件
+// 倪海厦中医传承网站主要JavaScript文件 - 优化版
+
+// 性能优化：使用 Intersection Observer API
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+// 性能优化：防抖函数
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// 性能优化：节流函数
+function throttle(func, limit) {
+    let inThrottle;
+    return function() {
+        const args = arguments;
+        const context = this;
+        if (!inThrottle) {
+            func.apply(context, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    }
+}
 
 // 等待DOM加载完成
 document.addEventListener('DOMContentLoaded', function() {
@@ -12,6 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initCategoryFilter();
     initShareButtons();
     initSearchFunctionality();
+    initLazyLoading();
+    initPerformanceOptimizations();
+    initMedicineInfoTabs();
 });
 
 // 导航栏功能
@@ -901,3 +937,228 @@ function initBencaoSection() {
 document.addEventListener('DOMContentLoaded', function() {
     initBencaoSection();
 }); 
+
+// 复制到剪贴板功能
+function copyToClipboard(text) {
+    // 使用现代浏览器的 Clipboard API
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+            showMessage('已复制到剪贴板！', 'success');
+        }).catch(err => {
+            console.error('复制失败:', err);
+            fallbackCopyToClipboard(text);
+        });
+    } else {
+        // 降级方案：使用传统的 document.execCommand
+        fallbackCopyToClipboard(text);
+    }
+}
+
+// 降级复制方案
+function fallbackCopyToClipboard(text) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-999999px';
+    textArea.style.top = '-999999px';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+            showMessage('已复制到剪贴板！', 'success');
+        } else {
+            showMessage('复制失败，请手动复制', 'error');
+        }
+    } catch (err) {
+        console.error('复制失败:', err);
+        showMessage('复制失败，请手动复制', 'error');
+    }
+    
+    document.body.removeChild(textArea);
+}
+
+// 轮播功能 - 已移除
+
+// 轮播控制函数 - 已移除
+
+// 图片懒加载功能
+function initLazyLoading() {
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            imageObserver.observe(img);
+        });
+    }
+}
+
+// 轮播图片优化功能 - 已移除
+
+// 性能优化功能
+function initPerformanceOptimizations() {
+    // 导航栏滚动效果
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        const handleScroll = throttle(() => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }, 100);
+
+        window.addEventListener('scroll', handleScroll);
+    }
+
+    // 预加载关键资源
+    preloadCriticalResources();
+
+    // 优化字体加载
+    optimizeFontLoading();
+}
+
+// 预加载关键资源
+function preloadCriticalResources() {
+    const criticalImages = [
+        'img/微信图片_2025-07-29_114127_664.png',
+        'img/微信图片_2025-07-29_114202_704.png',
+        'img/微信图片_2025-07-29_114227_868.png'
+    ];
+
+    criticalImages.forEach(src => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = src;
+        document.head.appendChild(link);
+    });
+}
+
+// 优化字体加载
+function optimizeFontLoading() {
+    if ('fonts' in document) {
+        Promise.all([
+            document.fonts.load('1em KaiTi'),
+            document.fonts.load('1em SimSun')
+        ]).then(() => {
+            document.documentElement.classList.add('fonts-loaded');
+        });
+    }
+}
+
+// 页面可见性API优化
+function initPageVisibilityOptimizations() {
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            // 页面不可见时暂停动画
+            document.body.classList.add('page-hidden');
+        } else {
+            // 页面可见时恢复动画
+            document.body.classList.remove('page-hidden');
+        }
+    });
+}
+
+// 错误监控
+function initErrorMonitoring() {
+    // 监听全局错误
+    window.addEventListener('error', function(e) {
+        console.error('页面错误:', e.error);
+        // 这里可以添加错误上报逻辑
+    });
+    
+    // 监听未处理的Promise拒绝
+    window.addEventListener('unhandledrejection', function(e) {
+        console.error('未处理的Promise拒绝:', e.reason);
+        // 这里可以添加错误上报逻辑
+    });
+}
+
+// 药物信息标签页功能
+function initMedicineInfoTabs() {
+    const medicineTabs = document.querySelectorAll('.medicine-tab');
+    const medicinePanels = document.querySelectorAll('.medicine-info-panel');
+    
+    if (!medicineTabs.length || !medicinePanels.length) return;
+    
+    medicineTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+            
+            // 移除所有活动状态
+            medicineTabs.forEach(t => t.classList.remove('active'));
+            medicinePanels.forEach(p => p.classList.remove('active'));
+            
+            // 添加当前活动状态
+            this.classList.add('active');
+            const targetPanel = document.getElementById(targetTab + '-panel');
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+                
+                // 添加动画效果
+                targetPanel.style.animation = 'none';
+                targetPanel.offsetHeight; // 触发重排
+                targetPanel.style.animation = 'fadeInUp 0.5s ease-out';
+            }
+        });
+    });
+    
+    // 添加键盘导航支持
+    medicineTabs.forEach((tab, index) => {
+        tab.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            } else if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                const nextTab = medicineTabs[(index + 1) % medicineTabs.length];
+                nextTab.focus();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                const prevTab = medicineTabs[(index - 1 + medicineTabs.length) % medicineTabs.length];
+                prevTab.focus();
+            }
+        });
+    });
+    
+    // 添加触摸滑动支持（移动端）
+    let startX = 0;
+    let currentTabIndex = 0;
+    
+    const medicineInfoContent = document.querySelector('.medicine-info-content');
+    if (medicineInfoContent) {
+        medicineInfoContent.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+        });
+        
+        medicineInfoContent.addEventListener('touchend', function(e) {
+            const endX = e.changedTouches[0].clientX;
+            const diffX = startX - endX;
+            const threshold = 50;
+            
+            if (Math.abs(diffX) > threshold) {
+                if (diffX > 0) {
+                    // 向左滑动，切换到下一个标签
+                    currentTabIndex = (currentTabIndex + 1) % medicineTabs.length;
+                } else {
+                    // 向右滑动，切换到上一个标签
+                    currentTabIndex = (currentTabIndex - 1 + medicineTabs.length) % medicineTabs.length;
+                }
+                
+                medicineTabs[currentTabIndex].click();
+            }
+        });
+    }
+} 

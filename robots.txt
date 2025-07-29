@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /test.html
+Disallow: /修改.txt
+
+Sitemap: https://nihaixia.org/sitemap.xml
+
+# 爬取延迟
+Crawl-delay: 1 
