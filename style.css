@@ -4665,3 +4665,35 @@ img {
         padding-left: var(--spacing-md);
     }
 }
+
+/* 调整状态页面图片样式 */
+.method-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
+    margin-bottom: var(--spacing-md);
+}
+
+.method-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.method-card:hover .method-img {
+    transform: scale(1.05);
+}
+
+.method-card {
+    overflow: hidden;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-light);
+    transition: var(--transition-normal);
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
