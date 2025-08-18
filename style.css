@@ -78,6 +78,8 @@ html {
     /* 性能优化：启用硬件加速 */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* 确保全屏显示不受滚动条影响 */
+    overflow-x: hidden;
 }
 
 body {
@@ -330,12 +332,15 @@ img {
 
 /* 首页图片展示区域 - 全屏显示 */
 .hero-image-section {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
     padding: 0;
     margin: 0;
+    /* 确保全屏显示 */
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .hero-image-container {
@@ -347,6 +352,8 @@ img {
     border-radius: 0;
     overflow: hidden;
     box-shadow: none;
+    /* 确保容器填满整个视口 */
+    min-height: 100vh;
 }
 
 .hero-image {
@@ -358,46 +365,148 @@ img {
     margin: 0;
     max-width: none;
     max-height: none;
+    min-width: 100%;
+    min-height: 100%;
     transition: transform var(--transition-normal) ease;
     border-radius: 0;
     box-shadow: none;
+    /* 确保图片完全覆盖 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .hero-image:hover {
     transform: scale(1.02);
 }
 
+/* 添加图片加载优化 */
+.hero-image {
+    /* 添加加载动画 */
+    animation: fadeInScale 0.8s ease-out;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 确保图片在所有浏览器中都能完美铺满 */
+.hero-image-section {
+    /* 防止页面滚动条影响全屏显示 */
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    width: 100vw;
+}
+
+/* 添加图片加载失败时的备用样式 */
+.hero-image:not([src]), 
+.hero-image[src=""],
+.hero-image[src*="error"] {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero-image:not([src])::after, 
+.hero-image[src=""]::after,
+.hero-image[src*="error"]::after {
+    content: "倪海厦中医传承";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
 /* 移动端图片优化 - 全屏显示 */
 @media (max-width: 768px) {
     .hero-image-section {
+        width: 100vw;
         height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
         padding: 0;
+        margin: 0;
     }
     
     .hero-image-container {
         width: 100%;
         height: 100%;
+        min-height: 100vh;
         margin: 0;
+        position: relative;
     }
     
     .hero-image {
         width: 100%;
         height: 100%;
+        min-width: 100%;
+        min-height: 100%;
         max-width: none;
         max-height: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
 @media (max-width: 480px) {
     .hero-image-section {
+        width: 100vw;
         height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
     }
     
     .hero-image {
         width: 100%;
         height: 100%;
+        min-width: 100%;
+        min-height: 100%;
         max-width: none;
         max-height: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* 横屏设备优化 */
+@media (orientation: landscape) and (max-height: 500px) {
+    .hero-image-section {
+        height: 100vh;
+        min-height: 100vh;
+    }
+    
+    .hero-image-container {
+        height: 100vh;
+        min-height: 100vh;
+    }
+    
+    .hero-image {
+        height: 100vh;
+        min-height: 100vh;
     }
 }
 
