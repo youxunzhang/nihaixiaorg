@@ -339,13 +339,21 @@ img {
     margin: 0;
     /* 高度由图片决定 */
     height: auto;
+    /* 添加渐变背景，在图片左右两侧显示 */
+    background: linear-gradient(135deg, 
+        #f5f1e8 0%, 
+        #e8dcc0 25%, 
+        #d4c4a8 50%, 
+        #e8dcc0 75%, 
+        #f5f1e8 100%);
 }
 
 .hero-image-container {
     width: 100%;
+    max-width: 1200px;
     position: relative;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     border-radius: 0;
     overflow: hidden;
     box-shadow: none;
