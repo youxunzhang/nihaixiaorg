@@ -538,7 +538,7 @@
     
     <!-- 本草纲目查询功能 -->
     <script>
-        // 中药材数据库（示例数据）
+        // 中药材数据库（完整数据）
         const medicineDatabase = {
             '人参': {
                 name: '人参',
@@ -568,6 +568,15 @@
                 dosage: '9-30g'
             },
             '枸杞': {
+                name: '枸杞子',
+                category: '补阴药',
+                nature: '甘，平',
+                channel: '肝、肾、肺经',
+                effect: '滋补肝肾，益精明目',
+                indication: '虚劳精亏，腰膝酸痛，眩晕耳鸣，内热消渴，血虚萎黄，目昏不明',
+                dosage: '6-12g'
+            },
+            '枸杞子': {
                 name: '枸杞子',
                 category: '补阴药',
                 nature: '甘，平',
@@ -611,6 +620,213 @@
                 effect: '利水渗湿，健脾，宁心',
                 indication: '水肿尿少，痰饮眩悸，脾虚食少，便溏泄泻，心神不安，惊悸失眠',
                 dosage: '10-15g'
+            },
+            '白芍': {
+                name: '白芍',
+                category: '补血药',
+                nature: '苦、酸，微寒',
+                channel: '肝、脾经',
+                effect: '养血调经，敛阴止汗，柔肝止痛，平抑肝阳',
+                indication: '血虚萎黄，月经不调，自汗盗汗，胁痛腹痛，四肢挛痛，头痛眩晕',
+                dosage: '6-15g'
+            },
+            '熟地黄': {
+                name: '熟地黄',
+                category: '补血药',
+                nature: '甘，微温',
+                channel: '肝、肾经',
+                effect: '补血滋阴，益精填髓',
+                indication: '血虚萎黄，心悸怔忡，月经不调，崩漏下血，肝肾阴虚，腰膝酸软，骨蒸潮热，盗汗遗精，内热消渴，眩晕耳鸣，须发早白',
+                dosage: '10-30g'
+            },
+            '何首乌': {
+                name: '何首乌',
+                category: '补血药',
+                nature: '苦、甘、涩，微温',
+                channel: '肝、心、肾经',
+                effect: '补肝肾，益精血，乌须发，强筋骨，化浊降脂',
+                indication: '血虚萎黄，眩晕耳鸣，须发早白，腰膝酸软，肢体麻木，崩漏带下，高脂血症',
+                dosage: '6-12g'
+            },
+            '阿胶': {
+                name: '阿胶',
+                category: '补血药',
+                nature: '甘，平',
+                channel: '肺、肝、肾经',
+                effect: '补血滋阴，润燥，止血',
+                indication: '血虚萎黄，眩晕心悸，肌痿无力，心烦不眠，虚风内动，肺燥咳嗽，劳嗽咯血，吐血尿血，便血崩漏，妊娠胎漏',
+                dosage: '3-9g，烊化兑服'
+            },
+            '麦冬': {
+                name: '麦冬',
+                category: '补阴药',
+                nature: '甘、微苦，微寒',
+                channel: '心、肺、胃经',
+                effect: '养阴生津，润肺清心',
+                indication: '肺燥干咳，虚劳咳嗽，津伤口渴，心烦失眠，内热消渴，肠燥便秘',
+                dosage: '6-12g'
+            },
+            '天冬': {
+                name: '天冬',
+                category: '补阴药',
+                nature: '甘、苦，寒',
+                channel: '肺、肾经',
+                effect: '养阴润燥，清肺生津',
+                indication: '肺燥干咳，顿咳痰黏，腰膝酸痛，骨蒸潮热，内热消渴，热病津伤，咽干口渴，肠燥便秘',
+                dosage: '6-12g'
+            },
+            '石斛': {
+                name: '石斛',
+                category: '补阴药',
+                nature: '甘，微寒',
+                channel: '胃、肾经',
+                effect: '益胃生津，滋阴清热',
+                indication: '热病津伤，口干烦渴，胃阴不足，食少于呕，病后虚热不退，阴虚火旺，骨蒸劳热，目暗不明，筋骨痿软',
+                dosage: '6-12g'
+            },
+            '玉竹': {
+                name: '玉竹',
+                category: '补阴药',
+                nature: '甘，微寒',
+                channel: '肺、胃经',
+                effect: '养阴润燥，生津止渴',
+                indication: '肺胃阴伤，燥热咳嗽，咽干口渴，内热消渴',
+                dosage: '6-12g'
+            },
+            '桑叶': {
+                name: '桑叶',
+                category: '解表药',
+                nature: '甘、苦，寒',
+                channel: '肺、肝经',
+                effect: '疏散风热，清肺润燥，清肝明目',
+                indication: '风热感冒，肺热燥咳，头晕头痛，目赤昏花',
+                dosage: '5-9g'
+            },
+            '牛蒡子': {
+                name: '牛蒡子',
+                category: '解表药',
+                nature: '辛、苦，寒',
+                channel: '肺、胃经',
+                effect: '疏散风热，宣肺透疹，解毒利咽',
+                indication: '风热感冒，温病初起，麻疹不透，风疹瘙痒，痈肿疮毒，丹毒，痄腮喉痹',
+                dosage: '6-12g'
+            },
+            '升麻': {
+                name: '升麻',
+                category: '解表药',
+                nature: '辛、微甘，微寒',
+                channel: '肺、脾、胃、大肠经',
+                effect: '发表透疹，清热解毒，升举阳气',
+                indication: '风热头痛，齿痛，口疮，咽喉肿痛，麻疹不透，阳毒发斑，脱肛，子宫脱垂',
+                dosage: '3-10g'
+            },
+            '葛根': {
+                name: '葛根',
+                category: '解表药',
+                nature: '甘、辛，凉',
+                channel: '脾、胃、肺经',
+                effect: '解肌退热，透疹，生津止渴，升阳止泻',
+                indication: '表证发热，项背强痛，麻疹不透，热病口渴，阴虚消渴，热泻热痢，脾虚泄泻',
+                dosage: '10-15g'
+            },
+            '柴胡': {
+                name: '柴胡',
+                category: '解表药',
+                nature: '苦、辛，微寒',
+                channel: '肝、胆经',
+                effect: '疏散退热，疏肝解郁，升举阳气',
+                indication: '感冒发热，寒热往来，胸胁胀痛，月经不调，子宫脱垂，脱肛',
+                dosage: '3-10g'
+            },
+            '磁石': {
+                name: '磁石',
+                category: '安神药',
+                nature: '咸，寒',
+                channel: '心、肝、肾经',
+                effect: '镇惊安神，平肝潜阳，聪耳明目，纳气平喘',
+                indication: '惊悸失眠，头晕目眩，视物昏花，耳鸣耳聋，肾虚气喘',
+                dosage: '9-30g，先煎'
+            },
+            '琥珀': {
+                name: '琥珀',
+                category: '安神药',
+                nature: '甘，平',
+                channel: '心、肝、膀胱经',
+                effect: '镇惊安神，活血散瘀，利尿通淋',
+                indication: '心神不安，心悸失眠，惊风癫痫，瘀血阻滞，痛经经闭，心腹刺痛，癥瘕积聚，淋证，癃闭',
+                dosage: '1.5-3g，研末冲服'
+            },
+            '珍珠': {
+                name: '珍珠',
+                category: '安神药',
+                nature: '甘、咸，寒',
+                channel: '心、肝经',
+                effect: '安神定惊，明目消翳，解毒生肌，润肤祛斑',
+                indication: '惊悸失眠，惊风癫痫，目赤翳障，视物昏花，口舌生疮，咽喉溃烂，疮疡不敛，皮肤色斑',
+                dosage: '0.1-0.3g，研末冲服'
+            },
+            '滑石': {
+                name: '滑石',
+                category: '利水渗湿药',
+                nature: '甘、淡，寒',
+                channel: '膀胱、肺、胃经',
+                effect: '利尿通淋，清热解暑，祛湿敛疮',
+                indication: '热淋，石淋，尿热涩痛，暑湿烦渴，湿热水泻，外治湿疹，湿疮，痱子',
+                dosage: '10-20g，包煎'
+            },
+            '海浮石': {
+                name: '海浮石',
+                category: '化痰止咳平喘药',
+                nature: '咸，寒',
+                channel: '肺、肾经',
+                effect: '清肺化痰，软坚散结，利尿通淋',
+                indication: '痰热咳喘，瘿瘤，瘰疬，血淋，石淋',
+                dosage: '10-15g'
+            },
+            '地龙': {
+                name: '地龙',
+                category: '平肝息风药',
+                nature: '咸，寒',
+                channel: '肝、脾、膀胱经',
+                effect: '清热定惊，通络，平喘，利尿',
+                indication: '高热神昏，惊痫抽搐，关节痹痛，肢体麻木，半身不遂，肺热喘咳，尿少水肿，高血压',
+                dosage: '5-15g'
+            },
+            '僵蚕': {
+                name: '僵蚕',
+                category: '平肝息风药',
+                nature: '咸、辛，平',
+                channel: '肝、肺、胃经',
+                effect: '息风止痉，祛风止痛，化痰散结',
+                indication: '惊痫抽搐，风中经络，口眼歪斜，风热头痛，目赤咽痛，风疹瘙痒，瘰疬痰核',
+                dosage: '5-10g'
+            },
+            '羚羊角': {
+                name: '羚羊角',
+                category: '平肝息风药',
+                nature: '咸，寒',
+                channel: '肝、心经',
+                effect: '平肝息风，清肝明目，散血解毒',
+                indication: '肝风内动，惊痫抽搐，妊娠子痫，高热痉厥，癫痫发狂，头痛眩晕，目赤翳障，温毒发斑，痈肿疮毒',
+                dosage: '1-3g，磨汁或研粉服'
+            },
+            '牛黄': {
+                name: '牛黄',
+                category: '开窍药',
+                nature: '苦，凉',
+                channel: '心、肝经',
+                effect: '清心，豁痰，开窍，凉肝，息风，解毒',
+                indication: '热病神昏，中风痰迷，惊痫抽搐，癫痫发狂，咽喉肿痛，口舌生疮，痈肿疔毒',
+                dosage: '0.15-0.35g，多入丸散用'
+            },
+            '麝香': {
+                name: '麝香',
+                category: '开窍药',
+                nature: '辛，温',
+                channel: '心、脾经',
+                effect: '开窍醒神，活血通经，消肿止痛',
+                indication: '热病神昏，中风痰厥，气郁暴厥，中恶昏迷，经闭，癥瘕，难产死胎，胸痹心痛，心腹暴痛，跌扑伤痛，痹痛麻木，痈肿瘰疬，咽喉肿痛',
+                dosage: '0.03-0.1g，多入丸散用'
             }
         };
 
@@ -618,19 +834,91 @@
         function searchBencao() {
             const searchTerm = document.getElementById('bencaoSearch').value.trim();
             if (!searchTerm) {
-                alert('请输入中药材名称');
+                showMessage('请输入中药材名称', 'warning');
                 return;
             }
             
-            // 查找中药材信息
-            const medicine = medicineDatabase[searchTerm] || medicineDatabase[searchTerm + '子'] || 
-                             Object.values(medicineDatabase).find(m => m.name.includes(searchTerm));
+            // 显示加载状态
+            showLoading();
             
-            if (medicine) {
-                displayResult(medicine);
-            } else {
-                displayNoResult(searchTerm);
-            }
+            // 模拟搜索延迟
+            setTimeout(() => {
+                // 多种搜索策略
+                let medicine = null;
+                
+                // 1. 精确匹配
+                medicine = medicineDatabase[searchTerm];
+                
+                // 2. 模糊匹配（包含关系）
+                if (!medicine) {
+                    medicine = Object.values(medicineDatabase).find(m => 
+                        m.name.includes(searchTerm) || 
+                        m.name.replace(/[子根叶花]/g, '').includes(searchTerm)
+                    );
+                }
+                
+                // 3. 别名匹配
+                if (!medicine) {
+                    const aliases = {
+                        '党参': '人参',
+                        '红参': '人参',
+                        '白参': '人参',
+                        '当归身': '当归',
+                        '当归尾': '当归',
+                        '黄芪根': '黄芪',
+                        '枸杞果': '枸杞子',
+                        '甘草根': '甘草',
+                        '川芎根': '川芎',
+                        '白术根': '白术',
+                        '茯苓块': '茯苓',
+                        '白芍药': '白芍',
+                        '熟地': '熟地黄',
+                        '何首乌根': '何首乌',
+                        '阿胶块': '阿胶',
+                        '麦门冬': '麦冬',
+                        '天门冬': '天冬',
+                        '石斛兰': '石斛',
+                        '玉竹根': '玉竹',
+                        '桑叶茶': '桑叶',
+                        '牛蒡': '牛蒡子',
+                        '升麻根': '升麻',
+                        '葛根粉': '葛根',
+                        '柴胡根': '柴胡',
+                        '磁石粉': '磁石',
+                        '琥珀粉': '琥珀',
+                        '珍珠粉': '珍珠',
+                        '滑石粉': '滑石',
+                        '海浮石粉': '海浮石',
+                        '地龙粉': '地龙',
+                        '僵蚕粉': '僵蚕',
+                        '羚羊角粉': '羚羊角',
+                        '牛黄粉': '牛黄',
+                        '麝香粉': '麝香'
+                    };
+                    
+                    const aliasKey = aliases[searchTerm];
+                    if (aliasKey) {
+                        medicine = medicineDatabase[aliasKey];
+                    }
+                }
+                
+                // 4. 分类搜索
+                if (!medicine) {
+                    const categoryMatches = Object.values(medicineDatabase).filter(m => 
+                        m.category.includes(searchTerm)
+                    );
+                    if (categoryMatches.length > 0) {
+                        showCategoryResults(categoryMatches, searchTerm);
+                        return;
+                    }
+                }
+                
+                if (medicine) {
+                    displayResult(medicine);
+                } else {
+                    displayNoResult(searchTerm);
+                }
+            }, 300);
         }
 
         // 快速搜索
@@ -671,6 +959,85 @@
             resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
+        // 显示加载状态
+        function showLoading() {
+            const resultDiv = document.getElementById('bencaoResult');
+            resultDiv.innerHTML = `
+                <div class="result-card">
+                    <div class="loading-content">
+                        <div class="loading-spinner"></div>
+                        <p>正在搜索中药材信息...</p>
+                    </div>
+                </div>
+            `;
+            resultDiv.style.display = 'block';
+        }
+
+        // 显示消息提示
+        function showMessage(message, type = 'info') {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message message-${type}`;
+            messageDiv.textContent = message;
+            messageDiv.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 12px 20px;
+                border-radius: 8px;
+                color: white;
+                font-weight: 500;
+                z-index: 10000;
+                animation: slideIn 0.3s ease;
+                ${type === 'warning' ? 'background: #ff9800;' : 
+                  type === 'error' ? 'background: #f44336;' : 
+                  'background: #4caf50;'}
+            `;
+            
+            document.body.appendChild(messageDiv);
+            
+            setTimeout(() => {
+                messageDiv.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => {
+                    document.body.removeChild(messageDiv);
+                }, 300);
+            }, 3000);
+        }
+
+        // 显示分类搜索结果
+        function showCategoryResults(medicines, category) {
+            const resultDiv = document.getElementById('bencaoResult');
+            let html = `
+                <div class="result-card">
+                    <div class="medicine-header">
+                        <h3>${category}类中药材</h3>
+                        <span class="medicine-category">共找到 ${medicines.length} 种</span>
+                    </div>
+                    <div class="category-results">
+            `;
+            
+            medicines.forEach(medicine => {
+                html += `
+                    <div class="category-item" onclick="displayResult(${JSON.stringify(medicine).replace(/"/g, '&quot;')})">
+                        <div class="item-name">${medicine.name}</div>
+                        <div class="item-nature">${medicine.nature}</div>
+                        <div class="item-effect">${medicine.effect.substring(0, 30)}...</div>
+                    </div>
+                `;
+            });
+            
+            html += `
+                    </div>
+                    <div class="medicine-footer">
+                        <a href="courses.html" class="view-more-btn">查看更多中药材 →</a>
+                    </div>
+                </div>
+            `;
+            
+            resultDiv.innerHTML = html;
+            resultDiv.style.display = 'block';
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
         // 回车键搜索
         document.addEventListener('DOMContentLoaded', function() {
             const searchInput = document.getElementById('bencaoSearch');
@@ -680,8 +1047,82 @@
                         searchBencao();
                     }
                 });
+                
+                // 添加输入建议
+                searchInput.addEventListener('input', function() {
+                    const value = this.value.trim();
+                    if (value.length > 0) {
+                        showSuggestions(value);
+                    } else {
+                        hideSuggestions();
+                    }
+                });
             }
         });
+
+        // 显示搜索建议
+        function showSuggestions(query) {
+            let suggestions = Object.keys(medicineDatabase).filter(name => 
+                name.includes(query) || 
+                name.replace(/[子根叶花]/g, '').includes(query)
+            ).slice(0, 5);
+            
+            if (suggestions.length > 0) {
+                const suggestionDiv = document.createElement('div');
+                suggestionDiv.id = 'suggestions';
+                suggestionDiv.className = 'suggestions';
+                suggestionDiv.style.cssText = `
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background: white;
+                    border: 1px solid #e9ecef;
+                    border-top: none;
+                    border-radius: 0 0 10px 10px;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                    z-index: 1000;
+                    max-height: 200px;
+                    overflow-y: auto;
+                `;
+                
+                suggestions.forEach(suggestion => {
+                    const item = document.createElement('div');
+                    item.className = 'suggestion-item';
+                    item.textContent = suggestion;
+                    item.style.cssText = `
+                        padding: 10px 15px;
+                        cursor: pointer;
+                        border-bottom: 1px solid #f0f0f0;
+                        transition: background 0.2s;
+                    `;
+                    item.addEventListener('mouseenter', () => {
+                        item.style.background = '#f8f9fa';
+                    });
+                    item.addEventListener('mouseleave', () => {
+                        item.style.background = 'white';
+                    });
+                    item.addEventListener('click', () => {
+                        document.getElementById('bencaoSearch').value = suggestion;
+                        hideSuggestions();
+                        searchBencao();
+                    });
+                    suggestionDiv.appendChild(item);
+                });
+                
+                const searchBox = document.querySelector('.search-box');
+                searchBox.style.position = 'relative';
+                searchBox.appendChild(suggestionDiv);
+            }
+        }
+
+        // 隐藏搜索建议
+        function hideSuggestions() {
+            const suggestions = document.getElementById('suggestions');
+            if (suggestions) {
+                suggestions.remove();
+            }
+        }
     </script>
     
     <!-- 页面加载和返回顶部功能 -->

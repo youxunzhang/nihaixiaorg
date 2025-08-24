@@ -843,6 +843,94 @@ img {
     }
 }
 
+/* 本草纲目查询增强样式 */
+.loading-content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.loading-content .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #e9ecef;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+.loading-content p {
+    color: #6c757d;
+    font-size: 16px;
+    margin: 0;
+}
+
+.category-results {
+    display: grid;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.category-item {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-item:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.item-name {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.item-nature {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.item-effect {
+    color: #495057;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.suggestion-item:hover {
+    background: #f8f9fa !important;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
