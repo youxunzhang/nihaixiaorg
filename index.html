@@ -1071,37 +1071,11 @@
                 const suggestionDiv = document.createElement('div');
                 suggestionDiv.id = 'suggestions';
                 suggestionDiv.className = 'suggestions';
-                suggestionDiv.style.cssText = `
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    right: 0;
-                    background: white;
-                    border: 1px solid #e9ecef;
-                    border-top: none;
-                    border-radius: 0 0 10px 10px;
-                    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-                    z-index: 1000;
-                    max-height: 200px;
-                    overflow-y: auto;
-                `;
                 
                 suggestions.forEach(suggestion => {
                     const item = document.createElement('div');
-                    item.className = 'suggestion-item';
+                    item.className = 'search-suggestion-item';
                     item.textContent = suggestion;
-                    item.style.cssText = `
-                        padding: 10px 15px;
-                        cursor: pointer;
-                        border-bottom: 1px solid #f0f0f0;
-                        transition: background 0.2s;
-                    `;
-                    item.addEventListener('mouseenter', () => {
-                        item.style.background = '#f8f9fa';
-                    });
-                    item.addEventListener('mouseleave', () => {
-                        item.style.background = 'white';
-                    });
                     item.addEventListener('click', () => {
                         document.getElementById('bencaoSearch').value = suggestion;
                         hideSuggestions();
