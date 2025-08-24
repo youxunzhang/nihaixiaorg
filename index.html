@@ -244,6 +244,86 @@
             </div>
         </section>
 
+        <!-- 本草纲目查询 -->
+        <section class="bencao-query-section">
+            <div class="container">
+                <h2 class="section-title">本草纲目查询</h2>
+                <p class="section-subtitle">快速查找中药材信息，了解药性功效</p>
+                
+                <div class="bencao-search-container">
+                    <div class="search-box">
+                        <input type="text" id="bencaoSearch" placeholder="请输入中药材名称..." class="search-input">
+                        <button class="search-btn" onclick="searchBencao()">🔍 查询</button>
+                    </div>
+                    
+                    <div class="quick-search">
+                        <h4>热门中药材</h4>
+                        <div class="quick-tags">
+                            <span class="tag" onclick="quickSearch('人参')">人参</span>
+                            <span class="tag" onclick="quickSearch('当归')">当归</span>
+                            <span class="tag" onclick="quickSearch('黄芪')">黄芪</span>
+                            <span class="tag" onclick="quickSearch('枸杞')">枸杞</span>
+                            <span class="tag" onclick="quickSearch('甘草')">甘草</span>
+                            <span class="tag" onclick="quickSearch('川芎')">川芎</span>
+                            <span class="tag" onclick="quickSearch('白术')">白术</span>
+                            <span class="tag" onclick="quickSearch('茯苓')">茯苓</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bencao-result" id="bencaoResult" style="display: none;">
+                    <div class="result-card">
+                        <div class="medicine-header">
+                            <h3 id="medicineName">中药材名称</h3>
+                            <span class="medicine-category" id="medicineCategory">药物分类</span>
+                        </div>
+                        <div class="medicine-content">
+                            <div class="medicine-info">
+                                <div class="info-item">
+                                    <strong>性味：</strong>
+                                    <span id="medicineNature">药物性味</span>
+                                </div>
+                                <div class="info-item">
+                                    <strong>归经：</strong>
+                                    <span id="medicineChannel">归经信息</span>
+                                </div>
+                                <div class="info-item">
+                                    <strong>功效：</strong>
+                                    <span id="medicineEffect">主要功效</span>
+                                </div>
+                                <div class="info-item">
+                                    <strong>主治：</strong>
+                                    <span id="medicineIndication">主治病症</span>
+                                </div>
+                                <div class="info-item">
+                                    <strong>用法用量：</strong>
+                                    <span id="medicineDosage">用法用量</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="medicine-footer">
+                            <a href="courses.html" class="view-more-btn">查看更多中药材 →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bencao-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">425</div>
+                        <div class="stat-label">种中药材</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">18</div>
+                        <div class="stat-label">个分类</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">个方剂</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- 资料下载 -->
         <section class="features-section">
             <div class="container">
@@ -455,6 +535,154 @@
     <button id="back-to-top" class="back-to-top">↑</button>
 
     <script src="main.js"></script>
+    
+    <!-- 本草纲目查询功能 -->
+    <script>
+        // 中药材数据库（示例数据）
+        const medicineDatabase = {
+            '人参': {
+                name: '人参',
+                category: '补气药',
+                nature: '甘、微苦，微温',
+                channel: '脾、肺、心经',
+                effect: '大补元气，复脉固脱，补脾益肺，生津止渴，安神益智',
+                indication: '体虚欲脱，肢冷脉微，脾虚食少，肺虚喘咳，津伤口渴，内热消渴，久病虚羸，惊悸失眠，阳痿宫冷',
+                dosage: '3-9g，另煎兑服'
+            },
+            '当归': {
+                name: '当归',
+                category: '补血药',
+                nature: '甘、辛，温',
+                channel: '肝、心、脾经',
+                effect: '补血活血，调经止痛，润肠通便',
+                indication: '血虚萎黄，眩晕心悸，月经不调，经闭痛经，虚寒腹痛，肠燥便秘，风湿痹痛，跌扑损伤，痈疽疮疡',
+                dosage: '6-12g'
+            },
+            '黄芪': {
+                name: '黄芪',
+                category: '补气药',
+                nature: '甘，微温',
+                channel: '肺、脾经',
+                effect: '补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌',
+                indication: '气虚乏力，食少便溏，中气下陷，久泻脱肛，便血崩漏，表虚自汗，气虚水肿，内热消渴，血虚萎黄，半身不遂，痹痛麻木，痈疽难溃，久溃不敛',
+                dosage: '9-30g'
+            },
+            '枸杞': {
+                name: '枸杞子',
+                category: '补阴药',
+                nature: '甘，平',
+                channel: '肝、肾、肺经',
+                effect: '滋补肝肾，益精明目',
+                indication: '虚劳精亏，腰膝酸痛，眩晕耳鸣，内热消渴，血虚萎黄，目昏不明',
+                dosage: '6-12g'
+            },
+            '甘草': {
+                name: '甘草',
+                category: '补气药',
+                nature: '甘，平',
+                channel: '心、肺、脾、胃经',
+                effect: '补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药',
+                indication: '脾胃虚弱，倦怠乏力，心悸气短，咳嗽痰多，脘腹、四肢挛急疼痛，痈肿疮毒，缓解药物毒性、烈性',
+                dosage: '2-10g'
+            },
+            '川芎': {
+                name: '川芎',
+                category: '活血化瘀药',
+                nature: '辛，温',
+                channel: '肝、胆、心包经',
+                effect: '活血行气，祛风止痛',
+                indication: '胸痹心痛，胸胁刺痛，跌扑肿痛，月经不调，经闭痛经，产后瘀阻，头痛，风湿痹痛',
+                dosage: '3-10g'
+            },
+            '白术': {
+                name: '白术',
+                category: '补气药',
+                nature: '甘、苦，温',
+                channel: '脾、胃经',
+                effect: '补气健脾，燥湿利水，止汗，安胎',
+                indication: '脾虚食少，腹胀泄泻，痰饮眩悸，水肿，自汗，胎动不安',
+                dosage: '6-12g'
+            },
+            '茯苓': {
+                name: '茯苓',
+                category: '利水渗湿药',
+                nature: '甘、淡，平',
+                channel: '心、肺、脾、肾经',
+                effect: '利水渗湿，健脾，宁心',
+                indication: '水肿尿少，痰饮眩悸，脾虚食少，便溏泄泻，心神不安，惊悸失眠',
+                dosage: '10-15g'
+            }
+        };
+
+        // 搜索功能
+        function searchBencao() {
+            const searchTerm = document.getElementById('bencaoSearch').value.trim();
+            if (!searchTerm) {
+                alert('请输入中药材名称');
+                return;
+            }
+            
+            // 查找中药材信息
+            const medicine = medicineDatabase[searchTerm] || medicineDatabase[searchTerm + '子'] || 
+                             Object.values(medicineDatabase).find(m => m.name.includes(searchTerm));
+            
+            if (medicine) {
+                displayResult(medicine);
+            } else {
+                displayNoResult(searchTerm);
+            }
+        }
+
+        // 快速搜索
+        function quickSearch(medicineName) {
+            document.getElementById('bencaoSearch').value = medicineName;
+            searchBencao();
+        }
+
+        // 显示搜索结果
+        function displayResult(medicine) {
+            const resultDiv = document.getElementById('bencaoResult');
+            
+            document.getElementById('medicineName').textContent = medicine.name;
+            document.getElementById('medicineCategory').textContent = medicine.category;
+            document.getElementById('medicineNature').textContent = medicine.nature;
+            document.getElementById('medicineChannel').textContent = medicine.channel;
+            document.getElementById('medicineEffect').textContent = medicine.effect;
+            document.getElementById('medicineIndication').textContent = medicine.indication;
+            document.getElementById('medicineDosage').textContent = medicine.dosage;
+            
+            resultDiv.style.display = 'block';
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // 显示未找到结果
+        function displayNoResult(searchTerm) {
+            const resultDiv = document.getElementById('bencaoResult');
+            
+            document.getElementById('medicineName').textContent = searchTerm;
+            document.getElementById('medicineCategory').textContent = '未找到';
+            document.getElementById('medicineNature').textContent = '暂无数据';
+            document.getElementById('medicineChannel').textContent = '暂无数据';
+            document.getElementById('medicineEffect').textContent = '未找到该中药材的信息，请尝试其他名称或查看完整的本草纲目页面。';
+            document.getElementById('medicineIndication').textContent = '建议访问本草纲目页面查看更多中药材信息';
+            document.getElementById('medicineDosage').textContent = '请咨询专业中医师';
+            
+            resultDiv.style.display = 'block';
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // 回车键搜索
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('bencaoSearch');
+            if (searchInput) {
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        searchBencao();
+                    }
+                });
+            }
+        });
+    </script>
     
     <!-- 页面加载和返回顶部功能 -->
     <script>
