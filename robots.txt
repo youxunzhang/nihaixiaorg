@@ -2,8 +2,32 @@ User-agent: *
 Allow: /
 Disallow: /test.html
 Disallow: /修改.txt
+Disallow: /nihaixiaorg
 
+# 允许图片和CSS/JS文件
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.ico$
+
+# 站点地图
 Sitemap: https://nihaixia.org/sitemap.xml
 
 # 爬取延迟
+Crawl-delay: 1
+
+# 特殊搜索引擎配置
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
 Crawl-delay: 1 

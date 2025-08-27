@@ -8,6 +8,10 @@
     <meta name="keywords" content="倪海厦,中医,传承,伤寒论,金匮要略,八部金刚功,八段锦,站桩,养生功法,中医学习">
     <meta name="author" content="倪海厦中医传承网站">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nihaixia.org/">
+    <meta name="language" content="zh-CN">
+    <meta name="geo.region" content="CN">
+    <meta name="geo.placename" content="China">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -26,7 +30,8 @@
     <!-- 性能优化：预加载关键资源 -->
     <link rel="preload" href="style.css" as="style">
     <link rel="preload" href="main.js" as="script">
-    <link rel="preload" href="倪海厦老师专业照片.png" as="image">
+    <link rel="preload" href="倪海厦老师专业照片.png" as="image" type="image/png">
+    <link rel="preload" href="倪海厦老师专业照片.png" as="image" media="(max-width: 768px)">
     
     <!-- DNS预解析 -->
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
@@ -52,8 +57,192 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8794607118520437" crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-8794607118520437">
     
-    <!-- 页面加载优化 -->
+    <!-- 结构化数据标记 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "倪海厦中医传承网站",
+        "url": "https://nihaixia.org",
+        "logo": "https://nihaixia.org/倪海厦老师专业照片.png",
+        "description": "传承和弘扬倪海厦老师的中医学术思想，提供优质的中医学习资源",
+        "sameAs": [
+            "https://www.youtube.com/channel/UCexample",
+            "https://weibo.com/nihaixiaorg"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": "Chinese"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "倪海厦中医传承网站",
+        "url": "https://nihaixia.org",
+        "description": "传承千年医学智慧，弘扬中医文化",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://nihaixia.org/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首页",
+                "item": "https://nihaixia.org"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- 关键CSS内联 -->
     <style>
+        /* 基础重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+        
+        body {
+            font-family: 'SimSun', '宋体', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%);
+            min-height: 100vh;
+            font-size: 16px;
+        }
+        
+        /* 导航栏关键样式 */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(44, 90, 160, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+        
+        .nav-logo h1 {
+            font-family: 'KaiTi', '楷体', serif;
+            font-size: 1.5rem;
+            color: #2c5aa0;
+            font-weight: bold;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: #2c5aa0;
+        }
+        
+        /* 页面标题关键样式 */
+        .page-header {
+            padding: 120px 0 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #2c5aa0 0%, #4a90e2 100%);
+            color: white;
+        }
+        
+        .page-title {
+            font-family: 'KaiTi', '楷体', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .page-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* 容器样式 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .page-subtitle {
+                font-size: 1rem;
+            }
+        }
+        
+        /* 汉堡菜单 */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .bar {
+            width: 25px;
+            height: 3px;
+            background: #2c3e50;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+        
+        /* 加载动画 */
         .loading-overlay {
             position: fixed;
             top: 0;
@@ -67,6 +256,7 @@
             z-index: 9999;
             transition: opacity 0.5s ease;
         }
+        
         .loading-spinner {
             width: 50px;
             height: 50px;
@@ -75,10 +265,12 @@
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
+        
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -98,6 +290,7 @@
             transition: all 0.3s ease;
             z-index: 1000;
         }
+    </style>
         .back-to-top:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);

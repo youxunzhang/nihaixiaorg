@@ -2,74 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://nihaixia.org/</loc>
-        <lastmod>2024-01-25</lastmod>
+        <lastmod>2024-12-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://nihaixia.org/about.html</loc>
-        <lastmod>2024-01-25</lastmod>
+        <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://nihaixia.org/courses.html</loc>
-        <lastmod>2024-01-25</lastmod>
+        <lastmod>2024-12-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://nihaixia.org/resources.html</loc>
-        <lastmod>2024-01-25</lastmod>
+        <lastmod>2024-12-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://nihaixia.org/news.html</loc>
-        <lastmod>2024-01-25</lastmod>
+        <lastmod>2024-12-27</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://nihaixia.org/badajingang.html</loc>
-        <lastmod>2024-01-25</lastmod>
+        <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://nihaixia.org/baduanjin.html</loc>
-        <lastmod>2024-01-25</lastmod>
+        <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://nihaixia.org/zhanzhuang.html</loc>
-        <lastmod>2024-01-25</lastmod>
+        <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://nihaixia.org/articles/ni-haixia-intro.html</loc>
-        <lastmod>2024-01-25</lastmod>
+        <loc>https://nihaixia.org/adjustment.html</loc>
+        <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://nihaixia.org/articles/ni-haixia-death-analysis.html</loc>
-        <lastmod>2024-01-25</lastmod>
+        <loc>https://nihaixia.org/breathing.html</loc>
+        <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://nihaixia.org/articles/yoga-meditation-sleep.html</loc>
-        <lastmod>2024-01-25</lastmod>
+        <loc>https://nihaixia.org/sitemap.html</loc>
+        <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://nihaixia.org/articles/meditation-comparison.html</loc>
-        <lastmod>2024-01-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.5</priority>
     </url>
 </urlset> 
