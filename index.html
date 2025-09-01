@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8794607118520437"
+     crossorigin="anonymous"></script>
+     <meta name="google-adsense-account" content="ca-pub-8794607118520437">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>倪海厦中医传承网站 - 传承千年医学智慧，弘扬中医文化</title>
@@ -30,8 +33,6 @@
     <!-- 性能优化：预加载关键资源 -->
     <link rel="preload" href="style.css" as="style">
     <link rel="preload" href="main.js" as="script">
-    <link rel="preload" href="倪海厦老师专业照片.png" as="image" type="image/png">
-    <link rel="preload" href="倪海厦老师专业照片.png" as="image" media="(max-width: 768px)">
     
     <!-- DNS预解析 -->
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
@@ -290,13 +291,136 @@
             transition: all 0.3s ease;
             z-index: 1000;
         }
-    </style>
+        
         .back-to-top:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
         }
+        
         .back-to-top.show {
             display: flex;
+        }
+        
+        /* 懒加载样式 */
+        .lazy {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .lazy.loaded {
+            opacity: 1;
+        }
+        
+        /* 图片占位符样式 */
+        .hero-image {
+            background: linear-gradient(135deg, #f5f1e8 0%, #e8dcc0 100%);
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* 收藏按钮样式 */
+        .bookmark-container {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        
+        .bookmark-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(139, 69, 19, 0.2);
+        }
+        
+        .bookmark-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+            background: linear-gradient(135deg, #a0522d 0%, #8b4513 100%);
+        }
+        
+        .bookmark-btn.bookmarked {
+            background: linear-gradient(135deg, #2e8b57 0%, #3cb371 100%);
+            box-shadow: 0 2px 8px rgba(46, 139, 87, 0.3);
+        }
+        
+        .bookmark-btn.bookmarked:hover {
+            background: linear-gradient(135deg, #3cb371 0%, #2e8b57 100%);
+            box-shadow: 0 4px 12px rgba(46, 139, 87, 0.4);
+        }
+        
+        .bookmark-icon {
+            font-size: 16px;
+        }
+        
+        .bookmark-text {
+            font-family: 'SimSun', '宋体', serif;
+        }
+        
+        .bookmark-manage-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #4a90e2 0%, #2c5aa0 100%);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            text-decoration: none;
+            margin-left: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(74, 144, 226, 0.2);
+        }
+        
+        .bookmark-manage-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+            background: linear-gradient(135deg, #2c5aa0 0%, #4a90e2 100%);
+        }
+        
+        .manage-icon {
+            font-size: 16px;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .bookmark-container {
+                margin-left: 10px;
+            }
+            
+            .bookmark-btn {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+            
+            .bookmark-text {
+                display: none;
+            }
+            
+            .bookmark-icon {
+                font-size: 18px;
+            }
+            
+            .bookmark-manage-btn {
+                width: 32px;
+                height: 32px;
+            }
+            
+            .manage-icon {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -346,6 +470,18 @@
                     <a href="about.html" class="nav-link">关于我们</a>
                 </li>
             </ul>
+            
+            <!-- 收藏按钮 -->
+            <div class="bookmark-container">
+                <button id="bookmarkBtn" class="bookmark-btn" title="收藏网站">
+                    <span class="bookmark-icon">🔖</span>
+                    <span class="bookmark-text">收藏</span>
+                </button>
+                <a href="bookmarks.html" class="bookmark-manage-btn" title="管理收藏">
+                    <span class="manage-icon">📋</span>
+                </a>
+            </div>
+            
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -359,7 +495,11 @@
         <!-- 首页图片展示 -->
         <section class="hero-image-section">
             <div class="hero-image-container">
-                <img src="倪海厦老师专业照片.png" alt="倪海厦中医传承" class="hero-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600'%3E%3Crect width='1200' height='600' fill='%23f5f1e8'/%3E%3Ctext x='600' y='300' text-anchor='middle' fill='%238b4513' font-size='24'%3E倪海厦中医传承%3C/text%3E%3C/svg%3E" 
+                     data-src="倪海厦老师专业照片.png" 
+                     alt="倪海厦中医传承" 
+                     class="hero-image lazy"
+                     loading="lazy">
             </div>
         </section>
 
@@ -2168,8 +2308,6 @@
     <!-- 返回顶部按钮 -->
     <button id="back-to-top" class="back-to-top">↑</button>
 
-    <script src="main.js"></script>
-    
     <!-- 页面加载和返回顶部功能 -->
     <script>
         // 页面加载完成后隐藏加载遮罩
@@ -2207,19 +2345,127 @@
 
         // 页面性能优化：图片懒加载
         document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('img[data-src]');
+            const lazyImages = document.querySelectorAll('img.lazy');
+            
             const imageObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const img = entry.target;
                         img.src = img.dataset.src;
-                        img.removeAttribute('data-src');
-                        observer.unobserve(img);
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                        
+                        // 添加加载动画
+                        img.style.opacity = '0';
+                        img.style.transition = 'opacity 0.5s ease';
+                        img.onload = function() {
+                            img.style.opacity = '1';
+                        };
                     }
                 });
             });
             
-            images.forEach(img => imageObserver.observe(img));
+            lazyImages.forEach(img => imageObserver.observe(img));
+        });
+        
+        // 收藏功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const bookmarkBtn = document.getElementById('bookmarkBtn');
+            const bookmarkIcon = bookmarkBtn.querySelector('.bookmark-icon');
+            const bookmarkText = bookmarkBtn.querySelector('.bookmark-text');
+            
+            // 检查是否已收藏
+            function checkBookmarkStatus() {
+                const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+                const currentUrl = window.location.href;
+                const isBookmarked = bookmarks.includes(currentUrl);
+                
+                if (isBookmarked) {
+                    bookmarkBtn.classList.add('bookmarked');
+                    bookmarkIcon.textContent = '📖';
+                    bookmarkText.textContent = '已收藏';
+                } else {
+                    bookmarkBtn.classList.remove('bookmarked');
+                    bookmarkIcon.textContent = '🔖';
+                    bookmarkText.textContent = '收藏';
+                }
+            }
+            
+            // 切换收藏状态
+            function toggleBookmark() {
+                const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+                const currentUrl = window.location.href;
+                const currentTitle = document.title;
+                
+                const bookmarkIndex = bookmarks.findIndex(item => item.url === currentUrl);
+                
+                if (bookmarkIndex === -1) {
+                    // 添加收藏
+                    bookmarks.push({
+                        url: currentUrl,
+                        title: currentTitle,
+                        timestamp: new Date().toISOString()
+                    });
+                    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+                    
+                    // 显示成功提示
+                    showNotification('已添加到收藏夹！', 'success');
+                } else {
+                    // 取消收藏
+                    bookmarks.splice(bookmarkIndex, 1);
+                    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+                    
+                    // 显示取消提示
+                    showNotification('已从收藏夹移除！', 'info');
+                }
+                
+                checkBookmarkStatus();
+            }
+            
+            // 显示通知
+            function showNotification(message, type = 'info') {
+                // 创建通知元素
+                const notification = document.createElement('div');
+                notification.className = `notification notification-${type}`;
+                notification.textContent = message;
+                
+                // 添加样式
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 100px;
+                    right: 20px;
+                    background: ${type === 'success' ? '#4CAF50' : '#2196F3'};
+                    color: white;
+                    padding: 12px 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                    z-index: 10000;
+                    font-size: 14px;
+                    transform: translateX(100%);
+                    transition: transform 0.3s ease;
+                `;
+                
+                document.body.appendChild(notification);
+                
+                // 显示动画
+                setTimeout(() => {
+                    notification.style.transform = 'translateX(0)';
+                }, 100);
+                
+                // 自动隐藏
+                setTimeout(() => {
+                    notification.style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 300);
+                }, 3000);
+            }
+            
+            // 绑定点击事件
+            bookmarkBtn.addEventListener('click', toggleBookmark);
+            
+            // 初始化检查收藏状态
+            checkBookmarkStatus();
         });
 
         // 平滑滚动优化
@@ -2236,5 +2482,8 @@
             });
         });
     </script>
+    
+    <!-- 延迟加载非关键JavaScript -->
+    <script src="main.js" defer></script>
 </body>
 </html> 
