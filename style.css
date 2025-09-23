@@ -152,8 +152,10 @@ img {
     margin: 0 auto;
     padding: 0 var(--spacing-md);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: clamp(1rem, 2vw, var(--spacing-lg));
+    flex-wrap: nowrap;
 }
 
 .nav-logo h1 {
@@ -164,13 +166,29 @@ img {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.nav-logo {
+    flex-shrink: 0;
+}
+
+.nav-menu .nav-item {
+    display: flex;
+    align-items: center;
+}
+
 .nav-menu {
     display: flex;
+    align-items: center;
+    justify-content: center;
     list-style: none;
-    gap: var(--spacing-lg);
+    gap: clamp(0.75rem, 1.8vw, var(--spacing-lg));
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -198,6 +216,20 @@ img {
     background-color: white;
     transition: all 0.3s ease;
     transform: translateX(-50%);
+}
+
+.nav-container > .bookmark-container {
+    flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+    .nav-menu {
+        gap: var(--spacing-sm);
+    }
+
+    .nav-container {
+        gap: var(--spacing-sm);
+    }
 }
 
 .nav-link:hover::after,
@@ -332,6 +364,14 @@ img {
     height: 3px;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     border-radius: 2px;
+}
+
+.section-description {
+    max-width: 780px;
+    margin: calc(-1 * var(--spacing-md)) auto var(--spacing-xl);
+    color: var(--text-light);
+    text-align: center;
+    line-height: 1.7;
 }
 
 /* 首页图片展示区域 - 高度与图片一致 */
@@ -3877,6 +3917,169 @@ img {
     font-size: 1.1rem;
 }
 
+/* 六字诀页面样式 */
+.liuzijue-sounds-section {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, var(--background-light) 0%, var(--background-color) 100%);
+}
+
+.liuzijue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.liuzijue-card {
+    background: var(--background-color);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.liuzijue-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+}
+
+.sound-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.sound-character {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-title);
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.18) 0%, rgba(44, 90, 160, 0.28) 100%);
+    box-shadow: inset 0 0 0 1px rgba(44, 90, 160, 0.1);
+}
+
+.sound-organ {
+    margin-top: 4px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.sound-focus {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+}
+
+.sound-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sound-benefits li {
+    position: relative;
+    padding-left: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-light);
+}
+
+.sound-benefits li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.liuzijue-steps-section {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, var(--background-color) 0%, var(--background-light) 100%);
+}
+
+.liuzijue-step-list {
+    list-style: none;
+    counter-reset: liuzijue-step;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.liuzijue-step-list li {
+    background: var(--background-color);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-light);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.liuzijue-step-list li::before {
+    counter-increment: liuzijue-step;
+    content: counter(liuzijue-step);
+    position: absolute;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    color: rgba(44, 90, 160, 0.15);
+}
+
+.liuzijue-step-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-medium);
+}
+
+.liuzijue-step-list h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+    font-family: var(--font-title);
+    font-size: 1.25rem;
+}
+
+.liuzijue-step-list p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.step-tips {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--spacing-sm);
+}
+
+.step-tips li {
+    position: relative;
+    padding-left: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-light);
+}
+
+.step-tips li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.liuzijue-tips-section {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, var(--background-light) 0%, var(--background-color) 100%);
+}
+
 /* 页脚外部链接样式 */
 .external-links {
     margin-top: var(--spacing-sm);
@@ -3896,10 +4099,12 @@ img {
 /* 响应式设计 */
 @media (max-width: 768px) {
     .baduanjin-grid,
-    .types-grid {
+    .types-grid,
+    .liuzijue-grid,
+    .liuzijue-step-list {
         grid-template-columns: 1fr;
     }
-    
+
     .essentials-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
@@ -3922,6 +4127,12 @@ img {
     .type-header {
         flex-direction: column;
         gap: var(--spacing-sm);
+    }
+
+    .sound-character {
+        width: 48px;
+        height: 48px;
+        font-size: 1.8rem;
     }
 }
 
