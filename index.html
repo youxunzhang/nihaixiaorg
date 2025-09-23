@@ -11,8 +11,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>倪海厦中医传承网站 - 传承千年医学智慧，弘扬中医文化</title>
-    <meta name="description" content="倪海厦中医传承网站，致力于传承和弘扬倪海厦老师的中医学术思想，提供优质的中医学习资源，包括《伤寒论》、《金匮要略》等经典著作解读，八部金刚功、八段锦、站桩等传统养生功法指导">
-    <meta name="keywords" content="倪海厦,中医,传承,伤寒论,金匮要略,八部金刚功,八段锦,站桩,养生功法,中医学习">
+    <meta name="description" content="倪海厦中医传承网站，致力于传承和弘扬倪海厦老师的中医学术思想，提供优质的中医学习资源，包括《伤寒论》、《金匮要略》等经典著作解读，八部金刚功、八段锦、站桩、六字诀等传统养生功法指导">
+    <meta name="keywords" content="倪海厦,中医,传承,伤寒论,金匮要略,八部金刚功,八段锦,站桩,六字诀,养生功法,中医学习">
     <meta name="author" content="倪海厦中医传承网站">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://nihaixia.org/">
@@ -156,25 +156,42 @@
             margin: 0 auto;
             padding: 0 20px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+            gap: clamp(1rem, 2vw, 2.5rem);
             height: 70px;
         }
-        
+
+        .nav-logo {
+            flex-shrink: 0;
+        }
+
         .nav-logo h1 {
             font-family: 'KaiTi', '楷体', serif;
             font-size: 1.5rem;
             color: #2c5aa0;
             font-weight: bold;
         }
-        
+
         .nav-menu {
             display: flex;
+            align-items: center;
+            justify-content: center;
             list-style: none;
-            gap: 2rem;
+            gap: clamp(0.75rem, 1.8vw, 2rem);
+            flex: 1 1 auto;
+            min-width: 0;
         }
-        
+
+        .nav-menu .nav-item {
+            display: flex;
+            align-items: center;
+        }
+
         .nav-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             text-decoration: none;
             color: #2c3e50;
             font-weight: 500;
@@ -212,7 +229,21 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        
+
+        @media (max-width: 1024px) {
+            .nav-container {
+                gap: 1rem;
+            }
+
+            .nav-menu {
+                gap: 1.2rem;
+            }
+
+            .bookmark-container {
+                margin-left: 12px;
+            }
+        }
+
         /* 响应式设计 */
         @media (max-width: 768px) {
             .nav-menu {
@@ -328,9 +359,11 @@
         .bookmark-container {
             display: flex;
             align-items: center;
-            margin-left: 20px;
+            margin-left: clamp(12px, 2vw, 20px);
+            flex-shrink: 0;
+            gap: 8px;
         }
-        
+
         .bookmark-btn {
             display: flex;
             align-items: center;
@@ -383,7 +416,7 @@
             border-radius: 50%;
             cursor: pointer;
             text-decoration: none;
-            margin-left: 8px;
+            margin-left: 0;
             transition: all 0.3s ease;
             box-shadow: 0 2px 8px rgba(74, 144, 226, 0.2);
         }
@@ -401,9 +434,10 @@
         /* 响应式设计 */
         @media (max-width: 768px) {
             .bookmark-container {
-                margin-left: 10px;
+                margin-left: 0;
+                gap: 6px;
             }
-            
+
             .bookmark-btn {
                 padding: 6px 12px;
                 font-size: 12px;
@@ -459,6 +493,7 @@
                         <li><a href="badajingang.html" class="dropdown-item">八部金刚功</a></li>
                         <li><a href="baduanjin.html" class="dropdown-item">八段锦</a></li>
                         <li><a href="zhanzhuang.html" class="dropdown-item">站桩</a></li>
+                        <li><a href="liuzijue.html" class="dropdown-item">六字诀</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
