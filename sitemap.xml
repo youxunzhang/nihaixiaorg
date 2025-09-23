@@ -49,6 +49,12 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://nihaixia.org/liuzijue.html</loc>
+        <lastmod>2024-12-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://nihaixia.org/adjustment.html</loc>
         <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
