@@ -15,29 +15,29 @@
 
 /* CSS变量定义 */
 :root {
-    /* 主色调 - 欧美流行的暖色调，适合中老年人 */
-    --primary-color: #2c5aa0;      /* 深蓝色，专业稳重 */
-    --secondary-color: #4a90e2;    /* 中蓝色，现代感 */
-    --accent-color: #f8b195;       /* 暖橙色，温暖友好 */
-    
-    /* 背景色 - 柔和的米色系 */
-    --background-color: #faf8f5;   /* 极浅米色 */
-    --background-light: #f5f2ed;   /* 浅米色 */
-    --background-dark: #e8e0d8;    /* 中米色 */
-    
-    /* 文字色 - 高对比度，便于阅读 */
-    --text-color: #2c3e50;         /* 深蓝灰色 */
-    --text-light: #34495e;         /* 中蓝灰色 */
-    --text-muted: #7f8c8d;         /* 浅灰色 */
-    
-    /* 边框色 - 柔和的灰色系 */
-    --border-color: #d5d8dc;       /* 浅灰色 */
-    --border-light: #ecf0f1;       /* 极浅灰色 */
-    
-    /* 阴影 - 柔和的蓝色调 */
-    --shadow-light: 0 2px 8px rgba(44, 90, 160, 0.08);
-    --shadow-medium: 0 4px 16px rgba(44, 90, 160, 0.12);
-    --shadow-heavy: 0 8px 32px rgba(44, 90, 160, 0.16);
+    /* 主色调 - 欧美极简蓝灰色系 */
+    --primary-color: #1f3a8a;      /* 深蓝色，现代专业 */
+    --secondary-color: #2563eb;    /* 亮蓝色，科技感 */
+    --accent-color: #f97316;       /* 温暖橙色点缀 */
+
+    /* 背景色 - 纯白与浅灰分层 */
+    --background-color: #ffffff;   /* 纯白背景 */
+    --background-light: #f8fafc;   /* 极浅灰 */
+    --background-dark: #e5e7eb;    /* 浅灰分隔 */
+
+    /* 文字色 - 高对比度深灰 */
+    --text-color: #0f172a;         /* 深石墨色 */
+    --text-light: #1f2937;         /* 中深灰 */
+    --text-muted: #6b7280;         /* 次要文字灰 */
+
+    /* 边框色 - 冷调浅灰 */
+    --border-color: #d1d5db;       /* 浅灰色 */
+    --border-light: #e5e7eb;       /* 极浅灰 */
+
+    /* 阴影 - 轻盈中性阴影 */
+    --shadow-light: 0 2px 8px rgba(15, 23, 42, 0.06);
+    --shadow-medium: 0 6px 18px rgba(15, 23, 42, 0.08);
+    --shadow-heavy: 0 10px 32px rgba(15, 23, 42, 0.1);
     
     /* 字体 */
     --font-title: 'KaiTi', '楷体', serif;
@@ -86,7 +86,7 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
     color: var(--text-color);
-    background: linear-gradient(135deg, var(--background-color) 0%, var(--background-light) 100%);
+    background: var(--background-color);
     min-height: 100vh;
     /* 性能优化：减少重绘 */
     will-change: scroll-position;
@@ -124,26 +124,45 @@ img {
     padding: 0 var(--spacing-md);
 }
 
+/* 欧美极简风格：全站纯白背景 */
+body, main, header, section, footer {
+    background: var(--background-color);
+}
+
+/* 统一移除渐变底色，保持纯白页面基调 */
+section,
+[class$="-section"],
+.page-header,
+.hero,
+.footer,
+.navbar,
+.hero-image-section {
+    background-image: none !important;
+    background-color: var(--background-color) !important;
+}
+
 /* 导航栏 */
 .navbar {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    box-shadow: var(--shadow-medium);
+    background: var(--background-color);
+    box-shadow: var(--shadow-light);
+    border-bottom: 1px solid var(--border-light);
     position: sticky;
     top: 0;
     z-index: var(--z-dropdown);
     padding: var(--spacing-sm) 0;
     /* 性能优化：启用硬件加速 */
     transform: translateZ(0);
-    /* 毛玻璃效果 */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    /* 细腻的毛玻璃效果 */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 /* 导航栏滚动效果 */
 .navbar.scrolled {
-    background: rgba(44, 90, 160, 0.95);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: var(--shadow-medium);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     transition: all var(--transition-normal) ease;
 }
 
@@ -160,10 +179,10 @@ img {
 
 .nav-logo h1 {
     font-family: var(--font-title);
-    color: white;
+    color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
 }
 
 .nav-logo {
@@ -189,7 +208,7 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
     padding: var(--spacing-xs) var(--spacing-sm);
@@ -202,7 +221,7 @@ img {
 
 .nav-link:hover,
 .nav-link.active {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--background-light);
     transform: translateY(-2px);
 }
 
@@ -213,7 +232,7 @@ img {
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: var(--primary-color);
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -281,7 +300,7 @@ img {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    background: rgba(255, 255, 255, 0.18);
     transition: left var(--transition-slow) ease;
 }
 
@@ -290,8 +309,8 @@ img {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: var(--accent-color);
+    background: var(--primary-color);
+    color: #ffffff;
     box-shadow: var(--shadow-light);
 }
 
@@ -325,18 +344,19 @@ img {
 
 /* 页面标题 */
 .page-header {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: var(--accent-color);
+    background: var(--background-color);
+    color: var(--text-color);
     padding: var(--spacing-xl) 0;
     text-align: center;
     margin-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .page-title {
     font-family: var(--font-title);
     font-size: 2.5rem;
     margin-bottom: var(--spacing-sm);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
 }
 
 .page-subtitle {
@@ -383,13 +403,7 @@ img {
     margin: 0;
     /* 高度由图片决定 */
     height: auto;
-    /* 添加渐变背景，在图片左右两侧显示 */
-    background: linear-gradient(135deg, 
-        #f5f1e8 0%, 
-        #e8dcc0 25%, 
-        #d4c4a8 50%, 
-        #e8dcc0 75%, 
-        #f5f1e8 100%);
+    background: var(--background-color);
 }
 
 .hero-image-container {
@@ -450,16 +464,16 @@ img {
 }
 
 /* 添加图片加载失败时的备用样式 */
-.hero-image:not([src]), 
+.hero-image:not([src]),
 .hero-image[src=""],
 .hero-image[src*="error"] {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: var(--background-light);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--accent-color);
-    font-size: 1.5rem;
-    font-weight: bold;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .hero-image:not([src])::after, 
@@ -538,8 +552,8 @@ img {
 
 /* 英雄区域 */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: var(--accent-color);
+    background: var(--background-color);
+    color: var(--text-color);
     padding: var(--spacing-xl) 0;
     text-align: center;
     position: relative;
@@ -547,14 +561,7 @@ img {
 }
 
 .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(244,228,188,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    opacity: 0.3;
+    display: none;
 }
 
 .hero-content {
@@ -566,7 +573,7 @@ img {
     font-family: var(--font-title);
     font-size: 3rem;
     margin-bottom: var(--spacing-md);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
 }
 
 .hero-subtitle {
@@ -599,7 +606,7 @@ img {
 /* 本草纲目查询样式 */
 .bencao-query-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+    background: var(--background-light);
     position: relative;
 }
 
@@ -650,8 +657,8 @@ img {
 
 .search-btn {
     padding: 15px 30px;
-    background: linear-gradient(135deg, #007bff, #0056b3);
-    color: white;
+    background: var(--primary-color);
+    color: #ffffff;
     border: none;
     border-radius: 50px;
     font-size: 16px;
@@ -663,7 +670,7 @@ img {
 }
 
 .search-btn:hover {
-    background: linear-gradient(135deg, #0056b3, #004085);
+    background: #1e3a8a;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
 }
@@ -735,8 +742,8 @@ img {
 }
 
 .medicine-category {
-    background: linear-gradient(135deg, #28a745, #20c997);
-    color: white;
+    background: var(--primary-color);
+    color: #ffffff;
     padding: 6px 15px;
     border-radius: 20px;
     font-size: 14px;
@@ -788,8 +795,8 @@ img {
     align-items: center;
     gap: 8px;
     padding: 12px 25px;
-    background: linear-gradient(135deg, #17a2b8, #138496);
-    color: white;
+    background: var(--secondary-color);
+    color: #ffffff;
     text-decoration: none;
     border-radius: 25px;
     font-weight: 600;
@@ -798,7 +805,7 @@ img {
 }
 
 .view-more-btn:hover {
-    background: linear-gradient(135deg, #138496, #117a8b);
+    background: #1e40af;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(23, 162, 184, 0.3);
     color: white;
@@ -832,12 +839,8 @@ img {
 .stat-number {
     font-size: 36px;
     font-weight: 700;
-    color: #007bff;
+    color: var(--secondary-color);
     margin-bottom: 8px;
-    background: linear-gradient(135deg, #007bff, #0056b3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .stat-label {
@@ -1087,7 +1090,7 @@ img {
 .course-image {
     position: relative;
     height: 200px;
-    background: linear-gradient(135deg, var(--background-light) 0%, var(--background-dark) 100%);
+    background: var(--background-light);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1098,7 +1101,7 @@ img {
     top: var(--spacing-sm);
     right: var(--spacing-sm);
     background: var(--primary-color);
-    color: var(--accent-color);
+    color: #ffffff;
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius);
     font-size: 0.9rem;
@@ -1193,7 +1196,7 @@ img {
 .resource-image {
     position: relative;
     height: 200px;
-    background: linear-gradient(135deg, var(--background-light) 0%, var(--background-dark) 100%);
+    background: var(--background-light);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1204,7 +1207,7 @@ img {
     top: var(--spacing-sm);
     right: var(--spacing-sm);
     background: var(--primary-color);
-    color: var(--accent-color);
+    color: #ffffff;
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius);
     font-size: 0.9rem;
@@ -1299,7 +1302,7 @@ img {
 .news-image {
     position: relative;
     height: 200px;
-    background: linear-gradient(135deg, var(--background-light) 0%, var(--background-dark) 100%);
+    background: var(--background-light);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1310,7 +1313,7 @@ img {
     top: var(--spacing-sm);
     right: var(--spacing-sm);
     background: var(--primary-color);
-    color: var(--accent-color);
+    color: #ffffff;
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius);
     font-size: 0.9rem;
