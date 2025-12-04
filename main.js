@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initLazyLoading();
     initPerformanceOptimizations();
     initMedicineInfoTabs();
+    initContactModal();
 });
 
 // 导航栏功能
@@ -138,6 +139,44 @@ function initMobileMenu() {
         if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+        }
+    });
+}
+
+// 联系作者弹窗
+function initContactModal() {
+    const trigger = document.querySelector('.contact-author-btn');
+    const modal = document.getElementById('contactModal');
+
+    if (!trigger || !modal) return;
+
+    const closeBtn = modal.querySelector('.contact-modal-close');
+
+    if (!closeBtn) return;
+
+    const openModal = (event) => {
+        event.preventDefault();
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+    };
+
+    const closeModal = () => {
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+    };
+
+    trigger.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
         }
     });
 }

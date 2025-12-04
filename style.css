@@ -2760,6 +2760,136 @@ img {
     background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
 }
 
+/* 联系作者弹窗 */
+.contact-author-btn {
+    border: 1px solid rgba(44, 90, 160, 0.2);
+    padding: 8px 14px;
+    border-radius: 12px;
+    background: linear-gradient(120deg, rgba(44, 90, 160, 0.08), rgba(81, 154, 255, 0.12));
+    box-shadow: 0 4px 10px rgba(44, 90, 160, 0.08);
+}
+
+.contact-author-btn:hover {
+    color: #2c5aa0;
+    border-color: rgba(44, 90, 160, 0.5);
+    background: linear-gradient(120deg, rgba(44, 90, 160, 0.12), rgba(81, 154, 255, 0.18));
+}
+
+.contact-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    z-index: var(--z-modal);
+    padding: 20px;
+}
+
+.contact-modal.active {
+    display: flex;
+}
+
+.contact-modal-content {
+    position: relative;
+    background: linear-gradient(165deg, #0f1926 0%, #0a1018 45%, #0d1a2b 100%);
+    border-radius: 20px;
+    width: min(520px, 90vw);
+    color: #e9f1ff;
+    padding: 24px 24px 28px;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(81, 154, 255, 0.35);
+    overflow: hidden;
+}
+
+.contact-modal-content::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 20%, rgba(81, 154, 255, 0.2), transparent 30%),
+                radial-gradient(circle at 80% 0%, rgba(44, 90, 160, 0.2), transparent 35%);
+    pointer-events: none;
+}
+
+.contact-modal-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.contact-subtitle {
+    color: #7ad6ff;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.contact-title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #8cffd2;
+}
+
+.contact-description {
+    color: #cfd6e4;
+    font-size: 0.95rem;
+}
+
+.contact-modal-body {
+    position: relative;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.contact-qr {
+    width: 100%;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto 14px;
+    border-radius: 12px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.contact-tip {
+    color: #9fb3cc;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.contact-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    color: #e9f1ff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.contact-modal-close:hover {
+    background: rgba(255, 255, 255, 0.14);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .contact-modal-content {
+        padding: 20px 18px 24px;
+    }
+
+    .contact-title {
+        font-size: 1.4rem;
+    }
+}
+
 .bencao-detail-section {
     margin-bottom: var(--spacing-xl);
     background: white;
