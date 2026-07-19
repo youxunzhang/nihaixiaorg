@@ -394,48 +394,46 @@ section,
     line-height: 1.7;
 }
 
-/* 首页图片展示区域 - 高度与图片一致 */
+/* 首页图片展示区域 - 紧凑画幅 */
 .hero-image-section {
-    width: 100vw;
+    width: 100%;
     position: relative;
     overflow: hidden;
-    padding: 0;
+    padding: clamp(18px, 2.5vw, 32px) var(--spacing-md);
     margin: 0;
-    /* 高度由图片决定 */
     height: auto;
     background: var(--background-color);
 }
 
 .hero-image-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1040px;
+    aspect-ratio: 16 / 9;
     position: relative;
     text-align: center;
     margin: 0 auto;
-    border-radius: 0;
+    border: 1px solid var(--border-light);
+    border-radius: 22px;
     overflow: hidden;
-    box-shadow: none;
-    /* 高度由图片决定 */
-    height: auto;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
 }
 
 .hero-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     margin: 0;
     max-width: none;
     transition: transform var(--transition-normal) ease;
-    border-radius: 0;
+    border-radius: inherit;
     box-shadow: none;
-    /* 图片自然显示，不强制覆盖，保持原始比例 */
     position: relative;
-    object-fit: contain;
-    object-position: center;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .hero-image:hover {
-    transform: scale(1.02);
+    transform: scale(1.012);
 }
 
 /* 添加图片加载优化 */
@@ -455,12 +453,11 @@ section,
     }
 }
 
-/* 确保图片在所有浏览器中都能完美铺满 */
+/* 保持图片区域位于页面内容宽度内 */
 .hero-image-section {
-    /* 防止页面滚动条影响全屏显示 */
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 /* 添加图片加载失败时的备用样式 */
@@ -487,49 +484,51 @@ section,
     z-index: 1;
 }
 
-/* 移动端图片优化 - 保持图片比例 */
+/* 移动端图片优化 */
 @media (max-width: 768px) {
     .hero-image-section {
-        width: 100vw;
+        width: 100%;
         height: auto;
-        padding: 0;
+        padding: 115px 12px 12px;
         margin: 0;
     }
     
     .hero-image-container {
         width: 100%;
         height: auto;
-        margin: 0;
+        aspect-ratio: 4 / 3;
+        margin: 0 auto;
         position: relative;
+        border-radius: 16px;
     }
     
     .hero-image {
         width: 100%;
-        height: auto;
+        height: 100%;
         display: block;
         margin: 0;
         max-width: none;
         position: relative;
-        object-fit: contain;
-        object-position: center;
+        object-fit: cover;
+        object-position: center top;
     }
 }
 
 @media (max-width: 480px) {
     .hero-image-section {
-        width: 100vw;
+        width: 100%;
         height: auto;
     }
     
     .hero-image {
         width: 100%;
-        height: auto;
+        height: 100%;
         display: block;
         margin: 0;
         max-width: none;
         position: relative;
-        object-fit: contain;
-        object-position: center;
+        object-fit: cover;
+        object-position: center top;
     }
 }
 
@@ -540,13 +539,15 @@ section,
     }
     
     .hero-image-container {
+        width: min(80vw, 760px);
         height: auto;
+        aspect-ratio: 16 / 9;
     }
     
     .hero-image {
-        height: auto;
+        height: 100%;
         width: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
 }
 
@@ -5082,6 +5083,344 @@ section,
 }
 
 /* 呼吸技巧样式 */
+.breath-trainer {
+    padding: 0 0 var(--spacing-xl);
+}
+
+.breath-trainer-heading {
+    max-width: 820px;
+    margin: 0 auto var(--spacing-lg);
+    text-align: center;
+}
+
+.breath-trainer-kicker {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 15px;
+    margin-bottom: var(--spacing-sm);
+    border-radius: 999px;
+    color: var(--primary-color);
+    background: #eaf1ff;
+    font-weight: 700;
+}
+
+.breath-trainer-heading h2 {
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-color);
+    font-family: var(--font-title);
+    font-size: clamp(1.8rem, 4vw, 2.75rem);
+    line-height: 1.25;
+}
+
+.breath-trainer-heading p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.breath-trainer-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+    overflow: hidden;
+    border: 1px solid #dbe5f5;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 20px 55px rgba(31, 58, 138, 0.1);
+}
+
+.breath-visual {
+    display: flex;
+    min-height: 610px;
+    padding: clamp(2rem, 5vw, 4rem);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, #f8fbff 0, #edf4ff 50%, #f8fbff 100%);
+}
+
+.breath-orbit {
+    display: grid;
+    width: min(68vw, 330px);
+    aspect-ratio: 1;
+    place-items: center;
+    border: 2px solid rgba(37, 99, 235, 0.18);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.48);
+    box-shadow: 0 0 0 28px rgba(37, 99, 235, 0.06), 0 0 70px rgba(37, 99, 235, 0.15);
+}
+
+.breath-orb {
+    display: flex;
+    width: 62%;
+    aspect-ratio: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #8aabf7;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 12px 38px rgba(31, 58, 138, 0.14);
+    transform: scale(0.78);
+    transition-property: transform, background-color, border-color, box-shadow;
+    transition-timing-function: ease-in-out;
+    transition-duration: 800ms;
+    will-change: transform;
+}
+
+.breath-orbit[data-phase="inhale"] .breath-orb {
+    border-color: #5f8ff0;
+    background: #f8fbff;
+    box-shadow: 0 16px 52px rgba(37, 99, 235, 0.28);
+    transform: scale(1);
+}
+
+.breath-orbit[data-phase="hold"] .breath-orb {
+    border-color: #8b5cf6;
+    background: #faf8ff;
+    box-shadow: 0 16px 52px rgba(139, 92, 246, 0.22);
+    transform: scale(1);
+}
+
+.breath-orbit[data-phase="exhale"] .breath-orb {
+    border-color: #3b9b8f;
+    background: #f6fffd;
+    box-shadow: 0 12px 38px rgba(59, 155, 143, 0.18);
+    transform: scale(0.78);
+}
+
+.breath-phase {
+    color: var(--text-light);
+    font-size: clamp(1.05rem, 2vw, 1.35rem);
+    font-weight: 700;
+}
+
+.breath-count {
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    font-size: clamp(3rem, 7vw, 4.75rem);
+    line-height: 1.1;
+}
+
+.breath-unit {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+}
+
+.breath-phase-track {
+    display: flex;
+    width: min(100%, 390px);
+    margin-top: 3rem;
+    align-items: center;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.breath-phase-track span {
+    transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.breath-phase-track span.active {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.breath-phase-track i {
+    height: 1px;
+    margin: 0 10px;
+    flex: 1;
+    background: #cbd5e1;
+}
+
+.breath-guidance {
+    min-height: 1.6em;
+    margin-top: var(--spacing-sm);
+    color: var(--text-muted);
+    text-align: center;
+}
+
+.breath-actions {
+    display: flex;
+    margin-top: var(--spacing-md);
+    gap: 12px;
+}
+
+.breath-button {
+    min-width: 120px;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 999px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+}
+
+.breath-button:hover {
+    transform: translateY(-2px);
+}
+
+.breath-button:focus-visible,
+.breath-presets button:focus-visible,
+.breath-input-wrap input:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.25);
+    outline-offset: 2px;
+}
+
+.breath-button-primary {
+    color: #ffffff;
+    background: var(--primary-color);
+    box-shadow: 0 8px 20px rgba(31, 58, 138, 0.22);
+}
+
+.breath-button-primary:hover {
+    background: var(--secondary-color);
+}
+
+.breath-button-secondary {
+    color: var(--primary-color);
+    background: #eaf1ff;
+}
+
+.breath-settings {
+    padding: clamp(2rem, 5vw, 4rem);
+}
+
+.breath-settings-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+}
+
+.breath-settings h3 {
+    margin-bottom: 3px;
+    color: var(--text-color);
+    font-family: var(--font-title);
+    font-size: 1.65rem;
+}
+
+.breath-settings-header p {
+    color: var(--text-muted);
+}
+
+.breath-rounds {
+    flex: 0 0 auto;
+    padding: 6px 10px;
+    border-radius: 999px;
+    color: var(--primary-color);
+    background: #eef4ff;
+    font-size: 0.82rem;
+}
+
+.breath-presets {
+    display: flex;
+    margin: var(--spacing-lg) 0;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.breath-presets button {
+    padding: 8px 12px;
+    border: 1px solid #d4deef;
+    border-radius: 999px;
+    color: var(--text-light);
+    background: #ffffff;
+    font: inherit;
+    font-size: 0.88rem;
+    cursor: pointer;
+}
+
+.breath-presets button.active {
+    border-color: var(--secondary-color);
+    color: var(--primary-color);
+    background: #eaf1ff;
+    font-weight: 700;
+}
+
+.breath-presets button:disabled,
+.breath-fields input:disabled {
+    cursor: not-allowed;
+    opacity: 0.58;
+}
+
+.breath-fields {
+    display: grid;
+    gap: 12px;
+}
+
+.breath-fields > label {
+    display: flex;
+    padding: 14px 16px;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+    border: 1px solid #dbe5f5;
+    border-radius: var(--border-radius-lg);
+    background: #f8fafc;
+}
+
+.breath-fields label > span:first-child {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+}
+
+.breath-fields b {
+    color: var(--text-color);
+}
+
+.breath-fields small {
+    margin-top: 2px;
+    color: var(--text-muted);
+    line-height: 1.35;
+}
+
+.breath-input-wrap {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 6px;
+}
+
+.breath-input-wrap input {
+    width: 58px;
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    color: var(--text-color);
+    background: #ffffff;
+    font: 700 1rem Arial, sans-serif;
+    text-align: center;
+}
+
+.breath-input-wrap em {
+    color: var(--text-muted);
+    font-style: normal;
+}
+
+.breath-safety-note {
+    display: flex;
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-sm);
+    gap: 10px;
+    border-radius: var(--border-radius-lg);
+    color: #78520a;
+    background: #fff8e8;
+    font-size: 0.9rem;
+}
+
+.breath-safety-note p {
+    line-height: 1.55;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .breath-orb,
+    .breath-button,
+    .breath-phase-track span {
+        transition-duration: 0.01ms !important;
+    }
+}
+
 .breathing-steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -5565,6 +5904,19 @@ section,
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+    .breath-trainer-card {
+        grid-template-columns: 1fr;
+    }
+
+    .breath-visual {
+        min-height: auto;
+        padding: 3rem 1.5rem;
+    }
+
+    .breath-settings {
+        padding: 2rem 1.5rem;
+    }
+
     .timeline::before {
         left: 15px;
     }
@@ -5623,6 +5975,37 @@ section,
 }
 
 @media (max-width: 480px) {
+    .breath-trainer-heading h2 {
+        font-size: 1.7rem;
+    }
+
+    .breath-orbit {
+        width: min(76vw, 290px);
+        box-shadow: 0 0 0 18px rgba(37, 99, 235, 0.06), 0 0 50px rgba(37, 99, 235, 0.13);
+    }
+
+    .breath-actions {
+        width: 100%;
+    }
+
+    .breath-button {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .breath-settings-header,
+    .breath-fields > label {
+        align-items: flex-start;
+    }
+
+    .breath-settings-header {
+        flex-direction: column;
+    }
+
+    .breath-fields > label {
+        padding: 12px;
+    }
+
     .intro-stats {
         grid-template-columns: 1fr;
         gap: var(--spacing-sm);

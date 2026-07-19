@@ -71,6 +71,79 @@
             </div>
         </section>
 
+        <!-- 互动呼吸练习器 -->
+        <section class="breath-trainer" aria-labelledby="breath-trainer-title">
+            <div class="container">
+                <div class="breath-trainer-heading">
+                    <span class="breath-trainer-kicker">🧘 呼吸片刻</span>
+                    <h2 id="breath-trainer-title">跟随节奏，给自己一个安静呼吸的片刻</h2>
+                    <p>圆环会按照“吸气—屏息—呼气”的节奏变化。先调整适合自己的时长，再开始练习。</p>
+                </div>
+
+                <div class="breath-trainer-card">
+                    <div class="breath-visual" aria-live="polite">
+                        <div class="breath-orbit" id="breath-orbit" data-phase="ready">
+                            <div class="breath-orb">
+                                <span class="breath-phase" id="breath-phase">准备好了吗？</span>
+                                <strong class="breath-count" id="breath-count">—</strong>
+                                <span class="breath-unit" id="breath-unit">放松肩膀</span>
+                            </div>
+                        </div>
+
+                        <div class="breath-phase-track" aria-hidden="true">
+                            <span data-track-phase="inhale">吸气</span>
+                            <i></i>
+                            <span data-track-phase="hold">屏息</span>
+                            <i></i>
+                            <span data-track-phase="exhale">呼气</span>
+                        </div>
+                        <p class="breath-guidance" id="breath-guidance">舒适坐好，轻轻闭眼或放松视线。</p>
+
+                        <div class="breath-actions">
+                            <button type="button" class="breath-button breath-button-primary" id="breath-toggle">开始练习</button>
+                            <button type="button" class="breath-button breath-button-secondary" id="breath-reset">重置</button>
+                        </div>
+                    </div>
+
+                    <div class="breath-settings">
+                        <div class="breath-settings-header">
+                            <div>
+                                <h3>节奏设置</h3>
+                                <p>以平稳、舒适、不憋闷为宜。</p>
+                            </div>
+                            <span class="breath-rounds">已完成 <strong id="breath-rounds">0</strong> 轮</span>
+                        </div>
+
+                        <div class="breath-presets" aria-label="呼吸节奏预设">
+                            <button type="button" data-preset="4,2,6" class="active">舒缓 4-2-6</button>
+                            <button type="button" data-preset="4,4,4">均衡 4-4-4</button>
+                            <button type="button" data-preset="4,7,8">安眠 4-7-8</button>
+                        </div>
+
+                        <div class="breath-fields">
+                            <label for="inhale-duration">
+                                <span><b>吸气时长</b><small>鼻子缓慢吸气，腹部自然鼓起</small></span>
+                                <span class="breath-input-wrap"><input id="inhale-duration" type="number" min="1" max="20" value="4" inputmode="numeric"><em>秒</em></span>
+                            </label>
+                            <label for="hold-duration">
+                                <span><b>屏息时长</b><small>不勉强，保持身体放松</small></span>
+                                <span class="breath-input-wrap"><input id="hold-duration" type="number" min="0" max="20" value="2" inputmode="numeric"><em>秒</em></span>
+                            </label>
+                            <label for="exhale-duration">
+                                <span><b>呼气时长</b><small>缓缓呼出，让腹部自然回落</small></span>
+                                <span class="breath-input-wrap"><input id="exhale-duration" type="number" min="1" max="30" value="6" inputmode="numeric"><em>秒</em></span>
+                            </label>
+                        </div>
+
+                        <div class="breath-safety-note">
+                            <span aria-hidden="true">💡</span>
+                            <p>练习时请保持自然呼吸。如出现头晕、胸闷或不适，请立即停止并恢复正常呼吸。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- 呼吸的重要性 -->
         <section class="breathing-importance">
             <div class="container">
@@ -403,5 +476,6 @@
     <button id="back-to-top" class="back-to-top">↑</button>
 
     <script src="main.js"></script>
+    <script src="breathing.js"></script>
 </body>
 </html>
