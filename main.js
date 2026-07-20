@@ -36,7 +36,10 @@ function throttle(func, limit) {
 // 等待DOM加载完成
 document.addEventListener('DOMContentLoaded', function() {
     // 初始化所有功能
+    initGlobalNavigationStructure();
     initNavigation();
+    initSiteDisclosure();
+    ContentDisclaimer.mountAll();
     initBackToTop();
     initScrollAnimations();
     initMobileMenu();
@@ -51,9 +54,49 @@ document.addEventListener('DOMContentLoaded', function() {
     initContactModal();
 });
 
+// 统一全站导航结构，避免各静态页面的重复导航逐渐不一致
+function initGlobalNavigationStructure() {
+    const navMenu = document.querySelector('.nav-menu');
+    if (!navMenu) return;
+
+    navMenu.innerHTML = `
+        <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+        <li class="nav-item"><a href="courses.html" class="nav-link">本草纲目</a></li>
+        <li class="nav-item"><a href="resources.html" class="nav-link">经典视频</a></li>
+        <li class="nav-item dropdown" data-nav-group="gongfu">
+            <a href="#" class="nav-link dropdown-toggle">功夫</a>
+            <ul class="dropdown-menu">
+                <li><a href="badajingang.html" class="dropdown-item">八部金刚功</a></li>
+                <li><a href="baduanjin.html" class="dropdown-item">八段锦</a></li>
+                <li><a href="zhanzhuang.html" class="dropdown-item">站桩</a></li>
+                <li><a href="liuzijue.html" class="dropdown-item">六字诀</a></li>
+                <li><a href="adjustment.html" class="dropdown-item">调整状态</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a href="index.html#breathing" class="nav-link">呼吸</a></li>
+        <li class="nav-item dropdown" data-nav-group="tools">
+            <a href="#" class="nav-link dropdown-toggle">学习工具</a>
+            <ul class="dropdown-menu">
+                <li><a href="herbs.html" class="dropdown-item">中药材资料</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a href="news.html" class="nav-link">资讯动态</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
+    `;
+
+    const hamburger = document.querySelector('.hamburger');
+    if (hamburger) {
+        hamburger.setAttribute('role', 'button');
+        hamburger.setAttribute('tabindex', '0');
+        hamburger.setAttribute('aria-label', '打开导航菜单');
+        hamburger.setAttribute('aria-expanded', 'false');
+    }
+}
+
 // 导航栏功能
 function initNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
     navLinks.forEach(link => {
@@ -63,8 +106,31 @@ function initNavigation() {
         // 检查当前页面并添加active类
         if (link.getAttribute('href') === currentPage) {
             link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
         }
     });
+
+    dropdownItems.forEach(link => {
+        const isCurrent = link.getAttribute('href') === currentPage;
+        link.classList.toggle('active', isCurrent);
+        if (isCurrent) {
+            link.setAttribute('aria-current', 'page');
+            const parentDropdown = link.closest('.dropdown');
+            const parentToggle = parentDropdown ? parentDropdown.querySelector('.dropdown-toggle') : null;
+            if (parentToggle) parentToggle.classList.add('active');
+        }
+    });
+}
+
+// 全站身份说明统一由共享脚本注入，避免静态页文案不一致
+function initSiteDisclosure() {
+    const footerBottom = document.querySelector('.footer-bottom');
+    if (!footerBottom || footerBottom.querySelector('.site-independence-note')) return;
+
+    const note = document.createElement('p');
+    note.className = 'site-independence-note';
+    note.textContent = '本站为个人创建的中医经典学习与资料整理网站，非倪海厦官方网站，与相关家属、机构及出版社不存在隶属、授权或合作关系。';
+    footerBottom.appendChild(note);
 }
 
 // 返回顶部按钮
@@ -123,6 +189,14 @@ function initMobileMenu() {
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', navMenu.classList.contains('active') ? 'true' : 'false');
+    });
+
+    hamburger.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            hamburger.click();
+        }
     });
     
     // 点击菜单项时关闭菜单
@@ -521,6 +595,49 @@ window.NiHaiXiaWebsite = {
     initBackToTop
 };
 
+// 中医药内容说明组件：列表页、详情页共用同一份文案
+const ContentDisclaimer = {
+    text: '内容说明：本站内容主要用于中医经典、中药材及传统文化学习，不构成疾病诊断、治疗方案、处方或个体化用药建议。中药材的使用涉及剂量、炮制、配伍、禁忌及个人差异，如有身体不适，请及时前往正规医疗机构就诊。',
+
+    renderHTML(extraClass = '') {
+        return `
+            <aside class="content-disclaimer ${extraClass}" role="note" aria-label="中医药内容说明">
+                <strong>内容说明</strong>
+                <p>${this.text.replace('内容说明：', '')}</p>
+            </aside>
+        `;
+    },
+
+    mountAll() {
+        document.querySelectorAll('[data-content-disclaimer]').forEach(container => {
+            container.innerHTML = this.renderHTML();
+        });
+    }
+};
+
+window.ContentDisclaimer = ContentDisclaimer;
+
+// 现有数据暂无统一别名字段，仅补充少量明确的常用异名；其余保持可选
+const BENCAO_ALIASES = {
+    '黄芪': ['黄耆'],
+    '白芍': ['白芍药'],
+    '茯苓': ['云苓'],
+    '陈皮': ['橘皮'],
+    '金银花': ['忍冬花'],
+    '枸杞子': ['枸杞']
+};
+
+function normalizeBencaoRecord(item) {
+    return {
+        aliases: BENCAO_ALIASES[item.name] || [],
+        source: '',
+        sourceTitle: '',
+        sourceNote: '',
+        updatedAt: '',
+        ...item
+    };
+}
+
 // 本草纲目数据
 const bencaoData = [
     {
@@ -718,17 +835,22 @@ const bencaoData = [
         description: "枸杞子为茄科植物宁夏枸杞的干燥成熟果实。主产于宁夏、甘肃、青海等地。具有滋补肝肾、益精明目的功效。",
         tags: ["滋补", "肝肾", "明目", "益精"]
     }
-];
+].map(normalizeBencaoRecord);
 
 // 本草纲目功能
 function initBencaoSection() {
-    const bencaoSection = document.querySelector('.bencao-section');
+    const bencaoSection = document.querySelector('.bencao-section:not([hidden])');
     if (!bencaoSection) return;
 
     let currentPage = 1;
     let itemsPerPage = 6;
     let filteredData = [...bencaoData];
     let currentCategory = 'all';
+    let activeModal = null;
+    const baseSeo = {
+        title: document.title,
+        description: document.querySelector('meta[name="description"]')?.getAttribute('content') || ''
+    };
 
     // 初始化搜索和筛选
     const searchInput = bencaoSection.querySelector('.bencao-search input');
@@ -763,11 +885,11 @@ function initBencaoSection() {
     // 筛选本草数据
     function filterBencao(query, category) {
         filteredData = bencaoData.filter(item => {
-            const matchesQuery = !query || 
+            const aliases = item.aliases.join(' ').toLowerCase();
+            const matchesQuery = !query ||
                 item.name.toLowerCase().includes(query) ||
                 item.pinyin.toLowerCase().includes(query) ||
-                item.effects.toLowerCase().includes(query) ||
-                item.category.toLowerCase().includes(query);
+                aliases.includes(query);
             
             const matchesCategory = category === 'all' || item.category === category;
             
@@ -799,7 +921,7 @@ function initBencaoSection() {
         }
 
         bencaoGrid.innerHTML = pageData.map(item => `
-            <div class="bencao-item" data-id="${item.id}">
+            <article class="bencao-item" data-id="${item.id}" role="button" tabindex="0" aria-label="查看${item.name}基础资料">
                 <div class="bencao-item-header">
                     <h3>${item.name}</h3>
                     <div class="pinyin">${item.pinyin}</div>
@@ -814,14 +936,11 @@ function initBencaoSection() {
                         <p>${item.nature}</p>
                     </div>
                     <div class="bencao-property">
-                        <h4>功效</h4>
-                        <p>${item.effects}</p>
-                    </div>
-                    <div class="bencao-tags">
-                        ${item.tags.map(tag => `<span class="bencao-tag">${tag}</span>`).join('')}
+                        <h4>归经</h4>
+                        <p>${item.meridian}</p>
                     </div>
                 </div>
-            </div>
+            </article>
         `).join('');
 
         // 添加点击事件
@@ -829,6 +948,14 @@ function initBencaoSection() {
             item.addEventListener('click', function() {
                 const id = parseInt(this.dataset.id);
                 showBencaoDetail(id);
+            });
+
+            item.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    const id = parseInt(this.dataset.id);
+                    showBencaoDetail(id);
+                }
             });
         });
     }
@@ -895,81 +1022,127 @@ function initBencaoSection() {
         }
     };
 
-    // 显示本草详情
-    function showBencaoDetail(id) {
-        const item = bencaoData.find(item => item.id === id);
-        if (!item) return;
+    function setDetailSeo(item) {
+        const descriptionMeta = document.querySelector('meta[name="description"]');
+        document.title = `${item.name}的性味、归经及传统记载｜中药材资料`;
+        if (descriptionMeta) {
+            descriptionMeta.setAttribute('content', `查询${item.name}的别名、分类、性味、归经、传统文献记载及注意事项，仅供中医文化学习参考。`);
+        }
+    }
 
-        // 创建模态框
+    function restoreListSeo() {
+        const descriptionMeta = document.querySelector('meta[name="description"]');
+        document.title = baseSeo.title;
+        if (descriptionMeta) descriptionMeta.setAttribute('content', baseSeo.description);
+    }
+
+    function closeBencaoDetail(updateUrl = true) {
+        if (!activeModal) return;
+        const modalToRemove = activeModal;
+        activeModal = null;
+        modalToRemove.classList.remove('active');
+        restoreListSeo();
+
+        if (updateUrl && window.location.search.includes('herb=')) {
+            history.replaceState({}, '', window.location.pathname);
+        }
+
+        setTimeout(() => modalToRemove.remove(), 300);
+    }
+
+    // 详情继续复用现有模态框，但只呈现基础资料与传统记载
+    function showBencaoDetail(id, updateUrl = true) {
+        const item = bencaoData.find(record => record.id === id);
+        if (!item) return;
+        if (activeModal) activeModal.remove();
+
+        const origin = item.description ? `${item.description.split('。')[0]}。` : '待补充核对';
+        const aliases = item.aliases.length ? item.aliases.join('、') : '待补充核对';
+        const publicRecord = item.sourceNote || '待补充核对';
+        const sourceDisplay = item.sourceTitle || item.source || '待补充核对';
+        const updatedAt = item.updatedAt || '待补充核对';
+
         const modal = document.createElement('div');
         modal.className = 'bencao-modal';
+        modal.setAttribute('role', 'dialog');
+        modal.setAttribute('aria-modal', 'true');
+        modal.setAttribute('aria-labelledby', 'bencao-detail-title');
         modal.innerHTML = `
             <div class="bencao-modal-content">
                 <div class="bencao-modal-header">
-                    <h2>${item.name} (${item.pinyin})</h2>
-                    <button class="bencao-modal-close">&times;</button>
+                    <h2 id="bencao-detail-title">${item.name}</h2>
+                    <p>${item.pinyin}</p>
+                    <button type="button" class="bencao-modal-close" aria-label="关闭${item.name}资料">&times;</button>
                 </div>
                 <div class="bencao-modal-body">
                     <div class="bencao-detail-section">
-                        <h3>基本信息</h3>
-                        <p><strong>分类：</strong>${item.category}</p>
+                        <h3>基础资料</h3>
+                        <p><strong>别名：</strong>${aliases}</p>
+                        <p><strong>药材分类：</strong>${item.category}</p>
+                        <p><strong>药材来源：</strong>${origin}</p>
                         <p><strong>性味：</strong>${item.nature}</p>
                         <p><strong>归经：</strong>${item.meridian}</p>
-                        <p><strong>用量：</strong>${item.usage}</p>
                     </div>
                     <div class="bencao-detail-section">
-                        <h3>功效主治</h3>
-                        <p>${item.effects}</p>
+                        <h3>传统功效记载</h3>
+                        <p>传统中医文献中记载：${item.effects}。</p>
                     </div>
                     <div class="bencao-detail-section">
-                        <h3>详细描述</h3>
-                        <p>${item.description}</p>
+                        <h3>古籍或公开资料记载</h3>
+                        <p>${publicRecord}</p>
                     </div>
                     <div class="bencao-detail-section">
-                        <h3>使用注意</h3>
-                        <p><strong>禁忌：</strong>${item.contraindications}</p>
+                        <h3>注意事项</h3>
+                        <p>${item.contraindications || '待补充核对'}</p>
                     </div>
-                    <div class="bencao-detail-section">
-                        <h3>相关标签</h3>
-                        <div class="bencao-tags">
-                            ${item.tags.map(tag => `<span class="bencao-tag">${tag}</span>`).join('')}
-                        </div>
+                    <div class="bencao-detail-section bencao-source-section">
+                        <h3>资料来源</h3>
+                        <p><strong>资料来源：</strong>${sourceDisplay}</p>
+                        <p><strong>最后更新时间：</strong>${updatedAt}</p>
                     </div>
+                    ${ContentDisclaimer.renderHTML('content-disclaimer-compact')}
                 </div>
             </div>
         `;
 
+        activeModal = modal;
         document.body.appendChild(modal);
+        setDetailSeo(item);
+        if (updateUrl) history.pushState({ herbId: id }, '', `${window.location.pathname}?herb=${id}`);
 
-        // 显示模态框
-        setTimeout(() => {
-            modal.classList.add('active');
-        }, 10);
-
-        // 关闭模态框
+        requestAnimationFrame(() => modal.classList.add('active'));
         const closeBtn = modal.querySelector('.bencao-modal-close');
-        closeBtn.addEventListener('click', () => {
-            modal.classList.remove('active');
-            setTimeout(() => {
-                document.body.removeChild(modal);
-            }, 300);
+        closeBtn.addEventListener('click', () => closeBencaoDetail());
+        closeBtn.focus();
+
+        modal.addEventListener('click', event => {
+            if (event.target === modal) closeBencaoDetail();
         });
 
-        // 点击背景关闭
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.classList.remove('active');
-                setTimeout(() => {
-                    document.body.removeChild(modal);
-                }, 300);
-            }
+        modal.addEventListener('keydown', event => {
+            if (event.key === 'Escape') closeBencaoDetail();
         });
     }
 
-    // 初始化渲染
-    renderBencaoGrid();
-    renderPagination();
-    updateStats();
+    // 初始化渲染，并支持从站内搜索动作带入关键词
+    const initialQuery = new URLSearchParams(window.location.search).get('q') || '';
+    if (initialQuery && searchInput) {
+        searchInput.value = initialQuery;
+        filterBencao(initialQuery.toLowerCase(), currentCategory);
+    } else {
+        renderBencaoGrid();
+        renderPagination();
+        updateStats();
+    }
+
+    const initialHerbId = Number(new URLSearchParams(window.location.search).get('herb'));
+    if (initialHerbId) showBencaoDetail(initialHerbId, false);
+
+    window.addEventListener('popstate', () => {
+        const herbId = Number(new URLSearchParams(window.location.search).get('herb'));
+        if (herbId) showBencaoDetail(herbId, false);
+        else closeBencaoDetail(false);
+    });
 }
 
 // 页面加载完成后初始化本草纲目功能
@@ -1200,4 +1373,4 @@ function initMedicineInfoTabs() {
             }
         });
     }
-} 
+}

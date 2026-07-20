@@ -266,7 +266,7 @@ section,
 .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--primary-color);
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -1738,10 +1738,13 @@ section,
         flex-direction: column;
         background-color: var(--primary-color);
         width: 100%;
+        max-height: calc(100vh - 70px);
         text-align: center;
         transition: 0.3s;
         box-shadow: var(--shadow-medium);
         padding: var(--spacing-lg) 0;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .nav-menu.active {
@@ -1750,6 +1753,24 @@ section,
 
     .hamburger {
         display: flex;
+    }
+
+    .nav-menu .nav-item {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-menu .nav-link {
+        width: 100%;
+        color: #ffffff;
+        padding: 12px var(--spacing-md);
+    }
+
+    .nav-menu .nav-link:hover,
+    .nav-menu .nav-link.active {
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.14);
+        transform: none;
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -5084,7 +5105,12 @@ section,
 
 /* 呼吸技巧样式 */
 .breath-trainer {
+    scroll-margin-top: 88px;
     padding: 0 0 var(--spacing-xl);
+}
+
+.intro-section + .breath-trainer {
+    padding-top: 5.5rem;
 }
 
 .breath-trainer-heading {
@@ -6189,11 +6215,11 @@ section,
         opacity: 1;
         visibility: visible;
         transform: none;
-        margin-top: var(--spacing-xs);
+        margin: var(--spacing-xs) auto var(--spacing-sm);
         padding: var(--spacing-sm);
         border-radius: var(--border-radius);
         min-width: auto;
-        width: 100%;
+        width: min(300px, 86%);
     }
     
     .dropdown-item {
@@ -6455,5 +6481,382 @@ section,
     
     .new-videos-section .video-description {
         font-size: 0.8rem;
+    }
+}
+
+/* 经典视频页：核验说明与分组排序 */
+.resources-note {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: flex-start;
+    margin: var(--spacing-xl) 0 0;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-left: 4px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background: var(--accent-color);
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.resources-note strong {
+    flex: 0 0 auto;
+    color: var(--primary-color);
+}
+
+.video-group {
+    padding-right: var(--spacing-lg);
+    padding-left: var(--spacing-lg);
+}
+
+.video-group-heading {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+.video-group-heading .section-title {
+    margin-bottom: var(--spacing-xs);
+    text-align: left;
+}
+
+.video-group-heading .section-title::after {
+    margin-left: 0;
+}
+
+.video-group-heading p {
+    color: var(--text-light);
+}
+
+.video-group-order {
+    display: grid;
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    font-family: var(--font-title);
+    font-weight: 700;
+}
+
+.new-videos-section .video-thumbnail {
+    display: block;
+}
+
+.new-videos-section .video-cover {
+    display: grid;
+    place-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.video-cover-playlist {
+    background: linear-gradient(135deg, #315c4c, #8b6f47);
+}
+
+.video-cover-classic {
+    background: linear-gradient(135deg, #7a3e2e, #c79a55);
+}
+
+.video-cover-label {
+    max-width: 75%;
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.new-videos-section .platform {
+    padding: 4px 8px;
+    border-radius: 12px;
+    background: #f3f3f3;
+    color: var(--text-light);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+@media (max-width: 480px) {
+    .resources-note {
+        display: block;
+    }
+
+    .resources-note strong {
+        display: block;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .video-group {
+        padding-right: var(--spacing-sm);
+        padding-left: var(--spacing-sm);
+    }
+
+    .video-group-order {
+        flex-basis: 42px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .video-cover-label {
+        font-size: 1.1rem;
+    }
+}
+
+/* 首页学习工具入口与中药材基础资料页 */
+[hidden] {
+    display: none !important;
+}
+
+.learning-tools-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.learning-tool-entry {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border: 1px solid #dbe5f5;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: var(--shadow-medium);
+}
+
+.learning-tool-icon {
+    display: grid;
+    width: 72px;
+    height: 72px;
+    place-items: center;
+    border-radius: 18px;
+    background: #eaf1ff;
+    font-size: 2rem;
+}
+
+.learning-tool-label {
+    display: inline-block;
+    margin-bottom: 4px;
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.learning-tool-content h2 {
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-family: var(--font-title);
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+}
+
+.learning-tool-content p {
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.learning-tool-link {
+    white-space: nowrap;
+}
+
+.herbs-page-header {
+    margin-bottom: 0;
+}
+
+.herbs-page-header .page-subtitle {
+    max-width: 780px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.herbs-notice-section {
+    padding: var(--spacing-lg) 0 0;
+}
+
+.herbs-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid #bfdbfe;
+    border-radius: var(--border-radius-lg);
+    color: #1e3a8a;
+    background: #eff6ff;
+}
+
+.herbs-notice p {
+    line-height: 1.65;
+}
+
+.herbs-directory {
+    padding-top: var(--spacing-lg);
+}
+
+.herbs-directory .bencao-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-md);
+}
+
+.herbs-directory .bencao-item {
+    min-height: 260px;
+    cursor: pointer;
+}
+
+.herbs-directory .bencao-item:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.3);
+    outline-offset: 3px;
+}
+
+.herbs-directory .bencao-item-header {
+    padding: var(--spacing-md);
+}
+
+.herbs-directory .bencao-item-header h3 {
+    font-size: 1.25rem;
+}
+
+.herbs-directory .bencao-item-header .pinyin {
+    margin-top: 5px;
+    font-size: 0.82rem;
+}
+
+.herbs-directory .bencao-item-content {
+    padding: var(--spacing-sm);
+}
+
+.herbs-directory .bencao-property h4 {
+    font-size: 0.85rem;
+}
+
+.herbs-directory .bencao-property p {
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.disclaimer-section {
+    padding: 0 0 var(--spacing-xl);
+}
+
+.content-disclaimer {
+    padding: var(--spacing-md);
+    border: 1px solid #d6dde8;
+    border-left: 4px solid var(--primary-color);
+    border-radius: var(--border-radius-lg);
+    color: var(--text-light);
+    background: #f8fafc;
+}
+
+.content-disclaimer strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+}
+
+.content-disclaimer p {
+    color: inherit;
+    font-size: 0.9rem;
+    line-height: 1.75;
+}
+
+.content-disclaimer-compact {
+    margin-top: var(--spacing-lg);
+}
+
+.bencao-modal-header > p {
+    position: relative;
+    z-index: 1;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.88);
+    text-align: center;
+}
+
+.bencao-source-section {
+    background: #f8fafc;
+}
+
+.dropdown-item.active {
+    color: #ffffff;
+    background: var(--primary-color);
+    border-left-color: var(--accent-color);
+}
+
+.site-independence-note {
+    max-width: 900px;
+    margin: var(--spacing-sm) auto 0;
+    color: rgba(244, 228, 188, 0.82);
+    font-size: 0.82rem;
+    line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+    .herbs-directory .bencao-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .learning-tool-entry {
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: var(--spacing-sm);
+    }
+
+    .learning-tool-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 14px;
+        font-size: 1.6rem;
+    }
+
+    .learning-tool-link {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .herbs-page-header {
+        padding-top: 7rem;
+    }
+
+    .herbs-directory .bencao-filters {
+        display: flex;
+        margin-right: calc(-1 * var(--spacing-md));
+        margin-left: calc(-1 * var(--spacing-md));
+        padding: 2px var(--spacing-md) var(--spacing-sm);
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        scroll-snap-type: x proximity;
+    }
+
+    .herbs-directory .bencao-filter {
+        width: auto;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+
+    .bencao-modal.active {
+        align-items: flex-start;
+        padding-top: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 560px) {
+    .herbs-directory .bencao-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .herbs-directory .bencao-item {
+        min-height: 0;
+    }
+
+    .bencao-header .section-title::before,
+    .bencao-header .section-title::after {
+        display: none;
+    }
+
+    .content-disclaimer {
+        padding: var(--spacing-sm);
     }
 }
