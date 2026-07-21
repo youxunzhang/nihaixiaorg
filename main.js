@@ -218,6 +218,17 @@ function initMobileMenu() {
 }
 
 // 联系作者弹窗
+function openContactModal(event) {
+    if (event) event.preventDefault();
+
+    const modal = document.getElementById('contactModal');
+    if (!modal) return;
+
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    modal.querySelector('.contact-modal-close')?.focus();
+}
+
 function initContactModal() {
     const trigger = document.querySelector('.contact-author-btn');
     const modal = document.getElementById('contactModal');
@@ -228,18 +239,12 @@ function initContactModal() {
 
     if (!closeBtn) return;
 
-    const openModal = (event) => {
-        event.preventDefault();
-        modal.classList.add('active');
-        modal.setAttribute('aria-hidden', 'false');
-    };
-
     const closeModal = () => {
         modal.classList.remove('active');
         modal.setAttribute('aria-hidden', 'true');
     };
 
-    trigger.addEventListener('click', openModal);
+    trigger.addEventListener('click', openContactModal);
     closeBtn.addEventListener('click', closeModal);
 
     modal.addEventListener('click', (event) => {
@@ -1152,6 +1157,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 复制到剪贴板功能
 function copyToClipboard(text) {
+    openContactModal();
+
     // 使用现代浏览器的 Clipboard API
     if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(text).then(() => {
