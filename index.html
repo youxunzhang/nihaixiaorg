@@ -39,7 +39,7 @@
 
     <!-- 性能优化：预加载关键资源 -->
     <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="main.js?v=20260722" as="script">
+    <link rel="preload" href="main.js?v=20260723" as="script">
     
     <!-- DNS预解析 -->
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
@@ -485,7 +485,7 @@
                     <a href="index.html" class="nav-link active">首页</a>
                 </li>
                 <li class="nav-item">
-                    <a href="books.html" class="nav-link">中医书库</a>
+                    <a href="/books" class="nav-link">中医书籍</a>
                 </li>
                 <li class="nav-item">
                     <a href="courses.html" class="nav-link">本草纲目</a>
@@ -548,24 +548,6 @@
                      alt="倪海厦中医传承" 
                      class="hero-image lazy"
                      loading="lazy">
-            </div>
-        </section>
-
-        <!-- 中医书库入口 -->
-        <section class="home-library-entry" aria-labelledby="homeLibraryTitle">
-            <div class="container home-library-grid">
-                <div class="home-library-copy">
-                    <p class="home-library-kicker">新栏目 · 中医书库</p>
-                    <h2 id="homeLibraryTitle">读经典，先找到正确的次序</h2>
-                    <p>按入门、经典、针灸、本草、伤寒、温病与养生浏览医书，也可以从名医与专题阅读路线进入。</p>
-                    <div class="home-library-actions">
-                        <a class="home-library-primary" href="books.html">进入中医书库</a>
-                        <a href="books.html#topics">查看专题书单</a>
-                    </div>
-                </div>
-                <div class="home-library-books" aria-label="中医经典书目">
-                    <span>黄帝内经</span><span>伤寒论</span><span>金匮要略</span><span>神农本草经</span>
-                </div>
             </div>
         </section>
 
@@ -655,6 +637,24 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 中医书库入口 -->
+        <section class="home-library-entry" aria-labelledby="homeLibraryTitle">
+            <div class="container home-library-grid">
+                <div class="home-library-copy">
+                    <p class="home-library-kicker">新栏目 · 中医书库</p>
+                    <h2 id="homeLibraryTitle">读经典，先找到正确的次序</h2>
+                    <p>按入门、经典、针灸、本草、伤寒、温病与养生浏览医书，也可以从名医与专题阅读路线进入。</p>
+                    <div class="home-library-actions">
+                        <a class="home-library-primary" href="books.html">进入中医书库</a>
+                        <a href="books.html#topics">查看专题书单</a>
+                    </div>
+                </div>
+                <div class="home-library-books" aria-label="中医经典书目">
+                    <span>黄帝内经</span><span>伤寒论</span><span>金匮要略</span><span>神农本草经</span>
                 </div>
             </div>
         </section>
@@ -1064,7 +1064,7 @@
     </script>
     
     <!-- 延迟加载非关键JavaScript -->
-    <script src="main.js?v=20260722" defer></script>
+    <script src="main.js?v=20260723" defer></script>
     <script src="breathing.js" defer></script>
 </body>
 </html> 

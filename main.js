@@ -61,6 +61,7 @@ function initGlobalNavigationStructure() {
 
     navMenu.innerHTML = `
         <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+        <li class="nav-item"><a href="/books" class="nav-link">中医书籍</a></li>
         <li class="nav-item"><a href="courses.html" class="nav-link">本草纲目</a></li>
         <li class="nav-item"><a href="resources.html" class="nav-link">经典视频</a></li>
         <li class="nav-item dropdown" data-nav-group="gongfu">
@@ -74,12 +75,6 @@ function initGlobalNavigationStructure() {
             </ul>
         </li>
         <li class="nav-item"><a href="index.html#breathing" class="nav-link">呼吸</a></li>
-        <li class="nav-item dropdown" data-nav-group="tools">
-            <a href="#" class="nav-link dropdown-toggle">学习工具</a>
-            <ul class="dropdown-menu">
-                <li><a href="herbs.html" class="dropdown-item">中药材资料</a></li>
-            </ul>
-        </li>
         <li class="nav-item"><a href="news.html" class="nav-link">资讯动态</a></li>
         <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
     `;
