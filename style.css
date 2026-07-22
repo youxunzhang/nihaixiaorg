@@ -1,5 +1,99 @@
 /* 倪海厦中医传承网站样式文件 - 优化版 */
 
+/* 首页中医书库入口 */
+.home-library-entry {
+    padding: 72px 0;
+    background: #f4efe3;
+    border-block: 1px solid #e2d7c2;
+}
+
+.home-library-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, .72fr);
+    gap: 70px;
+    align-items: center;
+}
+
+.home-library-kicker {
+    margin: 0 0 10px;
+    color: #a23b2a;
+    font-size: .82rem;
+    font-weight: 700;
+    letter-spacing: .2em;
+}
+
+.home-library-copy h2 {
+    margin: 0 0 18px;
+    color: #18231d;
+    font: 700 clamp(2rem, 4vw, 3.25rem)/1.25 KaiTi, serif;
+}
+
+.home-library-copy > p:not(.home-library-kicker) {
+    max-width: 680px;
+    margin: 0;
+    color: #526058;
+    font-size: 1.08rem;
+    line-height: 1.9;
+}
+
+.home-library-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.home-library-actions a {
+    color: #235b46;
+    font-weight: 700;
+    text-underline-offset: 5px;
+}
+
+.home-library-actions .home-library-primary {
+    padding: 11px 19px;
+    border-radius: 7px;
+    color: #fff;
+    background: #235b46;
+    text-decoration: none;
+}
+
+.home-library-books {
+    min-height: 235px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 28px 22px 34px;
+    border-bottom: 14px solid #5d4430;
+    background: radial-gradient(circle at 50% 25%, rgba(185,138,56,.18), transparent 45%);
+}
+
+.home-library-books span {
+    width: 62px;
+    height: 160px;
+    display: grid;
+    place-items: center;
+    margin: 0 4px;
+    padding: 12px;
+    border-radius: 3px 8px 5px 3px;
+    color: #fff8e8;
+    background: #315646;
+    box-shadow: 5px 8px 14px rgba(25,35,29,.2), inset -4px 0 7px rgba(0,0,0,.12);
+    font: 700 1.1rem/1.2 KaiTi, serif;
+    letter-spacing: .12em;
+    writing-mode: vertical-rl;
+}
+
+.home-library-books span:nth-child(2) { height: 190px; background: #9b3b2c; }
+.home-library-books span:nth-child(3) { height: 174px; background: #a7772f; }
+.home-library-books span:nth-child(4) { height: 202px; background: #314a63; }
+
+@media (max-width: 768px) {
+    .home-library-entry { padding: 56px 0; }
+    .home-library-grid { grid-template-columns: 1fr; gap: 25px; }
+    .home-library-books { min-height: 190px; transform: scale(.88); margin-inline: -25px; }
+}
+
 /* 性能优化：预加载关键字体 */
 @font-face {
     font-family: 'KaiTi';

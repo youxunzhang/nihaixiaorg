@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购买渠道说明｜中医书库</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="books.css?v=20260723">
+    <style>
+        .redirect-page{min-height:100vh;display:grid;place-items:center;padding:24px;background:#f6f0e3}.redirect-card{width:min(560px,100%);padding:42px;border:1px solid #d7cdb9;border-radius:14px;background:#fff;box-shadow:0 20px 60px rgba(35,52,43,.1)}.redirect-card h1{margin:12px 0;font:700 36px/1.3 KaiTi,serif}.redirect-card p{color:#526058;line-height:1.8}.redirect-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.redirect-actions a{padding:10px 17px;border:1px solid #235b46;border-radius:7px;color:#235b46;text-decoration:none;font-weight:700}.redirect-actions a.primary{color:#fff;background:#235b46}.redirect-note{font-size:12px}.redirect-card [hidden]{display:none}
+    </style>
+</head>
+<body class="library-page redirect-page">
+    <main class="redirect-card">
+        <p class="eyebrow">中医书库 · 购买渠道</p>
+        <h1 id="bookTitle">正在查找书籍</h1>
+        <p id="redirectMessage">正在读取已配置的购买渠道。</p>
+        <p class="redirect-note">提示：部分外部链接可能包含联盟推广参数，本站可能获得佣金，但不会增加你的购买价格。请在第三方平台核对版本、价格与售后信息。</p>
+        <div class="redirect-actions"><a class="primary" id="continueLink" href="#" rel="nofollow sponsored noopener" hidden>前往购买</a><a href="books.html">返回中医书库</a></div>
+    </main>
+    <script src="data/affiliate-links.js"></script>
+    <script>
+        (function () {
+            const params = new URLSearchParams(location.search);
+            const key = params.get('book') || '';
+            const item = window.BOOK_AFFILIATE_LINKS && window.BOOK_AFFILIATE_LINKS[key];
+            const title = document.getElementById('bookTitle');
+            const message = document.getElementById('redirectMessage');
+            const link = document.getElementById('continueLink');
+            if (!item) {
+                title.textContent = '未找到这本书';
+                message.textContent = '书籍参数无效，请返回书库重新选择。';
+                return;
+            }
+            title.textContent = item.title;
+            if (!item.url) {
+                message.textContent = '这本书的购买渠道正在整理中。你可以先返回书库查看阅读建议。';
+                return;
+            }
+            message.textContent = `即将前往${item.merchant || '第三方平台'}。请核对版本、编校者与出版社后再购买。`;
+            link.href = item.url;
+            link.hidden = false;
+        })();
+    </script>
+</body>
+</html>

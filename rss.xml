@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>倪海厦中医传承 · 中医书库</title>
+    <link>https://nihaixia.org/books.html</link>
+    <description>中医经典、名医著作与专题阅读路线更新。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://nihaixia.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>中医书库上线：从入门到经典的阅读地图</title>
+      <link>https://nihaixia.org/books.html</link>
+      <guid isPermaLink="true">https://nihaixia.org/books.html</guid>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0800</pubDate>
+      <description>首批整理十二本核心医书、七个分类、六位医家入口与四条专题阅读路线。</description>
+    </item>
+    <item>
+      <title>《黄帝内经》阅读指南</title>
+      <link>https://nihaixia.org/book-huangdi-neijing.html</link>
+      <guid isPermaLink="true">https://nihaixia.org/book-huangdi-neijing.html</guid>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0800</pubDate>
+      <description>了解《素问》《灵枢》的核心内容、适合人群、版本选择与推荐阅读顺序。</description>
+    </item>
+  </channel>
+</rss>
