@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子午流注时辰钟｜十二时辰与十二经络</title>
+    <meta name="description" content="互动子午流注时辰钟，实时显示当前时辰、当令经络，并提供十二时辰与十二经脉对应关系的传统中医文化资料。">
+    <meta name="keywords" content="子午流注,十二时辰,十二经络,经络时辰,中医时辰钟">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://nihaixia.org/ziwu.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="tcm-tools.css?v=20260724">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"子午流注时辰钟","url":"https://nihaixia.org/ziwu.html","description":"十二时辰与十二经络对应关系互动学习工具","inLanguage":"zh-CN","educationalUse":"文化学习"}</script>
+</head>
+<body class="tcm-tool-page">
+    <header class="tool-header"><div class="tool-container tool-nav"><a class="tool-brand" href="index.html"><span class="tool-brand-mark">医</span><span><strong>倪海厦中医传承</strong><small>互动学习工具</small></span></a><button class="tool-menu" type="button" aria-expanded="false" aria-controls="toolLinks">目录</button><nav class="tool-links" id="toolLinks"><a href="index.html">首页</a><a href="ziwu.html" class="active">子午流注</a><a href="acupoints.html">经络穴位模型</a><a href="books.html">中医书籍</a><a href="courses.html">本草纲目</a></nav></div></header>
+    <main>
+        <section class="tool-hero"><div class="tool-container tool-hero-grid"><div class="tool-hero-copy"><p class="tool-eyebrow">十二时辰 · 气血流注</p><h1>子午流注<br>时辰钟</h1><p>把一天二十四小时放回十二时辰中，查看传统理论中的当令经络与循环次序。钟表会根据你设备的本地时间实时更新。</p><div class="tool-disclaimer">本工具呈现传统中医时间理论，仅供文化学习与作息参考，不用于疾病诊断、治疗决策或按时自行针刺。</div></div><div class="ziwu-clock-wrap"><div class="ziwu-clock" id="ziwuClock" aria-label="实时子午流注时辰钟"><div class="clock-hand clock-hour" id="clockHour"></div><div class="clock-hand clock-minute" id="clockMinute"></div><div class="clock-hand clock-second" id="clockSecond"></div><div class="clock-pin"></div><div class="clock-center"><strong id="clockBranch">--时</strong><span id="clockDigital">--:--:--</span></div></div></div></div></section>
+        <section class="current-period"><div class="tool-container current-period-grid"><div class="current-time-box"><span>当前本地时间</span><strong id="currentTime">--:--</strong><em id="currentRange">--:--—--:--</em></div><div class="current-meridian"><p class="tool-eyebrow">此刻当令</p><h2 id="currentMeridian">正在读取时间…</h2><p id="currentNote"></p></div></div></section>
+        <section class="period-table-section"><div class="tool-container"><div class="tool-section-heading"><div><p class="tool-eyebrow">一日一周天</p><h2>十二时辰经络表</h2></div><p>十二经脉依次相接，传统子午流注学说用十二地支表示一天的时间节律。点击任意时辰可在钟面上查看。</p></div><div class="period-grid" id="periodGrid"></div></div></section>
+    </main>
+    <footer class="tool-footer"><div class="tool-container">传统医药文化学习资料 · <a href="about.html">了解本站</a></div></footer>
+    <script src="ziwu-data.js?v=20260724"></script><script src="ziwu.js?v=20260724"></script>
+</body>
+</html>

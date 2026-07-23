@@ -39,7 +39,7 @@
 
     <!-- 性能优化：预加载关键资源 -->
     <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="main.js?v=20260723" as="script">
+    <link rel="preload" href="main.js?v=20260724a" as="script">
     
     <!-- DNS预解析 -->
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
@@ -659,6 +659,25 @@
             </div>
         </section>
 
+        <!-- 首页子午流注 -->
+        <section class="home-ziwu-section" aria-labelledby="homeZiwuTitle">
+            <div class="container home-ziwu-card" id="homeZiwuWidget">
+                <div class="home-ziwu-clock" aria-hidden="true">
+                    <span id="homeZiwuTime">--:--</span>
+                    <small id="homeZiwuBranch">读取时辰中</small>
+                </div>
+                <div class="home-ziwu-copy">
+                    <p>此刻子午流注</p>
+                    <h2 id="homeZiwuTitle"><span id="homeZiwuMeridian">正在读取本地时间</span></h2>
+                    <p id="homeZiwuNote">根据设备时间显示当前时辰与传统经络对应信息。</p>
+                </div>
+                <div class="home-ziwu-actions">
+                    <a href="ziwu.html">打开时辰钟</a>
+                    <a href="acupoints.html">查看经络模型</a>
+                </div>
+            </div>
+        </section>
+
         <!-- 首页互动呼吸练习器 -->
         <section class="breath-trainer" id="breathing" aria-labelledby="breath-trainer-title">
             <div class="container">
@@ -1064,7 +1083,8 @@
     </script>
     
     <!-- 延迟加载非关键JavaScript -->
-    <script src="main.js?v=20260723" defer></script>
+    <script src="ziwu-data.js?v=20260724" defer></script>
+    <script src="main.js?v=20260724a" defer></script>
     <script src="breathing.js" defer></script>
 </body>
 </html> 

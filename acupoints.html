@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互动经络穴位人体模型｜拖动查看正面与背面</title>
+    <meta name="description" content="可拖动旋转的中医经络穴位人体模型，展示十四经脉走向与代表穴位，支持经络筛选、穴位点击和缩放学习。">
+    <meta name="keywords" content="人体经络图,穴位图,经络穴位,针灸模型,十四经脉">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://nihaixia.org/acupoints.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="tcm-tools.css?v=20260724">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"互动经络穴位人体模型","url":"https://nihaixia.org/acupoints.html","description":"十四经脉与代表穴位互动学习工具","inLanguage":"zh-CN","educationalUse":"文化学习"}</script>
+</head>
+<body class="tcm-tool-page">
+    <header class="tool-header"><div class="tool-container tool-nav"><a class="tool-brand" href="index.html"><span class="tool-brand-mark">医</span><span><strong>倪海厦中医传承</strong><small>互动学习工具</small></span></a><button class="tool-menu" type="button" aria-expanded="false" aria-controls="toolLinks">目录</button><nav class="tool-links" id="toolLinks"><a href="index.html">首页</a><a href="ziwu.html">子午流注</a><a href="acupoints.html" class="active">经络穴位模型</a><a href="books.html">中医书籍</a><a href="courses.html">本草纲目</a></nav></div></header>
+    <main class="model-page-main">
+        <section class="model-intro tool-container"><p class="tool-eyebrow">十四经脉 · 代表穴位</p><h1>互动经络穴位人体模型</h1><p>按住模型左右拖动可旋转查看正面、侧面与背面；点击彩色穴位查看名称和体表位置。滚轮或右上角按钮可缩放。</p></section>
+        <section class="model-workspace tool-container" aria-label="互动经络人体模型">
+            <aside class="model-panel meridian-panel"><h2>选择经络</h2><div class="meridian-list" id="meridianList"></div></aside>
+            <div class="model-panel canvas-panel" id="canvasPanel"><canvas id="meridianCanvas" aria-label="可拖动旋转的经络穴位人体模型"></canvas><span class="view-badge" id="viewBadge">正面</span><div class="model-controls"><button type="button" id="zoomIn" aria-label="放大">＋</button><button type="button" id="zoomOut" aria-label="缩小">−</button><button type="button" id="resetView" aria-label="重置视角">↺</button></div><p class="model-instruction">左右拖动旋转 · 点击穴位查看 · 滚轮缩放</p></div>
+            <aside class="model-panel point-panel"><h2>穴位资料</h2><div class="point-empty" id="pointEmpty">点击模型上的彩色圆点，查看代表穴位名称、所属经络和大致体表位置。</div><div class="point-detail" id="pointDetail" hidden><span class="point-code" id="pointCode"></span><h3 id="pointName"></h3><p class="point-meridian" id="pointMeridian"></p><dl><dt>体表位置</dt><dd id="pointLocation"></dd><dt>学习提示</dt><dd id="pointNote"></dd></dl></div><div class="model-legend">本模型为经络走向与代表穴位的示意图，不按真实人体比例绘制。穴位定位和针刺操作必须由专业人员完成，请勿依图自行针刺。</div></aside>
+        </section>
+    </main>
+    <footer class="tool-footer"><div class="tool-container">传统医药文化学习资料 · <a href="ziwu.html">查看子午流注时辰钟</a></div></footer>
+    <script src="acupoints.js?v=20260724"></script>
+</body>
+</html>

@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initPerformanceOptimizations();
     initMedicineInfoTabs();
     initContactModal();
+    initZiwuHomeWidget();
 });
 
 // 统一全站导航结构，避免各静态页面的重复导航逐渐不一致
@@ -75,6 +76,13 @@ function initGlobalNavigationStructure() {
             </ul>
         </li>
         <li class="nav-item"><a href="index.html#breathing" class="nav-link">呼吸</a></li>
+        <li class="nav-item dropdown" data-nav-group="tcm-tools">
+            <a href="#" class="nav-link dropdown-toggle">中医工具</a>
+            <ul class="dropdown-menu">
+                <li><a href="ziwu.html" class="dropdown-item">子午流注时辰钟</a></li>
+                <li><a href="acupoints.html" class="dropdown-item">经络穴位模型</a></li>
+            </ul>
+        </li>
         <li class="nav-item"><a href="news.html" class="nav-link">资讯动态</a></li>
         <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
     `;
@@ -228,7 +236,7 @@ function initContactModal() {
     const trigger = document.querySelector('.contact-author-btn');
     const modal = document.getElementById('contactModal');
 
-    if (!trigger || !modal) return;
+    if (!modal) return;
 
     const closeBtn = modal.querySelector('.contact-modal-close');
 
@@ -239,7 +247,7 @@ function initContactModal() {
         modal.setAttribute('aria-hidden', 'true');
     };
 
-    trigger.addEventListener('click', openContactModal);
+    trigger?.addEventListener('click', openContactModal);
     closeBtn.addEventListener('click', closeModal);
 
     modal.addEventListener('click', (event) => {
@@ -1375,4 +1383,33 @@ function initMedicineInfoTabs() {
             }
         });
     }
+}
+
+// 首页子午流注实时信息
+function initZiwuHomeWidget() {
+    const widget = document.getElementById('homeZiwuWidget');
+    if (!widget || !window.getCurrentZiwuPeriod || !window.formatZiwuRange) return;
+
+    const update = () => {
+        const now = new Date();
+        const period = window.getCurrentZiwuPeriod(now);
+        if (!period) return;
+        const time = new Intl.DateTimeFormat('zh-CN', {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+        }).format(now);
+        const timeNode = document.getElementById('homeZiwuTime');
+        const branchNode = document.getElementById('homeZiwuBranch');
+        const meridianNode = document.getElementById('homeZiwuMeridian');
+        const noteNode = document.getElementById('homeZiwuNote');
+        if (timeNode) timeNode.textContent = time;
+        if (branchNode) branchNode.textContent = `${period.branch}时 · ${window.formatZiwuRange(period)}`;
+        if (meridianNode) meridianNode.textContent = `${period.organ}经当令`;
+        if (noteNode) noteNode.textContent = period.note;
+        widget.style.setProperty('--ziwu-color', period.color);
+    };
+
+    update();
+    window.setInterval(update, 30000);
 }

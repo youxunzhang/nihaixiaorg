@@ -31,6 +31,18 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://nihaixia.org/ziwu.html</loc>
+        <lastmod>2026-07-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nihaixia.org/acupoints.html</loc>
+        <lastmod>2026-07-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://nihaixia.org/resources.html</loc>
         <lastmod>2024-12-27</lastmod>
         <changefreq>weekly</changefreq>
