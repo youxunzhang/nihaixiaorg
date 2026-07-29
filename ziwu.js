@@ -8,10 +8,11 @@
     let previewIndex = null;
 
     function buildClock() {
-        for (let i = 0; i < 24; i += 1) {
+        for (let i = 0; i < 60; i += 1) {
             const tick = document.createElement('span');
             tick.className = 'clock-tick';
-            tick.style.transform = `rotate(${i * 15}deg)`;
+            if (i % 5 === 0) tick.classList.add('major');
+            tick.style.transform = `rotate(${i * 6}deg)`;
             clock.appendChild(tick);
         }
         periods.forEach((period, index) => {
@@ -23,7 +24,7 @@
             label.dataset.index = String(index);
             label.style.left = `${50 + Math.cos(radians) * 40}%`;
             label.style.top = `${50 + Math.sin(radians) * 40}%`;
-            label.innerHTML = `<strong>${period.branch}·${period.organ}</strong><small>${window.formatZiwuRange(period)}</small>`;
+            label.innerHTML = `<strong><b>${period.branch}</b><i></i><em>${period.organ}</em></strong><small>${String(period.start).padStart(2, '0')}—${String(period.end).padStart(2, '0')}</small>`;
             label.addEventListener('click', () => {
                 previewIndex = previewIndex === index ? null : index;
                 renderActive(new Date());
@@ -58,6 +59,8 @@
             if (index === displayIndex) label.style.setProperty('--active-color', displayPeriod.color);
         });
         document.querySelectorAll('.period-card').forEach((card, index) => card.classList.toggle('active', index === displayIndex));
+        clock.style.setProperty('--active-angle', `${displayIndex * 30}deg`);
+        clock.style.setProperty('--active-color', displayPeriod.color);
         document.getElementById('clockBranch').textContent = `${displayPeriod.branch}时`;
         document.getElementById('currentMeridian').textContent = `${displayPeriod.organ}经当令 · ${displayPeriod.meridian}`;
         document.getElementById('currentNote').textContent = previewIndex === null ? displayPeriod.note : `预览 ${displayPeriod.branch}时：${displayPeriod.note}`;

@@ -74,6 +74,16 @@
     let dragging = false;
     let lastX = 0;
     let renderedPoints = [];
+    const bodyImage = new Image();
+    bodyImage.decoding = 'async';
+    bodyImage.src = 'assets/meridian-body-turnaround.png?v=20260724';
+
+    const bodyViews = [
+        { name: '正面', sx: 0, sw: 490 },
+        { name: '右侧', sx: 490, sw: 350 },
+        { name: '背面', sx: 830, sw: 490 },
+        { name: '左侧', sx: 1320, sw: 374 }
+    ];
 
     function colorFor(id) { return meridians.find((item) => item.id === id)?.color || '#255f49'; }
     function nameFor(id) { return meridians.find((item) => item.id === id)?.name || id; }
@@ -92,46 +102,53 @@
         const rotatedX = point[0] * Math.cos(rad) + point[2] * Math.sin(rad);
         const depth = point[2] * Math.cos(rad) - point[0] * Math.sin(rad);
         const rect = canvas.getBoundingClientRect();
-        const scaleX = rect.width * .43 * zoom;
-        const scaleY = rect.height * .88 * zoom;
-        return { x: rect.width / 2 + rotatedX * scaleX, y: rect.height * .06 + point[1] * scaleY, depth };
+        const scaleX = Math.min(rect.width * .31, rect.height * .258) * zoom;
+        const scaleY = rect.height * .90 * zoom;
+        const centerY = rect.height * .48;
+        const top = centerY - scaleY * .48;
+        return { x: rect.width / 2 + rotatedX * scaleX, y: top + point[1] * scaleY, depth };
     }
 
     function drawBody() {
         const rect = canvas.getBoundingClientRect();
-        const rad = angle * Math.PI / 180;
-        const turn = Math.abs(Math.cos(rad));
-        const scaleX = rect.width * .43 * zoom;
-        const scaleY = rect.height * .88 * zoom;
-        const cx = rect.width / 2;
-        const top = rect.height * .06;
-        const bodyWidth = scaleX * (.30 + turn * .28);
+        const normalized = ((angle % 360) + 360) % 360;
+        const view = normalized < 45 || normalized >= 315
+            ? bodyViews[0]
+            : normalized < 135
+                ? bodyViews[1]
+                : normalized < 225
+                    ? bodyViews[2]
+                    : bodyViews[3];
+
+        if (!bodyImage.complete || !bodyImage.naturalWidth) {
+            ctx.save();
+            ctx.fillStyle = 'rgba(37,95,73,.55)';
+            ctx.font = '15px "Noto Serif SC", serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('人体模型载入中…', rect.width / 2, rect.height / 2);
+            ctx.restore();
+            return view;
+        }
+
+        const sourceScale = bodyImage.naturalWidth / 1694;
+        const sx = view.sx * sourceScale;
+        const sw = view.sw * sourceScale;
+        const sourceHeight = bodyImage.naturalHeight;
+        const targetHeight = rect.height * .94 * zoom;
+        const targetWidth = targetHeight * (sw / sourceHeight);
+        const centerY = rect.height * .48;
+        const targetX = (rect.width - targetWidth) / 2;
+        const targetY = centerY - targetHeight * .48;
+
         ctx.save();
-        ctx.fillStyle = '#eadcc8';
-        ctx.strokeStyle = '#bfae97';
-        ctx.lineWidth = 1.5;
-        ctx.beginPath(); ctx.ellipse(cx, top + scaleY * .075, scaleX * .13 * (.62 + turn * .38), scaleY * .055, 0, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
-        ctx.beginPath();
-        ctx.moveTo(cx - bodyWidth * .44, top + scaleY * .16);
-        ctx.bezierCurveTo(cx - bodyWidth * 1.55, top + scaleY * .20, cx - bodyWidth * 1.35, top + scaleY * .48, cx - bodyWidth * 1.05, top + scaleY * .54);
-        ctx.lineTo(cx - bodyWidth * .58, top + scaleY * .58);
-        ctx.lineTo(cx - bodyWidth * .34, top + scaleY * .95);
-        ctx.lineTo(cx - bodyWidth * .04, top + scaleY * .95);
-        ctx.lineTo(cx, top + scaleY * .59);
-        ctx.lineTo(cx + bodyWidth * .04, top + scaleY * .95);
-        ctx.lineTo(cx + bodyWidth * .34, top + scaleY * .95);
-        ctx.lineTo(cx + bodyWidth * .58, top + scaleY * .58);
-        ctx.lineTo(cx + bodyWidth * 1.05, top + scaleY * .54);
-        ctx.bezierCurveTo(cx + bodyWidth * 1.35, top + scaleY * .48, cx + bodyWidth * 1.55, top + scaleY * .20, cx + bodyWidth * .44, top + scaleY * .16);
-        ctx.bezierCurveTo(cx + bodyWidth * .28, top + scaleY * .14, cx + bodyWidth * .22, top + scaleY * .13, cx + bodyWidth * .18, top + scaleY * .13);
-        ctx.lineTo(cx + bodyWidth * .22, top + scaleY * .50);
-        ctx.lineTo(cx - bodyWidth * .22, top + scaleY * .50);
-        ctx.lineTo(cx - bodyWidth * .18, top + scaleY * .13);
-        ctx.bezierCurveTo(cx - bodyWidth * .22, top + scaleY * .13, cx - bodyWidth * .28, top + scaleY * .14, cx - bodyWidth * .44, top + scaleY * .16);
-        ctx.closePath(); ctx.fill(); ctx.stroke();
-        ctx.fillStyle = 'rgba(112,83,53,.06)';
-        ctx.fillRect(cx - 1, top + scaleY * .14, 2, scaleY * .82);
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = 'high';
+        ctx.shadowColor = 'rgba(83,66,43,.18)';
+        ctx.shadowBlur = 18;
+        ctx.shadowOffsetY = 8;
+        ctx.drawImage(bodyImage, sx, 0, sw, sourceHeight, targetX, targetY, targetWidth, targetHeight);
         ctx.restore();
+        return view;
     }
 
     function drawMeridians() {
@@ -176,10 +193,9 @@
         const gradient = ctx.createRadialGradient(rect.width/2, rect.height*.43, 20, rect.width/2, rect.height*.43, rect.height*.52);
         gradient.addColorStop(0, 'rgba(255,255,255,.9)'); gradient.addColorStop(1, 'rgba(225,219,205,.35)');
         ctx.fillStyle = gradient; ctx.fillRect(0,0,rect.width,rect.height);
-        drawBody(); drawMeridians(); drawPoints();
+        const currentView = drawBody(); drawMeridians(); drawPoints();
         const normalized = ((angle % 360) + 360) % 360;
-        const view = normalized < 45 || normalized >= 315 ? '正面' : normalized < 135 ? '右侧' : normalized < 225 ? '背面' : '左侧';
-        document.getElementById('viewBadge').textContent = `${view} · ${Math.round(normalized)}°`;
+        document.getElementById('viewBadge').textContent = `${currentView.name} · ${Math.round(normalized)}°`;
     }
 
     function selectPoint(point) {
@@ -232,5 +248,6 @@
     document.querySelector('.tool-menu')?.addEventListener('click', (event) => {
         const links = document.getElementById('toolLinks'); const open = links.classList.toggle('open'); event.currentTarget.setAttribute('aria-expanded', String(open));
     });
+    bodyImage.addEventListener('load', draw);
     buildFilters(); resize(); window.addEventListener('resize', resize);
 })();

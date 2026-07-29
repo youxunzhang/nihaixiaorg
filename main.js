@@ -1403,11 +1403,28 @@ function initZiwuHomeWidget() {
         const branchNode = document.getElementById('homeZiwuBranch');
         const meridianNode = document.getElementById('homeZiwuMeridian');
         const noteNode = document.getElementById('homeZiwuNote');
+        const yinYangNode = document.getElementById('homeZiwuYinYang');
+        const elementNode = document.getElementById('homeZiwuElement');
+        const progressNode = document.getElementById('homeZiwuProgress');
+        const nextNode = document.getElementById('homeZiwuNext');
+        const nextRangeNode = document.getElementById('homeZiwuNextRange');
+        const periodIndex = window.ZIWU_PERIODS.indexOf(period);
+        const nextPeriod = window.ZIWU_PERIODS[(periodIndex + 1) % window.ZIWU_PERIODS.length];
+        let currentMinutes = now.getHours() * 60 + now.getMinutes();
+        const startMinutes = period.start * 60;
+        if (period.start > period.end && currentMinutes < period.end * 60) currentMinutes += 24 * 60;
+        const progress = Math.max(0, Math.min(100, ((currentMinutes - startMinutes) / 120) * 100));
         if (timeNode) timeNode.textContent = time;
         if (branchNode) branchNode.textContent = `${period.branch}时 · ${window.formatZiwuRange(period)}`;
         if (meridianNode) meridianNode.textContent = `${period.organ}经当令`;
         if (noteNode) noteNode.textContent = period.note;
+        if (yinYangNode) yinYangNode.textContent = `${period.yinYang}经`;
+        if (elementNode) elementNode.textContent = `五行属${period.element}`;
+        if (progressNode) progressNode.style.width = `${progress}%`;
+        if (nextNode) nextNode.textContent = `${nextPeriod.branch}时 · ${nextPeriod.organ}经`;
+        if (nextRangeNode) nextRangeNode.textContent = window.formatZiwuRange(nextPeriod);
         widget.style.setProperty('--ziwu-color', period.color);
+        widget.style.setProperty('--ziwu-progress-angle', `${progress * 3.6}deg`);
     };
 
     update();

@@ -38,7 +38,7 @@
     <meta property="twitter:image" content="https://nihaixia.org/倪海厦老师专业照片.png">
 
     <!-- 性能优化：预加载关键资源 -->
-    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="style.css?v=20260724b" as="style">
     <link rel="preload" href="main.js?v=20260724a" as="script">
     
     <!-- DNS预解析 -->
@@ -46,7 +46,7 @@
     <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
     
     <!-- 样式表 -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260724b">
     
     <!-- 网站图标 -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -667,13 +667,28 @@
                     <small id="homeZiwuBranch">读取时辰中</small>
                 </div>
                 <div class="home-ziwu-copy">
-                    <p>此刻子午流注</p>
+                    <p class="home-ziwu-kicker">此刻子午流注 · 本地时间</p>
                     <h2 id="homeZiwuTitle"><span id="homeZiwuMeridian">正在读取本地时间</span></h2>
                     <p id="homeZiwuNote">根据设备时间显示当前时辰与传统经络对应信息。</p>
+                    <div class="home-ziwu-tags" aria-label="当前经络属性">
+                        <span id="homeZiwuYinYang">阴阳</span>
+                        <span id="homeZiwuElement">五行</span>
+                        <span>传统时辰</span>
+                    </div>
+                    <div class="home-ziwu-progress" aria-label="当前时辰进度">
+                        <i id="homeZiwuProgress"></i>
+                    </div>
                 </div>
-                <div class="home-ziwu-actions">
-                    <a href="ziwu.html">打开时辰钟</a>
-                    <a href="acupoints.html">查看经络模型</a>
+                <div class="home-ziwu-side">
+                    <div class="home-ziwu-next">
+                        <small>下一时辰</small>
+                        <strong id="homeZiwuNext">--经</strong>
+                        <span id="homeZiwuNextRange">--:--—--:--</span>
+                    </div>
+                    <div class="home-ziwu-actions">
+                        <a href="ziwu.html">打开完整时辰钟 <span aria-hidden="true">→</span></a>
+                        <a href="acupoints.html">查看经络模型</a>
+                    </div>
                 </div>
             </div>
         </section>

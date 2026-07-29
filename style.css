@@ -7004,3 +7004,119 @@ section,
         padding: var(--spacing-sm);
     }
 }
+
+/* 首页子午流注卡片 v2：置于文件末尾，确保不被通用规则覆盖 */
+.home-ziwu-section {
+    position: relative;
+    padding: 54px 0;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 12% 15%, rgba(183, 140, 64, .13), transparent 27%),
+        linear-gradient(180deg, #f3eee2 0%, #faf8f2 100%);
+    border-block: 1px solid #e2d8c5;
+}
+
+.home-ziwu-section::before {
+    content: "子 午 流 注";
+    position: absolute;
+    right: 4%;
+    top: -22px;
+    color: rgba(106, 83, 51, .045);
+    font: 700 clamp(5rem, 11vw, 10rem)/1 KaiTi, serif;
+    letter-spacing: .12em;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.home-ziwu-section .home-ziwu-card {
+    --ziwu-color: #b74836;
+    --ziwu-progress-angle: 0deg;
+    position: relative;
+    display: grid;
+    grid-template-columns: 168px minmax(0, 1fr) 220px;
+    gap: 38px;
+    align-items: center;
+    padding: 36px 38px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 22px;
+    color: #f8fbf9;
+    background:
+        radial-gradient(circle at 88% 16%, rgba(183, 72, 54, .22), transparent 31%),
+        linear-gradient(125deg, #143b2f 0%, #1d4b3c 56%, #133329 100%);
+    box-shadow: 0 24px 58px rgba(23, 48, 38, .2);
+}
+
+.home-ziwu-section .home-ziwu-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, rgba(255,255,255,.07), transparent 38%);
+    pointer-events: none;
+}
+
+.home-ziwu-section .home-ziwu-clock {
+    position: relative;
+    z-index: 1;
+    width: 154px;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    border: 0;
+    border-radius: 50%;
+    text-align: center;
+    background:
+        radial-gradient(circle, #193f33 0 58%, transparent 59%),
+        conic-gradient(from 0deg, #e7c36e 0 var(--ziwu-progress-angle), rgba(255,255,255,.14) var(--ziwu-progress-angle) 360deg);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.16), 0 16px 36px rgba(0,0,0,.25);
+}
+
+.home-ziwu-section .home-ziwu-clock::before,
+.home-ziwu-section .home-ziwu-clock::after {
+    content: "";
+    position: absolute;
+    inset: 11px;
+    border: 1px dashed rgba(255,255,255,.23);
+    border-radius: 50%;
+}
+
+.home-ziwu-section .home-ziwu-clock::after { inset: 3px; border-style: solid; border-color: rgba(255,255,255,.08); }
+.home-ziwu-section .home-ziwu-clock span { position: relative; z-index: 1; color: #f4d486; font: 700 2.05rem/1 Georgia, serif; letter-spacing: .02em; }
+.home-ziwu-section .home-ziwu-clock small { position: relative; z-index: 1; display: block; max-width: 116px; margin-top: 10px; color: #d6e2dc; font-size: .72rem; line-height: 1.45; }
+.home-ziwu-section .home-ziwu-copy { position: relative; z-index: 1; min-width: 0; }
+.home-ziwu-section .home-ziwu-kicker { margin: 0 0 8px; color: #e7c36e; font-size: .76rem; font-weight: 800; letter-spacing: .16em; }
+.home-ziwu-section .home-ziwu-copy h2 { margin: 0 0 9px; color: #fff; font: 700 clamp(2rem, 3.4vw, 3.15rem)/1.15 KaiTi, serif; }
+.home-ziwu-section .home-ziwu-copy > p:last-of-type { max-width: 660px; margin: 0; color: #c9d7d0; line-height: 1.75; }
+.home-ziwu-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+.home-ziwu-tags span { padding: 4px 9px; border: 1px solid rgba(255,255,255,.15); border-radius: 999px; color: #e1ebe6; background: rgba(255,255,255,.06); font-size: .72rem; }
+.home-ziwu-progress { width: min(440px, 100%); height: 4px; margin-top: 18px; overflow: hidden; border-radius: 99px; background: rgba(255,255,255,.12); }
+.home-ziwu-progress i { display: block; width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--ziwu-color), #f0ce7d); transition: width .6s ease; }
+.home-ziwu-side { position: relative; z-index: 1; padding-left: 26px; border-left: 1px solid rgba(255,255,255,.14); }
+.home-ziwu-next { margin-bottom: 18px; }
+.home-ziwu-next small, .home-ziwu-next strong, .home-ziwu-next span { display: block; }
+.home-ziwu-next small { color: #9db3a8; font-size: .72rem; letter-spacing: .14em; }
+.home-ziwu-next strong { margin: 5px 0 2px; color: #fff; font: 700 1.2rem/1.3 KaiTi, serif; }
+.home-ziwu-next span { color: #c4d2cb; font-size: .76rem; }
+.home-ziwu-section .home-ziwu-actions { display: grid; gap: 9px; }
+.home-ziwu-section .home-ziwu-actions a { min-width: 0; padding: 10px 13px; border: 1px solid rgba(255,255,255,.25); border-radius: 8px; color: #eef5f1; text-align: center; text-decoration: none; font-size: .86rem; font-weight: 700; transition: transform .2s ease, background .2s ease; }
+.home-ziwu-section .home-ziwu-actions a:hover { transform: translateY(-2px); background: rgba(255,255,255,.08); }
+.home-ziwu-section .home-ziwu-actions a:first-child { border-color: #e7c36e; color: #173e31; background: #e7c36e; }
+
+@media (max-width: 900px) {
+    .home-ziwu-section .home-ziwu-card { grid-template-columns: 135px minmax(0, 1fr); gap: 25px; padding: 30px; }
+    .home-ziwu-section .home-ziwu-clock { width: 128px; }
+    .home-ziwu-section .home-ziwu-clock span { font-size: 1.65rem; }
+    .home-ziwu-side { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1.5fr; gap: 25px; align-items: end; padding: 18px 0 0; border-left: 0; border-top: 1px solid rgba(255,255,255,.14); }
+    .home-ziwu-next { margin: 0; }
+    .home-ziwu-section .home-ziwu-actions { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+    .home-ziwu-section { padding: 34px 0; }
+    .home-ziwu-section .home-ziwu-card { grid-template-columns: 1fr; gap: 22px; padding: 28px 22px; text-align: center; border-radius: 17px; }
+    .home-ziwu-section .home-ziwu-clock { width: 132px; margin: auto; }
+    .home-ziwu-tags { justify-content: center; }
+    .home-ziwu-progress { margin-inline: auto; }
+    .home-ziwu-side { grid-column: auto; grid-template-columns: 1fr; gap: 15px; }
+    .home-ziwu-section .home-ziwu-actions { grid-template-columns: 1fr; }
+}
