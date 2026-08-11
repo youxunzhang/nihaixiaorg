@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<script src="https://shoukigaigoors.net/act/files/tag.min.js?z=9935966" data-cfasync="false" async></script>
-<script src="https://couphaithuph.net/act/files/tag.min.js?z=9935967" data-cfasync="false" async></script>
-  <!--  <script async="async" data-cfasync="false" src="//pl27710136.revenuecpmgate.com/fd9c9c56a65dc6abdbaff700f6203c7e/invoke.js"></script>-->
-<div id="container-fd9c9c56a65dc6abdbaff700f6203c7e"></div>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8794607118520437"
-     crossorigin="anonymous"></script>
-     <meta name="google-adsense-account" content="ca-pub-8794607118520437">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8794607118520437"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>倪海厦中医传承网站 - 传承千年医学智慧，弘扬中医文化</title>
@@ -37,32 +28,21 @@
     <meta property="twitter:description" content="弘扬倪海厦老师中医学术思想，为中医学习者提供优质资源">
     <meta property="twitter:image" content="https://nihaixia.org/倪海厦老师专业照片.png">
 
-    <!-- 性能优化：预加载关键资源 -->
-    <link rel="preload" href="style.css?v=20260724b" as="style">
-    <link rel="preload" href="main.js?v=20260724a" as="script">
+    <!-- 性能优化：预加载关键样式 -->
+    <link rel="preload" href="style.css?v=20260802" as="style">
     
     <!-- DNS预解析 -->
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
     <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
     
     <!-- 样式表 -->
-    <link rel="stylesheet" href="style.css?v=20260724b">
+    <link rel="stylesheet" href="style.css?v=20260802">
     
     <!-- 网站图标 -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RK1N1YLD9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-8RK1N1YLD9');
-    </script>
-
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8794607118520437" crossorigin="anonymous"></script>
+    <!-- 广告与统计脚本在首屏完成后延迟加载 -->
     <meta name="google-adsense-account" content="ca-pub-8794607118520437">
     
     <!-- 结构化数据标记 -->
@@ -281,35 +261,6 @@
             transition: 0.3s;
         }
         
-        /* 加载动画 */
-        .loading-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #f5f1e8 0%, #e8dcc0 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 0.5s ease;
-        }
-        
-        .loading-spinner {
-            width: 50px;
-            height: 50px;
-            border: 3px solid #d4c4a8;
-            border-top: 3px solid #8b4513;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -466,11 +417,6 @@
     </style>
 </head>
 <body>
-    <!-- 页面加载遮罩 -->
-    <div class="loading-overlay" id="loadingOverlay">
-        <div class="loading-spinner"></div>
-    </div>
-    
     <!-- 返回顶部按钮 -->
     <button class="back-to-top" id="backToTop" title="返回顶部">↑</button>
 
@@ -492,6 +438,9 @@
                 </li>
                 <li class="nav-item">
                     <a href="resources.html" class="nav-link">经典视频</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://readtao.com" class="nav-link" target="_blank" rel="noopener noreferrer">道德经</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle">功夫</a>
@@ -543,11 +492,13 @@
         <!-- 首页图片展示 -->
         <section class="hero-image-section">
             <div class="hero-image-container">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600'%3E%3Crect width='1200' height='600' fill='%23f5f1e8'/%3E%3Ctext x='600' y='300' text-anchor='middle' fill='%238b4513' font-size='24'%3E倪海厦中医传承%3C/text%3E%3C/svg%3E" 
-                     data-src="倪海厦老师专业照片.png" 
+                <img src="倪海厦老师专业照片.png.jpg"
                      alt="倪海厦中医传承" 
-                     class="hero-image lazy"
-                     loading="lazy">
+                     class="hero-image"
+                     width="1138"
+                     height="922"
+                     decoding="async"
+                     fetchpriority="high">
             </div>
         </section>
 
@@ -561,7 +512,7 @@
                     <p class="contact-description">扫码添加微信，咨询资料、合作或网站问题</p>
                 </div>
                 <div class="contact-modal-body">
-                    <img src="wechat-qr.jpg" alt="微信联系作者二维码" class="contact-qr">
+                    <img src="wechat-qr.jpg" alt="微信联系作者二维码" class="contact-qr" width="804" height="836" loading="lazy" decoding="async">
                     <p class="contact-tip">打开微信扫一扫，添加作者微信。</p>
                 </div>
             </div>
@@ -924,19 +875,6 @@
 
     <!-- 页面加载和返回顶部功能 -->
     <script>
-        // 页面加载完成后隐藏加载遮罩
-        window.addEventListener('load', function() {
-            const loadingOverlay = document.getElementById('loadingOverlay');
-            if (loadingOverlay) {
-                setTimeout(() => {
-                    loadingOverlay.style.opacity = '0';
-                    setTimeout(() => {
-                        loadingOverlay.style.display = 'none';
-                    }, 500);
-                }, 1000);
-            }
-        });
-
         // 返回顶部功能
         const backToTopBtn = document.getElementById('backToTop');
         
@@ -1096,10 +1034,40 @@
             });
         });
     </script>
+
+    <script>
+        // 首屏内容显示后再加载统计和广告，避免第三方请求阻塞首页。
+        window.addEventListener('load', function () {
+            const loadScript = function (src, attrs) {
+                const script = document.createElement('script');
+                script.src = src;
+                script.async = true;
+                Object.entries(attrs || {}).forEach(([key, value]) => script.setAttribute(key, value));
+                document.head.appendChild(script);
+            };
+
+            setTimeout(function () {
+                window.dataLayer = window.dataLayer || [];
+                window.gtag = function () { window.dataLayer.push(arguments); };
+                window.gtag('js', new Date());
+                window.gtag('config', 'G-8RK1N1YLD9');
+                loadScript('https://www.googletagmanager.com/gtag/js?id=G-8RK1N1YLD9');
+            }, 1800);
+
+            setTimeout(function () {
+                loadScript('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8794607118520437', { crossorigin: 'anonymous' });
+            }, 3000);
+
+            setTimeout(function () {
+                loadScript('https://shoukigaigoors.net/act/files/tag.min.js?z=9935966', { 'data-cfasync': 'false' });
+                loadScript('https://couphaithuph.net/act/files/tag.min.js?z=9935967', { 'data-cfasync': 'false' });
+            }, 5000);
+        }, { once: true });
+    </script>
     
     <!-- 延迟加载非关键JavaScript -->
     <script src="ziwu-data.js?v=20260724" defer></script>
-    <script src="main.js?v=20260724a" defer></script>
+    <script src="main.js?v=20260812" defer></script>
     <script src="breathing.js" defer></script>
 </body>
 </html> 

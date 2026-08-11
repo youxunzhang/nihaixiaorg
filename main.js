@@ -65,6 +65,7 @@ function initGlobalNavigationStructure() {
         <li class="nav-item"><a href="/books" class="nav-link">中医书籍</a></li>
         <li class="nav-item"><a href="courses.html" class="nav-link">本草纲目</a></li>
         <li class="nav-item"><a href="resources.html" class="nav-link">经典视频</a></li>
+        <li class="nav-item"><a href="https://readtao.com" class="nav-link" target="_blank" rel="noopener noreferrer">道德经</a></li>
         <li class="nav-item dropdown" data-nav-group="gongfu">
             <a href="#" class="nav-link dropdown-toggle">功夫</a>
             <ul class="dropdown-menu">
