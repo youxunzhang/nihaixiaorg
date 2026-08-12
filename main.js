@@ -63,7 +63,6 @@ function initGlobalNavigationStructure() {
     navMenu.innerHTML = `
         <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
         <li class="nav-item"><a href="/books" class="nav-link">中医书籍</a></li>
-        <li class="nav-item"><a href="courses.html" class="nav-link">本草纲目</a></li>
         <li class="nav-item"><a href="resources.html" class="nav-link">经典视频</a></li>
         <li class="nav-item"><a href="https://readtao.com" class="nav-link" target="_blank" rel="noopener noreferrer">道德经</a></li>
         <li class="nav-item dropdown" data-nav-group="gongfu">
@@ -429,8 +428,6 @@ function performSearch(query) {
     // 这里可以连接到实际的搜索API
     // 目前使用模拟数据
     const mockResults = [
-        { title: '倪海厦《伤寒论》精讲', url: 'courses.html#伤寒论', type: '课程' },
-        { title: '中医脉诊技巧详解', url: 'courses.html#脉诊', type: '课程' },
         { title: '倪海厦老师生平介绍', url: 'articles/ni-haixia-intro.html', type: '文章' },
         { title: '中医基础理论', url: 'resources.html#基础理论', type: '资料' }
     ].filter(item => 
