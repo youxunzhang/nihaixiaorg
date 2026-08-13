@@ -1242,28 +1242,8 @@ function initPerformanceOptimizations() {
         window.addEventListener('scroll', handleScroll);
     }
 
-    // 预加载关键资源
-    preloadCriticalResources();
-
     // 优化字体加载
     optimizeFontLoading();
-}
-
-// 预加载关键资源
-function preloadCriticalResources() {
-    const criticalImages = [
-        'img/微信图片_2025-07-29_114127_664.png',
-        'img/微信图片_2025-07-29_114202_704.png',
-        'img/微信图片_2025-07-29_114227_868.png'
-    ];
-
-    criticalImages.forEach(src => {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'image';
-        link.href = src;
-        document.head.appendChild(link);
-    });
 }
 
 // 优化字体加载

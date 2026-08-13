@@ -7120,3 +7120,8 @@ section,
     .home-ziwu-side { grid-column: auto; grid-template-columns: 1fr; gap: 15px; }
     .home-ziwu-section .home-ziwu-actions { grid-template-columns: 1fr; }
 }
+/* 首页首屏之外的大区块按需渲染，减少首次布局与绘制开销 */
+body:not(.library-page):not(.tcm-tool-page) main > section:not(.hero-image-section) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 720px;
+}
