@@ -64,7 +64,15 @@ function initGlobalNavigationStructure() {
         <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
         <li class="nav-item"><a href="/books" class="nav-link">中医书籍</a></li>
         <li class="nav-item"><a href="resources.html" class="nav-link">经典视频</a></li>
-        <li class="nav-item"><a href="https://readtao.com" class="nav-link" target="_blank" rel="noopener noreferrer">道德经</a></li>
+        <li class="nav-item dropdown" data-nav-group="materials">
+            <a href="#" class="nav-link dropdown-toggle">资料</a>
+            <ul class="dropdown-menu">
+                <li><a href="tao.html" class="dropdown-item">资料首页</a></li>
+                <li><a href="nihaixia-materials.html" class="dropdown-item">倪海厦资料</a></li>
+                <li><a href="badajingang-materials.html" class="dropdown-item">八部金刚功资料</a></li>
+                <li><a href="taodejing-materials.html" class="dropdown-item">道德经资料</a></li>
+            </ul>
+        </li>
         <li class="nav-item dropdown" data-nav-group="gongfu">
             <a href="#" class="nav-link dropdown-toggle">功夫</a>
             <ul class="dropdown-menu">
