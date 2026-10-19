@@ -63,6 +63,7 @@ function initGlobalNavigationStructure() {
     navMenu.innerHTML = `
         <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
         <li class="nav-item"><a href="/books" class="nav-link">中医书籍</a></li>
+        <li class="nav-item"><a href="/guji/" class="nav-link">经典原文</a></li>
         <li class="nav-item"><a href="resources.html" class="nav-link">经典视频</a></li>
         <li class="nav-item dropdown" data-nav-group="materials">
             <a href="#" class="nav-link dropdown-toggle">资料</a>
@@ -241,7 +242,7 @@ function openContactModal(event) {
 }
 
 function initContactModal() {
-    const trigger = document.querySelector('.contact-author-btn');
+    const triggers = document.querySelectorAll('.contact-author-btn');
     const modal = document.getElementById('contactModal');
 
     if (!modal) return;
@@ -255,7 +256,7 @@ function initContactModal() {
         modal.setAttribute('aria-hidden', 'true');
     };
 
-    trigger?.addEventListener('click', openContactModal);
+    triggers.forEach(trigger => trigger.addEventListener('click', openContactModal));
     closeBtn.addEventListener('click', closeModal);
 
     modal.addEventListener('click', (event) => {

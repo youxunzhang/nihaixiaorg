@@ -3,6 +3,9 @@ Allow: /
 Disallow: /test.html
 Disallow: /修改.txt
 Disallow: /nihaixiaorg
+Disallow: /content/guji/
+Disallow: /scripts/
+Disallow: /tests/
 
 # 允许图片和CSS/JS文件
 Allow: /*.css$

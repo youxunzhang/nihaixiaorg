@@ -1,0 +1,73 @@
+.hero-visual {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 520px;
+}
+
+.hero-visual::before {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: rgba(169, 68, 50, .09);
+    box-shadow: 0 0 0 52px rgba(185, 139, 67, .055);
+}
+
+.hero-qr-card {
+    position: relative;
+    z-index: 5;
+    width: min(330px, 100%);
+    padding: 17px 17px 14px;
+    border: 1px solid #d4c3a4;
+    border-radius: 13px;
+    background: #fff;
+    box-shadow: 0 28px 65px rgba(22, 56, 45, .22);
+}
+
+.hero-qr-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 3px 3px 13px;
+}
+
+.hero-qr-heading span {
+    color: var(--red);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .15em;
+}
+
+.hero-qr-heading strong { font-size: 15px; }
+.hero-qr-card img {
+    display: block;
+    width: 100%;
+    height: 390px;
+    object-fit: contain;
+    border-radius: 7px;
+    background: #fff;
+}
+
+.hero-qr-card p {
+    margin: 12px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+}
+
+.hero-qr-card p b { color: var(--red); }
+
+@media (max-width: 800px) {
+    .tao-hero { padding: 48px 0 55px; }
+    .hero-grid { gap: 28px; }
+    .hero-visual { min-height: 470px; }
+    .hero-qr-card { width: min(320px, 92vw); }
+}
+
+@media (max-width: 480px) {
+    .hero-visual { min-height: 440px; }
+    .hero-qr-card img { height: 350px; }
+}
