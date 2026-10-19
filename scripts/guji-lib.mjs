@@ -104,7 +104,7 @@ function shell({ title, description, canonical, active = 'guji', breadcrumbs = [
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="${canonical}">
   <link rel="icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/guji/guji.css?v=20261019">
+  <link rel="stylesheet" href="/guji/guji.css?v=20261019-2">
   ${structuredData}
   ${breadcrumbs.length ? breadcrumbJson(breadcrumbs) : ''}
 </head>
@@ -126,7 +126,7 @@ function shell({ title, description, canonical, active = 'guji', breadcrumbs = [
     <p>本站为个人建立的独立资料整理网站，非任何医家、家属、机构或出版社的官方网站。</p>
   </footer>
   <button class="guji-top" type="button" aria-label="返回顶部">↑</button>
-  <script src="/guji/guji.js?v=20261019" defer></script>
+  <script src="/guji/guji.js?v=20261019-2" defer></script>
 </body>
 </html>`;
 }
@@ -142,16 +142,22 @@ function countPublished(bookId, publishedChapters) {
 export function renderLibraryIndex(catalog, publishedChapters = []) {
   const cards = catalog.books.map((book, index) => {
     const counts = book.volumes.map((volume) => `${volume.title} ${(volume.chapters || volume.entries).length} 条目录`).join(' · ');
+    const entryCount = book.volumes.reduce((sum, volume) => sum + (volume.chapters || volume.entries).length, 0);
+    const structureUnit = book.id === 'shennong-bencao' ? '品' : book.id === 'shanghanlun' ? '卷' : '部';
+    const entryLabel = book.id === 'shennong-bencao' ? '首批索引' : '目录条目';
     return `<article class="classic-card classic-card-${index + 1}" data-search="${escapeHtml(`${book.title} ${book.subtitle} ${counts}`)}">
-      <div class="classic-card-mark" aria-hidden="true">${['医', '伤', '本'][index]}</div>
-      <div><p class="classic-card-kicker">${escapeHtml(book.subtitle)}</p><h2>${escapeHtml(book.title)}</h2><p>${escapeHtml(book.summary)}</p>
-      <dl><div><dt>目录结构</dt><dd>${escapeHtml(counts)}</dd></div><div><dt>已审正文</dt><dd>${countPublished(book.id, publishedChapters)} 篇</dd></div></dl>
-      <a class="guji-primary-link" href="/guji/${book.slug}/">查看目录 <span aria-hidden="true">→</span></a></div>
+      <div class="classic-card-top"><span class="classic-card-mark" aria-hidden="true">${['医', '伤', '本'][index]}</span><span class="classic-card-number" aria-hidden="true">0${index + 1}</span></div>
+      <div class="classic-card-copy"><p class="classic-card-kicker">${escapeHtml(book.subtitle)}</p><h2>${escapeHtml(book.title)}</h2><p>${escapeHtml(book.summary)}</p></div>
+      <dl class="classic-card-metrics"><div><dt>目录结构</dt><dd><strong>${book.volumes.length}</strong> ${structureUnit}</dd></div><div><dt>${entryLabel}</dt><dd><strong>${entryCount}</strong> 条</dd></div><div><dt>已审正文</dt><dd><strong>${countPublished(book.id, publishedChapters)}</strong> 篇</dd></div></dl>
+      <a class="guji-primary-link" href="/guji/${book.slug}/"><span>查看全书目录</span><span class="classic-link-arrow" aria-hidden="true">→</span></a>
     </article>`;
   }).join('');
 
+  const totalEntries = catalog.books.reduce((sum, book) => sum + book.volumes.reduce((bookSum, volume) => bookSum + (volume.chapters || volume.entries).length, 0), 0);
+  const totalVolumes = catalog.books.reduce((sum, book) => sum + book.volumes.length, 0);
+
   const body = `<section class="guji-hero"><div class="guji-container guji-hero-grid"><div><p class="guji-eyebrow">古籍阅读 · 篇章目录 · 文献来源</p><h1>中医经典原文</h1><p class="guji-lead">从书目和篇章目录进入，保留底本线索与审核状态。只有来源、版权与内容审核全部通过的正文才会开放阅读。</p><form class="classic-search" role="search"><label for="classicSearch">搜索书名或目录标题</label><div><input id="classicSearch" type="search" placeholder="例如：素问、辨脉法、上品" autocomplete="off"><button type="submit">查找</button></div><p>仅搜索古籍书名与目录元数据，不提供症状、疾病或方药推荐。</p></form></div><div class="guji-hero-seal" aria-hidden="true"><span>经</span><span>典</span><span>原</span><span>文</span></div></div></section>
-  <section class="guji-section"><div class="guji-container"><div class="guji-section-heading"><div><p class="guji-eyebrow">首批经典</p><h2>三部古籍，一套阅读路径</h2></div><p>目录可以公开浏览；“整理中”条目不会生成空白详情页。</p></div><div class="classic-grid" id="classicResults">${cards}</div><p class="classic-empty" hidden>没有找到匹配的书名或目录。</p></div></section>
+  <section class="guji-section"><div class="guji-container"><div class="guji-section-heading"><div><p class="guji-eyebrow">首批经典</p><h2>三部古籍，一套阅读路径</h2></div><div class="classic-overview" aria-label="古籍目录概览"><span><strong>${catalog.books.length}</strong> 部经典</span><span><strong>${totalVolumes}</strong> 个分部</span><span><strong>${totalEntries}</strong> 条目录</span></div></div><div class="classic-grid" id="classicResults">${cards}</div><p class="classic-empty" hidden>没有找到匹配的书名或目录。</p><p class="classic-catalog-note">目录均可直接浏览；标记为“整理中”的内容不会生成空白详情页。</p></div></section>
   <section class="guji-section guji-section-muted"><div class="guji-container guji-explainer"><div><p class="guji-eyebrow">阅读规则</p><h2>先确认来源，再开放正文</h2></div><ol><li><span>01</span><div><strong>目录定位</strong><p>按书、分册和篇章建立稳定路径。</p></div></li><li><span>02</span><div><strong>底本核校</strong><p>记录版本、出处、文字状态与来源链接。</p></div></li><li><span>03</span><div><strong>内容审核</strong><p>医疗高风险内容未经批准不公开。</p></div></li></ol></div></section>
   <section class="guji-section"><div class="guji-container">${renderNotice()}</div></section>`;
 

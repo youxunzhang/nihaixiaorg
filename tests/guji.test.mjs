@@ -4,7 +4,7 @@ import path from 'node:path';
 import test from 'node:test';
 import { fileURLToPath } from 'node:url';
 import { buildGuji } from '../scripts/build-guji.mjs';
-import { isPublicChapter, renderReaderPage } from '../scripts/guji-lib.mjs';
+import { isPublicChapter, renderLibraryIndex, renderReaderPage } from '../scripts/guji-lib.mjs';
 
 const testDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '.guji-test-output');
 
@@ -51,6 +51,20 @@ test('未通过审核的正文不进入静态构建产物', async () => {
   assert.equal(combined.includes('GUJI_DRAFT_LEAK_SENTINEL'), false);
   assert.equal(combined.includes('href="/guji/shennong-bencao/shangpin/01/"'), false);
   await fs.rm(testDir, { recursive: true, force: true });
+});
+
+test('古籍首页使用精简指标卡片，网站首页提供三部经典直达入口', async () => {
+  const catalog = JSON.parse(await fs.readFile(path.resolve('content/guji/catalog.json'), 'utf8'));
+  const libraryHtml = renderLibraryIndex(catalog, []);
+  assert.match(libraryHtml, /class="classic-card-metrics"/);
+  assert.match(libraryHtml, /244<\/strong> 条目录/);
+  assert.match(libraryHtml, /查看全书目录/);
+
+  const homeHtml = await fs.readFile(path.resolve('index.html'), 'utf8');
+  assert.match(homeHtml, /id="classics"/);
+  assert.match(homeHtml, /href="\/guji\/huangdi-neijing\/"/);
+  assert.match(homeHtml, /href="\/guji\/shanghanlun\/"/);
+  assert.match(homeHtml, /href="\/guji\/shennong-bencao\/"/);
 });
 
 test('V1 拒绝生成本草药物详情页', async () => {
