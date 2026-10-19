@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8794607118520437"
+     crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的收藏 - 倪海厦中医传承网站</title>
+    <meta name="description" content="查看和管理您收藏的倪海厦中医传承网站页面">
+    <meta name="keywords" content="收藏,书签,倪海厦,中医传承">
+    <link rel="canonical" href="https://nihaixia.org/bookmarks.html">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .bookmarks-container {
+            padding: 40px 0;
+        }
+        
+        .bookmarks-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .bookmarks-header h1 {
+            font-family: 'KaiTi', '楷体', serif;
+            font-size: 2.5rem;
+            color: #2c5aa0;
+            margin-bottom: 10px;
+        }
+        
+        .bookmarks-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .bookmarks-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .bookmark-item {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #2c5aa0;
+        }
+        
+        .bookmark-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        
+        .bookmark-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 8px;
+            text-decoration: none;
+        }
+        
+        .bookmark-title:hover {
+            color: #4a90e2;
+        }
+        
+        .bookmark-url {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            word-break: break-all;
+        }
+        
+        .bookmark-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        
+        .bookmark-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn-remove {
+            background: #ff4757;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-remove:hover {
+            background: #ff3742;
+            transform: scale(1.05);
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+        
+        .empty-state .icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+        
+        .empty-state h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .empty-state p {
+            margin-bottom: 20px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #2c5aa0 0%, #4a90e2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+        }
+        
+        .clear-all-btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .clear-all-btn:hover {
+            background: #ff5252;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>倪海厦中医传承</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">本草纲目</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">经典视频</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">功夫</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="badajingang.html" class="dropdown-item">八部金刚功</a></li>
+                        <li><a href="baduanjin.html" class="dropdown-item">八段锦</a></li>
+                        <li><a href="zhanzhuang.html" class="dropdown-item">站桩</a></li>
+                        <li><a href="liuzijue.html" class="dropdown-item">六字诀</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="adjustment.html" class="nav-link">调整状态</a>
+                </li>
+                <li class="nav-item">
+                    <a href="breathing.html" class="nav-link">呼吸</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">资讯动态</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">关于我们</a>
+                </li>
+            </ul>
+            
+            <!-- 收藏按钮 -->
+            <div class="bookmark-container">
+                <button id="bookmarkBtn" class="bookmark-btn" title="收藏网站">
+                    <span class="bookmark-icon">🔖</span>
+                    <span class="bookmark-text">收藏</span>
+                </button>
+            </div>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <div class="container">
+            <div class="bookmarks-container">
+                <div class="bookmarks-header">
+                    <h1>我的收藏</h1>
+                    <p>管理您收藏的倪海厦中医传承网站页面</p>
+                </div>
+                
+                <div class="bookmarks-list" id="bookmarksList">
+                    <!-- 收藏列表将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>倪海厦中医传承</h3>
+                    <p>传承千年医学智慧，弘扬传统中医文化</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="courses.html">本草纲目</a></li>
+                        <li><a href="resources.html">经典视频</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact-qr">
+                    <h4>联系方式</h4>
+                    <div class="wechat-qr">
+                        <img src="assets/tao-wechat-qr.png?v=20261019" alt="张优勋微信二维码" class="qr-code" loading="lazy">
+                        <p class="qr-tip">微信扫码联系作者</p>
+                    </div>
+                    <p class="contact-email">📧 zhangyouxun2024@qq.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 倪海厦中医传承网站. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <script>
+        // 收藏管理功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const bookmarksList = document.getElementById('bookmarksList');
+            
+            // 加载收藏列表
+            function loadBookmarks() {
+                const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+                
+                if (bookmarks.length === 0) {
+                    bookmarksList.innerHTML = `
+                        <div class="empty-state">
+                            <div class="icon">🔖</div>
+                            <h3>暂无收藏</h3>
+                            <p>您还没有收藏任何页面</p>
+                            <a href="index.html" class="btn-primary">返回首页</a>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                // 添加清空所有按钮
+                const clearAllBtn = document.createElement('button');
+                clearAllBtn.className = 'clear-all-btn';
+                clearAllBtn.textContent = '清空所有收藏';
+                clearAllBtn.onclick = clearAllBookmarks;
+                bookmarksList.appendChild(clearAllBtn);
+                
+                // 渲染收藏列表
+                bookmarks.forEach((bookmark, index) => {
+                    const bookmarkItem = document.createElement('div');
+                    bookmarkItem.className = 'bookmark-item';
+                    
+                    const date = new Date(bookmark.timestamp).toLocaleDateString('zh-CN');
+                    
+                    bookmarkItem.innerHTML = `
+                        <a href="${bookmark.url}" class="bookmark-title" target="_blank">${bookmark.title}</a>
+                        <div class="bookmark-url">${bookmark.url}</div>
+                        <div class="bookmark-meta">
+                            <span>收藏时间：${date}</span>
+                            <div class="bookmark-actions">
+                                <button class="btn-remove" onclick="removeBookmark(${index})">删除</button>
+                            </div>
+                        </div>
+                    `;
+                    
+                    bookmarksList.appendChild(bookmarkItem);
+                });
+            }
+            
+            // 删除单个收藏
+            window.removeBookmark = function(index) {
+                const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+                bookmarks.splice(index, 1);
+                localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+                
+                // 重新加载列表
+                bookmarksList.innerHTML = '';
+                loadBookmarks();
+                
+                // 显示通知
+                showNotification('收藏已删除！', 'info');
+            };
+            
+            // 清空所有收藏
+            function clearAllBookmarks() {
+                if (confirm('确定要清空所有收藏吗？此操作不可恢复。')) {
+                    localStorage.removeItem('bookmarks');
+                    bookmarksList.innerHTML = '';
+                    loadBookmarks();
+                    showNotification('所有收藏已清空！', 'info');
+                }
+            }
+            
+            // 显示通知
+            function showNotification(message, type = 'info') {
+                const notification = document.createElement('div');
+                notification.className = `notification notification-${type}`;
+                notification.textContent = message;
+                
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 100px;
+                    right: 20px;
+                    background: ${type === 'success' ? '#4CAF50' : '#2196F3'};
+                    color: white;
+                    padding: 12px 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                    z-index: 10000;
+                    font-size: 14px;
+                    transform: translateX(100%);
+                    transition: transform 0.3s ease;
+                `;
+                
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.style.transform = 'translateX(0)';
+                }, 100);
+                
+                setTimeout(() => {
+                    notification.style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 300);
+                }, 3000);
+            }
+            
+            // 初始化加载
+            loadBookmarks();
+        });
+        
+        // 返回顶部功能
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script src="main.js?v=20261011b"></script>
+</body>
+</html>

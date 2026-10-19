@@ -1,0 +1,20 @@
+{
+  "id": "review-workflow-example",
+  "bookId": "huangdi-neijing",
+  "volumeId": "suwen",
+  "title": "审核流程示例（非古籍正文）",
+  "slug": "review-workflow-example",
+  "order": 0,
+  "sourceEdition": "待填写",
+  "sourceCitation": "待填写",
+  "sourceUrl": "",
+  "sourceRightsNote": "待人工确认",
+  "paragraphs": [
+    {"id":"p1","text":"GUJI_DRAFT_LEAK_SENTINEL：此文件仅用于验证草稿隔离，不是古籍正文。"}
+  ],
+  "sourceVerified": false,
+  "rightsCleared": false,
+  "complianceApproved": false,
+  "reviewStatus": "draft"
+}
+
