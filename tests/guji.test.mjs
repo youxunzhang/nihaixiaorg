@@ -65,6 +65,8 @@ test('古籍首页使用精简指标卡片，网站首页提供三部经典直�
   assert.match(homeHtml, /href="\/guji\/huangdi-neijing\/"/);
   assert.match(homeHtml, /href="\/guji\/shanghanlun\/"/);
   assert.match(homeHtml, /href="\/guji\/shennong-bencao\/"/);
+  assert.match(homeHtml, /需要目录，可以微信联系/);
+  assert.doesNotMatch(homeHtml, /<ol><li><span>1<\/span>添加好友/);
 });
 
 test('V1 拒绝生成本草药物详情页', async () => {
