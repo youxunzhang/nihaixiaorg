@@ -67,6 +67,10 @@ test('古籍首页使用精简指标卡片，网站首页提供三部经典直�
   assert.match(homeHtml, /href="\/guji\/shennong-bencao\/"/);
   assert.match(homeHtml, /需要目录，可以微信联系/);
   assert.doesNotMatch(homeHtml, /<ol><li><span>1<\/span>添加好友/);
+  assert.ok(
+    homeHtml.indexOf('倪海厦老师简介') < homeHtml.indexOf('id="classics"'),
+    '首页应先显示倪海厦老师简介，再显示三部古籍入口',
+  );
 });
 
 test('V1 拒绝生成本草药物详情页', async () => {
