@@ -77,9 +77,11 @@
     let selectedPoint = null;
     let hoveredPoint = null;
     let renderedPoints = [];
+    let viewAnimationFrame = null;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     const bodyImage = new Image();
     bodyImage.decoding = 'async';
-    bodyImage.src = 'assets/meridian-body-turnaround-v2.png?v=20261020';
+    bodyImage.src = 'assets/meridian-body-turnaround-v3.png?v=20261020';
 
     const bodyViews = [
         { name: '正面', angle: 0, sx: .013, sw: .306 },
@@ -112,22 +114,8 @@
         return { x: rect.width / 2 + rotatedX * scaleX, y: top + point[1] * scaleY, depth };
     }
 
-    function drawBody() {
+    function drawBodyView(view, opacity = 1) {
         const rect = canvas.getBoundingClientRect();
-        const normalized = ((angle % 360) + 360) % 360;
-        const viewIndex = Math.round(normalized / 90) % 4;
-        const view = bodyViews[viewIndex];
-
-        if (!bodyImage.complete || !bodyImage.naturalWidth) {
-            ctx.save();
-            ctx.fillStyle = 'rgba(37,95,73,.55)';
-            ctx.font = '15px "Noto Serif SC", serif';
-            ctx.textAlign = 'center';
-            ctx.fillText('人体模型载入中…', rect.width / 2, rect.height / 2);
-            ctx.restore();
-            return view;
-        }
-
         const sw = bodyImage.naturalWidth * view.sw;
         const sx = bodyImage.naturalWidth * view.sx;
         const sourceHeight = bodyImage.naturalHeight;
@@ -140,12 +128,40 @@
         ctx.save();
         ctx.imageSmoothingEnabled = true;
         ctx.imageSmoothingQuality = 'high';
-        ctx.shadowColor = 'rgba(83,66,43,.14)';
-        ctx.shadowBlur = 15;
-        ctx.shadowOffsetY = 7;
+        ctx.globalAlpha = opacity;
+        ctx.shadowColor = 'rgba(38,50,44,.24)';
+        ctx.shadowBlur = 24;
+        ctx.shadowOffsetY = 10;
         ctx.drawImage(bodyImage, sx, 0, sw, sourceHeight, targetX, targetY, targetWidth, targetHeight);
         ctx.restore();
-        return view;
+    }
+
+    function drawBody() {
+        const rect = canvas.getBoundingClientRect();
+        const normalized = ((angle % 360) + 360) % 360;
+        const exactView = normalized / 90;
+        const firstIndex = Math.floor(exactView) % 4;
+        const secondIndex = (firstIndex + 1) % 4;
+        const blend = exactView - Math.floor(exactView);
+        const activeView = bodyViews[Math.round(exactView) % 4];
+
+        if (!bodyImage.complete || !bodyImage.naturalWidth) {
+            ctx.save();
+            ctx.fillStyle = 'rgba(37,95,73,.55)';
+            ctx.font = '15px "Noto Serif SC", serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('人体模型载入中…', rect.width / 2, rect.height / 2);
+            ctx.restore();
+            return activeView;
+        }
+
+        if (blend < .015) drawBodyView(bodyViews[firstIndex]);
+        else if (blend > .985) drawBodyView(bodyViews[secondIndex]);
+        else {
+            drawBodyView(bodyViews[firstIndex], 1 - blend);
+            drawBodyView(bodyViews[secondIndex], blend);
+        }
+        return activeView;
     }
 
     function drawMeridians() {
@@ -201,12 +217,26 @@
     function draw() {
         const rect = canvas.getBoundingClientRect();
         ctx.clearRect(0, 0, rect.width, rect.height);
-        const gradient = ctx.createRadialGradient(rect.width/2, rect.height*.43, 20, rect.width/2, rect.height*.43, rect.height*.52);
-        gradient.addColorStop(0, 'rgba(255,255,255,.95)'); gradient.addColorStop(1, 'rgba(225,219,205,.3)');
+        const gradient = ctx.createRadialGradient(rect.width/2, rect.height*.38, 18, rect.width/2, rect.height*.43, rect.height*.58);
+        gradient.addColorStop(0, 'rgba(255,255,255,.98)');
+        gradient.addColorStop(.52, 'rgba(240,237,227,.72)');
+        gradient.addColorStop(1, 'rgba(196,204,193,.32)');
         ctx.fillStyle = gradient; ctx.fillRect(0,0,rect.width,rect.height);
+
         ctx.save();
-        ctx.beginPath(); ctx.ellipse(rect.width / 2, rect.height * .91, Math.min(rect.width * .2, 95) * zoom, 15 * zoom, 0, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(45,60,52,.09)'; ctx.filter = 'blur(8px)'; ctx.fill(); ctx.restore();
+        const halo = ctx.createRadialGradient(rect.width / 2, rect.height * .37, 10, rect.width / 2, rect.height * .42, Math.min(rect.width * .34, 210));
+        halo.addColorStop(0, 'rgba(222,188,121,.2)');
+        halo.addColorStop(.55, 'rgba(255,255,255,.09)');
+        halo.addColorStop(1, 'rgba(255,255,255,0)');
+        ctx.fillStyle = halo; ctx.fillRect(0, 0, rect.width, rect.height);
+        ctx.restore();
+
+        ctx.save();
+        ctx.beginPath(); ctx.ellipse(rect.width / 2, rect.height * .91, Math.min(rect.width * .24, 118) * zoom, 20 * zoom, 0, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(28,49,40,.16)'; ctx.filter = 'blur(11px)'; ctx.fill(); ctx.restore();
+        ctx.save();
+        ctx.beginPath(); ctx.ellipse(rect.width / 2, rect.height * .912, Math.min(rect.width * .23, 110) * zoom, 19 * zoom, 0, 0, Math.PI * 2);
+        ctx.strokeStyle = 'rgba(184,137,64,.28)'; ctx.lineWidth = 1.2; ctx.stroke(); ctx.restore();
         const currentView = drawBody(); drawMeridians(); drawPoints();
         document.getElementById('viewBadge').textContent = currentView.name;
         document.getElementById('activeMeridianBadge').textContent = nameFor(activeMeridian);
@@ -251,12 +281,42 @@
         });
     }
 
-    function setView(nextAngle) {
-        angle = ((Math.round(nextAngle / 90) * 90) % 360 + 360) % 360;
-        document.querySelectorAll('[data-view]').forEach((button) => button.classList.toggle('active', Number(button.dataset.view) === angle));
+    function setView(nextAngle, animate = true) {
+        const targetAngle = ((Math.round(nextAngle / 90) * 90) % 360 + 360) % 360;
+        document.querySelectorAll('[data-view]').forEach((button) => button.classList.toggle('active', Number(button.dataset.view) === targetAngle));
         hoveredPoint = null;
         document.getElementById('pointTooltip').hidden = true;
-        draw();
+        if (viewAnimationFrame) cancelAnimationFrame(viewAnimationFrame);
+        if (!animate || reduceMotion.matches) {
+            angle = targetAngle;
+            panel.classList.remove('turning');
+            draw();
+            return;
+        }
+
+        const startAngle = angle;
+        const normalizedStart = ((startAngle % 360) + 360) % 360;
+        let delta = ((targetAngle - normalizedStart + 540) % 360) - 180;
+        if (delta === -180) delta = 180;
+        if (Math.abs(delta) < .5) { angle = targetAngle; draw(); return; }
+        const startTime = performance.now();
+        const duration = 360;
+        panel.classList.add('turning');
+
+        function animateView(now) {
+            const progress = Math.min(1, (now - startTime) / duration);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            angle = startAngle + delta * eased;
+            draw();
+            if (progress < 1) viewAnimationFrame = requestAnimationFrame(animateView);
+            else {
+                angle = targetAngle;
+                viewAnimationFrame = null;
+                panel.classList.remove('turning');
+                draw();
+            }
+        }
+        viewAnimationFrame = requestAnimationFrame(animateView);
     }
 
     function changeView(direction) {

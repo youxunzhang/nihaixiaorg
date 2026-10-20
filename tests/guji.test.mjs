@@ -113,9 +113,10 @@ test('首页提供六个本草名称入口，穴位模型提供四视图控制',
   for (const view of ['0', '90', '180', '270']) assert.match(modelHtml, new RegExp(`data-view="${view}"`));
   assert.match(modelHtml, /id="pointShortcuts"/);
   const modelJs = await fs.readFile(path.resolve('acupoints.js'), 'utf8');
-  assert.match(modelJs, /meridian-body-turnaround-v2\.png/);
+  assert.match(modelJs, /meridian-body-turnaround-v3\.png/);
+  assert.match(modelJs, /requestAnimationFrame\(animateView\)/);
   assert.match(modelJs, /function setView\(/);
-  assert.equal(await fileExists(path.resolve('assets/meridian-body-turnaround-v2.png')), true);
+  assert.equal(await fileExists(path.resolve('assets/meridian-body-turnaround-v3.png')), true);
 });
 
 test('V1 拒绝生成本草药物详情页', async () => {
