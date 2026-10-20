@@ -3,9 +3,11 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   assertCatalog,
+  isPublishableHerbProfile,
   isPublicChapter,
   outputPathForChapter,
   renderBookPage,
+  renderHerbProfilePage,
   renderLibraryIndex,
   renderReaderPage,
   renderVolumePage
@@ -55,6 +57,7 @@ export async function buildGuji({ outDir = path.join(projectRoot, 'dist', 'guji'
   const reviewFiles = await listJsonFiles(path.join(projectRoot, 'content', 'guji', 'review'));
   const reviewedRecords = await Promise.all(reviewFiles.map(readJson));
   const published = reviewedRecords.filter(isPublicChapter);
+  const herbProfiles = (catalog.herbProfiles || []).filter(isPublishableHerbProfile);
 
   for (const chapter of published) {
     if (!Array.isArray(chapter.paragraphs) || chapter.paragraphs.length === 0) {
@@ -74,8 +77,26 @@ export async function buildGuji({ outDir = path.join(projectRoot, 'dist', 'guji'
   for (const book of catalog.books) {
     await writePage(path.join(outDir, book.slug, 'index.html'), renderBookPage(catalog, book, published));
     for (const volume of book.volumes) {
-      await writePage(path.join(outDir, book.slug, volume.slug, 'index.html'), renderVolumePage(catalog, book, volume, published));
+      await writePage(path.join(outDir, book.slug, volume.slug, 'index.html'), renderVolumePage(catalog, book, volume, published, herbProfiles));
     }
+  }
+
+  const herbBook = findBook(catalog, 'shennong-bencao');
+  for (const profile of herbProfiles) {
+    const volume = findVolume(herbBook, profile.volumeId);
+    const siblings = herbProfiles.filter((item) => item.volumeId === profile.volumeId);
+    const currentIndex = siblings.findIndex((item) => item.id === profile.id);
+    const asNav = (item) => item ? {
+      title: item.displayName || item.name,
+      url: `/guji/${herbBook.slug}/${volume.slug}/${item.slug}/`
+    } : null;
+    await writePage(
+      path.join(outDir, herbBook.slug, volume.slug, profile.slug, 'index.html'),
+      renderHerbProfilePage(catalog, herbBook, volume, profile, {
+        previous: asNav(siblings[currentIndex - 1]),
+        next: asNav(siblings[currentIndex + 1])
+      })
+    );
   }
 
   for (const chapter of published) {
@@ -87,12 +108,13 @@ export async function buildGuji({ outDir = path.join(projectRoot, 'dist', 'guji'
     await writePage(outputPathForChapter(outDir, book, volume, chapter), renderReaderPage(catalog, book, volume, chapter, { previous: asNav(siblings[currentIndex - 1]), next: asNav(siblings[currentIndex + 1]) }));
   }
 
-  return { catalog, reviewed: reviewedRecords.length, published: published.length, outDir };
+  return { catalog, reviewed: reviewedRecords.length, published: published.length, herbProfiles: herbProfiles.length, outDir };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const result = await buildGuji({ outDir: process.env.GUJI_OUT_DIR || undefined });
   console.log(`古籍系统构建完成：${result.outDir}`);
   console.log(`审核记录 ${result.reviewed} 条，公开正文 ${result.published} 篇。`);
+  console.log(`本草药名文献 ${result.herbProfiles} 篇。`);
 }
 

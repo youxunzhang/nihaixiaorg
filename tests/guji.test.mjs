@@ -4,7 +4,7 @@ import path from 'node:path';
 import test from 'node:test';
 import { fileURLToPath } from 'node:url';
 import { buildGuji } from '../scripts/build-guji.mjs';
-import { isPublicChapter, renderLibraryIndex, renderReaderPage } from '../scripts/guji-lib.mjs';
+import { isPublishableHerbProfile, isPublicChapter, renderHerbProfilePage, renderLibraryIndex, renderReaderPage } from '../scripts/guji-lib.mjs';
 
 const testDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '.guji-test-output');
 
@@ -42,9 +42,11 @@ test('未通过审核的正文不进入静态构建产物', async () => {
   const result = await buildGuji({ outDir: testDir });
   assert.equal(result.reviewed, 1);
   assert.equal(result.published, 0);
+  assert.equal(result.herbProfiles, 12);
   assert.equal(await fileExists(path.join(testDir, 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'shennong-bencao', 'shangpin', 'index.html')), true);
+  assert.equal(await fileExists(path.join(testDir, 'shennong-bencao', 'shangpin', 'renshen', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', 'review-workflow-example', 'index.html')), false);
   const files = await walk(testDir);
   const combined = (await Promise.all(files.filter((file) => file.endsWith('.html')).map((file) => fs.readFile(file, 'utf8')))).join('\n');
@@ -57,7 +59,8 @@ test('古籍首页使用精简指标卡片，网站首页提供三部经典直�
   const catalog = JSON.parse(await fs.readFile(path.resolve('content/guji/catalog.json'), 'utf8'));
   const libraryHtml = renderLibraryIndex(catalog, []);
   assert.match(libraryHtml, /class="classic-card-metrics"/);
-  assert.match(libraryHtml, /244<\/strong> 条目录/);
+  assert.match(libraryHtml, /256<\/strong> 条目录/);
+  assert.match(libraryHtml, /药名文献<\/dt><dd><strong>12<\/strong> 篇/);
   assert.match(libraryHtml, /查看全书目录/);
 
   const homeHtml = await fs.readFile(path.resolve('index.html'), 'utf8');
@@ -80,11 +83,26 @@ test('V1 拒绝生成本草药物详情页', async () => {
   assert.throws(() => renderReaderPage(catalog, book, volume, { ...approved, bookId: book.id, volumeId: volume.id }), /不生成《神农本草经》药物详情页/);
 });
 
+test('首批本草药名文献页只提供古籍原文、异名和阅读边界', async () => {
+  const catalog = JSON.parse(await fs.readFile(path.resolve('content/guji/catalog.json'), 'utf8'));
+  const book = catalog.books.find((item) => item.id === 'shennong-bencao');
+  const profile = catalog.herbProfiles.find((item) => item.slug === 'renshen');
+  const volume = book.volumes.find((item) => item.id === profile.volumeId);
+  assert.equal(catalog.herbProfiles.length, 12);
+  assert.equal(catalog.herbProfiles.every(isPublishableHerbProfile), true);
+  const html = renderHerbProfilePage(catalog, book, volume, profile, {});
+  assert.match(html, /人参，味甘小寒/);
+  assert.match(html, /历史文献记录不等于现代疗效/);
+  assert.match(html, /不提供现代功效判断、剂量、配伍或用药建议/);
+  assert.match(html, /核对来源原页/);
+});
+
 test('公开 sitemap 只包含目录页，不包含未审核正文', async () => {
   const sitemap = await fs.readFile(path.resolve('sitemap.xml'), 'utf8');
   assert.match(sitemap, /https:\/\/nihaixia\.org\/guji\//);
   assert.match(sitemap, /\/guji\/huangdi-neijing\/suwen\//);
   assert.match(sitemap, /\/guji\/shennong-bencao\/xiapin\//);
+  assert.match(sitemap, /\/guji\/shennong-bencao\/shangpin\/renshen\//);
   assert.doesNotMatch(sitemap, /\/guji\/huangdi-neijing\/suwen\/\d{2}\//);
   assert.doesNotMatch(sitemap, /review-workflow-example/);
 });

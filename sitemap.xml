@@ -126,8 +126,20 @@
     </url>
     <url>
         <loc>https://nihaixia.org/guji/shennong-bencao/shangpin/</loc>
-        <lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+        <lastmod>2026-10-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
     </url>
+    <url><loc>https://nihaixia.org/guji/shennong-bencao/shangpin/tianmendong/</loc><lastmod>2026-10-20</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://nihaixia.org/guji/shennong-bencao/shangpin/gandihuang/</loc><lastmod>2026-10-20</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://nihaixia.org/guji/shennong-bencao/shangpin/changpu/</loc><lastmod>2026-10-20</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://nihaixia.org/guji/shennong-bencao/shangpin/yuanzhi/</loc><lastmod>2026-10-20</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://nihaixia.org/guji/shennong-bencao/shangpin/zexie/</loc><lastmod>2026-10-20</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://nihaixia.org/guji/shennong-bencao/shangpin/shuyu/</loc><lastmod>2026-10-20</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://nihaixia.org/guji/shennong-bencao/shangpin/gancao/</loc><lastmod>2026-10-20</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://nihaixia.org/guji/shennong-bencao/shangpin/renshen/</loc><lastmod>2026-10-20</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://nihaixia.org/guji/shennong-bencao/shangpin/huanglian/</loc><lastmod>2026-10-20</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://nihaixia.org/guji/shennong-bencao/shangpin/huangqi/</loc><lastmod>2026-10-20</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://nihaixia.org/guji/shennong-bencao/shangpin/danggui/</loc><lastmod>2026-10-20</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://nihaixia.org/guji/shennong-bencao/shangpin/fuling/</loc><lastmod>2026-10-20</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
     <url>
         <loc>https://nihaixia.org/guji/shennong-bencao/zhongpin/</loc>
         <lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>

@@ -12,6 +12,19 @@ export function isPublicChapter(chapter) {
   );
 }
 
+export function isPublishableHerbProfile(profile) {
+  return Boolean(
+    profile &&
+    profile.slug &&
+    profile.name &&
+    profile.volumeId &&
+    profile.section &&
+    profile.sourceText &&
+    Array.isArray(profile.readingNotes) &&
+    profile.readingNotes.length >= 2
+  );
+}
+
 export function escapeHtml(value = '') {
   return String(value)
     .replaceAll('&', '&amp;')
@@ -49,6 +62,19 @@ export function assertCatalog(catalog) {
     }
   }
   if (expected.size) throw new Error(`缺少首期经典：${[...expected].join(', ')}`);
+
+  const herbBook = catalog.books.find((book) => book.id === 'shennong-bencao');
+  const profileSlugs = new Set();
+  for (const profile of catalog.herbProfiles || []) {
+    if (!isPublishableHerbProfile(profile)) throw new Error(`药名文献页字段不完整：${profile?.name || '未知条目'}`);
+    assertSafeSlug(profile.slug, `${profile.name} slug`);
+    if (profileSlugs.has(profile.slug)) throw new Error(`药名文献页 slug 重复：${profile.slug}`);
+    profileSlugs.add(profile.slug);
+    const volume = herbBook?.volumes.find((item) => item.id === profile.volumeId);
+    if (!volume || !volume.entries.includes(profile.name)) {
+      throw new Error(`药名文献页未进入对应目录：${profile.name}`);
+    }
+  }
 }
 
 export function chapterCatalog(book, volume) {
@@ -145,10 +171,14 @@ export function renderLibraryIndex(catalog, publishedChapters = []) {
     const entryCount = book.volumes.reduce((sum, volume) => sum + (volume.chapters || volume.entries).length, 0);
     const structureUnit = book.id === 'shennong-bencao' ? '品' : book.id === 'shanghanlun' ? '卷' : '部';
     const entryLabel = book.id === 'shennong-bencao' ? '首批索引' : '目录条目';
+    const publishedLabel = book.id === 'shennong-bencao' ? '药名文献' : '已审正文';
+    const publishedCount = book.id === 'shennong-bencao'
+      ? (catalog.herbProfiles || []).filter(isPublishableHerbProfile).length
+      : countPublished(book.id, publishedChapters);
     return `<article class="classic-card classic-card-${index + 1}" data-search="${escapeHtml(`${book.title} ${book.subtitle} ${counts}`)}">
       <div class="classic-card-top"><span class="classic-card-mark" aria-hidden="true">${['医', '伤', '本'][index]}</span><span class="classic-card-number" aria-hidden="true">0${index + 1}</span></div>
       <div class="classic-card-copy"><p class="classic-card-kicker">${escapeHtml(book.subtitle)}</p><h2>${escapeHtml(book.title)}</h2><p>${escapeHtml(book.summary)}</p></div>
-      <dl class="classic-card-metrics"><div><dt>目录结构</dt><dd><strong>${book.volumes.length}</strong> ${structureUnit}</dd></div><div><dt>${entryLabel}</dt><dd><strong>${entryCount}</strong> 条</dd></div><div><dt>已审正文</dt><dd><strong>${countPublished(book.id, publishedChapters)}</strong> 篇</dd></div></dl>
+      <dl class="classic-card-metrics"><div><dt>目录结构</dt><dd><strong>${book.volumes.length}</strong> ${structureUnit}</dd></div><div><dt>${entryLabel}</dt><dd><strong>${entryCount}</strong> 条</dd></div><div><dt>${publishedLabel}</dt><dd><strong>${publishedCount}</strong> 篇</dd></div></dl>
       <a class="guji-primary-link" href="/guji/${book.slug}/"><span>查看全书目录</span><span class="classic-link-arrow" aria-hidden="true">→</span></a>
     </article>`;
   }).join('');
@@ -183,33 +213,90 @@ export function renderBookPage(catalog, book, publishedChapters = []) {
   const source = catalog.sources[book.sourceId];
   const crumbs = [{ name: '首页', url: '/' }, { name: '经典原文', url: '/guji/' }, { name: book.title, url: `/guji/${book.slug}/` }];
   const volumes = book.volumes.map((volume) => volumeSummary(book, volume)).join('');
-  const body = `<section class="guji-book-hero"><div class="guji-container guji-book-grid"><div><p class="guji-eyebrow">${escapeHtml(book.subtitle)}</p><h1>《${escapeHtml(book.title)}》目录</h1><p class="guji-lead">${escapeHtml(book.summary)}</p><div class="guji-status"><span>目录 ${book.volumes.reduce((sum, volume) => sum + (volume.chapters || volume.entries).length, 0)} 条</span><span>已审正文 ${countPublished(book.id, publishedChapters)} 篇</span></div></div><div class="guji-source-card"><span>文献说明</span><p>${escapeHtml(book.historyNote)}</p><a href="${book.guideUrl}">了解这本书</a></div></div></section>
+  const reviewedCount = book.id === 'shennong-bencao'
+    ? (catalog.herbProfiles || []).filter(isPublishableHerbProfile).length
+    : countPublished(book.id, publishedChapters);
+  const reviewedLabel = book.id === 'shennong-bencao' ? '药名文献' : '已审正文';
+  const body = `<section class="guji-book-hero"><div class="guji-container guji-book-grid"><div><p class="guji-eyebrow">${escapeHtml(book.subtitle)}</p><h1>《${escapeHtml(book.title)}》目录</h1><p class="guji-lead">${escapeHtml(book.summary)}</p><div class="guji-status"><span>目录 ${book.volumes.reduce((sum, volume) => sum + (volume.chapters || volume.entries).length, 0)} 条</span><span>${reviewedLabel} ${reviewedCount} 篇</span></div></div><div class="guji-source-card"><span>文献说明</span><p>${escapeHtml(book.historyNote)}</p><a href="${book.guideUrl}">了解这本书</a></div></div></section>
   <section class="guji-section"><div class="guji-container"><div class="guji-section-heading"><div><p class="guji-eyebrow">目录结构</p><h2>按分册与卷次浏览</h2></div><p>“整理中”的条目仅显示目录，不生成正文页。</p></div><div class="volume-grid">${volumes}</div></div></section>
   <section class="guji-section guji-section-muted"><div class="guji-container source-panel"><div><p class="guji-eyebrow">底本与出处</p><h2>${escapeHtml(source.label)}</h2><p>${escapeHtml(source.rightsNote)}</p></div><a href="${source.url}" rel="noopener noreferrer" target="_blank">查看来源记录</a></div></section>
   <section class="guji-section"><div class="guji-container">${renderNotice()}</div></section>`;
   return shell({ title: `《${book.title}》目录｜中医经典原文`, description: `${book.title}${book.subtitle}篇章目录、文献来源和内容审核进度。`, canonical: `https://nihaixia.org/guji/${book.slug}/`, breadcrumbs: crumbs, body });
 }
 
-export function renderVolumePage(catalog, book, volume, publishedChapters = []) {
+export function renderVolumePage(catalog, book, volume, publishedChapters = [], herbProfiles = []) {
   const source = catalog.sources[book.sourceId];
   const isHerbIndex = Array.isArray(volume.entries);
   const entries = isHerbIndex ? volume.entries.map((title, index) => ({ title, order: index + 1 })) : chapterCatalog(book, volume);
   const publicByKey = new Map(publishedChapters.map((chapter) => [`${chapter.bookId}/${chapter.volumeId}/${chapter.slug}`, chapter]));
+  const herbByName = new Map(herbProfiles.filter((profile) => profile.volumeId === volume.id && isPublishableHerbProfile(profile)).map((profile) => [profile.name, profile]));
   const list = entries.map((entry) => {
     const published = !isHerbIndex && publicByKey.get(`${book.id}/${volume.id}/${entry.slug}`);
+    const herbProfile = isHerbIndex && herbByName.get(entry.title);
     const number = String(entry.order).padStart(2, '0');
     const chapterUrl = book.id === 'shanghanlun' ? `/guji/${book.slug}/${entry.slug}/` : `/guji/${book.slug}/${volume.slug}/${entry.slug}/`;
-    const link = published ? `<a href="${chapterUrl}">${escapeHtml(entry.title)}</a><span class="toc-status published">已审可读</span>` : `<span>${escapeHtml(entry.title)}</span><span class="toc-status">${isHerbIndex ? '古籍药名索引' : '正文整理中'}</span>`;
-    return `<li data-search="${escapeHtml(entry.title)}"><span class="toc-number">${number}</span><div>${link}</div></li>`;
+    const herbUrl = herbProfile ? `/guji/${book.slug}/${volume.slug}/${herbProfile.slug}/` : '';
+    const link = published
+      ? `<a href="${chapterUrl}">${escapeHtml(entry.title)}</a><span class="toc-status published">已审可读</span>`
+      : herbProfile
+        ? `<a href="${herbUrl}">${escapeHtml(herbProfile.displayName || herbProfile.name)}</a><span class="toc-status published">文献页</span>`
+        : `<span>${escapeHtml(entry.title)}</span><span class="toc-status">${isHerbIndex ? '古籍药名索引' : '正文整理中'}</span>`;
+    const searchText = herbProfile ? `${entry.title} ${(herbProfile.aliases || []).join(' ')}` : entry.title;
+    return `<li data-search="${escapeHtml(searchText)}"><span class="toc-number">${number}</span><div>${link}</div></li>`;
   }).join('');
   const crumbs = [{ name: '首页', url: '/' }, { name: '经典原文', url: '/guji/' }, { name: book.title, url: `/guji/${book.slug}/` }, { name: volume.title, url: `/guji/${book.slug}/${volume.slug}/` }];
   const titleSuffix = isHerbIndex ? '古籍药名索引' : '篇章目录';
   const intro = volume.description || `按${volume.title}原有次序浏览目录。`;
   const body = `<section class="guji-catalog-hero"><div class="guji-container"><p class="guji-eyebrow">《${escapeHtml(book.title)}》</p><h1>${escapeHtml(volume.title)} · ${titleSuffix}</h1><p class="guji-lead">${escapeHtml(intro)}</p>${isHerbIndex ? '<p class="catalog-boundary"><strong>边界：</strong>本页仅提供古籍药名定位，不提供现代药物功效、主治、剂量、禁忌或使用建议。</p>' : ''}</div></section>
-  <section class="guji-section"><div class="guji-container guji-catalog-layout"><aside class="catalog-aside"><label for="catalogSearch">搜索本目录</label><input id="catalogSearch" type="search" placeholder="输入篇名或古籍药名" autocomplete="off"><p>仅匹配当前目录标题。</p><a href="/guji/${book.slug}/">← 返回《${escapeHtml(book.title)}》总目录</a></aside><div><div class="catalog-meta"><span>${entries.length} 条已录入目录</span>${isHerbIndex ? `<span>传统计数 ${volume.expectedCount} 条</span>` : `<span>${publishedChapters.filter((chapter) => chapter.bookId === book.id && chapter.volumeId === volume.id).length} 篇已审正文</span>`}</div><ol class="classic-toc" id="catalogResults">${list}</ol><p class="catalog-empty" hidden>本目录中没有匹配条目。</p></div></div></section>
+  <section class="guji-section"><div class="guji-container guji-catalog-layout"><aside class="catalog-aside"><label for="catalogSearch">搜索本目录</label><input id="catalogSearch" type="search" placeholder="输入篇名或古籍药名" autocomplete="off"><p>可匹配当前目录标题与已整理异名。</p><a href="/guji/${book.slug}/">← 返回《${escapeHtml(book.title)}》总目录</a></aside><div><div class="catalog-meta"><span>${entries.length} 条已录入目录</span>${isHerbIndex ? `<span>${herbByName.size} 条文献页</span><span>传统计数 ${volume.expectedCount} 条</span>` : `<span>${publishedChapters.filter((chapter) => chapter.bookId === book.id && chapter.volumeId === volume.id).length} 篇已审正文</span>`}</div><ol class="classic-toc" id="catalogResults">${list}</ol><p class="catalog-empty" hidden>本目录中没有匹配条目。</p></div></div></section>
   <section class="guji-section guji-section-muted"><div class="guji-container source-panel"><div><p class="guji-eyebrow">目录来源</p><h2>${escapeHtml(source.label)}</h2><p>${escapeHtml(source.rightsNote)}</p></div><a href="${source.url}" rel="noopener noreferrer" target="_blank">核对来源</a></div></section>
   <section class="guji-section"><div class="guji-container">${renderNotice()}</div></section>`;
   return shell({ title: `${book.title}·${volume.title}${titleSuffix}｜中医经典原文`, description: `${book.title}${volume.title}${titleSuffix}、来源说明与审核状态。`, canonical: `https://nihaixia.org/guji/${book.slug}/${volume.slug}/`, breadcrumbs: crumbs, body });
+}
+
+export function renderHerbProfilePage(catalog, book, volume, profile, navigation = {}) {
+  if (book.id !== 'shennong-bencao') throw new Error('药名文献页只能归入《神农本草经》');
+  if (!isPublishableHerbProfile(profile)) throw new Error(`药名文献页字段不完整：${profile?.name || '未知条目'}`);
+  if (profile.volumeId !== volume.id) throw new Error(`药名文献页分部不匹配：${profile.name}`);
+  assertSafeSlug(profile.slug, `${profile.name} slug`);
+  const source = catalog.sources[book.sourceId];
+  const profileUrl = `/guji/${book.slug}/${volume.slug}/${profile.slug}/`;
+  const aliases = (profile.aliases || []).length
+    ? `<ul class="herb-alias-list">${profile.aliases.map((alias) => `<li>${escapeHtml(alias)}</li>`).join('')}</ul>`
+    : '<p class="herb-empty-note">所据条文未另列异名。</p>';
+  const notes = profile.readingNotes.map((note) => `<li>${escapeHtml(note)}</li>`).join('');
+  const navLink = (item, label) => item
+    ? `<a href="${item.url}"><span>${label}</span><strong>${escapeHtml(item.title)}</strong></a>`
+    : '<span></span>';
+  const crumbs = [
+    { name: '首页', url: '/' },
+    { name: '经典原文', url: '/guji/' },
+    { name: book.title, url: `/guji/${book.slug}/` },
+    { name: volume.title, url: `/guji/${book.slug}/${volume.slug}/` },
+    { name: profile.displayName || profile.name, url: profileUrl }
+  ];
+  const body = `<section class="herb-profile-hero"><div class="guji-container herb-profile-hero-grid"><div><p class="guji-eyebrow">《${escapeHtml(book.title)}》· ${escapeHtml(profile.section)}</p><h1>${escapeHtml(profile.displayName || profile.name)}</h1><p class="guji-lead">核对古籍中的药名位置、原文与异名。本文只做文献整理，不提供现代功效判断、剂量、配伍或用药建议。</p></div><dl class="herb-profile-facts"><div><dt>三品位置</dt><dd>${escapeHtml(volume.title)}</dd></div><div><dt>古籍部类</dt><dd>${escapeHtml(profile.section)}</dd></div><div><dt>整理日期</dt><dd>${escapeHtml(catalog.updatedAt)}</dd></div></dl></div></section>
+  <section class="guji-section"><div class="guji-container herb-profile-layout"><article class="herb-profile-main"><p class="guji-eyebrow">古籍录文</p><h2>所据页面原文</h2><blockquote>${escapeHtml(profile.sourceText)}</blockquote><p class="herb-transcription-note">录文据“${escapeHtml(source.label)}”整理，保留所据页面的主要字形与措辞；如用于学术引用，请回到来源页核对原文及页面修订记录。</p><div class="herb-reading"><h2>读法与版本提示</h2><ul>${notes}</ul></div></article><aside class="herb-profile-side"><section><p class="guji-eyebrow">异名线索</p><h2>条文所载名称</h2>${aliases}</section><section><p class="guji-eyebrow">整理边界</p><p><strong>历史文献记录不等于现代疗效。</strong> 本页不解释现代药理，不判断疗效，不提供剂量、禁忌或服用方式。古籍中的“无毒”“久服”等词也不等同于现代安全结论。</p></section></aside></div></section>
+  <section class="guji-section guji-section-muted"><div class="guji-container source-panel"><div><p class="guji-eyebrow">底本与出处</p><h2>${escapeHtml(source.label)}</h2><p>${escapeHtml(source.rightsNote)}</p></div><a href="${source.url}" rel="noopener noreferrer" target="_blank">核对来源原页</a></div></section>
+  <section class="guji-section"><div class="guji-container"><nav class="classic-navigation herb-navigation" aria-label="药名文献导航">${navLink(navigation.previous, '上一味')}<a class="back-toc" href="/guji/${book.slug}/${volume.slug}/">返回${escapeHtml(volume.title)}目录</a>${navLink(navigation.next, '下一味')}</nav>${renderNotice()}</div></section>`;
+  return shell({
+    title: `${profile.displayName || profile.name}｜《神农本草经》${profile.section}原文与异名`,
+    description: `${profile.displayName || profile.name}在《神农本草经》${profile.section}中的原文、异名、目录位置与版本阅读提示，仅供古籍文献学习。`,
+    canonical: `https://nihaixia.org${profileUrl}`,
+    breadcrumbs: crumbs,
+    body,
+    structuredData: jsonLd({
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: `${profile.displayName || profile.name}｜《神农本草经》${profile.section}原文与异名`,
+      description: `${profile.displayName || profile.name}的古籍原文、异名与版本阅读提示。`,
+      datePublished: catalog.updatedAt,
+      dateModified: catalog.updatedAt,
+      inLanguage: 'zh-CN',
+      author: { '@type': 'Organization', name: '倪海厦中医传承网站' },
+      mainEntityOfPage: `https://nihaixia.org${profileUrl}`
+    })
+  });
 }
 
 export function renderReaderPage(catalog, book, volume, chapter, navigation = {}) {
