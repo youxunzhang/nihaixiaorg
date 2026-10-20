@@ -1,0 +1,541 @@
+.herb-tool-page {
+    --herb-paper: #f4efe3;
+    --herb-cream: #fbf8f0;
+    --herb-ink: #17372b;
+    --herb-muted: #68736d;
+    --herb-line: #ded3be;
+    --herb-red: #b44835;
+    --herb-gold: #c28c32;
+    background: #fbfaf6;
+}
+
+.herb-tool-page,
+.herb-tool-page *,
+.herb-tool-page *::before,
+.herb-tool-page *::after {
+    box-sizing: border-box;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.herb-hero {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(64px, 8vw, 108px) 0 clamp(62px, 8vw, 96px);
+    background:
+        radial-gradient(circle at 9% 9%, rgba(194, 140, 50, .15), transparent 27%),
+        radial-gradient(circle at 88% 80%, rgba(37, 95, 73, .11), transparent 31%),
+        linear-gradient(135deg, #fbfaf6 0 56%, #f1ebdc 56% 100%);
+}
+
+.herb-hero::before {
+    content: "本 草";
+    position: absolute;
+    right: 3vw;
+    top: -3.5rem;
+    color: rgba(37, 95, 73, .045);
+    font: 700 clamp(9rem, 24vw, 22rem)/1 KaiTi, serif;
+    letter-spacing: .08em;
+    pointer-events: none;
+}
+
+.herb-hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(430px, .88fr);
+    gap: clamp(48px, 8vw, 100px);
+    align-items: center;
+}
+
+.herb-hero-copy h1 {
+    max-width: 720px;
+    margin: 0;
+    color: var(--herb-ink);
+    font: 700 clamp(48px, 6.2vw, 78px)/1.14 KaiTi, serif;
+    letter-spacing: .02em;
+}
+
+.herb-hero-copy > p:not(.tool-eyebrow) {
+    max-width: 650px;
+    margin: 24px 0 0;
+    color: var(--herb-muted);
+    font-size: 17px;
+    line-height: 1.95;
+}
+
+.herb-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.herb-hero-actions a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 46px;
+    padding: 0 21px;
+    border: 1px solid var(--tool-jade);
+    border-radius: 7px;
+    color: #fff;
+    background: var(--tool-jade);
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.herb-hero-actions a + a {
+    color: var(--tool-jade);
+    background: rgba(255, 255, 255, .7);
+}
+
+.herb-hero-actions a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(29, 70, 53, .14);
+}
+
+.herb-boundary {
+    max-width: 660px;
+    margin-top: 25px;
+    padding: 13px 16px;
+    border-left: 3px solid var(--herb-gold);
+    color: #6d6354;
+    background: rgba(255, 251, 240, .78);
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.herb-specimen-board {
+    position: relative;
+    padding: 24px;
+    border: 1px solid #cfbea0;
+    border-radius: 16px;
+    background:
+        linear-gradient(rgba(123, 100, 62, .04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(123, 100, 62, .04) 1px, transparent 1px),
+        #fffdf8;
+    background-size: 22px 22px;
+    box-shadow: 0 30px 70px rgba(45, 55, 45, .17), inset 0 0 0 6px rgba(249, 244, 232, .84);
+    transform: rotate(1deg);
+}
+
+.herb-specimen-board::before {
+    content: "资料卡";
+    position: absolute;
+    right: 22px;
+    top: -13px;
+    padding: 5px 17px;
+    border-radius: 3px;
+    color: #fff8e8;
+    background: var(--herb-red);
+    box-shadow: 0 6px 14px rgba(115, 49, 37, .18);
+    font: 700 13px/1.4 KaiTi, serif;
+    letter-spacing: .18em;
+    transform: rotate(3deg);
+}
+
+.specimen-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 5px 4px 16px;
+    border-bottom: 1px solid #d9cbb3;
+}
+
+.specimen-heading span {
+    color: var(--herb-ink);
+    font: 700 27px/1.2 KaiTi, serif;
+}
+
+.specimen-heading small {
+    color: #9c8a6c;
+    font: 10px/1.2 Georgia, serif;
+    letter-spacing: .12em;
+}
+
+.specimen-stack {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 18px 0 12px;
+}
+
+.specimen-card {
+    display: flex;
+    min-height: 108px;
+    align-items: center;
+    gap: 14px;
+    padding: 15px;
+    border: 1px solid rgba(134, 108, 68, .2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .82);
+    box-shadow: 0 8px 20px rgba(57, 66, 56, .07);
+}
+
+.specimen-card > span {
+    display: grid;
+    width: 50px;
+    height: 58px;
+    flex: 0 0 auto;
+    place-items: center;
+    border: 1px solid currentColor;
+    border-radius: 48% 48% 46% 50%;
+    color: var(--tool-jade);
+    background: #f4ead1;
+    font: 700 24px/1 KaiTi, serif;
+    transform: rotate(-4deg);
+}
+
+.specimen-card strong,
+.specimen-card small {
+    display: block;
+}
+
+.specimen-card strong {
+    color: #2f4438;
+    font: 700 17px/1.3 KaiTi, serif;
+}
+
+.specimen-card small {
+    margin-top: 6px;
+    color: #887c69;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.specimen-flower > span { color: #a54f64; background: #f5e5e8; }
+.specimen-fruit > span { color: #b45435; background: #f6e5d8; }
+.specimen-fungus > span { color: #8a6b3f; background: #f0e8d7; }
+.specimen-footnote { margin: 4px 2px 0; color: #9c8a6c; font: 10px/1.5 Georgia, serif; letter-spacing: .14em; }
+
+.herb-primer {
+    padding: clamp(66px, 8vw, 100px) 0;
+}
+
+.herb-section-heading,
+.herb-directory-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+.herb-section-heading h2,
+.herb-directory-head h2,
+.herb-reading-card h2 {
+    margin: 0;
+    color: var(--herb-ink);
+    font: 700 clamp(33px, 4vw, 48px)/1.22 KaiTi, serif;
+}
+
+.herb-section-heading > p {
+    max-width: 520px;
+    margin: 0;
+    color: var(--herb-muted);
+    line-height: 1.85;
+}
+
+.herb-primer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-top: 1px solid var(--herb-line);
+    border-bottom: 1px solid var(--herb-line);
+}
+
+.herb-primer-grid article {
+    position: relative;
+    min-height: 235px;
+    padding: 30px 27px;
+    border-right: 1px solid var(--herb-line);
+}
+
+.herb-primer-grid article:last-child { border-right: 0; }
+.herb-primer-grid article > span { color: var(--herb-red); font: 700 12px/1 Georgia, serif; letter-spacing: .12em; }
+.herb-primer-grid h3 { margin: 39px 0 12px; color: #273e32; font: 700 24px/1.25 KaiTi, serif; }
+.herb-primer-grid p { margin: 0; color: var(--herb-muted); font-size: 14px; line-height: 1.85; }
+
+.herb-directory {
+    padding: clamp(68px, 8vw, 105px) 0;
+    background:
+        radial-gradient(circle at 92% 5%, rgba(180, 72, 53, .08), transparent 24%),
+        var(--herb-paper);
+    border-block: 1px solid #e1d7c5;
+}
+
+.herb-search {
+    position: relative;
+    display: block;
+    width: min(370px, 100%);
+}
+
+.herb-search input {
+    width: 100%;
+    height: 50px;
+    padding: 0 48px 0 17px;
+    border: 1px solid #cfc2aa;
+    border-radius: 9px;
+    color: #283c31;
+    background: rgba(255, 255, 255, .88);
+    font: 15px/1 inherit;
+    outline: none;
+}
+
+.herb-search input:focus {
+    border-color: var(--tool-jade);
+    box-shadow: 0 0 0 4px rgba(37, 95, 73, .11);
+}
+
+.herb-search > span:last-child {
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    color: var(--tool-jade);
+    font: 700 24px/1 sans-serif;
+    transform: translateY(-54%);
+}
+
+.herb-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.herb-filter-row button {
+    padding: 9px 15px;
+    border: 1px solid #cfc2aa;
+    border-radius: 999px;
+    color: #59675f;
+    background: rgba(255, 255, 255, .74);
+    font: 13px/1.2 inherit;
+    cursor: pointer;
+}
+
+.herb-filter-row button:hover,
+.herb-filter-row button.active {
+    color: #fff;
+    border-color: var(--tool-jade);
+    background: var(--tool-jade);
+}
+
+.herb-filter-row button:focus-visible,
+.herb-card:focus-visible,
+.herb-dialog-close:focus-visible {
+    outline: 3px solid rgba(194, 140, 50, .4);
+    outline-offset: 3px;
+}
+
+.herb-results-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 25px 0 16px;
+    color: #837965;
+    font-size: 12px;
+}
+
+.herb-results-bar p { margin: 0; color: var(--tool-jade); font-weight: 700; }
+
+.herb-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.herb-card {
+    --herb-accent: #2f7256;
+    position: relative;
+    display: grid;
+    grid-template-columns: 82px minmax(0, 1fr);
+    min-height: 190px;
+    gap: 18px;
+    padding: 23px;
+    overflow: hidden;
+    border: 1px solid #d9cdb7;
+    border-radius: 13px;
+    color: inherit;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 9px 25px rgba(44, 55, 47, .06);
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.herb-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 4px;
+    background: var(--herb-accent);
+}
+
+.herb-card:hover {
+    border-color: color-mix(in srgb, var(--herb-accent) 52%, #d9cdb7);
+    box-shadow: 0 16px 34px rgba(44, 55, 47, .12);
+    transform: translateY(-3px);
+}
+
+.herb-card-mark {
+    display: grid;
+    width: 75px;
+    height: 90px;
+    place-items: center;
+    border: 1px solid color-mix(in srgb, var(--herb-accent) 26%, #ded3be);
+    border-radius: 42% 42% 46% 45%;
+    color: var(--herb-accent);
+    background: color-mix(in srgb, var(--herb-accent) 9%, #fffaf0);
+    box-shadow: inset 0 0 24px rgba(255, 255, 255, .72);
+    font: 700 34px/1 KaiTi, serif;
+    transform: rotate(-2deg);
+}
+
+.herb-card-head {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.herb-card h3 { margin: 0; color: var(--herb-ink); font: 700 26px/1.2 KaiTi, serif; }
+.herb-card .herb-pinyin { display: block; margin-top: 3px; color: #9a8b73; font: 11px/1.4 Georgia, serif; }
+.herb-card .herb-part { flex: 0 0 auto; padding: 5px 7px; border-radius: 4px; color: var(--herb-accent); background: color-mix(in srgb, var(--herb-accent) 9%, #fff); font-size: 10px; }
+.herb-card .herb-origin { margin: 15px 0 0; color: #647068; font-size: 13px; line-height: 1.72; }
+.herb-card .herb-alias { margin: 13px 0 0; color: #94866e; font-size: 11px; }
+.herb-card-arrow { position: absolute; right: 18px; bottom: 15px; color: var(--herb-accent); font-weight: 800; }
+
+.herb-empty {
+    padding: 55px 20px;
+    border: 1px dashed #c8baa2;
+    border-radius: 12px;
+    color: #776d5d;
+    background: rgba(255, 255, 255, .55);
+    text-align: center;
+}
+
+.herb-empty strong,
+.herb-empty span { display: block; }
+.herb-empty strong { color: var(--herb-ink); font: 700 24px/1.4 KaiTi, serif; }
+.herb-empty span { margin-top: 7px; font-size: 13px; }
+
+.herb-reading-path { padding: clamp(66px, 8vw, 95px) 0 0; }
+.herb-reading-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 45px;
+    align-items: center;
+    padding: clamp(32px, 5vw, 58px);
+    border-radius: 16px;
+    color: #fff;
+    background:
+        radial-gradient(circle at 88% 50%, rgba(242, 202, 113, .15), transparent 26%),
+        var(--tool-jade-dark);
+    box-shadow: 0 20px 48px rgba(26, 58, 44, .15);
+}
+
+.herb-reading-card .tool-eyebrow { color: #e1b85f; }
+.herb-reading-card h2 { color: #fff; }
+.herb-reading-card p:not(.tool-eyebrow) { max-width: 720px; margin: 15px 0 0; color: #c8d7cf; line-height: 1.85; }
+.herb-reading-card > a { padding: 13px 18px; border: 1px solid rgba(255, 255, 255, .28); border-radius: 7px; color: #f3d18a; text-decoration: none; white-space: nowrap; }
+.herb-reading-card > a:hover { background: rgba(255, 255, 255, .08); }
+
+.herb-sources { padding: 24px 0 clamp(66px, 8vw, 95px); }
+.herb-source-note { padding: 22px 26px; border: 1px solid #ded4c1; border-radius: 12px; color: #6a746e; background: #f8f5ed; }
+.herb-source-note h2 { margin: 0 0 9px; color: #30473a; font: 700 20px/1.3 KaiTi, serif; }
+.herb-source-note p { margin: 0; font-size: 13px; line-height: 1.8; }
+.herb-source-note > div { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 13px; }
+.herb-source-note a { color: var(--tool-jade); font-size: 12px; font-weight: 700; }
+
+.herb-dialog {
+    width: min(760px, calc(100% - 32px));
+    max-height: min(86vh, 850px);
+    padding: 0;
+    overflow: auto;
+    border: 1px solid #cabda5;
+    border-radius: 16px;
+    color: var(--herb-ink);
+    background: #fffdf8;
+    box-shadow: 0 35px 90px rgba(24, 38, 31, .3);
+}
+
+.herb-dialog::backdrop { background: rgba(17, 31, 24, .58); backdrop-filter: blur(4px); }
+.herb-dialog-close { position: sticky; z-index: 3; float: right; right: 15px; top: 15px; width: 38px; height: 38px; margin: 15px 15px -53px 0; border: 1px solid rgba(255, 255, 255, .45); border-radius: 50%; color: #fff; background: rgba(19, 55, 41, .8); font: 24px/1 sans-serif; cursor: pointer; backdrop-filter: blur(7px); }
+.herb-dialog-hero { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 24px; align-items: center; padding: 38px 68px 34px 36px; color: #fff; background: var(--dialog-accent, var(--tool-jade)); }
+.herb-dialog-mark { display: grid; width: 100px; height: 115px; place-items: center; border: 1px solid rgba(255, 255, 255, .36); border-radius: 45% 43% 47% 44%; background: rgba(255, 255, 255, .12); font: 700 47px/1 KaiTi, serif; transform: rotate(-2deg); }
+.herb-dialog-kicker { margin: 0 0 5px; color: rgba(255, 255, 255, .74); font-size: 11px; font-weight: 700; letter-spacing: .16em; }
+.herb-dialog-hero h2 { margin: 0; color: #fff; font: 700 41px/1.15 KaiTi, serif; }
+.herb-dialog-hero .herb-pinyin { display: block; margin-top: 6px; color: rgba(255, 255, 255, .78); font: 13px/1.4 Georgia, serif; }
+.herb-dialog-body { padding: 30px 36px 36px; }
+.herb-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 0 28px; border-block: 1px solid #e2d8c6; }
+.herb-facts div { padding: 16px; border-right: 1px solid #e2d8c6; }
+.herb-facts div:first-child { padding-left: 0; }
+.herb-facts div:last-child { padding-right: 0; border-right: 0; }
+.herb-facts dt { color: #95866d; font-size: 11px; }
+.herb-facts dd { margin: 7px 0 0; color: #30453a; font-weight: 700; line-height: 1.55; }
+.herb-detail-section { padding: 19px 0; border-bottom: 1px solid #e7dece; }
+.herb-detail-section h3 { margin: 0 0 9px; color: var(--dialog-accent, var(--tool-jade)); font: 700 21px/1.3 KaiTi, serif; }
+.herb-detail-section p { margin: 0; color: #5f6c64; line-height: 1.85; }
+.herb-detail-section a { color: var(--dialog-accent, var(--tool-jade)); font-weight: 700; }
+.herb-dialog-note { margin-top: 22px; padding: 14px 16px; border-left: 3px solid var(--herb-gold); color: #6b6254; background: #faf4e7; font-size: 12px; line-height: 1.75; }
+
+@media (max-width: 980px) {
+    .herb-hero-grid { grid-template-columns: 1fr; }
+    .herb-specimen-board { width: min(650px, 100%); margin-inline: auto; transform: none; }
+    .herb-primer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .herb-primer-grid article:nth-child(2) { border-right: 0; }
+    .herb-primer-grid article:nth-child(-n+2) { border-bottom: 1px solid var(--herb-line); }
+    .herb-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 720px) {
+    .herb-hero { padding-top: 50px; background: linear-gradient(180deg, #fbfaf6 0 62%, #f1ebdc 62%); }
+    .herb-hero::before { display: none; }
+    .herb-hero-grid { gap: 43px; }
+    .herb-hero-copy h1 { font-size: clamp(43px, 13vw, 61px); }
+    .herb-hero-copy > p:not(.tool-eyebrow) { font-size: 15px; }
+    .herb-section-heading,
+    .herb-directory-head { display: block; }
+    .herb-section-heading > p { margin-top: 13px; }
+    .herb-search { margin-top: 22px; }
+    .herb-filter-row { flex-wrap: nowrap; margin-inline: -14px; padding: 2px 14px 8px; overflow-x: auto; scrollbar-width: thin; }
+    .herb-filter-row button { flex: 0 0 auto; }
+    .herb-reading-card { grid-template-columns: 1fr; gap: 25px; }
+    .herb-reading-card > a { white-space: normal; text-align: center; }
+}
+
+@media (max-width: 580px) {
+    .specimen-stack { grid-template-columns: 1fr; }
+    .specimen-card { min-height: 86px; }
+    .herb-primer-grid { grid-template-columns: 1fr; }
+    .herb-primer-grid article { min-height: 0; border-right: 0; border-bottom: 1px solid var(--herb-line); }
+    .herb-primer-grid article:last-child { border-bottom: 0; }
+    .herb-primer-grid h3 { margin-top: 22px; }
+    .herb-card-grid { grid-template-columns: 1fr; }
+    .herb-results-bar > span { display: none; }
+    .herb-dialog-hero { grid-template-columns: 78px minmax(0, 1fr); gap: 17px; padding: 30px 58px 28px 23px; }
+    .herb-dialog-mark { width: 72px; height: 84px; font-size: 36px; }
+    .herb-dialog-hero h2 { font-size: 34px; }
+    .herb-dialog-body { padding: 24px 22px 30px; }
+    .herb-facts { grid-template-columns: 1fr; }
+    .herb-facts div,
+    .herb-facts div:first-child,
+    .herb-facts div:last-child { padding: 12px 0; border-right: 0; border-bottom: 1px solid #e2d8c6; }
+    .herb-facts div:last-child { border-bottom: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .herb-card,
+    .herb-hero-actions a { transition: none; }
+}

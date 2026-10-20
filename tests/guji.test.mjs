@@ -211,6 +211,29 @@ test('公开 sitemap 只包含目录页，不包含未审核正文', async () =>
   assert.doesNotMatch(sitemap, /review-workflow-example/);
 });
 
+test('中医工具提供认识中药材入口与非诊疗型名称档案', async () => {
+  const [mainJs, herbsHtml, herbsJs, redirects, acupointsHtml, ziwuHtml] = await Promise.all([
+    fs.readFile(path.resolve('main.js'), 'utf8'),
+    fs.readFile(path.resolve('herbs.html'), 'utf8'),
+    fs.readFile(path.resolve('herbs.js'), 'utf8'),
+    fs.readFile(path.resolve('_redirects'), 'utf8'),
+    fs.readFile(path.resolve('acupoints.html'), 'utf8'),
+    fs.readFile(path.resolve('ziwu.html'), 'utf8')
+  ]);
+
+  assert.match(mainJs, /href="herbs\.html" class="dropdown-item">认识中药材/);
+  assert.match(acupointsHtml, /href="herbs\.html">认识中药材/);
+  assert.match(ziwuHtml, /href="herbs\.html">认识中药材/);
+  assert.match(herbsHtml, /从形态开始/);
+  assert.match(herbsHtml, /基原/);
+  assert.match(herbsHtml, /药用部位/);
+  assert.match(herbsHtml, /形态辨识/);
+  assert.match(herbsHtml, /不提供功效、主治、方剂、剂量/);
+  assert.equal((herbsJs.match(/slug: '/g) || []).length, 15);
+  assert.doesNotMatch(herbsJs, /effects:|usage:|contraindications:|<h3>功效|<h3>主治|用法用量/);
+  assert.doesNotMatch(redirects, /^\/herbs(?:\.html)?\s/m);
+});
+
 async function fileExists(file) {
   try { await fs.access(file); return true; } catch (_) { return false; }
 }
