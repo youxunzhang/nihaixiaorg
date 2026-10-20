@@ -29,14 +29,14 @@
     <meta property="twitter:image" content="https://nihaixia.org/倪海厦老师专业照片.png">
 
     <!-- 性能优化：预加载关键样式 -->
-    <link rel="preload" href="style.css?v=20261020-1" as="style">
+    <link rel="preload" href="style.css?v=20261020-2" as="style">
     
     <!-- DNS预解析 -->
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
     <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
     
     <!-- 样式表 -->
-    <link rel="stylesheet" href="style.css?v=20261020-1">
+    <link rel="stylesheet" href="style.css?v=20261020-2">
     <link rel="stylesheet" href="home-paid-materials.css?v=20261019-2">
     
     <!-- 网站图标 -->
@@ -657,42 +657,46 @@
 
         <!-- 首页本草名称精选 -->
         <section class="home-herbs" id="herbs" aria-labelledby="homeHerbsTitle">
-            <div class="container">
-                <div class="home-herbs-heading">
-                    <div>
-                        <p class="home-herbs-kicker">中草药 · 名称档案</p>
-                        <h2 id="homeHerbsTitle">从常见名称，进入古籍目录</h2>
+            <div class="container home-herbs-layout">
+                <header class="home-herbs-heading">
+                    <p class="home-herbs-kicker">《神农本草经》· 名称档案</p>
+                    <h2 id="homeHerbsTitle">先认名字，<br>再进入原典</h2>
+                    <p class="home-herbs-intro">从六个常见名称开始，查看它们在古籍目录中的位置、异名与版本字形。</p>
+                    <div class="home-herbs-scope">
+                        <span>本页只记录</span>
+                        <strong>名称 · 异名 · 目录位置</strong>
+                        <small>仅作名称与文献索引，不作应用说明</small>
                     </div>
-                    <div class="home-herbs-intro">
-                        <p>精选《神农本草经》中的名称条目，只展示目录位置、异名与版本线索。</p>
-                        <a href="/guji/shennong-bencao/shangpin/">查看全部名称资料 <span aria-hidden="true">→</span></a>
-                    </div>
-                </div>
-                <div class="home-herbs-grid">
+                    <a class="home-herbs-all" href="/guji/shennong-bencao/shangpin/">浏览全部 12 条名称档案 <span aria-hidden="true">→</span></a>
+                </header>
+                <div class="home-herbs-catalog">
+                    <div class="home-herbs-catalog-title"><strong>六条精选</strong><span>点击名称查看资料</span></div>
+                    <div class="home-herbs-grid">
                     <a class="home-herb-card" href="/guji/shennong-bencao/shangpin/renshen/">
-                        <span class="home-herb-seal" aria-hidden="true">参</span><span class="home-herb-order">上品 · 28</span>
-                        <h3>人参</h3><p>条目附名：人衔、鬼盖</p><span class="home-herb-link">查看名称资料 <i aria-hidden="true">→</i></span>
+                        <span class="home-herb-index" aria-hidden="true">01</span><span class="home-herb-seal" aria-hidden="true">参</span>
+                        <span class="home-herb-copy"><small>上品 · 28</small><h3>人参</h3><p>人衔 · 鬼盖</p></span><span class="home-herb-arrow" aria-hidden="true">↗</span>
                     </a>
                     <a class="home-herb-card" href="/guji/shennong-bencao/shangpin/gancao/">
-                        <span class="home-herb-seal" aria-hidden="true">甘</span><span class="home-herb-order">上品 · 27</span>
-                        <h3>甘草</h3><p>所据条目未另列异名</p><span class="home-herb-link">查看名称资料 <i aria-hidden="true">→</i></span>
+                        <span class="home-herb-index" aria-hidden="true">02</span><span class="home-herb-seal" aria-hidden="true">甘</span>
+                        <span class="home-herb-copy"><small>上品 · 27</small><h3>甘草</h3><p>目录未另列异名</p></span><span class="home-herb-arrow" aria-hidden="true">↗</span>
                     </a>
                     <a class="home-herb-card" href="/guji/shennong-bencao/shangpin/huangqi/">
-                        <span class="home-herb-seal" aria-hidden="true">芪</span><span class="home-herb-order">上品 · 30</span>
-                        <h3>黄芪</h3><p>附名戴糁 · 检索字形黄耆</p><span class="home-herb-link">查看名称资料 <i aria-hidden="true">→</i></span>
+                        <span class="home-herb-index" aria-hidden="true">03</span><span class="home-herb-seal" aria-hidden="true">芪</span>
+                        <span class="home-herb-copy"><small>上品 · 30</small><h3>黄芪</h3><p>戴糁 · 黄耆</p></span><span class="home-herb-arrow" aria-hidden="true">↗</span>
                     </a>
                     <a class="home-herb-card" href="/guji/shennong-bencao/shangpin/danggui/">
-                        <span class="home-herb-seal" aria-hidden="true">归</span><span class="home-herb-order">上品 · 31</span>
-                        <h3>当归</h3><p>条目附名：干归</p><span class="home-herb-link">查看名称资料 <i aria-hidden="true">→</i></span>
+                        <span class="home-herb-index" aria-hidden="true">04</span><span class="home-herb-seal" aria-hidden="true">归</span>
+                        <span class="home-herb-copy"><small>上品 · 31</small><h3>当归</h3><p>条目附名：干归</p></span><span class="home-herb-arrow" aria-hidden="true">↗</span>
                     </a>
                     <a class="home-herb-card" href="/guji/shennong-bencao/shangpin/fuling/">
-                        <span class="home-herb-seal" aria-hidden="true">苓</span><span class="home-herb-order">上品 · 32</span>
-                        <h3>茯苓</h3><p>木部上品 · 条目附名伏兔</p><span class="home-herb-link">查看名称资料 <i aria-hidden="true">→</i></span>
+                        <span class="home-herb-index" aria-hidden="true">05</span><span class="home-herb-seal" aria-hidden="true">苓</span>
+                        <span class="home-herb-copy"><small>上品 · 32</small><h3>茯苓</h3><p>木部 · 附名伏兔</p></span><span class="home-herb-arrow" aria-hidden="true">↗</span>
                     </a>
                     <a class="home-herb-card" href="/guji/shennong-bencao/shangpin/shuyu/">
-                        <span class="home-herb-seal" aria-hidden="true">薯</span><span class="home-herb-order">上品 · 26</span>
-                        <h3>署豫（薯蓣）</h3><p>条目附名山芋 · 保留原目录字形</p><span class="home-herb-link">查看名称资料 <i aria-hidden="true">→</i></span>
+                        <span class="home-herb-index" aria-hidden="true">06</span><span class="home-herb-seal" aria-hidden="true">薯</span>
+                        <span class="home-herb-copy"><small>上品 · 26</small><h3>署豫（薯蓣）</h3><p>山芋 · 原目录字形</p></span><span class="home-herb-arrow" aria-hidden="true">↗</span>
                     </a>
+                    </div>
                 </div>
             </div>
         </section>
