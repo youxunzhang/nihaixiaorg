@@ -7222,6 +7222,59 @@ body:not(.library-page):not(.tcm-tool-page) main > section:not(.hero-image-secti
     .home-classics-footer p { width: 100%; margin-top: 5px; line-height: 1.65; }
 }
 
+/* 首页本草名称精选 */
+.home-herbs {
+    --herb-green: #1d6049;
+    --herb-rust: #b64b37;
+    padding: clamp(62px, 7vw, 88px) 0;
+    background: #fbfaf6;
+}
+.home-herbs-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, .72fr); gap: clamp(32px, 7vw, 84px); align-items: end; margin-bottom: 30px; }
+.home-herbs-kicker { margin: 0 0 9px; color: var(--herb-rust); font-size: .78rem; font-weight: 800; letter-spacing: .2em; }
+.home-herbs-heading h2 { margin: 0; color: #17382e; font: 700 clamp(2.1rem, 4.2vw, 3.45rem)/1.2 KaiTi, serif; }
+.home-herbs-intro { padding-left: 25px; border-left: 2px solid rgba(31,101,79,.28); }
+.home-herbs-intro p { margin: 0 0 14px; color: #5f6c66; line-height: 1.8; }
+.home-herbs-intro a { display: inline-flex; align-items: center; gap: 10px; color: var(--herb-green); font-weight: 800; text-decoration: none; }
+.home-herbs-intro a span { transition: transform .2s ease; }
+.home-herbs-intro a:hover span, .home-herbs-intro a:focus-visible span { transform: translateX(4px); }
+.home-herbs-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.home-herb-card {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 46px minmax(0, 1fr);
+    column-gap: 15px;
+    padding: 20px;
+    border: 1px solid #e1d6c0;
+    border-radius: 14px;
+    color: inherit;
+    background: linear-gradient(145deg, #fff, #fbf7ee);
+    text-decoration: none;
+    box-shadow: 0 10px 28px rgba(51,66,56,.06);
+    transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+.home-herb-card:hover, .home-herb-card:focus-visible { transform: translateY(-4px); border-color: rgba(31,101,79,.38); box-shadow: 0 18px 38px rgba(51,66,56,.11); outline: none; }
+.home-herb-seal { grid-row: 1 / span 2; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; color: #fff8e8; background: var(--herb-green); font: 700 1.3rem/1 KaiTi, serif; box-shadow: 0 8px 18px rgba(31,96,73,.18); }
+.home-herb-card:nth-child(3n + 2) .home-herb-seal { background: var(--herb-rust); box-shadow-color: rgba(182,75,55,.2); }
+.home-herb-card:nth-child(3n) .home-herb-seal { background: #ad7a2f; box-shadow-color: rgba(173,122,47,.2); }
+.home-herb-order { align-self: end; color: #8b7b62; font: 700 .7rem/1.2 Georgia, serif; letter-spacing: .08em; }
+.home-herb-card h3 { align-self: start; margin: 4px 0 0; color: #17382e; font: 700 1.55rem/1.2 KaiTi, serif; }
+.home-herb-card > p { grid-column: 1 / -1; min-height: 1.6em; margin: 17px 0 13px; color: #657069; font-size: .82rem; line-height: 1.65; }
+.home-herb-link { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; padding-top: 13px; border-top: 1px solid #e7decd; color: var(--herb-green); font-size: .8rem; font-weight: 800; }
+.home-herb-link i { font-style: normal; transition: transform .2s ease; }
+.home-herb-card:hover .home-herb-link i, .home-herb-card:focus-visible .home-herb-link i { transform: translateX(4px); }
+
+@media (max-width: 900px) {
+    .home-herbs-heading { grid-template-columns: 1fr; gap: 20px; }
+    .home-herbs-intro { padding: 0; border: 0; }
+    .home-herbs-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 580px) {
+    .home-herbs { padding: 52px 0; }
+    .home-herbs-heading h2 { font-size: 2.25rem; }
+    .home-herbs-grid { grid-template-columns: 1fr; }
+}
+
 @media (prefers-reduced-motion: reduce) {
-    .home-classic-card, .home-classic-action i, .home-classics-intro a span { transition: none; }
+    .home-classic-card, .home-classic-action i, .home-classics-intro a span, .home-herb-card, .home-herb-link i, .home-herbs-intro a span { transition: none; }
 }

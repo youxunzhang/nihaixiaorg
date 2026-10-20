@@ -77,6 +77,24 @@ test('古籍首页使用精简指标卡片，网站首页提供三部经典直�
   );
 });
 
+test('首页提供六个本草名称入口，穴位模型提供四视图控制', async () => {
+  const homeHtml = await fs.readFile(path.resolve('index.html'), 'utf8');
+  const herbSection = homeHtml.match(/<section class="home-herbs"[\s\S]*?<\/section>/)?.[0] || '';
+  assert.match(herbSection, /id="herbs"/);
+  for (const slug of ['renshen', 'gancao', 'huangqi', 'danggui', 'fuling', 'shuyu']) {
+    assert.match(herbSection, new RegExp(`/guji/shennong-bencao/shangpin/${slug}/`));
+  }
+  assert.doesNotMatch(herbSection, /主治|功效|疗效|剂量|处方|服用|疾病|治疗|诊断|禁忌/);
+
+  const modelHtml = await fs.readFile(path.resolve('acupoints.html'), 'utf8');
+  for (const view of ['0', '90', '180', '270']) assert.match(modelHtml, new RegExp(`data-view="${view}"`));
+  assert.match(modelHtml, /id="pointShortcuts"/);
+  const modelJs = await fs.readFile(path.resolve('acupoints.js'), 'utf8');
+  assert.match(modelJs, /meridian-body-turnaround-v2\.png/);
+  assert.match(modelJs, /function setView\(/);
+  assert.equal(await fileExists(path.resolve('assets/meridian-body-turnaround-v2.png')), true);
+});
+
 test('V1 拒绝生成本草药物详情页', async () => {
   const catalog = JSON.parse(await fs.readFile(path.resolve('content/guji/catalog.json'), 'utf8'));
   const book = catalog.books.find((item) => item.id === 'shennong-bencao');

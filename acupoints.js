@@ -73,16 +73,19 @@
     let activeMeridian = 'all';
     let dragging = false;
     let lastX = 0;
+    let dragDistance = 0;
+    let selectedPoint = null;
+    let hoveredPoint = null;
     let renderedPoints = [];
     const bodyImage = new Image();
     bodyImage.decoding = 'async';
-    bodyImage.src = 'assets/meridian-body-turnaround.png?v=20260724';
+    bodyImage.src = 'assets/meridian-body-turnaround-v2.png?v=20261020';
 
     const bodyViews = [
-        { name: '正面', sx: 0, sw: 490 },
-        { name: '右侧', sx: 490, sw: 350 },
-        { name: '背面', sx: 830, sw: 490 },
-        { name: '左侧', sx: 1320, sw: 374 }
+        { name: '正面', angle: 0, sx: .013, sw: .306 },
+        { name: '右侧', angle: 90, sx: .293, sw: .195 },
+        { name: '背面', angle: 180, sx: .475, sw: .286 },
+        { name: '左侧', angle: 270, sx: .768, sw: .221 }
     ];
 
     function colorFor(id) { return meridians.find((item) => item.id === id)?.color || '#255f49'; }
@@ -102,7 +105,7 @@
         const rotatedX = point[0] * Math.cos(rad) + point[2] * Math.sin(rad);
         const depth = point[2] * Math.cos(rad) - point[0] * Math.sin(rad);
         const rect = canvas.getBoundingClientRect();
-        const scaleX = Math.min(rect.width * .31, rect.height * .258) * zoom;
+        const scaleX = Math.min(rect.width * .205, rect.height * .18) * zoom;
         const scaleY = rect.height * .90 * zoom;
         const centerY = rect.height * .48;
         const top = centerY - scaleY * .48;
@@ -112,13 +115,8 @@
     function drawBody() {
         const rect = canvas.getBoundingClientRect();
         const normalized = ((angle % 360) + 360) % 360;
-        const view = normalized < 45 || normalized >= 315
-            ? bodyViews[0]
-            : normalized < 135
-                ? bodyViews[1]
-                : normalized < 225
-                    ? bodyViews[2]
-                    : bodyViews[3];
+        const viewIndex = Math.round(normalized / 90) % 4;
+        const view = bodyViews[viewIndex];
 
         if (!bodyImage.complete || !bodyImage.naturalWidth) {
             ctx.save();
@@ -130,11 +128,10 @@
             return view;
         }
 
-        const sourceScale = bodyImage.naturalWidth / 1694;
-        const sx = view.sx * sourceScale;
-        const sw = view.sw * sourceScale;
+        const sw = bodyImage.naturalWidth * view.sw;
+        const sx = bodyImage.naturalWidth * view.sx;
         const sourceHeight = bodyImage.naturalHeight;
-        const targetHeight = rect.height * .94 * zoom;
+        const targetHeight = rect.height * .96 * zoom;
         const targetWidth = targetHeight * (sw / sourceHeight);
         const centerY = rect.height * .48;
         const targetX = (rect.width - targetWidth) / 2;
@@ -143,9 +140,9 @@
         ctx.save();
         ctx.imageSmoothingEnabled = true;
         ctx.imageSmoothingQuality = 'high';
-        ctx.shadowColor = 'rgba(83,66,43,.18)';
-        ctx.shadowBlur = 18;
-        ctx.shadowOffsetY = 8;
+        ctx.shadowColor = 'rgba(83,66,43,.14)';
+        ctx.shadowBlur = 15;
+        ctx.shadowOffsetY = 7;
         ctx.drawImage(bodyImage, sx, 0, sw, sourceHeight, targetX, targetY, targetWidth, targetHeight);
         ctx.restore();
         return view;
@@ -155,15 +152,22 @@
         Object.entries(paths).forEach(([id, path]) => {
             if (activeMeridian !== 'all' && activeMeridian !== id) return;
             const projected = path.map(project);
-            ctx.save();
-            ctx.beginPath();
-            projected.forEach((point, index) => index ? ctx.lineTo(point.x, point.y) : ctx.moveTo(point.x, point.y));
-            ctx.strokeStyle = colorFor(id);
-            ctx.globalAlpha = activeMeridian === id ? 1 : .76;
-            ctx.lineWidth = activeMeridian === id ? 4 : 2.2;
-            ctx.lineCap = 'round'; ctx.lineJoin = 'round';
-            ctx.shadowColor = 'rgba(255,255,255,.7)'; ctx.shadowBlur = 2;
-            ctx.stroke(); ctx.restore();
+            projected.slice(1).forEach((point, index) => {
+                const previous = projected[index];
+                const frontFacing = (previous.depth + point.depth) / 2 >= -.06;
+                const selected = activeMeridian === id;
+                const alpha = frontFacing ? (selected ? 1 : .72) : (selected ? .24 : .09);
+                const width = selected ? 4.2 : 2.2;
+                ctx.save();
+                ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+                ctx.globalAlpha = alpha * .8;
+                ctx.beginPath(); ctx.moveTo(previous.x, previous.y); ctx.lineTo(point.x, point.y);
+                ctx.strokeStyle = '#fff'; ctx.lineWidth = width + 3; ctx.stroke();
+                ctx.globalAlpha = alpha;
+                ctx.beginPath(); ctx.moveTo(previous.x, previous.y); ctx.lineTo(point.x, point.y);
+                ctx.strokeStyle = colorFor(id); ctx.lineWidth = width; ctx.stroke();
+                ctx.restore();
+            });
         });
     }
 
@@ -172,18 +176,25 @@
         points.forEach((point) => {
             if (activeMeridian !== 'all' && activeMeridian !== point.meridian) return;
             const pos = project([point.x, point.y, point.z]);
-            const radius = activeMeridian === point.meridian ? 6 : 4.5;
+            const frontFacing = pos.depth >= -.07;
+            const selected = selectedPoint?.code === point.code;
+            const hovered = hoveredPoint?.code === point.code;
+            const radius = selected ? 7.5 : activeMeridian === point.meridian ? 6 : 4.5;
             ctx.save();
-            ctx.globalAlpha = Math.max(.35, .75 + pos.depth * .45);
+            ctx.globalAlpha = frontFacing ? 1 : .13;
+            if (selected || hovered) {
+                ctx.beginPath(); ctx.arc(pos.x, pos.y, radius + 5, 0, Math.PI * 2);
+                ctx.strokeStyle = colorFor(point.meridian); ctx.lineWidth = selected ? 2.5 : 1.5; ctx.stroke();
+            }
             ctx.beginPath(); ctx.arc(pos.x, pos.y, radius, 0, Math.PI * 2);
             ctx.fillStyle = colorFor(point.meridian); ctx.fill();
             ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.stroke();
-            if (activeMeridian !== 'all') {
+            if (activeMeridian !== 'all' && frontFacing) {
                 ctx.globalAlpha = 1; ctx.fillStyle = '#26372e'; ctx.font = '12px sans-serif';
                 ctx.fillText(point.name, pos.x + 9, pos.y + 4);
             }
             ctx.restore();
-            renderedPoints.push({ ...pos, radius: 12, data: point });
+            if (frontFacing) renderedPoints.push({ ...pos, radius: 14, data: point });
         });
     }
 
@@ -191,14 +202,18 @@
         const rect = canvas.getBoundingClientRect();
         ctx.clearRect(0, 0, rect.width, rect.height);
         const gradient = ctx.createRadialGradient(rect.width/2, rect.height*.43, 20, rect.width/2, rect.height*.43, rect.height*.52);
-        gradient.addColorStop(0, 'rgba(255,255,255,.9)'); gradient.addColorStop(1, 'rgba(225,219,205,.35)');
+        gradient.addColorStop(0, 'rgba(255,255,255,.95)'); gradient.addColorStop(1, 'rgba(225,219,205,.3)');
         ctx.fillStyle = gradient; ctx.fillRect(0,0,rect.width,rect.height);
+        ctx.save();
+        ctx.beginPath(); ctx.ellipse(rect.width / 2, rect.height * .91, Math.min(rect.width * .2, 95) * zoom, 15 * zoom, 0, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(45,60,52,.09)'; ctx.filter = 'blur(8px)'; ctx.fill(); ctx.restore();
         const currentView = drawBody(); drawMeridians(); drawPoints();
-        const normalized = ((angle % 360) + 360) % 360;
-        document.getElementById('viewBadge').textContent = `${currentView.name} · ${Math.round(normalized)}°`;
+        document.getElementById('viewBadge').textContent = currentView.name;
+        document.getElementById('activeMeridianBadge').textContent = nameFor(activeMeridian);
     }
 
     function selectPoint(point) {
+        selectedPoint = point;
         document.getElementById('pointEmpty').hidden = true;
         const detail = document.getElementById('pointDetail');
         detail.hidden = false;
@@ -208,6 +223,45 @@
         document.getElementById('pointMeridian').textContent = nameFor(point.meridian);
         document.getElementById('pointLocation').textContent = point.location;
         document.getElementById('pointNote').textContent = point.note;
+        document.querySelectorAll('.point-shortcuts button').forEach((button) => button.classList.toggle('active', button.dataset.code === point.code));
+        draw();
+    }
+
+    function clearPointSelection() {
+        selectedPoint = null;
+        document.getElementById('pointEmpty').hidden = false;
+        document.getElementById('pointDetail').hidden = true;
+        document.querySelectorAll('.point-shortcuts button').forEach((button) => button.classList.remove('active'));
+    }
+
+    function updatePointShortcuts() {
+        const visible = activeMeridian === 'all' ? points : points.filter((point) => point.meridian === activeMeridian);
+        document.getElementById('visiblePointCount').textContent = String(visible.length);
+        const shortcuts = document.getElementById('pointShortcuts');
+        shortcuts.replaceChildren();
+        if (activeMeridian === 'all') return;
+        visible.forEach((point) => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.dataset.code = point.code;
+            button.style.setProperty('--point-color', colorFor(point.meridian));
+            button.textContent = `${point.code} · ${point.name}`;
+            button.addEventListener('click', () => selectPoint(point));
+            shortcuts.appendChild(button);
+        });
+    }
+
+    function setView(nextAngle) {
+        angle = ((Math.round(nextAngle / 90) * 90) % 360 + 360) % 360;
+        document.querySelectorAll('[data-view]').forEach((button) => button.classList.toggle('active', Number(button.dataset.view) === angle));
+        hoveredPoint = null;
+        document.getElementById('pointTooltip').hidden = true;
+        draw();
+    }
+
+    function changeView(direction) {
+        const currentIndex = Math.round(angle / 90) % 4;
+        setView(((currentIndex + direction + 4) % 4) * 90);
     }
 
     function buildFilters() {
@@ -216,38 +270,80 @@
             const button = document.createElement('button');
             button.type = 'button'; button.className = 'meridian-filter';
             button.classList.toggle('active', meridian.id === 'all');
+            button.setAttribute('aria-pressed', String(meridian.id === 'all'));
             button.style.setProperty('--line-color', meridian.color);
             button.innerHTML = `<i></i><span>${meridian.name}</span>`;
             button.addEventListener('click', () => {
                 activeMeridian = meridian.id;
-                document.querySelectorAll('.meridian-filter').forEach((item) => item.classList.toggle('active', item === button));
-                draw();
+                document.querySelectorAll('.meridian-filter').forEach((item) => {
+                    const active = item === button;
+                    item.classList.toggle('active', active);
+                    item.setAttribute('aria-pressed', String(active));
+                });
+                updatePointShortcuts();
+                const firstPoint = points.find((point) => point.meridian === activeMeridian);
+                if (firstPoint) selectPoint(firstPoint);
+                else { clearPointSelection(); draw(); }
             });
             list.appendChild(button);
         });
     }
 
-    panel.addEventListener('pointerdown', (event) => { dragging = true; lastX = event.clientX; panel.classList.add('dragging'); panel.setPointerCapture(event.pointerId); });
-    panel.addEventListener('pointermove', (event) => {
-        if (!dragging) return;
-        angle += (event.clientX - lastX) * .65; lastX = event.clientX; draw();
+    canvas.addEventListener('pointerdown', (event) => {
+        dragging = true; lastX = event.clientX; dragDistance = 0;
+        panel.classList.add('dragging'); canvas.setPointerCapture(event.pointerId);
     });
-    panel.addEventListener('pointerup', (event) => { dragging = false; panel.classList.remove('dragging'); panel.releasePointerCapture(event.pointerId); });
-    panel.addEventListener('pointercancel', () => { dragging = false; panel.classList.remove('dragging'); });
+    canvas.addEventListener('pointermove', (event) => {
+        const rect = canvas.getBoundingClientRect();
+        const x = event.clientX - rect.left; const y = event.clientY - rect.top;
+        if (!dragging) {
+            const nearest = renderedPoints.map((point) => ({ point, distance: Math.hypot(point.x - x, point.y - y) })).sort((a,b) => a.distance - b.distance)[0];
+            const nextHovered = nearest && nearest.distance <= nearest.point.radius ? nearest.point.data : null;
+            if (nextHovered?.code !== hoveredPoint?.code) {
+                hoveredPoint = nextHovered;
+                draw();
+            }
+            const tooltip = document.getElementById('pointTooltip');
+            if (nextHovered) {
+                tooltip.hidden = false;
+                tooltip.textContent = `${nextHovered.code} · ${nextHovered.name}`;
+                tooltip.style.left = `${x}px`; tooltip.style.top = `${y}px`;
+            } else tooltip.hidden = true;
+            return;
+        }
+        const delta = event.clientX - lastX;
+        dragDistance += Math.abs(event.movementX || delta);
+        if (Math.abs(delta) >= 48) {
+            changeView(delta > 0 ? -1 : 1);
+            lastX = event.clientX;
+        }
+    });
+    canvas.addEventListener('pointerup', (event) => { dragging = false; panel.classList.remove('dragging'); canvas.releasePointerCapture(event.pointerId); });
+    canvas.addEventListener('pointercancel', () => { dragging = false; panel.classList.remove('dragging'); });
+    canvas.addEventListener('pointerleave', () => { if (!dragging) { hoveredPoint = null; document.getElementById('pointTooltip').hidden = true; draw(); } });
     canvas.addEventListener('click', (event) => {
-        if (Math.abs(event.movementX) > 3) return;
+        if (dragDistance > 8) { dragDistance = 0; return; }
+        dragDistance = 0;
         const rect = canvas.getBoundingClientRect();
         const x = event.clientX - rect.left; const y = event.clientY - rect.top;
         const nearest = renderedPoints.map((point) => ({ point, distance: Math.hypot(point.x - x, point.y - y) })).sort((a,b) => a.distance - b.distance)[0];
         if (nearest && nearest.distance <= nearest.point.radius) selectPoint(nearest.point.data);
     });
-    panel.addEventListener('wheel', (event) => { event.preventDefault(); zoom = Math.min(1.35, Math.max(.72, zoom - event.deltaY * .001)); draw(); }, { passive: false });
+    canvas.addEventListener('wheel', (event) => { event.preventDefault(); zoom = Math.min(1.35, Math.max(.72, zoom - event.deltaY * .001)); draw(); }, { passive: false });
+    canvas.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') { event.preventDefault(); changeView(-1); }
+        if (event.key === 'ArrowRight') { event.preventDefault(); changeView(1); }
+        if (event.key === '+' || event.key === '=') { event.preventDefault(); zoom = Math.min(1.35, zoom + .1); draw(); }
+        if (event.key === '-' || event.key === '_') { event.preventDefault(); zoom = Math.max(.72, zoom - .1); draw(); }
+        if (event.key === '0') { event.preventDefault(); zoom = 1; setView(0); }
+    });
+    document.querySelectorAll('[data-view]').forEach((button) => button.addEventListener('click', () => setView(Number(button.dataset.view))));
     document.getElementById('zoomIn').addEventListener('click', () => { zoom = Math.min(1.35, zoom + .1); draw(); });
     document.getElementById('zoomOut').addEventListener('click', () => { zoom = Math.max(.72, zoom - .1); draw(); });
-    document.getElementById('resetView').addEventListener('click', () => { angle = 0; zoom = 1; draw(); });
+    document.getElementById('resetView').addEventListener('click', () => { zoom = 1; setView(0); });
     document.querySelector('.tool-menu')?.addEventListener('click', (event) => {
         const links = document.getElementById('toolLinks'); const open = links.classList.toggle('open'); event.currentTarget.setAttribute('aria-expanded', String(open));
     });
     bodyImage.addEventListener('load', draw);
-    buildFilters(); resize(); window.addEventListener('resize', resize);
+    buildFilters(); updatePointShortcuts(); resize(); window.addEventListener('resize', resize);
 })();
