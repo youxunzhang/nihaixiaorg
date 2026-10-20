@@ -19,6 +19,268 @@
   },
   "herbProfiles": [
     {
+      "id": "yuquan",
+      "slug": "yuquan",
+      "name": "玉泉",
+      "displayName": "玉泉",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": ["玉札"],
+      "catalogNotes": [
+        "“玉泉”列于所据分部页的玉石部上品，本站保留其目录位置与原有题名。",
+        "“玉札”为条目所附名称线索，仅用于古籍目录检索和版本核对。"
+      ]
+    },
+    {
+      "id": "dansha",
+      "slug": "dansha",
+      "name": "丹砂",
+      "displayName": "丹砂",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": [],
+      "catalogNotes": [
+        "“丹砂”是所据玉石部上品分部页中的目录正名，本站按原目录次序收录。",
+        "所据条目未另列异名，因此本页不自行补入后世称呼或现实对应物。"
+      ]
+    },
+    {
+      "id": "shuiyin",
+      "slug": "shuiyin",
+      "name": "水银",
+      "displayName": "水银",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": [],
+      "catalogNotes": [
+        "“水银”列于所据分部页的玉石部上品，本页只记录古籍目录位置。",
+        "本站不把古籍名目转换为现代物质说明，也不扩展现实用途信息。"
+      ]
+    },
+    {
+      "id": "kongqing",
+      "slug": "kongqing",
+      "name": "空青",
+      "displayName": "空青",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": [],
+      "catalogNotes": [
+        "“空青”位于所据玉石部上品目录中，本站沿用来源页面的题名。",
+        "所据条目未另列异名，本页不依据后世材料推定名称所指。"
+      ]
+    },
+    {
+      "id": "zengqing",
+      "slug": "zengqing",
+      "name": "曾青",
+      "displayName": "曾青",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": [],
+      "catalogNotes": [
+        "“曾青”是所据分部页保留的目录正名，列于玉石部上品。",
+        "本页仅提供目录定位与版本来源，未另补异名或现代分类信息。"
+      ]
+    },
+    {
+      "id": "baiqing",
+      "slug": "baiqing",
+      "name": "白青",
+      "displayName": "白青",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": [],
+      "catalogNotes": [
+        "“白青”收录于所据玉石部上品目录，本站保留其原有次序。",
+        "来源条目未附其他名称，本页不自行建立与现实材料的对应关系。"
+      ]
+    },
+    {
+      "id": "yunmu",
+      "slug": "yunmu",
+      "name": "云母",
+      "displayName": "云母",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": ["云珠", "云华", "云英", "云液", "云沙", "鳞石"],
+      "catalogNotes": [
+        "“云母”列于所据玉石部上品目录，条目同时保存了六个附名。",
+        "“云珠”“云华”“云英”“云液”“云沙”“鳞石”均作为古籍检索线索收录。"
+      ]
+    },
+    {
+      "id": "puxiao",
+      "slug": "puxiao",
+      "name": "朴消",
+      "displayName": "朴消（朴硝）",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": [],
+      "searchVariants": ["朴硝"],
+      "catalogNotes": [
+        "所据页面题作“朴消”，本站保留这一目录字形，不直接改写标题。",
+        "“朴硝”作为交叉检索字形单列，便于查找其他整理本。"
+      ]
+    },
+    {
+      "id": "xiaoshi",
+      "slug": "xiaoshi",
+      "name": "消石",
+      "displayName": "消石",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": ["芒硝"],
+      "catalogNotes": [
+        "“消石”是所据玉石部上品分部页中的目录正名。",
+        "“芒硝”为该条所附名称，本站只将其用于古籍名称互查。"
+      ]
+    },
+    {
+      "id": "fanshi",
+      "slug": "fanshi",
+      "name": "矾石",
+      "displayName": "矾石",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": ["羽涅"],
+      "catalogNotes": [
+        "“矾石”列于所据玉石部上品目录，本站沿用来源页面的简体字形。",
+        "“羽涅”为条目附载名称，仅作为目录检索与版本核对线索。"
+      ]
+    },
+    {
+      "id": "huashi",
+      "slug": "huashi",
+      "name": "滑石",
+      "displayName": "滑石",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": [],
+      "catalogNotes": [
+        "“滑石”收录于所据分部页的玉石部上品，本站保留其目录次序。",
+        "所据条目未另列异名，因此本页不补入其他时代的称呼。"
+      ]
+    },
+    {
+      "id": "zishi",
+      "slug": "zishi",
+      "name": "紫石",
+      "displayName": "紫石",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": [],
+      "catalogNotes": [
+        "“紫石”是所据玉石部上品目录中的题名，本站按原目录位置收录。",
+        "本页只保存书目名称和来源，未另作现代材料对应说明。"
+      ]
+    },
+    {
+      "id": "baishiying",
+      "slug": "baishiying",
+      "name": "白石英",
+      "displayName": "白石英",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": [],
+      "catalogNotes": [
+        "“白石英”位于所据玉石部上品目录中，本页保留其题名与次序。",
+        "来源条目未附异名，本站不自行增加后世名称或分类判断。"
+      ]
+    },
+    {
+      "id": "wuseshizhi",
+      "slug": "wuseshizhi",
+      "name": "五色石脂",
+      "displayName": "五色石脂",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": [],
+      "searchVariants": ["青石赤石黄石白石黑石脂等"],
+      "catalogNotes": [
+        "本站目录以“五色石脂”概括收录，所据正文条题作“青石赤石黄石白石黑石脂等”。",
+        "较长条题作为交叉检索字形保存，便于核对不同目录的归并方式。"
+      ]
+    },
+    {
+      "id": "taiyi-yuyuliang",
+      "slug": "taiyi-yuyuliang",
+      "name": "太一禹余粮",
+      "displayName": "太一禹余粮",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": ["石脑"],
+      "catalogNotes": [
+        "“太一禹余粮”列于所据玉石部上品目录，本站保留来源页的“太一”字形。",
+        "“石脑”为条目所附名称线索，适合与目录正名一并检索。"
+      ]
+    },
+    {
+      "id": "yuyuliang",
+      "slug": "yuyuliang",
+      "name": "禹余粮",
+      "displayName": "禹余粮",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": [],
+      "catalogNotes": [
+        "“禹余粮”在所据目录中紧随“太一禹余粮”，本站将两条分别建档。",
+        "所据条目未另列异名，本页不将相邻题名合并为同一条。"
+      ]
+    },
+    {
+      "id": "xionghuang",
+      "slug": "xionghuang",
+      "name": "雄黄",
+      "displayName": "雄黄",
+      "volumeId": "shangpin",
+      "section": "玉石部上品",
+      "aliases": ["黄食石"],
+      "catalogNotes": [
+        "“雄黄”是所据玉石部上品分部页中的目录正名。",
+        "“黄食石”为条目附载名称，仅用于古籍检索和版本对照。"
+      ]
+    },
+    {
+      "id": "qingzhi",
+      "slug": "qingzhi",
+      "name": "青芝",
+      "displayName": "青芝",
+      "volumeId": "shangpin",
+      "section": "草部上品",
+      "aliases": ["龙芝"],
+      "catalogNotes": [
+        "“青芝”位于所据草部上品目录，本站按分部页次序收录。",
+        "“龙芝”为该条所附名称，本页只保留其文献检索用途。"
+      ]
+    },
+    {
+      "id": "chizhi",
+      "slug": "chizhi",
+      "name": "赤芝",
+      "displayName": "赤芝",
+      "volumeId": "shangpin",
+      "section": "草部上品",
+      "aliases": ["丹芝"],
+      "catalogNotes": [
+        "“赤芝”列于所据草部上品目录，是本站采用的目录正名。",
+        "“丹芝”为条目所附名称线索，适合用于其他辑本的交叉查找。"
+      ]
+    },
+    {
+      "id": "huangzhi",
+      "slug": "huangzhi",
+      "name": "黄芝",
+      "displayName": "黄芝",
+      "volumeId": "shangpin",
+      "section": "草部上品",
+      "aliases": ["金芝"],
+      "catalogNotes": [
+        "“黄芝”收录于所据草部上品目录，本站保留其来源次序。",
+        "“金芝”为条目附载名称，仅作为古籍名称互查线索保存。"
+      ]
+    },
+    {
       "id": "tianmendong",
       "slug": "tianmendong",
       "name": "天门冬",

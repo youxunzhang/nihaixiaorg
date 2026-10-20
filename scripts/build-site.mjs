@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildGuji } from './build-guji.mjs';
+import { isPublishableHerbProfile } from './guji-lib.mjs';
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(scriptDir, '..');
@@ -30,6 +31,26 @@ for (const entry of await fs.readdir(root, { withFileTypes: true })) {
 }
 
 const result = await buildGuji({ outDir: path.join(outDir, 'guji') });
+
+const sitemapPath = path.join(outDir, 'sitemap.xml');
+const sitemap = await fs.readFile(sitemapPath, 'utf8');
+const herbStart = '<!-- GENERATED HERB PROFILES START -->';
+const herbEnd = '<!-- GENERATED HERB PROFILES END -->';
+if (!sitemap.includes(herbStart) || !sitemap.includes(herbEnd)) {
+  throw new Error('sitemap.xml 缺少本草名称页生成标记');
+}
+const herbBook = result.catalog.books.find((book) => book.id === 'shennong-bencao');
+const herbUrls = (result.catalog.herbProfiles || [])
+  .filter(isPublishableHerbProfile)
+  .map((profile) => {
+    const volume = herbBook.volumes.find((item) => item.id === profile.volumeId);
+    if (!volume) throw new Error(`本草名称页缺少分部：${profile.name}`);
+    return `    <url><loc>https://nihaixia.org/guji/${herbBook.slug}/${volume.slug}/${profile.slug}/</loc><lastmod>${result.catalog.updatedAt}</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>`;
+  })
+  .join('\n');
+const herbBlockPattern = new RegExp(`${herbStart}[\\s\\S]*?${herbEnd}`);
+await fs.writeFile(sitemapPath, sitemap.replace(herbBlockPattern, `${herbStart}\n${herbUrls}\n    ${herbEnd}`), 'utf8');
+
 console.log(`站点构建完成：${outDir}`);
 console.log(`古籍审核记录 ${result.reviewed} 条，公开正文 ${result.published} 篇。`);
 

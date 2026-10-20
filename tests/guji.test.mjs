@@ -42,11 +42,13 @@ test('未通过审核的正文不进入静态构建产物', async () => {
   const result = await buildGuji({ outDir: testDir });
   assert.equal(result.reviewed, 82);
   assert.equal(result.published, 81);
-  assert.equal(result.herbProfiles, 12);
+  assert.equal(result.herbProfiles, 32);
   assert.equal(await fileExists(path.join(testDir, 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'shennong-bencao', 'shangpin', 'index.html')), true);
+  assert.equal(await fileExists(path.join(testDir, 'shennong-bencao', 'shangpin', 'yuquan', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'shennong-bencao', 'shangpin', 'renshen', 'index.html')), true);
+  assert.equal(await fileExists(path.join(testDir, 'shennong-bencao', 'shangpin', 'huangzhi', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', '01', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', '81', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', 'review-workflow-example', 'index.html')), false);
@@ -81,7 +83,7 @@ test('古籍首页使用精简指标卡片，网站首页提供三部经典直�
   const libraryHtml = renderLibraryIndex(catalog, []);
   assert.match(libraryHtml, /class="classic-card-metrics"/);
   assert.match(libraryHtml, /256<\/strong> 条目录/);
-  assert.match(libraryHtml, /名称资料<\/dt><dd><strong>12<\/strong> 篇/);
+  assert.match(libraryHtml, /名称资料<\/dt><dd><strong>32<\/strong> 篇/);
   assert.match(libraryHtml, /查看导读与目录/);
 
   const homeHtml = await fs.readFile(path.resolve('index.html'), 'utf8');
@@ -89,7 +91,7 @@ test('古籍首页使用精简指标卡片，网站首页提供三部经典直�
   assert.match(homeHtml, /href="\/guji\/huangdi-neijing\/"/);
   assert.match(homeHtml, /href="\/guji\/shanghanlun\/"/);
   assert.match(homeHtml, /href="\/guji\/shennong-bencao\/"/);
-  assert.match(homeHtml, /12 条名称资料/);
+  assert.match(homeHtml, /32 条名称资料/);
   assert.match(homeHtml, /需要目录，可以微信联系/);
   assert.doesNotMatch(homeHtml, /<ol><li><span>1<\/span>添加好友/);
   assert.ok(
@@ -133,13 +135,19 @@ test('三部古籍页都有实际文献导读内容', async () => {
   }
 });
 
-test('首批本草名称页只提供目录、异名和版本资料', async () => {
+test('上品本草名称页完整覆盖目录且只提供目录、异名和版本资料', async () => {
   const catalog = JSON.parse(await fs.readFile(path.resolve('content/guji/catalog.json'), 'utf8'));
   const book = catalog.books.find((item) => item.id === 'shennong-bencao');
   const profile = catalog.herbProfiles.find((item) => item.slug === 'renshen');
   const volume = book.volumes.find((item) => item.id === profile.volumeId);
-  assert.equal(catalog.herbProfiles.length, 12);
+  assert.equal(catalog.herbProfiles.length, 32);
   assert.equal(catalog.herbProfiles.every(isPublishableHerbProfile), true);
+  const shangpin = book.volumes.find((item) => item.id === 'shangpin');
+  assert.deepEqual(
+    catalog.herbProfiles.filter((item) => item.volumeId === 'shangpin').map((item) => item.name),
+    shangpin.entries,
+    '上品当前已录入目录应全部生成名称档案',
+  );
   for (const item of catalog.herbProfiles) {
     const itemVolume = book.volumes.find((entry) => entry.id === item.volumeId);
     const itemHtml = renderHerbProfilePage(catalog, book, itemVolume, item, {});
@@ -159,6 +167,8 @@ test('公开 sitemap 只包含目录页，不包含未审核正文', async () =>
   assert.match(sitemap, /\/guji\/huangdi-neijing\/suwen\//);
   assert.match(sitemap, /\/guji\/shennong-bencao\/xiapin\//);
   assert.match(sitemap, /\/guji\/shennong-bencao\/shangpin\/renshen\//);
+  assert.match(sitemap, /\/guji\/shennong-bencao\/shangpin\/yuquan\//);
+  assert.match(sitemap, /\/guji\/shennong-bencao\/shangpin\/huangzhi\//);
   assert.match(sitemap, /\/guji\/huangdi-neijing\/suwen\/01\//);
   assert.match(sitemap, /\/guji\/huangdi-neijing\/suwen\/81\//);
   assert.doesNotMatch(sitemap, /review-workflow-example/);
