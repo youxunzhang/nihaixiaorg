@@ -55,7 +55,7 @@ export async function buildGuji({ outDir = path.join(projectRoot, 'dist', 'guji'
   assertCatalog(catalog);
 
   const reviewFiles = await listJsonFiles(path.join(projectRoot, 'content', 'guji', 'review'));
-  const reviewedRecords = await Promise.all(reviewFiles.map(readJson));
+  const reviewedRecords = (await Promise.all(reviewFiles.map(readJson))).flatMap((record) => Array.isArray(record) ? record : [record]);
   const published = reviewedRecords.filter(isPublicChapter);
   const herbProfiles = (catalog.herbProfiles || []).filter(isPublishableHerbProfile);
 

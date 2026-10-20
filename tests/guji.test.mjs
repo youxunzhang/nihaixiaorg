@@ -40,19 +40,40 @@ test('统一阅读器包含来源、设置、段落锚点和目录导航', async
 test('未通过审核的正文不进入静态构建产物', async () => {
   await fs.rm(testDir, { recursive: true, force: true });
   const result = await buildGuji({ outDir: testDir });
-  assert.equal(result.reviewed, 1);
-  assert.equal(result.published, 0);
+  assert.equal(result.reviewed, 82);
+  assert.equal(result.published, 81);
   assert.equal(result.herbProfiles, 12);
   assert.equal(await fileExists(path.join(testDir, 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'shennong-bencao', 'shangpin', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'shennong-bencao', 'shangpin', 'renshen', 'index.html')), true);
+  assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', '01', 'index.html')), true);
+  assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', '81', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', 'review-workflow-example', 'index.html')), false);
   const files = await walk(testDir);
   const combined = (await Promise.all(files.filter((file) => file.endsWith('.html')).map((file) => fs.readFile(file, 'utf8')))).join('\n');
   assert.equal(combined.includes('GUJI_DRAFT_LEAK_SENTINEL'), false);
   assert.equal(combined.includes('href="/guji/shennong-bencao/shangpin/01/"'), false);
   await fs.rm(testDir, { recursive: true, force: true });
+});
+
+test('《素问》八十一篇正文保留来源版本、许可和完整段落', async () => {
+  const chapters = JSON.parse(await fs.readFile(path.resolve('content/guji/review/suwen-wikisource.json'), 'utf8'));
+  assert.equal(chapters.length, 81);
+  assert.equal(chapters[0].title, '上古天真论');
+  assert.equal(chapters[80].title, '解精微论');
+  assert.equal(chapters.every(isPublicChapter), true);
+  for (const [index, chapter] of chapters.entries()) {
+    assert.equal(chapter.order, index + 1);
+    assert.equal(chapter.slug, String(index + 1).padStart(2, '0'));
+    assert.ok(chapter.paragraphs.length >= 1, `${chapter.title} 正文不得为空`);
+    assert.ok(chapter.paragraphs.map((item) => item.text).join('').length >= 100, `${chapter.title} 正文长度异常`);
+    assert.match(chapter.sourceUrl, /zh\.wikisource\.org\/w\/index\.php\?title=/);
+    assert.match(String(chapter.sourceRevision), /^\d+$/);
+    assert.equal(chapter.sourceLicense, 'CC BY-SA 4.0');
+    assert.match(chapter.bodySha256, /^[a-f0-9]{64}$/);
+    assert.doesNotMatch(chapter.paragraphs.map((item) => item.text).join('\n'), /Public domain|mw-|编辑章节/);
+  }
 });
 
 test('古籍首页使用精简指标卡片，网站首页提供三部经典直达入口', async () => {
@@ -138,7 +159,8 @@ test('公开 sitemap 只包含目录页，不包含未审核正文', async () =>
   assert.match(sitemap, /\/guji\/huangdi-neijing\/suwen\//);
   assert.match(sitemap, /\/guji\/shennong-bencao\/xiapin\//);
   assert.match(sitemap, /\/guji\/shennong-bencao\/shangpin\/renshen\//);
-  assert.doesNotMatch(sitemap, /\/guji\/huangdi-neijing\/suwen\/\d{2}\//);
+  assert.match(sitemap, /\/guji\/huangdi-neijing\/suwen\/01\//);
+  assert.match(sitemap, /\/guji\/huangdi-neijing\/suwen\/81\//);
   assert.doesNotMatch(sitemap, /review-workflow-example/);
 });
 
