@@ -4,7 +4,7 @@ import path from 'node:path';
 import test from 'node:test';
 import { fileURLToPath } from 'node:url';
 import { buildGuji } from '../scripts/build-guji.mjs';
-import { isPublishableHerbProfile, isPublicChapter, renderHerbProfilePage, renderLibraryIndex, renderReaderPage } from '../scripts/guji-lib.mjs';
+import { isPublishableHerbProfile, isPublicChapter, renderBookPage, renderHerbProfilePage, renderLibraryIndex, renderReaderPage } from '../scripts/guji-lib.mjs';
 
 const testDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '.guji-test-output');
 
@@ -60,14 +60,15 @@ test('古籍首页使用精简指标卡片，网站首页提供三部经典直�
   const libraryHtml = renderLibraryIndex(catalog, []);
   assert.match(libraryHtml, /class="classic-card-metrics"/);
   assert.match(libraryHtml, /256<\/strong> 条目录/);
-  assert.match(libraryHtml, /药名文献<\/dt><dd><strong>12<\/strong> 篇/);
-  assert.match(libraryHtml, /查看全书目录/);
+  assert.match(libraryHtml, /名称资料<\/dt><dd><strong>12<\/strong> 篇/);
+  assert.match(libraryHtml, /查看导读与目录/);
 
   const homeHtml = await fs.readFile(path.resolve('index.html'), 'utf8');
   assert.match(homeHtml, /id="classics"/);
   assert.match(homeHtml, /href="\/guji\/huangdi-neijing\/"/);
   assert.match(homeHtml, /href="\/guji\/shanghanlun\/"/);
   assert.match(homeHtml, /href="\/guji\/shennong-bencao\/"/);
+  assert.match(homeHtml, /12 条名称资料/);
   assert.match(homeHtml, /需要目录，可以微信联系/);
   assert.doesNotMatch(homeHtml, /<ol><li><span>1<\/span>添加好友/);
   assert.ok(
@@ -83,17 +84,33 @@ test('V1 拒绝生成本草药物详情页', async () => {
   assert.throws(() => renderReaderPage(catalog, book, volume, { ...approved, bookId: book.id, volumeId: volume.id }), /不生成《神农本草经》药物详情页/);
 });
 
-test('首批本草药名文献页只提供古籍原文、异名和阅读边界', async () => {
+test('三部古籍页都有实际文献导读内容', async () => {
+  const catalog = JSON.parse(await fs.readFile(path.resolve('content/guji/catalog.json'), 'utf8'));
+  for (const book of catalog.books) {
+    assert.equal(book.guideSections.length, 3, `${book.title} 应有三段文献导读`);
+    const html = renderBookPage(catalog, book, []);
+    assert.match(html, /class="book-guide-grid"/);
+    assert.match(html, new RegExp(book.guideSections[0].title));
+  }
+});
+
+test('首批本草名称页只提供目录、异名和版本资料', async () => {
   const catalog = JSON.parse(await fs.readFile(path.resolve('content/guji/catalog.json'), 'utf8'));
   const book = catalog.books.find((item) => item.id === 'shennong-bencao');
   const profile = catalog.herbProfiles.find((item) => item.slug === 'renshen');
   const volume = book.volumes.find((item) => item.id === profile.volumeId);
   assert.equal(catalog.herbProfiles.length, 12);
   assert.equal(catalog.herbProfiles.every(isPublishableHerbProfile), true);
+  for (const item of catalog.herbProfiles) {
+    const itemVolume = book.volumes.find((entry) => entry.id === item.volumeId);
+    const itemHtml = renderHerbProfilePage(catalog, book, itemVolume, item, {});
+    assert.doesNotMatch(itemHtml, /味甘|味苦|味辛|主治|功效|疗效|剂量|处方|服用|疾病|治疗|诊断|禁忌/);
+  }
   const html = renderHerbProfilePage(catalog, book, volume, profile, {});
-  assert.match(html, /人参，味甘小寒/);
-  assert.match(html, /历史文献记录不等于现代疗效/);
-  assert.match(html, /不提供现代功效判断、剂量、配伍或用药建议/);
+  assert.match(html, /目录正名/);
+  assert.match(html, /人衔/);
+  assert.match(html, /鬼盖/);
+  assert.match(html, /目录序号<\/dt><dd>28/);
   assert.match(html, /核对来源原页/);
 });
 
