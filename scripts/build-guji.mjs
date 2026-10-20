@@ -108,7 +108,7 @@ export async function buildGuji({ outDir = path.join(projectRoot, 'dist', 'guji'
     await writePage(outputPathForChapter(outDir, book, volume, chapter), renderReaderPage(catalog, book, volume, chapter, { previous: asNav(siblings[currentIndex - 1]), next: asNav(siblings[currentIndex + 1]) }));
   }
 
-  return { catalog, reviewed: reviewedRecords.length, published: published.length, herbProfiles: herbProfiles.length, outDir };
+  return { catalog, reviewed: reviewedRecords.length, published: published.length, publishedChapters: published, herbProfiles: herbProfiles.length, outDir };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

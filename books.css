@@ -76,7 +76,7 @@
 .book-cover::after { content: ""; position: absolute; inset: 9px; border: 1px solid rgba(255,255,255,.32); pointer-events: none; }
 .book-cover span, .book-cover small { z-index: 1; font-size: 10px; letter-spacing: .18em; opacity: .82; }
 .book-cover strong { z-index: 1; font: 700 22px/1.35 KaiTi, serif; writing-mode: vertical-rl; letter-spacing: .15em; }
-.cover-indigo { background: #314a63; }.cover-rust { background: #9b3c2c; }.cover-gold { background: #a7772f; }.cover-green { background: #326046; }.cover-blue { background: #315b72; }.cover-teal { background: #2f6b67; }.cover-forest { background: #36533c; }.cover-plum { background: #6d4058; }.cover-coral { background: #a75843; }.cover-sand { background: #9a7441; }.cover-ink { background: #343a3b; }.cover-bamboo { background: #68805a; }
+.cover-indigo { background: #314a63; }.cover-rust { background: #9b3c2c; }.cover-gold { background: #a7772f; }.cover-green { background: #326046; }.cover-yijing { background: linear-gradient(160deg, #263c34, #8b6b32); }.cover-tao { background: linear-gradient(160deg, #202f3d, #536e70); }.cover-blue { background: #315b72; }.cover-teal { background: #2f6b67; }.cover-forest { background: #36533c; }.cover-plum { background: #6d4058; }.cover-coral { background: #a75843; }.cover-sand { background: #9a7441; }.cover-ink { background: #343a3b; }.cover-bamboo { background: #68805a; }
 .book-info { min-width: 0; display: flex; flex-direction: column; }
 .book-meta { display: flex; gap: 7px; flex-wrap: wrap; }
 .book-meta span { padding: 3px 8px; border-radius: 4px; color: var(--jade); background: #edf4ef; font-size: 11px; }
@@ -85,7 +85,8 @@
 .book-info > p { margin: 0; color: var(--ink-soft); font-size: 14px; line-height: 1.72; }
 .book-actions { display: flex; gap: 12px; align-items: center; margin-top: auto; padding-top: 15px; }
 .book-actions a { color: var(--jade); font-size: 13px; font-weight: 700; text-underline-offset: 4px; }
-.book-actions .buy-link { margin-left: auto; padding: 7px 11px; border: 1px solid #d9c69e; border-radius: 6px; color: #815d20; text-decoration: none; background: #fffaf0; }
+.book-actions .original-link { padding: 7px 11px; border-radius: 6px; color: #fff; text-decoration: none; background: var(--jade); box-shadow: 0 6px 14px rgba(35,91,70,.16); }
+.book-actions .original-link:hover { background: var(--jade-dark); }
 .empty-state { padding: 70px 20px; border: 1px dashed #cfc6b5; border-radius: 12px; text-align: center; color: var(--ink-soft); }
 .empty-state strong { color: var(--ink); font-size: 22px; }
 

@@ -40,8 +40,8 @@ test('统一阅读器包含来源、设置、段落锚点和目录导航', async
 test('未通过审核的正文不进入静态构建产物', async () => {
   await fs.rm(testDir, { recursive: true, force: true });
   const result = await buildGuji({ outDir: testDir });
-  assert.equal(result.reviewed, 82);
-  assert.equal(result.published, 81);
+  assert.equal(result.reviewed, 227);
+  assert.equal(result.published, 226);
   assert.equal(result.herbProfiles, 32);
   assert.equal(await fileExists(path.join(testDir, 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', 'index.html')), true);
@@ -51,6 +51,10 @@ test('未通过审核的正文不进入静态构建产物', async () => {
   assert.equal(await fileExists(path.join(testDir, 'shennong-bencao', 'shangpin', 'huangzhi', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', '01', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', '81', 'index.html')), true);
+  assert.equal(await fileExists(path.join(testDir, 'yijing', 'shangjing', '01', 'index.html')), true);
+  assert.equal(await fileExists(path.join(testDir, 'yijing', 'xiajing', '64', 'index.html')), true);
+  assert.equal(await fileExists(path.join(testDir, 'daodejing', 'daojing', '01', 'index.html')), true);
+  assert.equal(await fileExists(path.join(testDir, 'daodejing', 'deijing', '81', 'index.html')), true);
   assert.equal(await fileExists(path.join(testDir, 'huangdi-neijing', 'suwen', 'review-workflow-example', 'index.html')), false);
   const files = await walk(testDir);
   const combined = (await Promise.all(files.filter((file) => file.endsWith('.html')).map((file) => fs.readFile(file, 'utf8')))).join('\n');
@@ -78,13 +82,41 @@ test('《素问》八十一篇正文保留来源版本、许可和完整段落',
   }
 });
 
-test('古籍首页使用精简指标卡片，网站首页提供三部经典直达入口', async () => {
+test('《易经》六十四卦与《道德经》八十一章均有可追溯原文', async () => {
+  const yijing = JSON.parse(await fs.readFile(path.resolve('content/guji/review/yijing-wikisource.json'), 'utf8'));
+  const daodejing = JSON.parse(await fs.readFile(path.resolve('content/guji/review/daodejing-wikisource.json'), 'utf8'));
+  assert.equal(yijing.length, 64);
+  assert.equal(yijing[0].title, '乾');
+  assert.equal(yijing[63].title, '未济');
+  assert.equal(daodejing.length, 81);
+  assert.equal(daodejing[0].title, '第一章');
+  assert.equal(daodejing[80].title, '第八十一章');
+  for (const chapter of [...yijing, ...daodejing]) {
+    assert.equal(isPublicChapter(chapter), true);
+    assert.ok(chapter.paragraphs.length >= 1, `${chapter.title} 正文不得为空`);
+    assert.match(chapter.sourceUrl, /zh\.wikisource\.org\/w\/index\.php\?title=/);
+    assert.match(String(chapter.sourceRevision), /^\d+$/);
+    assert.equal(chapter.sourceLicense, 'CC BY-SA 4.0');
+    assert.match(chapter.bodySha256, /^[a-f0-9]{64}$/);
+  }
+  assert.doesNotMatch(daodejing.map((chapter) => chapter.paragraphs.map((item) => item.text).join('')).join('\n'), /王弼曰|晁说之|熊克谨记/);
+});
+
+test('古籍首页使用五部经典卡片，网站首页保留三部中医经典入口', async () => {
   const catalog = JSON.parse(await fs.readFile(path.resolve('content/guji/catalog.json'), 'utf8'));
   const libraryHtml = renderLibraryIndex(catalog, []);
   assert.match(libraryHtml, /class="classic-card-metrics"/);
-  assert.match(libraryHtml, /256<\/strong> 条目录/);
+  assert.match(libraryHtml, /401<\/strong> 条目录/);
   assert.match(libraryHtml, /名称资料<\/dt><dd><strong>32<\/strong> 篇/);
+  assert.match(libraryHtml, /五部古籍，一套阅读路径/);
+  assert.match(libraryHtml, /href="\/guji\/yijing\/"/);
+  assert.match(libraryHtml, /href="\/guji\/daodejing\/"/);
   assert.match(libraryHtml, /查看导读与目录/);
+
+  const booksHtml = await fs.readFile(path.resolve('books.html'), 'utf8');
+  assert.doesNotMatch(booksHtml, /购买|buy-link|go\.html\?book=/);
+  assert.match(booksHtml, /阅读六十四卦原文/);
+  assert.match(booksHtml, /阅读八十一章原文/);
 
   const homeHtml = await fs.readFile(path.resolve('index.html'), 'utf8');
   assert.match(homeHtml, /id="classics"/);
@@ -126,7 +158,7 @@ test('V1 拒绝生成本草药物详情页', async () => {
   assert.throws(() => renderReaderPage(catalog, book, volume, { ...approved, bookId: book.id, volumeId: volume.id }), /不生成《神农本草经》药物详情页/);
 });
 
-test('三部古籍页都有实际文献导读内容', async () => {
+test('五部古籍页都有实际文献导读内容', async () => {
   const catalog = JSON.parse(await fs.readFile(path.resolve('content/guji/catalog.json'), 'utf8'));
   for (const book of catalog.books) {
     assert.equal(book.guideSections.length, 3, `${book.title} 应有三段文献导读`);
@@ -163,7 +195,7 @@ test('上品本草名称页完整覆盖目录且只提供目录、异名和版�
 });
 
 test('公开 sitemap 只包含目录页，不包含未审核正文', async () => {
-  const sitemap = await fs.readFile(path.resolve('sitemap.xml'), 'utf8');
+  const sitemap = await fs.readFile(path.resolve('dist/sitemap.xml'), 'utf8');
   assert.match(sitemap, /https:\/\/nihaixia\.org\/guji\//);
   assert.match(sitemap, /\/guji\/huangdi-neijing\/suwen\//);
   assert.match(sitemap, /\/guji\/shennong-bencao\/xiapin\//);
@@ -172,6 +204,10 @@ test('公开 sitemap 只包含目录页，不包含未审核正文', async () =>
   assert.match(sitemap, /\/guji\/shennong-bencao\/shangpin\/huangzhi\//);
   assert.match(sitemap, /\/guji\/huangdi-neijing\/suwen\/01\//);
   assert.match(sitemap, /\/guji\/huangdi-neijing\/suwen\/81\//);
+  assert.match(sitemap, /\/guji\/yijing\/shangjing\/01\//);
+  assert.match(sitemap, /\/guji\/yijing\/xiajing\/64\//);
+  assert.match(sitemap, /\/guji\/daodejing\/daojing\/01\//);
+  assert.match(sitemap, /\/guji\/daodejing\/deijing\/81\//);
   assert.doesNotMatch(sitemap, /review-workflow-example/);
 });
 

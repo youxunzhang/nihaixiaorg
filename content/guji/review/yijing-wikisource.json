@@ -1,0 +1,6210 @@
+[
+  {
+    "id": "yijing-001",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "乾",
+    "sourceHeading": "周易/乾",
+    "slug": "01",
+    "order": 1,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》乾卦，修订版本 2404991",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E4%B9%BE&oldid=2404991&variant=zh-hans",
+    "sourceRevision": 2404991,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "413c33fe79aa5191310729cb874cf3b69bd3bdde4dec7d1e99dc3e26b422ffff",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "乾：元亨。利貞。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：潛龍勿用。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：見龍在田，利見大人。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：君子終日乾乾，夕惕若；厲，无咎。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：或躍在淵，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：飛龍在天，利見大人。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：亢龍，有悔。"
+      },
+      {
+        "id": "p8",
+        "text": "用九：見羣龍无首，吉。"
+      },
+      {
+        "id": "p9",
+        "text": "彖曰："
+      },
+      {
+        "id": "p10",
+        "text": "大哉乾元，萬物資始，乃統天。雲行雨施，品物流形，大明終始，六位時成。"
+      },
+      {
+        "id": "p11",
+        "text": "時乘六龍以御天，乾道變化，各正性命，保合大和，乃利貞。"
+      },
+      {
+        "id": "p12",
+        "text": "首出庶物，萬國咸寧。"
+      },
+      {
+        "id": "p13",
+        "text": "象曰："
+      },
+      {
+        "id": "p14",
+        "text": "天行健，君子以自強不息。"
+      },
+      {
+        "id": "p15",
+        "text": "潛龍勿用，陽在下也。"
+      },
+      {
+        "id": "p16",
+        "text": "見龍在田，德施普也。"
+      },
+      {
+        "id": "p17",
+        "text": "終日乾乾，反復道也。"
+      },
+      {
+        "id": "p18",
+        "text": "或躍在淵，進无咎也。"
+      },
+      {
+        "id": "p19",
+        "text": "飛龍在天，大人造也。"
+      },
+      {
+        "id": "p20",
+        "text": "亢龍有悔，盈不可久也。"
+      },
+      {
+        "id": "p21",
+        "text": "用九，天德不可為首也。"
+      },
+      {
+        "id": "p22",
+        "text": "文言曰："
+      },
+      {
+        "id": "p23",
+        "text": "元者，善之長也。亨者，嘉之會也。利者，義之和也。貞者，事之幹也。君子體仁足以長人，嘉會足以合禮，利物足以和義，貞固足以幹事。君子行此四德者，故曰：「乾，元、亨、利、貞。」"
+      },
+      {
+        "id": "p24",
+        "text": "初九曰：「潛龍，勿用。」何謂也？子曰：「龍德而隱者也。不易乎世，不成乎名，遯世无悶，不見是而无悶，樂則行之，憂則違之，確乎其不可拔，潛龍也。」"
+      },
+      {
+        "id": "p25",
+        "text": "九二曰：「見龍在田，利見大人。」何謂也？子曰：「龍德而正中者也。庸言之信，庸行之謹；閑邪存其誠，善世而不伐，德博而化。易曰：『見龍在田，利見大人。』君德也。」"
+      },
+      {
+        "id": "p26",
+        "text": "九三曰：「君子終日乾乾，夕惕若，厲，无咎。」何謂也？子曰：「君子進德脩業。忠信，所以進德也；脩辭立其誠，所以居業也。知至至之，可與言幾也。知終終之，可與存義也。是故居上位而不驕，在下位而不憂，故乾乾因其時而惕，雖危无咎矣。」"
+      },
+      {
+        "id": "p27",
+        "text": "九四曰：「或躍在淵，无咎。」何謂也？子曰：「上下无常，非為邪也。進退无恒，非離羣也。君子進德脩業，欲及時也。故无咎。」"
+      },
+      {
+        "id": "p28",
+        "text": "九五曰：「飛龍在天，利見大人。」何謂也？子曰：「同聲相應，同氣相求；水流濕，火就燥，雲從龍，風從虎；聖人作而萬物覩；本乎天者親上，本乎地者親下，則各從其類也。」"
+      },
+      {
+        "id": "p29",
+        "text": "上九曰：「亢龍，有悔。」何謂也？子曰：「貴而无位，高而无民，賢人在下位而无輔，是以動而有悔也。」"
+      },
+      {
+        "id": "p30",
+        "text": "「潛龍勿用」，下也。"
+      },
+      {
+        "id": "p31",
+        "text": "「見龍在田」，時舍也。"
+      },
+      {
+        "id": "p32",
+        "text": "「終日乾乾」，行事也。"
+      },
+      {
+        "id": "p33",
+        "text": "「或躍在淵」，自試也。"
+      },
+      {
+        "id": "p34",
+        "text": "「飛龍在天」，上治也。"
+      },
+      {
+        "id": "p35",
+        "text": "「亢龍有悔」，窮之災也。"
+      },
+      {
+        "id": "p36",
+        "text": "「乾元用九」，天下治也。"
+      },
+      {
+        "id": "p37",
+        "text": "「潛龍勿用」，陽氣潛藏。"
+      },
+      {
+        "id": "p38",
+        "text": "「見龍在田」，天下文明。"
+      },
+      {
+        "id": "p39",
+        "text": "「終日乾乾」，與時偕行。"
+      },
+      {
+        "id": "p40",
+        "text": "「或躍在淵」，乾道乃革。"
+      },
+      {
+        "id": "p41",
+        "text": "「飛龍在天」，乃位乎天德。"
+      },
+      {
+        "id": "p42",
+        "text": "「亢龍有悔」，與時偕極。"
+      },
+      {
+        "id": "p43",
+        "text": "「乾元用九」，乃見天則。"
+      },
+      {
+        "id": "p44",
+        "text": "乾元者，始而亨者也。利貞者，性情也。乾始能以美利利天下，不言所利，大矣哉！大哉乾元，剛健中正，純粹精也。六爻發揮，旁通情也。時乘六龍，以御天也。雲行雨施，天下平也。"
+      },
+      {
+        "id": "p45",
+        "text": "君子以成德為行，日可見之行也。潛之為言也，隱而未見，行而未成，是以君子弗用也。"
+      },
+      {
+        "id": "p46",
+        "text": "君子學以聚之，問以辯之，寬以居之，仁以行之，易曰：「見龍在田，利見大人。」君德也。"
+      },
+      {
+        "id": "p47",
+        "text": "九三，重剛而不中，上不在天，下不在田；故乾乾因其時而惕，雖危，无咎矣。"
+      },
+      {
+        "id": "p48",
+        "text": "九四，重剛而不中，上不在天，下不在田，中不在人，故或之。或之者，疑之也，故无咎。"
+      },
+      {
+        "id": "p49",
+        "text": "夫大人者，與天地合其德，與日月合其明，與四時合其序，與鬼神合其吉凶；先天而天弗違，後天而奉天時，天且弗違，而況於人乎？況於鬼神乎？"
+      },
+      {
+        "id": "p50",
+        "text": "亢之為言也，知進而不知退，知存而不知亡，知得而不知喪；其唯聖人乎？知進退存亡而不失其正者，其唯聖人乎！"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-002",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "坤",
+    "sourceHeading": "周易/坤",
+    "slug": "02",
+    "order": 2,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》坤卦，修订版本 2404999",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%9D%A4&oldid=2404999&variant=zh-hans",
+    "sourceRevision": 2404999,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "2e454210be531c06f821405b2e7cbd5440cafed63462e5f251ef67c602ccd97e",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "<span"
+      },
+      {
+        "id": "p2",
+        "text": "坤：元亨。利牝馬之貞。"
+      },
+      {
+        "id": "p3",
+        "text": "君子有攸往，先迷後得主。"
+      },
+      {
+        "id": "p4",
+        "text": "利西南得朋，東北喪朋。安貞，吉。"
+      },
+      {
+        "id": "p5",
+        "text": "初六：履霜，堅冰至。"
+      },
+      {
+        "id": "p6",
+        "text": "六二：直方大，不習无不利。"
+      },
+      {
+        "id": "p7",
+        "text": "六三：含章，可貞。或從王事，无成有終。"
+      },
+      {
+        "id": "p8",
+        "text": "六四：括囊，无咎无譽。"
+      },
+      {
+        "id": "p9",
+        "text": "六五：黃裳，元吉。"
+      },
+      {
+        "id": "p10",
+        "text": "上六：龍戰于野，其血玄黃。"
+      },
+      {
+        "id": "p11",
+        "text": "用六：利永貞。"
+      },
+      {
+        "id": "p12",
+        "text": "彖曰："
+      },
+      {
+        "id": "p13",
+        "text": "至哉坤元，萬物資生，乃順承天。坤厚載物，德合无疆；含弘光大，品物咸亨。牝馬地類，行地无疆，柔順利貞。"
+      },
+      {
+        "id": "p14",
+        "text": "君子攸行，先迷失道，後順得常。"
+      },
+      {
+        "id": "p15",
+        "text": "西南得朋，乃與類行，東北喪朋，乃終有慶。安貞之吉，應地无疆。"
+      },
+      {
+        "id": "p16",
+        "text": "象曰："
+      },
+      {
+        "id": "p17",
+        "text": "地勢坤，君子以厚德載物。"
+      },
+      {
+        "id": "p18",
+        "text": "履霜堅冰，陰始凝也。馴致其道，至堅冰也。"
+      },
+      {
+        "id": "p19",
+        "text": "六二之動，直以方也。不習无不利，地道光也。"
+      },
+      {
+        "id": "p20",
+        "text": "含章可貞，以時發也。或從王事，知光大也。"
+      },
+      {
+        "id": "p21",
+        "text": "括囊无咎，慎不害也。"
+      },
+      {
+        "id": "p22",
+        "text": "黃裳元吉，文在中也。"
+      },
+      {
+        "id": "p23",
+        "text": "龍戰于野，其道窮也。"
+      },
+      {
+        "id": "p24",
+        "text": "用六永貞，以大終也。"
+      },
+      {
+        "id": "p25",
+        "text": "文言曰："
+      },
+      {
+        "id": "p26",
+        "text": "坤至柔而動也剛，至靜而德方。後得主而有常，含萬物而化光。坤道其順乎！承天而時行。"
+      },
+      {
+        "id": "p27",
+        "text": "積善之家，必有餘慶；積不善之家，必有餘殃。臣弒其君，子弒其父，非一朝一夕之故，其所由來者漸矣。由辨之不早辨也。易曰：「履霜，堅冰至。」蓋言順也。"
+      },
+      {
+        "id": "p28",
+        "text": "直其正也，方其義也。君子敬以直內，義以方外，敬義立而德不孤。「直方大，不習无不利。」則不疑其所行也。"
+      },
+      {
+        "id": "p29",
+        "text": "陰雖有美，含之。以從王事，弗敢成也。地道也，妻道也，臣道也。地道无成，而代有終也。"
+      },
+      {
+        "id": "p30",
+        "text": "天地變化，草木蕃；天地閉，賢人隱。易曰：「括囊，无咎，无譽。」蓋言謹也。"
+      },
+      {
+        "id": "p31",
+        "text": "君子黃中通理，正位居體，美在其中，而暢於四支，發於事業，美之至也。"
+      },
+      {
+        "id": "p32",
+        "text": "陰疑於陽必戰，為其嫌於无陽也，故稱龍焉。猶未離其類也，故稱血焉。夫玄黃者，天地之雜也。天玄而地黃。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-003",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "屯",
+    "sourceHeading": "周易/屯",
+    "slug": "03",
+    "order": 3,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》屯卦，修订版本 10643482",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%B1%AF&oldid=10643482&variant=zh-hans",
+    "sourceRevision": 10643482,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "053b40dc12b2c7c849a992b663814ddbd118565062be631f852494ff47224acf",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "屯：元亨，利貞。勿用有攸往，利建侯。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：桓，利居貞，利建侯。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：屯如邅如，乘馬班如，匪寇婚媾，女子貞不字，十年乃字。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：即鹿无虞，惟入于林中，君子幾不如舍，往吝。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：乘馬班如，求婚媾，往，吉无不利。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：屯其膏；小貞吉，大貞凶。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：乘馬班如，泣血漣如。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "屯，剛柔始交而難生，動乎險中，大亨貞。雷雨之動滿盈，天造草昧，宜建侯而不寧。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "雲雷，屯；君子以經綸。"
+      },
+      {
+        "id": "p12",
+        "text": "雖磐桓，志行正也。以貴下賤，大得民也。"
+      },
+      {
+        "id": "p13",
+        "text": "六二之難，乘剛也。十年乃字，反常也。"
+      },
+      {
+        "id": "p14",
+        "text": "即鹿无虞，以從禽也。君子舍之，往吝窮也。"
+      },
+      {
+        "id": "p15",
+        "text": "求而往，明也。"
+      },
+      {
+        "id": "p16",
+        "text": "屯其膏，施未光也。"
+      },
+      {
+        "id": "p17",
+        "text": "泣血漣如，何可長也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-004",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "蒙",
+    "sourceHeading": "周易/蒙",
+    "slug": "04",
+    "order": 4,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》蒙卦，修订版本 10645379",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%92%99&oldid=10645379&variant=zh-hans",
+    "sourceRevision": 10645379,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "c67643aaf85b1c0f4fecde0e4c41c7fbe1997d074350a7b6358e7d20b8f58215",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "蒙：亨。匪我求童蒙，童蒙求我。初筮告，再三瀆，瀆則不告。利貞。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：發蒙，利用刑人，用說桎梏，以往吝。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：包蒙吉，納婦吉，子克家。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：勿用女，見金夫，不有躬，无攸利。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：困蒙，吝。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：童蒙，吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：擊蒙，不利為寇，利禦寇。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "蒙，山下有險，險而止，蒙。蒙亨，以亨行，時中也。匪我求童蒙，童蒙求我，志應也。初筮告，以剛中也。再三瀆，瀆則不告，瀆蒙也。蒙以養正，聖功也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "山下出泉，蒙；君子以果行育德。"
+      },
+      {
+        "id": "p12",
+        "text": "利用刑人，以正法也。"
+      },
+      {
+        "id": "p13",
+        "text": "子克家，剛柔接也。"
+      },
+      {
+        "id": "p14",
+        "text": "勿用取女，行不順也。"
+      },
+      {
+        "id": "p15",
+        "text": "困蒙之吝，獨遠實也。"
+      },
+      {
+        "id": "p16",
+        "text": "童蒙之吉，順以巽也。"
+      },
+      {
+        "id": "p17",
+        "text": "利禦寇，上下順也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-005",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "需",
+    "sourceHeading": "周易/需",
+    "slug": "05",
+    "order": 5,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》需卦，修订版本 10643261",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%9C%80&oldid=10643261&variant=zh-hans",
+    "sourceRevision": 10643261,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "3fd290424b961b7c8dd328000fff2cd42107eb3bfb2ab309fcfdf54706e1f332",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "需：有孚，光亨。貞吉，利涉大川。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：需于郊，利用恆，无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：需于沙，小有言，終吉。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：需于泥，致寇至。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：需于血，出自穴。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：需于酒食，貞吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：入于穴，有不速之客三人來，敬之終吉。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "需，須也，險在前也；剛健而不陷，其義不困窮矣。需，有孚，光亨，貞吉，位乎天位，以正中也。利涉大川，往有功也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "雲上於天，需；君子以飲食宴樂。"
+      },
+      {
+        "id": "p12",
+        "text": "需于郊，不犯難行也。利用恆，无咎，未失常也。"
+      },
+      {
+        "id": "p13",
+        "text": "需于沙，衍在中也。雖小有言，以吉終也。"
+      },
+      {
+        "id": "p14",
+        "text": "需于泥，災在外也。自我致寇，敬慎不敗也。"
+      },
+      {
+        "id": "p15",
+        "text": "需于血，順以聽也。"
+      },
+      {
+        "id": "p16",
+        "text": "酒食，貞吉，以中正也。"
+      },
+      {
+        "id": "p17",
+        "text": "不速之客來，敬之終吉。雖不當位，未大失也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-006",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "讼",
+    "sourceHeading": "周易/訟",
+    "slug": "06",
+    "order": 6,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》讼卦，修订版本 10645409",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%A8%9F&oldid=10645409&variant=zh-hans",
+    "sourceRevision": 10645409,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "573f2f10d34be6ce9bdf5452b5a2e58c5d78bf1a62c369a2952a54bcec7b3007",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "訟：有孚，窒，惕，中吉，終凶。利見大人，不利涉大川。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：不永所事，小有言，終吉。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：不克訟，歸而逋，其邑人三百戶无眚。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：食舊德，貞厲，終吉。或從王事，无成。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：不克訟，復即命渝，安貞吉。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：訟，元吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：或錫之鞶帶，終朝三之。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "訟，上剛下險，險而健，訟。訟，有孚，窒，惕，中吉，剛來而得中也。終凶，訟不可成也。利見大人，尚中正也。不利涉大川，入于淵也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "天與水違行，訟；君子以作事謀始。"
+      },
+      {
+        "id": "p12",
+        "text": "不永所事，訟不可長也。雖小有言，其辯明也。"
+      },
+      {
+        "id": "p13",
+        "text": "不克訟，歸逋竄也。自下訟上，患至掇也。"
+      },
+      {
+        "id": "p14",
+        "text": "食舊德，從上吉也。"
+      },
+      {
+        "id": "p15",
+        "text": "復即命渝，安貞，不失也。"
+      },
+      {
+        "id": "p16",
+        "text": "訟，元吉，以中正也。"
+      },
+      {
+        "id": "p17",
+        "text": "以訟受服，亦不足敬也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-007",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "师",
+    "sourceHeading": "周易/師",
+    "slug": "07",
+    "order": 7,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》师卦，修订版本 2405011",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%B8%AB&oldid=2405011&variant=zh-hans",
+    "sourceRevision": 2405011,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "f6bb90ad74260c56b3eb6d1e8895e9ae82d3e2b2c66e58e07ef2be9c5876fd13",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "師：貞丈人吉，无咎。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：師出以律，否臧，凶。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：在師中吉，无咎；王三錫命。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：師或輿尸，凶。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：師左次，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：田有禽，利執言，无咎。長子帥師，弟子輿尸，貞凶。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：大君有命，開國承家，小人勿用。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "師，眾也。貞，正也。能以眾正，可以王矣。剛中而應，行險而順，以此毒天下，而民從之，吉又何咎矣。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "地中有水，師；君子以容民畜衆。"
+      },
+      {
+        "id": "p12",
+        "text": "師出以律；失律，凶也。"
+      },
+      {
+        "id": "p13",
+        "text": "在師中吉，承天寵也。王三錫命，懷萬邦也。"
+      },
+      {
+        "id": "p14",
+        "text": "師或輿尸，大无功也。"
+      },
+      {
+        "id": "p15",
+        "text": "左次无咎，未失常也。"
+      },
+      {
+        "id": "p16",
+        "text": "長子帥師，以中行也。弟子輿尸，使不當也。"
+      },
+      {
+        "id": "p17",
+        "text": "大君有命，以正功也。小人勿用，必亂邦也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-008",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "比",
+    "sourceHeading": "周易/比",
+    "slug": "08",
+    "order": 8,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》比卦，修订版本 10645543",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%AF%94&oldid=10645543&variant=zh-hans",
+    "sourceRevision": 10645543,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "458f8ed02aed7aad4315797932e3589cccd4504b858a1d40ccaca8c9d75ba3a4",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "比：吉。原筮元永貞，无咎。不寧方來，後夫凶。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：有孚，比之，无咎。有孚盈缶，終來有它，吉。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：比之自內，貞吉。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：比之匪人。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：外比之，貞吉。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：顯比。王用三，失前禽，邑人不誡，吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：比之无首，凶。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "比，吉也。比，輔也，下順從也。原筮，元永貞，无咎，以剛中也。不寧方來，上下應也。後夫凶，其道窮也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "地上有水，比；先王以建萬國，親諸侯。"
+      },
+      {
+        "id": "p12",
+        "text": "比之初六，有它吉也。"
+      },
+      {
+        "id": "p13",
+        "text": "比之自內，不自失也。"
+      },
+      {
+        "id": "p14",
+        "text": "比之匪人，不亦傷乎！"
+      },
+      {
+        "id": "p15",
+        "text": "外比於賢，以從上也。"
+      },
+      {
+        "id": "p16",
+        "text": "顯比之吉，位正中也。舍逆取順，失前禽也。邑人不誡，上使中也。"
+      },
+      {
+        "id": "p17",
+        "text": "比之无首，无所終也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-009",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "小畜",
+    "sourceHeading": "周易/小畜",
+    "slug": "09",
+    "order": 9,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》小畜卦，修订版本 10645530",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%B0%8F%E7%95%9C&oldid=10645530&variant=zh-hans",
+    "sourceRevision": 10645530,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "63f0281aa2fa8c9e251b41ba6ace94ba677485cc2146c55929f3330cdf5dc47b",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "小畜：亨。密雲不雨，自我西郊。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：復自道，何其咎，吉。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：牽復，吉。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：說，夫妻反目。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：有孚，血去惕出，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：有孚攣如，富以其鄰。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：既雨既處，尚載，婦貞厲，月幾望，君子征凶。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "小畜，柔得位而上下應之，曰小畜。健而巽，剛中而志行，乃亨。密雲不雨，尚往也。自我西郊，施未行也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "風行天上，小畜，君子以懿文德。"
+      },
+      {
+        "id": "p12",
+        "text": "復自道，其義吉也。"
+      },
+      {
+        "id": "p13",
+        "text": "牽復在中，亦不自失也。"
+      },
+      {
+        "id": "p14",
+        "text": "夫妻反目，不能正室也。"
+      },
+      {
+        "id": "p15",
+        "text": "有孚。惕出。上合志也。"
+      },
+      {
+        "id": "p16",
+        "text": "有孚攣如，不獨富也。"
+      },
+      {
+        "id": "p17",
+        "text": "既雨既處，德積載也。君子征凶，有所疑也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-010",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "履",
+    "sourceHeading": "周易/履",
+    "slug": "10",
+    "order": 10,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》履卦，修订版本 10647513",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%B1%A5&oldid=10647513&variant=zh-hans",
+    "sourceRevision": 10647513,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "ad78198faabd916dd4f5d41fb7e2158aa05c20c25756f2b343a87d7bd1e535dc",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "履虎尾，不咥人，亨。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：素履，往无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：履道坦坦，幽人貞吉。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：眇能視，跛能履，履虎尾，咥人，凶。武人為于大君。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：履虎尾，愬愬終吉。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：夬履，貞厲。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：視履考詳，其旋元吉。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "履，柔履剛也。說而應乎乾，是以履虎尾，不咥人，亨，利貞。剛中正，履帝位而不疚，光明也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "上天下澤，履；君子以辨上下，定民志。"
+      },
+      {
+        "id": "p12",
+        "text": "素履之往，獨行願也。"
+      },
+      {
+        "id": "p13",
+        "text": "幽人貞吉，中不自亂也。"
+      },
+      {
+        "id": "p14",
+        "text": "眇能視，不足以有明也。跛能履，不足以與行也。咥人之凶，位不當也。武人為于大君，志剛也。"
+      },
+      {
+        "id": "p15",
+        "text": "愬愬終吉，志行也。"
+      },
+      {
+        "id": "p16",
+        "text": "夬履貞厲，位正當也。"
+      },
+      {
+        "id": "p17",
+        "text": "元吉在上，大有慶也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-011",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "泰",
+    "sourceHeading": "周易/泰",
+    "slug": "11",
+    "order": 11,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》泰卦，修订版本 2106138",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%B3%B0&oldid=2106138&variant=zh-hans",
+    "sourceRevision": 2106138,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "5502d23a179ba9f43103985b45eade0a760257216030a689fabac20df2c4ff72",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "泰：小往大來，吉亨。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：拔茅茹以其彙，征吉。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：包荒。用馮河，不遐遺；朋亡。得尚于中行。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：无平不陂，无往不復，艱貞无咎。勿恤其孚，于食有福。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：翩翩，不富以其鄰；不戒以孚。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：帝乙歸妹，以祉，元吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：城復于隍，勿用師，自邑告命，貞吝。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "泰，小往大來，吉亨。則是天地交而萬物通也，上下交而其志同也。內陽而外陰，內健而外順，內君子而外小人，君子道長，小人道消也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "天地交，泰；后以財成天地之道，輔相天地之宜，以左右民。"
+      },
+      {
+        "id": "p12",
+        "text": "拔茅征吉，志在外也。"
+      },
+      {
+        "id": "p13",
+        "text": "包荒，得尚于中行，以光大也。"
+      },
+      {
+        "id": "p14",
+        "text": "无往不復，天地際也。"
+      },
+      {
+        "id": "p15",
+        "text": "翩翩不富，皆失實也。不戒以孚，中心願也。"
+      },
+      {
+        "id": "p16",
+        "text": "以祉，元吉。中以行願也。"
+      },
+      {
+        "id": "p17",
+        "text": "城復于隍，其命亂也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-012",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "否",
+    "sourceHeading": "周易/否",
+    "slug": "12",
+    "order": 12,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》否卦，修订版本 10645603",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%90%A6&oldid=10645603&variant=zh-hans",
+    "sourceRevision": 10645603,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "d53510e1dcc70830b02380a1aab2944e52b79d5762b5716c3f72632e40a597f2",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "否之匪人，不利君子貞，大往小來。"
+      },
+      {
+        "id": "p2",
+        "text": "初六，拔茅茹以其彙，貞吉。亨。"
+      },
+      {
+        "id": "p3",
+        "text": "六二，包承，小人吉，大人否。亨。"
+      },
+      {
+        "id": "p4",
+        "text": "六三，包羞。"
+      },
+      {
+        "id": "p5",
+        "text": "九四，有命，无咎，疇離祉。"
+      },
+      {
+        "id": "p6",
+        "text": "九五，休否，大人吉。其亡其亡，繫于桑。"
+      },
+      {
+        "id": "p7",
+        "text": "上九，傾否，先否後喜。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "否之匪人，不利君子貞，大往小來。則是天地不交而萬物不通也，上下不交而天下无邦也。內陰而外陽，內柔而外剛，內小人而外君子，小人道長，君子道消也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "天地不交，否；君子以儉德辟難，不可榮以祿。"
+      },
+      {
+        "id": "p12",
+        "text": "拔茅貞吉，志在君也。"
+      },
+      {
+        "id": "p13",
+        "text": "大人否，亨。不亂羣也。"
+      },
+      {
+        "id": "p14",
+        "text": "包羞，位不當也。"
+      },
+      {
+        "id": "p15",
+        "text": "有命无咎，志行也。"
+      },
+      {
+        "id": "p16",
+        "text": "大人之吉，位正當也。"
+      },
+      {
+        "id": "p17",
+        "text": "否終則傾，何可長也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-013",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "同人",
+    "sourceHeading": "周易/同人",
+    "slug": "13",
+    "order": 13,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》同人卦，修订版本 10645635",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%90%8C%E4%BA%BA&oldid=10645635&variant=zh-hans",
+    "sourceRevision": 10645635,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "b3ad3968c6046aead26edfecf655502ff9a6099cf7938ea098d5e5b2a6380c40",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "同人于野，亨。 利涉大川，利君子貞。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：同人于門，無咎。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：同人于宗，吝。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：伏戎于莽，升其高陵，三歲不興。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：乘其，弗克攻，吉。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：同人，先號啕而後笑。大師克相遇。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：同人于郊，無悔。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "同人，柔得位得中，而應乎乾，曰同人。同人曰，同人于野，亨。利涉大川，乾行也。文明以健，中正而應，君子正也。唯君子為能通天下之志。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "天與火，同人；君子以類族辨物。"
+      },
+      {
+        "id": "p12",
+        "text": "出門同人，又誰咎也。"
+      },
+      {
+        "id": "p13",
+        "text": "同人于宗，吝道也。"
+      },
+      {
+        "id": "p14",
+        "text": "伏戎于莽，敵剛也。三歲不興，安行也。"
+      },
+      {
+        "id": "p15",
+        "text": "乘其，義弗克也，其吉，則困而反則也。"
+      },
+      {
+        "id": "p16",
+        "text": "同人之先，以中直也。大師相遇，言相克也。"
+      },
+      {
+        "id": "p17",
+        "text": "同人于郊，志未得也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-014",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "大有",
+    "sourceHeading": "周易/大有",
+    "slug": "14",
+    "order": 14,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》大有卦，修订版本 10645712",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%A4%A7%E6%9C%89&oldid=10645712&variant=zh-hans",
+    "sourceRevision": 10645712,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "a376a0efe32ea7042f14b5ab849f040326629d516ae591ce80decb603bc762f9",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "大有：元亨。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：无交害，匪咎，艱則无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：大以載，有攸往，无咎。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：公用亨于天子，小人弗克。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：匪其，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：厥孚交如，威如；吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：自天之，吉无不利。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "大有，柔得尊位，大中而上下應之，曰大有。其德剛健而文明，應乎天而時行，是以元亨。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "火在天上，大有；君子以遏惡揚善，順天休命。"
+      },
+      {
+        "id": "p12",
+        "text": "大有初九，无交害也。"
+      },
+      {
+        "id": "p13",
+        "text": "大以載，積中不敗也。"
+      },
+      {
+        "id": "p14",
+        "text": "公用亨于天子，小人害也。"
+      },
+      {
+        "id": "p15",
+        "text": "匪其彭，无咎；明辨晰也。"
+      },
+      {
+        "id": "p16",
+        "text": "厥孚交如，信以發志也。威如之吉，易而无備也。"
+      },
+      {
+        "id": "p17",
+        "text": "大有上吉，自天佑也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-015",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "谦",
+    "sourceHeading": "周易/謙",
+    "slug": "15",
+    "order": 15,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》谦卦，修订版本 2106142",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%AC%99&oldid=2106142&variant=zh-hans",
+    "sourceRevision": 2106142,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "3334be23617272411d79c34da2a395f48ac2d9900b307573db7d6df352e37b00",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "謙：亨，君子有終。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：謙謙君子，用涉大川，吉。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：鳴謙，貞吉。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：勞謙君子，有終吉。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：无不利，撝謙。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：不富，以其鄰，利用侵伐，无不利。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：鳴謙，利用行師，征邑國。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "謙，亨，天道下濟而光明，地道卑而上行。天道虧盈而益謙，地道變盈而流謙，鬼神害盈而福謙，人道惡盈而好謙。謙尊而光，卑而不可逾，君子之終也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "地中有山，謙；君子以裒多益寡，稱物平施。"
+      },
+      {
+        "id": "p12",
+        "text": "謙謙君子，卑以自牧也。"
+      },
+      {
+        "id": "p13",
+        "text": "鳴謙貞吉，中心得也。"
+      },
+      {
+        "id": "p14",
+        "text": "勞謙君子，萬民服也。"
+      },
+      {
+        "id": "p15",
+        "text": "无不利撝謙；不違則也。"
+      },
+      {
+        "id": "p16",
+        "text": "利用侵伐，征不服也。"
+      },
+      {
+        "id": "p17",
+        "text": "鳴謙，志未得也。可用行師，征邑國也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-016",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "豫",
+    "sourceHeading": "周易/豫",
+    "slug": "16",
+    "order": 16,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》豫卦，修订版本 10645735",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%B1%AB&oldid=10645735&variant=zh-hans",
+    "sourceRevision": 10645735,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "085719afef4e92301851a1af8f60ed821474e6b7a01ed56adddbbee7bbb21868",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "豫：利建侯行師。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：鳴豫，凶。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：介于石，不終日，貞吉。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：盱豫，悔。遲有悔。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：由豫，大有得。勿疑。朋盍。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：貞疾，恆不死。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：冥豫，成有渝，无咎。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "豫，剛應而志行，順以動，豫。豫，順以動，故天地如之，而況建侯行師乎？天地以順動，故日月不過，而四時不忒；聖人以順動，則刑罰清而民服。豫之時義大矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "雷出地奮，豫。先王以作樂崇德，殷薦之上帝，以配祖考。"
+      },
+      {
+        "id": "p12",
+        "text": "初六鳴豫，志窮凶也。"
+      },
+      {
+        "id": "p13",
+        "text": "不終日，貞吉；以中正也。"
+      },
+      {
+        "id": "p14",
+        "text": "盱豫有悔，位不當也。"
+      },
+      {
+        "id": "p15",
+        "text": "由豫，大有得；志大行也。"
+      },
+      {
+        "id": "p16",
+        "text": "六五貞疾，乘剛也。恆不死，中未亡也。"
+      },
+      {
+        "id": "p17",
+        "text": "冥豫在上，何可長也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-017",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "随",
+    "sourceHeading": "周易/隨",
+    "slug": "17",
+    "order": 17,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》随卦，修订版本 10645020",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%9A%A8&oldid=10645020&variant=zh-hans",
+    "sourceRevision": 10645020,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "f99669fb2802b95eb403a0f8c951c2c9848a593bd117a296492f7a2b20ff9b91",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "隨：元亨。利貞。无咎。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：官有渝，貞吉。出門交有功。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：係小子，失丈夫。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：係丈夫，失小子。隨，有求得利，居貞。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：隨有獲，貞凶。有孚在道，以明，何咎。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：孚于嘉，吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：拘係之，乃從維之。王用亨于西山。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "隨，剛來而下柔，動而說，隨。大亨貞，无咎，而天下隨時，隨時之義大矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "澤中有雷，隨；君子以嚮晦入宴息。"
+      },
+      {
+        "id": "p12",
+        "text": "官有渝，從正吉也。出門交有功，不失也。"
+      },
+      {
+        "id": "p13",
+        "text": "系小子，弗兼與也。"
+      },
+      {
+        "id": "p14",
+        "text": "系丈夫，志舍下也。"
+      },
+      {
+        "id": "p15",
+        "text": "隨有獲，其義凶也。有孚在道，明功也。"
+      },
+      {
+        "id": "p16",
+        "text": "孚于嘉，吉；位正中也。"
+      },
+      {
+        "id": "p17",
+        "text": "拘系之，上窮也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-018",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "蛊",
+    "sourceHeading": "周易/蠱",
+    "slug": "18",
+    "order": 18,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》蛊卦，修订版本 2106145",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%A0%B1&oldid=2106145&variant=zh-hans",
+    "sourceRevision": 2106145,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "85247ea7da575d73a3889a59c46b5e20c20ee57109eb95ca3302482917d5b7e1",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "蠱：元亨。利涉大川。先甲三日，後甲三日。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：幹父之蠱，有子考，无咎，厲終吉。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：幹母之蠱，不可貞。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：幹父之蠱，小有悔，无大咎。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：裕父之蠱，往見吝。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：幹父之蠱，用譽。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：不事王侯，高尚其事。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "蠱，剛上而柔下，巽而止，蠱。蠱，元亨，而天下治也。利涉大川，往有事也。先甲三日，後甲三日，終則有始，天行也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "山下有風，蠱；君子以振民育德。"
+      },
+      {
+        "id": "p12",
+        "text": "幹父之蠱，意承考也。"
+      },
+      {
+        "id": "p13",
+        "text": "幹母之蠱，得中道也。"
+      },
+      {
+        "id": "p14",
+        "text": "幹父之蠱，終无咎也。"
+      },
+      {
+        "id": "p15",
+        "text": "裕父之蠱，往未得也。"
+      },
+      {
+        "id": "p16",
+        "text": "幹父用譽，承以德也。"
+      },
+      {
+        "id": "p17",
+        "text": "不事王侯，志可則也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-019",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "临",
+    "sourceHeading": "周易/臨",
+    "slug": "19",
+    "order": 19,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》临卦，修订版本 2106146",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%87%A8&oldid=2106146&variant=zh-hans",
+    "sourceRevision": 2106146,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "434cc7cf8fb62819e03cd919241b6bb8434d34a0f9f2c6cc4c948b2f07cb5c9d",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "臨：元亨。利貞。至于八月有凶。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：咸臨，貞吉。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：咸臨，吉无不利。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：甘臨，无攸利。既憂之，无咎。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：至臨，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：知臨，大君之宜，吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：敦臨，吉无咎。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "臨，剛浸而長。說而順，剛中而應，大亨以正，天之道也。至于八月有凶，消不久也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "澤上有地，臨；君子以教思无窮，容保民无疆。"
+      },
+      {
+        "id": "p12",
+        "text": "咸臨貞吉，志行正也。"
+      },
+      {
+        "id": "p13",
+        "text": "咸臨，吉无不利；未順命也。"
+      },
+      {
+        "id": "p14",
+        "text": "甘臨，位不當也。既憂之，咎不長也。"
+      },
+      {
+        "id": "p15",
+        "text": "至臨无咎，位當也。"
+      },
+      {
+        "id": "p16",
+        "text": "大君之宜，行中之謂也。"
+      },
+      {
+        "id": "p17",
+        "text": "敦臨之吉，志在內也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-020",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "观",
+    "sourceHeading": "周易/觀",
+    "slug": "20",
+    "order": 20,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》观卦，修订版本 10645159",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%A7%80&oldid=10645159&variant=zh-hans",
+    "sourceRevision": 10645159,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "90d26b3db6e106ba75d64aa471b89b4626df1ea04dbc228dab671f109b9660d7",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "觀：盥而不薦，有孚顒若。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：童觀，小人无咎，君子吝。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：窺觀，利女貞。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：觀我生，進退。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：觀國之光，利用賓于王。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：觀我生，君子无咎。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：觀其生，君子无咎。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "大觀在上，順而巽，中正以觀天下。觀，盥而不薦，有孚顒若，下觀而化也。觀天之神道，而四時不忒，聖人以神道設教，而天下服矣。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "風行地上，觀；先王以省方，觀民設教。"
+      },
+      {
+        "id": "p12",
+        "text": "初六童觀，小人道也。"
+      },
+      {
+        "id": "p13",
+        "text": "窺觀女貞，亦可醜也。"
+      },
+      {
+        "id": "p14",
+        "text": "觀我生，進退；未失道也。"
+      },
+      {
+        "id": "p15",
+        "text": "觀國之光，尚賓也。"
+      },
+      {
+        "id": "p16",
+        "text": "觀我生，觀民也。"
+      },
+      {
+        "id": "p17",
+        "text": "觀其生，志未平也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-021",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "噬嗑",
+    "sourceHeading": "周易/噬嗑",
+    "slug": "21",
+    "order": 21,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》噬嗑卦，修订版本 10645753",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%99%AC%E5%97%91&oldid=10645753&variant=zh-hans",
+    "sourceRevision": 10645753,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "ff40d6a0b8e6e78b3b04a66b861098bd5b69f76ae5733ac311421dc4de7014d4",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "噬嗑：亨。利用獄。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：屨校滅趾，无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：噬膚滅鼻，无咎。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：噬肉，遇毒；小吝，无咎。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：噬乾胏，得金矢，利艱貞，吉。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：噬乾肉，得黃金，貞厲，无咎。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：何校滅耳，凶。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "頤中有物，曰噬嗑，噬嗑而亨。剛柔分，動而明，雷電合而章。柔得中而上行，雖不當位，利用獄也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "雷電噬嗑；先王以明罰敕法。"
+      },
+      {
+        "id": "p12",
+        "text": "屨校滅趾，不行也。"
+      },
+      {
+        "id": "p13",
+        "text": "噬膚滅鼻，乘剛也。"
+      },
+      {
+        "id": "p14",
+        "text": "遇毒，位不當也。"
+      },
+      {
+        "id": "p15",
+        "text": "利艱貞吉，未光也。"
+      },
+      {
+        "id": "p16",
+        "text": "貞厲无咎，得當也。"
+      },
+      {
+        "id": "p17",
+        "text": "何校滅耳，聰不明也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-022",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "贲",
+    "sourceHeading": "周易/賁",
+    "slug": "22",
+    "order": 22,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》贲卦，修订版本 2405035",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%B3%81&oldid=2405035&variant=zh-hans",
+    "sourceRevision": 2405035,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "4276d3b3814b428edcf2b5b3a3f12c45f9d6d7500f0e6cac7b955644f8c989db",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "賁：亨。小利有攸往。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：賁其趾，舍車而徒。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：賁其須。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：賁如濡如，永貞吉。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：賁如皤如，白馬翰如，匪寇婚媾。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：賁於丘園，束帛戔戔，吝，終吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：白賁，无咎。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "賁，亨；柔來而文剛，故亨。分剛上而文柔，故小利有攸往。剛柔交錯，天文也；文明以止，人文也。觀乎天文，以察時變；觀乎人文，以化成天下。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "山下有火，賁；君子以明庶政，无敢折獄。"
+      },
+      {
+        "id": "p12",
+        "text": "舍車而徒，義弗乘也。"
+      },
+      {
+        "id": "p13",
+        "text": "賁其須，與上興也。"
+      },
+      {
+        "id": "p14",
+        "text": "永貞之吉，終莫之陵也。"
+      },
+      {
+        "id": "p15",
+        "text": "六四，當位疑也。匪寇婚媾，終无尤也。"
+      },
+      {
+        "id": "p16",
+        "text": "六五之吉，有喜也。"
+      },
+      {
+        "id": "p17",
+        "text": "白賁无咎，上得志也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-023",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "剥",
+    "sourceHeading": "周易/剝",
+    "slug": "23",
+    "order": 23,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》剥卦，修订版本 10645800",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%89%9D&oldid=10645800&variant=zh-hans",
+    "sourceRevision": 10645800,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "1a4ddbb2715e91946ce9ff2ef7e6620ef57f2607270b598fad8fe69e291a58f7",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "剝：不利。有攸往。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：剝牀以足，蔑貞凶。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：剝牀以辨，蔑貞凶。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：剝之，无咎。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：剝牀以膚，凶。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：貫魚，以宮人寵，无不利。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：碩果不食，君子，小人剝廬。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "剝，剝也，柔變剛也。不利有攸往，小人長也。順而止之，觀象也。君子尚消息盈虛，天行也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "山附地上，剝；上以厚下，安宅。"
+      },
+      {
+        "id": "p12",
+        "text": "剝牀以足，以滅下也。"
+      },
+      {
+        "id": "p13",
+        "text": "剝牀以辨，未有與也。"
+      },
+      {
+        "id": "p14",
+        "text": "剝之无咎，失上下也。"
+      },
+      {
+        "id": "p15",
+        "text": "剝牀以膚，切近災也。"
+      },
+      {
+        "id": "p16",
+        "text": "以宮人寵，終无尤也。"
+      },
+      {
+        "id": "p17",
+        "text": "君子得輿，民所載也。小人剝廬，終不可用也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-024",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "复",
+    "sourceHeading": "周易/復",
+    "slug": "24",
+    "order": 24,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》复卦，修订版本 10643037",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%BE%A9&oldid=10643037&variant=zh-hans",
+    "sourceRevision": 10643037,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "72de6e2060b1a9e1eb2991db4278dbf975a4e0839674d0e0a630010f1ba9da61",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "復：亨。出入无疾，朋來无咎。反復其道，七日來復，利有攸往。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：不遠復，无祇悔，元吉。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：休復，吉。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：頻復，厲无咎。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：中行獨復。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：敦復，无悔。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：迷復，凶，有災眚。用行師，終有大敗，以其國君，凶；至于十年，不克征。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "復亨；剛反，動而以順行，是以出入无疾，朋來无咎。反復其道，七日來復，天行也。利有攸往，剛長也。復其見天地之心乎？"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "雷在地中，復；先王以至日閉關，商旅不行，后不省方。"
+      },
+      {
+        "id": "p12",
+        "text": "不遠之復，以修身也。"
+      },
+      {
+        "id": "p13",
+        "text": "休復之吉，以下仁也。"
+      },
+      {
+        "id": "p14",
+        "text": "頻復之厲，義无咎也。"
+      },
+      {
+        "id": "p15",
+        "text": "中行獨復，以從道也。"
+      },
+      {
+        "id": "p16",
+        "text": "敦復无悔，中以自考也。"
+      },
+      {
+        "id": "p17",
+        "text": "迷復之凶，反君道也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-025",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "无妄",
+    "sourceHeading": "周易/无妄",
+    "slug": "25",
+    "order": 25,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》无妄卦，修订版本 10645038",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%97%A0%E5%A6%84&oldid=10645038&variant=zh-hans",
+    "sourceRevision": 10645038,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "0cbc1a8562e53de1d309cbfcec61bc7e10854b1e97ebaf9a53b728858b63b4f1",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "无妄：元亨。利貞。其匪正有眚，不利有攸往。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：无妄，往吉。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：不耕穫，不菑畬，則利有攸往。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：无妄之災，或繫之牛，行人之得，邑人之災。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：可貞，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：无妄之疾，勿藥有喜。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：无妄，行有眚，无攸利。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "无妄，剛自外來，而為主於內。動而健，剛中而應，大亨以正，天之命也。其匪正有眚，不利有攸往。无妄之往，何之矣？ 天命不佑，行矣哉？"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "天下雷行，物與无妄；先王以茂對時，育萬物。"
+      },
+      {
+        "id": "p12",
+        "text": "无妄之往，得志也。"
+      },
+      {
+        "id": "p13",
+        "text": "不耕穫，未富也。"
+      },
+      {
+        "id": "p14",
+        "text": "行人得牛，邑人災也。"
+      },
+      {
+        "id": "p15",
+        "text": "可貞无咎，固有之也。"
+      },
+      {
+        "id": "p16",
+        "text": "无妄之藥，不可試也。"
+      },
+      {
+        "id": "p17",
+        "text": "无妄之行，窮之災也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-026",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "大畜",
+    "sourceHeading": "周易/大畜",
+    "slug": "26",
+    "order": 26,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》大畜卦，修订版本 10646304",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%A4%A7%E7%95%9C&oldid=10646304&variant=zh-hans",
+    "sourceRevision": 10646304,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "bf325c7d7517751a7683d123962447a3ef9e51ed070a6282fd31672b2c01bf1c",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "大畜：利貞，不家食吉，利涉大川。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：有厲利已。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：輿說。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：良馬逐，利艱貞，吉。日閑輿衛，利有攸往。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：童牛之，元吉。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：豶豕之牙，吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：何天之衢，亨。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "大畜，剛健篤實輝光，日新其德，剛上而尚賢。能止健，大正也。不家食吉，養賢也。利涉大川，應乎天也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "天在山中，大畜；君子以多識前言往行，以畜其德。"
+      },
+      {
+        "id": "p12",
+        "text": "有厲利已，不犯災也。"
+      },
+      {
+        "id": "p13",
+        "text": "輿說輹，中无尤也。"
+      },
+      {
+        "id": "p14",
+        "text": "利有攸往，上合志也。"
+      },
+      {
+        "id": "p15",
+        "text": "六四元吉，有喜也。"
+      },
+      {
+        "id": "p16",
+        "text": "六五之吉，有慶也。"
+      },
+      {
+        "id": "p17",
+        "text": "何天之衢，道大行也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-027",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "颐",
+    "sourceHeading": "周易/頤",
+    "slug": "27",
+    "order": 27,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》颐卦，修订版本 10643091",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%A0%A4&oldid=10643091&variant=zh-hans",
+    "sourceRevision": 10643091,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "96368ed693e2082ded5b41b5b90eb75f368222882f60947a9ff9bb6025c5ef08",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "頤：貞吉。觀頤，自求口實。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：舍爾靈龜，觀我朵頤，凶。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：顛頤，拂經，于丘頤，征凶。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：拂頤，貞凶，十年勿用，无攸利。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：顛頤吉，虎視眈眈，其欲逐逐，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：拂經，居貞吉，不可涉大川。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：由頤，厲吉，利涉大川。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "頤貞吉，養正則吉也。觀頤，觀其所養也；自求口實，觀其自養也。天地養萬物，聖人養賢，以及萬民；頤之時大矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "山下有雷，頤；君子以慎言語，節飲食。"
+      },
+      {
+        "id": "p12",
+        "text": "觀我朵頤，亦不足貴也。"
+      },
+      {
+        "id": "p13",
+        "text": "六二征凶，行失類也。"
+      },
+      {
+        "id": "p14",
+        "text": "十年勿用，道大悖也。"
+      },
+      {
+        "id": "p15",
+        "text": "顛頤之吉，上施光也。"
+      },
+      {
+        "id": "p16",
+        "text": "居貞之吉，順以從上也。"
+      },
+      {
+        "id": "p17",
+        "text": "由頤厲吉，大有慶也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-028",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "大过",
+    "sourceHeading": "周易/大過",
+    "slug": "28",
+    "order": 28,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》大过卦，修订版本 10645184",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%A4%A7%E9%81%8E&oldid=10645184&variant=zh-hans",
+    "sourceRevision": 10645184,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "ba1a2bee6afe4d6f4295820bab46cd323f4b20816f584c9525417e66dbad7ade",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "大過：棟橈，利有攸往，亨。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：藉用白茅，无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：枯楊生稊，老夫得其女妻，无不利。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：棟橈，凶。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：棟隆，吉。有它吝。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：枯楊生華，老婦得其士夫，无咎无譽。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：過涉滅頂，凶，无咎。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "大過，大者過也。棟橈，本末弱也。剛過而中，巽而說行，利有攸往，乃亨。大過之時大矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "澤滅木，大過。君子以獨立不懼，遯世无悶。"
+      },
+      {
+        "id": "p12",
+        "text": "藉用白茅，柔在下也。"
+      },
+      {
+        "id": "p13",
+        "text": "老夫女妻，過以相與也。"
+      },
+      {
+        "id": "p14",
+        "text": "棟橈之凶，不可以有輔也。"
+      },
+      {
+        "id": "p15",
+        "text": "棟隆之吉，不橈乎下也。"
+      },
+      {
+        "id": "p16",
+        "text": "枯楊生華，何可久也。老婦士夫，亦可醜也。"
+      },
+      {
+        "id": "p17",
+        "text": "過涉之凶，不可咎也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-029",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "坎",
+    "sourceHeading": "周易/坎",
+    "slug": "29",
+    "order": 29,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》坎卦，修订版本 10646381",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%9D%8E&oldid=10646381&variant=zh-hans",
+    "sourceRevision": 10646381,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "6bd93cc669b6da2b00066ea726183db1a42b9aa8b0ab001cb72aca06a6f0b53b",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "習坎：有孚，維心亨。行有尚。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：習坎，入于坎窞，凶。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：坎有險，求小得。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：來之坎坎，險且枕，入于坎窞，勿用。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：，終无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：坎不盈，既平，无咎。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：係用徽纆，寘于叢棘，三歲不得，凶。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "習坎，重險也。水流而不盈，行險而不失其信。維心亨，乃以剛中也。行有尚，往有功也。天險不可升也，地險山川丘陵也，王公設險以守其國，坎之時用大矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "水洊至，習坎；君子以常德行，習教事。"
+      },
+      {
+        "id": "p12",
+        "text": "習坎入坎，失道凶也。"
+      },
+      {
+        "id": "p13",
+        "text": "求小得，未出中也。"
+      },
+      {
+        "id": "p14",
+        "text": "來之坎坎，終无功也。"
+      },
+      {
+        "id": "p15",
+        "text": "樽酒簋貳，剛柔济也。"
+      },
+      {
+        "id": "p16",
+        "text": "坎不盈，中未大也。"
+      },
+      {
+        "id": "p17",
+        "text": "上六失道，凶三歲也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-030",
+    "bookId": "yijing",
+    "volumeId": "shangjing",
+    "title": "离",
+    "sourceHeading": "周易/離",
+    "slug": "30",
+    "order": 30,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》离卦，修订版本 10646424",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%9B%A2&oldid=10646424&variant=zh-hans",
+    "sourceRevision": 10646424,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "4b9664790accf69058ecba2a07ca36a4797c0df4af83bdcc4b630b69af5173bc",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "離：利貞。亨。畜牝牛，吉。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：履錯然，敬之无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：黃離，元吉。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：日昃之離，不鼓缶而歌，則大耋之，凶。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：突如其來如，焚如，死如，棄如。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：出涕沱若，戚嗟若，吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：王用出征，有嘉折首，獲匪其醜，无咎。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "離，麗也；日月麗乎天，百穀草木麗乎土，重明以麗乎正，乃化成天下。柔麗乎中正，故亨；是以畜牝牛吉也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "明兩作離，大人以繼明照于四方。"
+      },
+      {
+        "id": "p12",
+        "text": "履錯之敬，以辟咎也。"
+      },
+      {
+        "id": "p13",
+        "text": "黃離元吉，得中道也。"
+      },
+      {
+        "id": "p14",
+        "text": "日昃之離，何可久也。"
+      },
+      {
+        "id": "p15",
+        "text": "突如其來如，无所容也。"
+      },
+      {
+        "id": "p16",
+        "text": "六五之吉，離王公也。"
+      },
+      {
+        "id": "p17",
+        "text": "王用出征，以正邦也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-031",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "咸",
+    "sourceHeading": "周易/咸",
+    "slug": "31",
+    "order": 31,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》咸卦，修订版本 10646450",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%92%B8&oldid=10646450&variant=zh-hans",
+    "sourceRevision": 10646450,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "7949c66a2c9aeaa65d6399670abb1ba2410c41407f8a460d47fc4171ab2dd42b",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "咸：亨。利貞。取女吉。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：咸其。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：咸其腓，凶，居吉。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：咸其股，執其隨，往吝。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：貞吉悔亡，憧憧往來，朋從爾思。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：咸其脢，无悔。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：咸其輔，頰，舌。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "咸，感也。柔上而剛下，二氣感應以相與，止而說，男下女，是以亨利貞，取女吉也。天地感而萬物化生，聖人感人心而天下和平；觀其所感，而天地萬物之情可見矣！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "山上有澤，咸；君子以虛受人。"
+      },
+      {
+        "id": "p12",
+        "text": "咸其拇，志在外也。"
+      },
+      {
+        "id": "p13",
+        "text": "雖凶，居吉，順不害也。"
+      },
+      {
+        "id": "p14",
+        "text": "咸其股，亦不處也。志在隨人，所執下也。"
+      },
+      {
+        "id": "p15",
+        "text": "貞吉悔亡，未感害也。憧憧往來，未光大也。"
+      },
+      {
+        "id": "p16",
+        "text": "咸其脢，志末也。"
+      },
+      {
+        "id": "p17",
+        "text": "咸其輔，頰，舌，滕口說也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-032",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "恒",
+    "sourceHeading": "周易/恒",
+    "slug": "32",
+    "order": 32,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》恒卦，修订版本 10646486",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%81%92&oldid=10646486&variant=zh-hans",
+    "sourceRevision": 10646486,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "79d4e2a284bc49bff78c4c4017b1f11d80c66bd523fc79edbb84cf5dc489bc80",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "恆：亨，无咎。利貞，利有攸往。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：浚恆，貞凶，无攸利。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：悔亡。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：不恆其德，或承之羞，貞吝。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：田无禽。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：恆其德，貞，婦人吉，夫子凶。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：恆，凶。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "恆，久也。剛上而柔下，雷風相與，巽而動，剛柔皆應，恆。恆亨无咎，利貞；久于其道也，天地之道，恆久而不已也。利有攸往，終則有始也。日月得天，而能久照，四時變化，而能久成，聖人久于其道，而天下化成；觀其所恆，而天地萬物之情可見矣！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "雷風，恆；君子以立不易方。"
+      },
+      {
+        "id": "p12",
+        "text": "浚恆之凶，始求深也。"
+      },
+      {
+        "id": "p13",
+        "text": "九二悔亡，能久中也。"
+      },
+      {
+        "id": "p14",
+        "text": "不恆其德，无所容也。"
+      },
+      {
+        "id": "p15",
+        "text": "久非其位，安得禽也。"
+      },
+      {
+        "id": "p16",
+        "text": "婦人貞吉，從一而終也。夫子制義，從婦凶也。"
+      },
+      {
+        "id": "p17",
+        "text": "振恆在上，大无功也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-033",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "遁",
+    "sourceHeading": "周易/遯",
+    "slug": "33",
+    "order": 33,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》遁卦，修订版本 10645108",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%81%AF&oldid=10645108&variant=zh-hans",
+    "sourceRevision": 10645108,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "c0e6f3d114fa66a805611358e5fe4e714db333edbce63f3a183c2b22f3996410",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "遯：亨。小利貞。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：遯尾，厲，勿用有攸往。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：執之用黃牛之革，莫之勝說。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：係遯，有疾厲，畜臣妾吉。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：好遯君子吉，小人否。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：嘉遯，貞吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：肥遯，无不利。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "遯亨，遯而亨也。剛當位而應，與時行也。小利貞，浸而長也。遯之時義大矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "天下有山，遯；君子以遠小人，不惡而嚴。"
+      },
+      {
+        "id": "p12",
+        "text": "遯尾之厲，不往何災也。"
+      },
+      {
+        "id": "p13",
+        "text": "執用黃牛，固志也。"
+      },
+      {
+        "id": "p14",
+        "text": "係遯之厲，有疾憊也。畜臣妾吉，不可大事也。"
+      },
+      {
+        "id": "p15",
+        "text": "君子好遯，小人否也。"
+      },
+      {
+        "id": "p16",
+        "text": "嘉遯貞吉，以正志也。"
+      },
+      {
+        "id": "p17",
+        "text": "肥遯，无不利；无所疑也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-034",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "大壮",
+    "sourceHeading": "周易/大壯",
+    "slug": "34",
+    "order": 34,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》大壮卦，修订版本 10646529",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%A4%A7%E5%A3%AF&oldid=10646529&variant=zh-hans",
+    "sourceRevision": 10646529,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "0452e395822a97fe01632a23f360ed95738f4bbdbf9f7be9eb1c8dd4b313d401",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "大壯：利貞。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：壯于趾，征凶，有孚。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：貞吉。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：小人用壯，君子用罔，貞厲。羝羊觸藩，羸其角。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：貞吉悔亡，藩決不羸，壯于大之。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：喪羊于易，无悔。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：羝羊觸藩，不能退，不能遂，无攸利，艱則吉。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "大壯，大者壯也。剛以動，故壯。大壯利貞；大者正也。正大而天地之情可見矣！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "雷在天上，大壯；君子以非禮弗履。"
+      },
+      {
+        "id": "p12",
+        "text": "壯于趾，其孚窮也。"
+      },
+      {
+        "id": "p13",
+        "text": "九二貞吉，以中也。"
+      },
+      {
+        "id": "p14",
+        "text": "小人用壯，君子罔也。"
+      },
+      {
+        "id": "p15",
+        "text": "藩決不羸，尚往也。"
+      },
+      {
+        "id": "p16",
+        "text": "喪羊于易，位不當也。"
+      },
+      {
+        "id": "p17",
+        "text": "不能退，不能遂，不詳也。艱則吉，咎不長也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-035",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "晋",
+    "sourceHeading": "周易/晉",
+    "slug": "35",
+    "order": 35,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》晋卦，修订版本 10646579",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%99%89&oldid=10646579&variant=zh-hans",
+    "sourceRevision": 10646579,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "6ff77dfc8b5c473351031cff3b5f77027ed9910fb68c9f167c57cba436051fa3",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "晉：康侯用錫馬蕃庶，晝日三接。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：晉如，摧如，貞吉。罔孚，裕无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：晉如，愁如，貞吉。受茲介福，于其王母。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：眾允，悔亡。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：晉如鼠，貞厲。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：悔亡，得勿恤，往吉无不利。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：晉其角，維用伐邑，厲吉无咎，貞吝。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "晉，進也。明出地上，順而麗乎大明，柔進而上行。是以康侯用錫馬蕃庶，晝日三接也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "明出地上，晉；君子以自昭明德。"
+      },
+      {
+        "id": "p12",
+        "text": "晉如，摧如；獨行正也。裕无咎；未受命也。"
+      },
+      {
+        "id": "p13",
+        "text": "受茲介福，以中正也。"
+      },
+      {
+        "id": "p14",
+        "text": "眾允之志，上行也。"
+      },
+      {
+        "id": "p15",
+        "text": "鼫鼠貞厲，位不當也。"
+      },
+      {
+        "id": "p16",
+        "text": "失得勿恤，往有慶也。"
+      },
+      {
+        "id": "p17",
+        "text": "維用伐邑，道未光也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-036",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "明夷",
+    "sourceHeading": "周易/明夷",
+    "slug": "36",
+    "order": 36,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》明夷卦，修订版本 10644507",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%98%8E%E5%A4%B7&oldid=10644507&variant=zh-hans",
+    "sourceRevision": 10644507,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "26ca1b38364c41bcb5176d6e7c2ce31bba44be404688d390cbaa2a4ed09a1ac1",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "明夷：利艱貞。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：明夷于飛，垂其翼。君子于行，三日不食，有攸往，主人有言。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：明夷，夷于左股，用拯馬壯，吉。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：明夷于南狩，得其大首，不可疾貞。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：入于左腹，獲明夷之心，于出門庭。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：箕子之明夷，利貞。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：不明晦，初登于天，後入于地。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "明入地中，明夷。內文明而外柔順，以蒙大難，文王以之。利艱貞，晦其明也，內難而能正其志，箕子以之。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "明入地中，明夷；君子以蒞眾，用晦而明。"
+      },
+      {
+        "id": "p12",
+        "text": "君子于行，義不食也。"
+      },
+      {
+        "id": "p13",
+        "text": "六二之吉，順以則也。"
+      },
+      {
+        "id": "p14",
+        "text": "南狩之志，乃大得也。"
+      },
+      {
+        "id": "p15",
+        "text": "入于左腹，獲心意也。"
+      },
+      {
+        "id": "p16",
+        "text": "箕子之貞，明不可息也。"
+      },
+      {
+        "id": "p17",
+        "text": "初登于天，照四國也。後入于地，失則也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-037",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "家人",
+    "sourceHeading": "周易/家人",
+    "slug": "37",
+    "order": 37,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》家人卦，修订版本 2405005",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%AE%B6%E4%BA%BA&oldid=2405005&variant=zh-hans",
+    "sourceRevision": 2405005,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "1e5bc8effc4f9dcf33d4902519ce5e589cdb8fd284f2429502e0a8714eef85d9",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "家人：利女貞。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：閑有家，悔亡。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：无攸遂，在中饋，貞吉。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：家人嗃嗃，悔厲吉；婦子嘻嘻，終吝。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：富家，大吉。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：王假有家，勿恤。吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：有孚威如，終吉。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "家人，女正位乎內，男正位乎外，男女正，天地之大義也。家人有嚴君焉，父母之謂也。父父，子子，兄兄，弟弟，夫夫，婦婦，而家道正；正家而天下定矣。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "風自火出，家人；君子以言有物，而行有恆。"
+      },
+      {
+        "id": "p12",
+        "text": "閑有家，志未變也。"
+      },
+      {
+        "id": "p13",
+        "text": "六二之吉，順以巽也。"
+      },
+      {
+        "id": "p14",
+        "text": "家人嗃嗃，未失也；婦子嘻嘻，失家節也。"
+      },
+      {
+        "id": "p15",
+        "text": "富家大吉，順在位也。"
+      },
+      {
+        "id": "p16",
+        "text": "王假有家，交相愛也。"
+      },
+      {
+        "id": "p17",
+        "text": "威如之吉，反身之謂也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-038",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "睽",
+    "sourceHeading": "周易/睽",
+    "slug": "38",
+    "order": 38,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》睽卦，修订版本 10646622",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E7%9D%BD&oldid=10646622&variant=zh-hans",
+    "sourceRevision": 10646622,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "0aeeb9a412c097e28e7933cbba517eb83948849d1d77077450a34751c8e7c94e",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "睽：小事吉。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：悔亡，喪馬勿逐，自復；見惡人无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：遇主于巷，无咎。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：見輿曳，其牛，其人天且劓，无初有終。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：睽孤，遇元夫，交孚，厲无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：悔亡，厥宗噬膚，往何咎。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：睽孤， 見豕負涂，載鬼一車， 先張之弧，後說之弧，匪寇婚媾，往遇雨則吉。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "睽，火動而上，澤動而下；二女同居，其志不同行；說而麗乎明，柔進而上行，得中而應乎剛；是以小事吉。天地睽，而其事同也；男女睽，而其志通也；萬物睽，而其事類也；睽之時用大矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "上火下澤，睽；君子以同而異。"
+      },
+      {
+        "id": "p12",
+        "text": "見惡人，以辟咎也。"
+      },
+      {
+        "id": "p13",
+        "text": "遇主于巷，未失道也。"
+      },
+      {
+        "id": "p14",
+        "text": "見輿曳，位不當也。无初有終，遇剛也。"
+      },
+      {
+        "id": "p15",
+        "text": "交孚无咎，志行也。"
+      },
+      {
+        "id": "p16",
+        "text": "厥宗噬膚，往有慶也。"
+      },
+      {
+        "id": "p17",
+        "text": "遇雨之吉，群疑亡也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-039",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "蹇",
+    "sourceHeading": "周易/蹇",
+    "slug": "39",
+    "order": 39,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》蹇卦，修订版本 2405036",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%B9%87&oldid=2405036&variant=zh-hans",
+    "sourceRevision": 2405036,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "e2f91ba167638881ee6071b7c9a2a06c6d04a36b3c25a7fb47a50c05f93deccc",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "蹇：利西南，不利東北；利見大人，貞吉。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：往蹇，來譽。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：王臣蹇蹇，匪躬之故。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：往蹇來反。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：往蹇來連。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：大蹇朋來。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：往蹇來碩，吉；利見大人。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "蹇，難也，險在前也。見險而能止，知矣哉！蹇利西南，往得中也；不利東北，其道窮也。利見大人，往有功也。當位貞吉，以正邦也。蹇之時用大矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "山上有水，蹇；君子以反身修德。"
+      },
+      {
+        "id": "p12",
+        "text": "往蹇來譽，宜待也。"
+      },
+      {
+        "id": "p13",
+        "text": "王臣蹇蹇，終无尤也。"
+      },
+      {
+        "id": "p14",
+        "text": "往蹇來反，內喜之也。"
+      },
+      {
+        "id": "p15",
+        "text": "往蹇來連，當位實也。"
+      },
+      {
+        "id": "p16",
+        "text": "大蹇朋來，以中節也。"
+      },
+      {
+        "id": "p17",
+        "text": "往蹇來碩，志在內也。利見大人，以從貴也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-040",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "解",
+    "sourceHeading": "周易/解",
+    "slug": "40",
+    "order": 40,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》解卦，修订版本 10646666",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%A7%A3&oldid=10646666&variant=zh-hans",
+    "sourceRevision": 10646666,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "e2a360efac78e1b9ad0cb994d8b2512194d9668d87c83b63bf6fb6fb3344109d",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "解：利西南，无所往，其來復吉。有攸往，夙吉。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：田獲三狐，得黃矢，貞吉。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：負且乘，致寇至，貞吝。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：解而拇，朋至斯孚。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：君子有解，吉；有孚于小人。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：公用射隼，于高之上，獲之，无不利。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "解，險以動，動而免乎險，解。解利西南，往得眾也。其來復吉，乃得中也。有攸往夙吉，往有功也。天地解，而雷雨作，雷雨作，而百果草木皆甲坼，解之時義大矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "雷雨作，解；君子以赦過宥罪。"
+      },
+      {
+        "id": "p12",
+        "text": "剛柔之際，義无咎也。"
+      },
+      {
+        "id": "p13",
+        "text": "九二貞吉，得中道也。"
+      },
+      {
+        "id": "p14",
+        "text": "負且乘，亦可丑也，自我致戎，又誰咎也。"
+      },
+      {
+        "id": "p15",
+        "text": "解而拇，未當位也。"
+      },
+      {
+        "id": "p16",
+        "text": "君子有解，小人退也。"
+      },
+      {
+        "id": "p17",
+        "text": "公用射隼，以解悖也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-041",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "损",
+    "sourceHeading": "周易/損",
+    "slug": "41",
+    "order": 41,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》损卦，修订版本 10646704",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%90%8D&oldid=10646704&variant=zh-hans",
+    "sourceRevision": 10646704,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "384baa27d4ad809eaef10bd03fa01de962385c0c02134afbb765ade329f408d3",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "損：有孚，元吉。无咎，可貞，利有攸往。曷之用？二簋可用享。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：事遄往，无咎，酌損之。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：利貞，征凶，弗損益之。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：三人行，則損一人；一人行，則得其友。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：損其疾，使遄有喜，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：或益之，十朋之龜弗克違，元吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：弗損益之，无咎，貞吉，利有攸往，得臣无家。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "損，損下益上，其道上行。損而有孚，元吉，无咎，可貞，利有攸往。曷之用？二簋可用享；二簋應有時。損剛益柔有時，損益盈虛，與時偕行。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "山下有澤，損；君子以懲忿窒欲。"
+      },
+      {
+        "id": "p12",
+        "text": "已事遄往，尚合志也。"
+      },
+      {
+        "id": "p13",
+        "text": "九二利貞，中以為志也。"
+      },
+      {
+        "id": "p14",
+        "text": "一人行，三則疑也。"
+      },
+      {
+        "id": "p15",
+        "text": "損其疾，亦可喜也。"
+      },
+      {
+        "id": "p16",
+        "text": "六五元吉，自上佑也。"
+      },
+      {
+        "id": "p17",
+        "text": "弗損益之，大得志也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-042",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "益",
+    "sourceHeading": "周易/益",
+    "slug": "42",
+    "order": 42,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》益卦，修订版本 10646726",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E7%9B%8A&oldid=10646726&variant=zh-hans",
+    "sourceRevision": 10646726,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "3630bae05f562376b4675bac244a4fa77fc9287c5c1ba399804d356f50d11fc4",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "益：利有攸往。利涉大川。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：利用為大作，元吉，无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：或益之，十朋之龜弗克違，永貞吉。王用享于帝，吉。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：益之用凶事，无咎。有孚中行，告公用圭。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：中行，告公從。利用為依遷。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：有孚惠心，勿問元吉。有孚惠我德。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：莫益之，或擊之，立心勿恆，凶。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "益，損上益下，民說无疆，自上下下，其道大光。利有攸往，中正有慶。利涉大川，木道乃行。益動而巽，日進无疆。天施地生，其益无方。凡益之道，與時偕行。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "風雷，益；君子以見善則遷，有過則改。"
+      },
+      {
+        "id": "p12",
+        "text": "元吉无咎，下不厚事也。"
+      },
+      {
+        "id": "p13",
+        "text": "或益之，自外來也。"
+      },
+      {
+        "id": "p14",
+        "text": "益用凶事，固有之也。"
+      },
+      {
+        "id": "p15",
+        "text": "告公從，以益志也。"
+      },
+      {
+        "id": "p16",
+        "text": "有孚惠心，勿問之矣。惠我德，大得志也。"
+      },
+      {
+        "id": "p17",
+        "text": "莫益之，偏辭也。或擊之，自外來也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-043",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "夬",
+    "sourceHeading": "周易/夬",
+    "slug": "43",
+    "order": 43,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》夬卦，修订版本 2405003",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%A4%AC&oldid=2405003&variant=zh-hans",
+    "sourceRevision": 2405003,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "fbbfaefd3a3ed943a8100d2302cfaf3934a8079bc5caddf324a85ee5880d13a9",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "夬：揚于王庭，孚號，有厲，告自邑，不利即戎，利有攸往。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：壯于前趾，往不勝為咎。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：惕號，莫夜有戎，勿恤。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：壯于頄，有凶。君子夬夬，獨行遇雨，若濡有慍，无咎。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：臀无膚，其行次且。牽羊悔亡，聞言不信。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：莧陸夬夬，中行无咎。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：无號，終有凶。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "夬，決也，剛決柔也。健而說，決而和，揚于王庭，柔乘五剛也。孚號有厲，其危乃光也。告自邑，不利即戎，所尚乃窮也。利有攸往，剛長乃終也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "澤上于天，夬；君子以施祿及下，居德則忌。"
+      },
+      {
+        "id": "p12",
+        "text": "不勝而往，咎也。"
+      },
+      {
+        "id": "p13",
+        "text": "莫夜有戎，得中道也。"
+      },
+      {
+        "id": "p14",
+        "text": "君子夬夬，終无咎也。"
+      },
+      {
+        "id": "p15",
+        "text": "其行次且，位不當也。聞言不信，聰不明也。"
+      },
+      {
+        "id": "p16",
+        "text": "中行无咎，中未光也。"
+      },
+      {
+        "id": "p17",
+        "text": "无號之凶，終不可長也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-044",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "姤",
+    "sourceHeading": "周易/姤",
+    "slug": "44",
+    "order": 44,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》姤卦，修订版本 10646826",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%A7%A4&oldid=10646826&variant=zh-hans",
+    "sourceRevision": 10646826,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "7d142ea7cd913af42392098e77066a54a54eca517ceb72067f717d40c6f54915",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "姤：女壯，勿用取女。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：系于金柅，貞吉，有攸往，見凶，羸豕，孚，。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：包有魚，无咎，不利賓。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：臀无膚，其行次且，厲，无大咎。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：包无魚，起凶。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：以杞瓜，含章，有隕自天。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：姤其角，吝，无咎。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "姤，遇也，柔遇剛也。勿用取女，不可與長也。天地相遇，品物咸章也。剛遇中正，天下大行也。姤之時義大矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "天下有風，姤；后以施命誥四方。"
+      },
+      {
+        "id": "p12",
+        "text": "系于金柅，柔道牽也。"
+      },
+      {
+        "id": "p13",
+        "text": "包有魚，義不及賓也。"
+      },
+      {
+        "id": "p14",
+        "text": "其行次且，行未牽也。"
+      },
+      {
+        "id": "p15",
+        "text": "无魚之凶，遠民也。"
+      },
+      {
+        "id": "p16",
+        "text": "九五含章，中正也。有隕自天，志不舍命也。"
+      },
+      {
+        "id": "p17",
+        "text": "姤其角，上窮吝也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-045",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "萃",
+    "sourceHeading": "周易/萃",
+    "slug": "45",
+    "order": 45,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》萃卦，修订版本 10647546",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%90%83&oldid=10647546&variant=zh-hans",
+    "sourceRevision": 10647546,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "9c88dd35aa049fc498903aace6b745d555ef6879a49470426f2449dd71f62920",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "萃：王假有廟，利見大人，亨。利貞。用大牲吉，利有攸往。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：有孚不終，乃亂乃萃，若號一握為笑，勿恤，往无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：引吉，无咎，孚乃利用禴。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：萃如，嗟如，无攸利，往无咎，小吝。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：大吉，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：萃有位，无咎。匪孚，元永貞，悔亡。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：齎涕洟，无咎。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "萃，聚也；順以說，剛中而應，故聚也。王假有廟，致孝享也。利見大人亨，聚以正也。用大牲吉，利有攸往，順天命也。觀其所聚，而天地萬物之情可見矣。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "澤上于地，萃；君子以除戎器，戒不虞。"
+      },
+      {
+        "id": "p12",
+        "text": "乃亂乃萃，其志亂也。"
+      },
+      {
+        "id": "p13",
+        "text": "引吉无咎，中未變也。"
+      },
+      {
+        "id": "p14",
+        "text": "往无咎，上巽也。"
+      },
+      {
+        "id": "p15",
+        "text": "大吉无咎，位不當也。"
+      },
+      {
+        "id": "p16",
+        "text": "萃有位，志未光也。"
+      },
+      {
+        "id": "p17",
+        "text": "齎咨涕洟，未安上也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-046",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "升",
+    "sourceHeading": "周易/升",
+    "slug": "46",
+    "order": 46,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》升卦，修订版本 10646879",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%8D%87&oldid=10646879&variant=zh-hans",
+    "sourceRevision": 10646879,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "0b7de4b6837f433f20155a14acbafd9a43d0ee3433f2aa4b3733e42aeffd731a",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "升：元亨，用見大人，勿恤，南征吉。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：允升，大吉。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：孚乃利用禴，无咎。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：升虛邑。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：王用于岐山，吉无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：貞吉，升階。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：冥升，利于不息之貞。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "柔以時升，巽而順，剛中而應，是以大亨。用見大人，勿恤；有慶也。南征吉，志行也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "地中生木，升；君子以順德，積小以高大。"
+      },
+      {
+        "id": "p12",
+        "text": "允升大吉，上合志也。"
+      },
+      {
+        "id": "p13",
+        "text": "九二之孚，有喜也。"
+      },
+      {
+        "id": "p14",
+        "text": "升虛邑，无所疑也。"
+      },
+      {
+        "id": "p15",
+        "text": "王用亨于岐山，順事也。"
+      },
+      {
+        "id": "p16",
+        "text": "貞吉升階，大得志也。"
+      },
+      {
+        "id": "p17",
+        "text": "冥升在上，消不富也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-047",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "困",
+    "sourceHeading": "周易/困",
+    "slug": "47",
+    "order": 47,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》困卦，修订版本 10647032",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%9B%B0&oldid=10647032&variant=zh-hans",
+    "sourceRevision": 10647032,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "2967a83ddfbd430a7231aa5a4cb9874b1912bef65db3ba846e3dc7720978e6b4",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "困：亨，貞大人吉，无咎，有言不信。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：臀困于株木，入于幽谷，三歲不覿。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：困于酒食，朱紱方來，利用亨祀，征凶，无咎。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：困于石，據于蒺，入于其宮，不見其妻，凶。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：來，困于金，吝，有終。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：劓刖，困于赤紱，乃徐有說，利用祭祀。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：困于葛藟，于臲卼，曰動悔。有悔，征吉。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "困，剛掩也。險以說，困而不失其所，亨；其唯君子乎？ 貞大人吉，以剛中也。有言不信，尚口乃窮也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "澤无水，困；君子以致命遂志。"
+      },
+      {
+        "id": "p12",
+        "text": "入于幽谷，幽不明也。"
+      },
+      {
+        "id": "p13",
+        "text": "困于酒食，中有慶也。"
+      },
+      {
+        "id": "p14",
+        "text": "據于蒺藜，乘剛也。入于其宮，不見其妻，不祥也。"
+      },
+      {
+        "id": "p15",
+        "text": "來徐徐，志在下也。雖不當位，有與也。"
+      },
+      {
+        "id": "p16",
+        "text": "劓刖，志未得也。乃徐有說，以中直也。利用祭祀，受福也。"
+      },
+      {
+        "id": "p17",
+        "text": "困于葛藟，未當也。動悔，有悔，吉行也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-048",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "井",
+    "sourceHeading": "周易/井",
+    "slug": "48",
+    "order": 48,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》井卦，修订版本 10645240",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E4%BA%95&oldid=10645240&variant=zh-hans",
+    "sourceRevision": 10645240,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "cd9bc4de8664b1ca396887712527ea51dd7ed69b7487590bdb95aabab0f1e3fb",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "井：改邑不改井，无喪无得，往來井井。汔至亦未繘井。羸其瓶，凶。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：井泥不食，舊井无禽。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：井谷射鮒，瓮敝漏。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：井渫不食，為我心惻，可用汲，王明，並受其福。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：井甃，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：井冽，寒泉食。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：井收勿幕，有孚元吉。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "巽乎水而上水，井；井養而不窮也。改邑不改井，乃以剛中也。汔至亦未繘井，未有功也。羸其瓶，是以凶也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "木上有水，井；君子以勞民勸相。"
+      },
+      {
+        "id": "p12",
+        "text": "井泥不食，下也。舊井无禽，時舍也。"
+      },
+      {
+        "id": "p13",
+        "text": "井谷射鮒，无與也。"
+      },
+      {
+        "id": "p14",
+        "text": "井渫不食，行惻也。求王明，受福也。"
+      },
+      {
+        "id": "p15",
+        "text": "井甃无咎，修井也。"
+      },
+      {
+        "id": "p16",
+        "text": "寒泉之食，中正也。"
+      },
+      {
+        "id": "p17",
+        "text": "元吉在上，大成也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-049",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "革",
+    "sourceHeading": "周易/革",
+    "slug": "49",
+    "order": 49,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》革卦，修订版本 10643173",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%9D%A9&oldid=10643173&variant=zh-hans",
+    "sourceRevision": 10643173,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "25e5c1992663ee1ee54ef801e30ca9c73ca3453b2bf8a19514b75fb3be367005",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "革：已日乃孚，元亨。利貞。悔亡。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：鞏用黃牛之革。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：已日乃革之，征吉，无咎。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：征凶，貞厲，革言三就，有孚。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：悔亡，有孚改命，吉。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：大人虎變，未占有孚。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：君子豹變，小人革面，征凶，居貞吉。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "革，水火相息，二女同居，其志不相得，曰革。已日乃孚；革而信也。文明以說，大亨以正，革而當，其悔乃亡。天地革而四時成，湯武革命，順乎天而應乎人，革之時義大矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "澤中有火，革；君子以治歷明時。"
+      },
+      {
+        "id": "p12",
+        "text": "鞏用黃牛，不可以有為也。"
+      },
+      {
+        "id": "p13",
+        "text": "已日革之，行有嘉也。"
+      },
+      {
+        "id": "p14",
+        "text": "革言三就，又何之矣。"
+      },
+      {
+        "id": "p15",
+        "text": "改命之吉，信志也。"
+      },
+      {
+        "id": "p16",
+        "text": "大人虎變，其文炳也。"
+      },
+      {
+        "id": "p17",
+        "text": "君子豹變，其文蔚也。小人革面，順以從君也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-050",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "鼎",
+    "sourceHeading": "周易/鼎",
+    "slug": "50",
+    "order": 50,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》鼎卦，修订版本 10647086",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%BC%8E&oldid=10647086&variant=zh-hans",
+    "sourceRevision": 10647086,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "3313dcee0c1ef2c18bff9b87e74b2658c0a954185b83ad5884eb10ed76062072",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "鼎：元吉，亨。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：鼎顛趾，利出否，得妾以其子，无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：鼎有實，我仇有疾，不我能即，吉。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：鼎耳革，其行塞，雉膏不食，方雨虧悔，終吉。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：鼎折足，覆公餗，其渥，凶。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：鼎黃耳金鉉，利貞。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：鼎玉鉉，大吉，无不利。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "鼎，象也。以木巽火，亨飪也。聖人亨以享上帝，而大亨以養聖賢。巽而耳目聰明，柔進而上行，得中而應乎剛，是以元亨。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "木上有火，鼎；君子以正位凝命。"
+      },
+      {
+        "id": "p12",
+        "text": "鼎顛趾，未悖也。利出否，以從貴也。"
+      },
+      {
+        "id": "p13",
+        "text": "鼎有實，慎所之也。我仇有疾，終无尤也。"
+      },
+      {
+        "id": "p14",
+        "text": "鼎耳革，失其義也。"
+      },
+      {
+        "id": "p15",
+        "text": "覆公餗，信如何也。"
+      },
+      {
+        "id": "p16",
+        "text": "鼎黃耳，中以為實也。"
+      },
+      {
+        "id": "p17",
+        "text": "玉鉉在上，剛柔節也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-051",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "震",
+    "sourceHeading": "周易/震",
+    "slug": "51",
+    "order": 51,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》震卦，修订版本 10644930",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E9%9C%87&oldid=10644930&variant=zh-hans",
+    "sourceRevision": 10644930,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "94d23491267149bb0c79973df79acbab0d4abfa83dbde2b26fec3b73da0b54e9",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "震：亨。震來虩虩，笑言啞啞。震驚百里，不喪匕鬯。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：震來虩虩，後笑言啞啞，吉。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：震來厲，億喪貝，躋于九陵，勿逐，七日得。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：震蘇蘇，震行无眚。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：震遂泥。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：震往來厲，億无喪，有事。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：震索索，視矍矍，征凶。震不于其躬，于其鄰，无咎。婚媾有言。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "震，亨。震來虩虩，恐致福也。笑言啞啞，後有則也。震驚百里，驚遠而懼邇也。出可以守宗廟社稷，以為祭主也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "洊雷，震；君子以恐懼修省。"
+      },
+      {
+        "id": "p12",
+        "text": "震來虩虩，恐致福也。笑言啞啞，後有則也。"
+      },
+      {
+        "id": "p13",
+        "text": "震來厲，乘剛也。"
+      },
+      {
+        "id": "p14",
+        "text": "震蘇蘇，位不當也。"
+      },
+      {
+        "id": "p15",
+        "text": "震遂泥，未光也。"
+      },
+      {
+        "id": "p16",
+        "text": "震往來厲，危行也。其事在中，大无喪也。"
+      },
+      {
+        "id": "p17",
+        "text": "震索索，中未得也。雖凶无咎，畏鄰戒也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-052",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "艮",
+    "sourceHeading": "周易/艮",
+    "slug": "52",
+    "order": 52,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》艮卦，修订版本 10647135",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%89%AE&oldid=10647135&variant=zh-hans",
+    "sourceRevision": 10647135,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "f0c5e44d4e3072941512bd860ff100120c01583bf8935966d53079c8f765e8d1",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "艮：艮其背，不獲其身，行其庭，不見其人，无咎。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：艮其趾，无咎，利永貞。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：艮其腓，不拯其隨，其心不快。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：艮其限，其夤，厲心。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：艮其身，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：艮其輔，言有，悔亡。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：敦艮，吉。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "艮，止也。時止則止，時行則行，動靜不失其時，其道光明。艮其止，止其所也。上下敵應，不相與也。是以不獲其身，行其庭不見其人，无咎也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "兼山，艮；君子以思不出其位。"
+      },
+      {
+        "id": "p12",
+        "text": "艮其趾，未失正也。"
+      },
+      {
+        "id": "p13",
+        "text": "不拯其隨，未退聽也。"
+      },
+      {
+        "id": "p14",
+        "text": "艮其限，危薰心也。"
+      },
+      {
+        "id": "p15",
+        "text": "艮其身，止諸躬也。"
+      },
+      {
+        "id": "p16",
+        "text": "艮其輔，以中正也。"
+      },
+      {
+        "id": "p17",
+        "text": "敦艮之吉，以厚終也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-053",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "渐",
+    "sourceHeading": "周易/漸",
+    "slug": "53",
+    "order": 53,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》渐卦，修订版本 2560535",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%BC%B8&oldid=2560535&variant=zh-hans",
+    "sourceRevision": 2560535,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "29ab6b76e142a60e9cfdd5c7e85b28b359bf5bd7583bea1eec807eeed6aa9529",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "漸：女歸吉，利貞。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：鴻漸于干，小子厲，有言，无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：鴻漸于磐，飲食衎衎，吉。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：鴻漸于陸，夫征不復，婦孕不育，凶；利禦寇。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：鴻漸于木，或得其桷，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：鴻漸于陵，婦三歲不孕，終莫之勝，吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：鴻漸于陸，其羽可用為儀，吉。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "漸之進也，女歸吉也。進得位，往有功也。進以正，可以正邦也。其位剛，得中也。止而巽，動不窮也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "山上有木，漸；君子以居賢德，善俗。"
+      },
+      {
+        "id": "p12",
+        "text": "小子之厲，義无咎也。"
+      },
+      {
+        "id": "p13",
+        "text": "飲食衎衎，不素飽也。"
+      },
+      {
+        "id": "p14",
+        "text": "夫征不復，離群丑也。婦孕不育，失其道也。利用禦寇，順相保也。"
+      },
+      {
+        "id": "p15",
+        "text": "或得其桷，順以巽也。"
+      },
+      {
+        "id": "p16",
+        "text": "終莫之勝，吉；得所愿也。"
+      },
+      {
+        "id": "p17",
+        "text": "其羽可用為儀，吉；不可亂也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-054",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "归妹",
+    "sourceHeading": "周易/歸妹",
+    "slug": "54",
+    "order": 54,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》归妹卦，修订版本 10647182",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%AD%B8%E5%A6%B9&oldid=10647182&variant=zh-hans",
+    "sourceRevision": 10647182,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "a6746292bffa6d3aec7b61df7963d3fa765c508c08c57dbaab855872d856c149",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "歸妹：征凶，无攸利。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：歸妹以娣，跛能履，征吉。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：眇視，利幽人之貞。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：歸妹以須，反歸以娣。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：歸妹愆期，遲歸有時。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：帝乙歸妹，其君之袂，不如其娣之袂良，月幾望，吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：女承筐无實，士刲羊无血，无攸利。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "歸妹，天地之大義也。天地不交，而萬物不興，歸妹人之終始也。說以動，所歸妹也。征凶，位不當也。无攸利，柔乘剛也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "澤上有雷，歸妹；君子以永終知敝。"
+      },
+      {
+        "id": "p12",
+        "text": "歸妹以娣，以恆也。跛能履吉，相承也。"
+      },
+      {
+        "id": "p13",
+        "text": "利幽人之貞，未變常也。"
+      },
+      {
+        "id": "p14",
+        "text": "歸妹以須，未當也。"
+      },
+      {
+        "id": "p15",
+        "text": "愆期之志，有待而行也。"
+      },
+      {
+        "id": "p16",
+        "text": "帝乙歸妹，不如其娣之袂良也。其位在中，以貴行也。"
+      },
+      {
+        "id": "p17",
+        "text": "上六无實，承虛筐也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-055",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "丰",
+    "sourceHeading": "周易/豐",
+    "slug": "55",
+    "order": 55,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》丰卦，修订版本 10645290",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E8%B1%90&oldid=10645290&variant=zh-hans",
+    "sourceRevision": 10645290,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "7a1b9fdb60894c4f36c23d3e8ffdd888aaa19ad1137ac7c17c36bed9f01f0580",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "豐：亨。王假之，勿憂，宜日中。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：遇其配主，雖旬无咎，往有尚。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：豐其蔀，日中見斗，往得疑疾，有孚發若，吉。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：豐其沛，日中見沬，折其右肱，无咎。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：豐其蔀，日中見斗，遇其夷主，吉。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：來章，有慶譽，吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：豐其屋，蔀其家，窺其戶，闃其无人，三歲不觌，凶。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "豐，大也。明以動，故豐。王假之，尚大也。勿憂宜日中，宜照天下也。日中則昃，月盈則食，天地盈虛，與時消息，而況于人乎？況于鬼神乎？"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "雷電皆至，豐；君子以折獄致刑。"
+      },
+      {
+        "id": "p12",
+        "text": "雖旬无咎，過旬災也。"
+      },
+      {
+        "id": "p13",
+        "text": "有孚發若，信以發志也。"
+      },
+      {
+        "id": "p14",
+        "text": "豐其沛，不可大事也。折其右肱，終不可用也。"
+      },
+      {
+        "id": "p15",
+        "text": "豐其蔀，位不當也。日中見斗，幽不明也。遇其夷主，吉；行也。"
+      },
+      {
+        "id": "p16",
+        "text": "六五之吉，有慶也。"
+      },
+      {
+        "id": "p17",
+        "text": "豐其屋，天際翔也。窺其戶，闃其无人，自藏也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-056",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "旅",
+    "sourceHeading": "周易/旅",
+    "slug": "56",
+    "order": 56,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》旅卦，修订版本 10647234",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%97%85&oldid=10647234&variant=zh-hans",
+    "sourceRevision": 10647234,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "e22d0ce2ff900f7c93309c42ef3ce260fae9411ff0b43f2d174953d330a5400e",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "旅：小亨，旅貞吉。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：旅瑣瑣，斯其所取災。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：旅即次，懷其資，得僕貞。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：旅焚其次，喪其僕，貞厲。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：旅于處，得其資斧，我心不快。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：射雉一矢亡，終以譽命。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：鳥焚其巢，旅人先笑後號咷。喪牛于易，凶。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "旅，小亨，柔得中乎外，而順乎剛，止而麗乎明，是以小亨，旅貞吉也。旅之時義大矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "山上有火，旅；君子以明慎用刑，而不留獄。"
+      },
+      {
+        "id": "p12",
+        "text": "旅瑣瑣，志窮災也。"
+      },
+      {
+        "id": "p13",
+        "text": "得童僕貞，終无尤也。"
+      },
+      {
+        "id": "p14",
+        "text": "旅焚其次，亦以傷矣。以旅與下，其義喪也。"
+      },
+      {
+        "id": "p15",
+        "text": "旅于處，未得位也。得其資斧，心未快也。"
+      },
+      {
+        "id": "p16",
+        "text": "終以譽命，上逮也。"
+      },
+      {
+        "id": "p17",
+        "text": "以旅在上，其義焚也。喪牛于易，終莫之聞也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-057",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "巽",
+    "sourceHeading": "周易/巽",
+    "slug": "57",
+    "order": 57,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》巽卦，修订版本 10644966",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%B7%BD&oldid=10644966&variant=zh-hans",
+    "sourceRevision": 10644966,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "fa8f286e0985ff377a527b1e186d95f6bd8aee4a1c92be725bbe0d8e93db1856",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "巽：小亨。利有攸往。利見大人。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：進退，利武人之貞。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：巽在牀下，用史巫紛若，吉无咎。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：頻巽，吝。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：悔亡，田獲三品。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：貞吉悔亡，无不利。无初有終，先庚三日，後庚三日，吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：巽在牀下，喪其資斧，貞凶。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "重巽以申命，剛巽乎中正而志行。柔皆順乎剛，是以小亨，利有攸往，利見大人。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "隨風，巽；君子以申命行事。"
+      },
+      {
+        "id": "p12",
+        "text": "進退，志疑也。利武人之貞，志治也。"
+      },
+      {
+        "id": "p13",
+        "text": "紛若之吉，得中也。"
+      },
+      {
+        "id": "p14",
+        "text": "頻巽之吝，志窮也。"
+      },
+      {
+        "id": "p15",
+        "text": "田獲三品，有功也。"
+      },
+      {
+        "id": "p16",
+        "text": "九五之吉，位正中也。"
+      },
+      {
+        "id": "p17",
+        "text": "巽在牀下，上窮也。喪其資斧，正乎凶也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-058",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "兑",
+    "sourceHeading": "周易/兌",
+    "slug": "58",
+    "order": 58,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》兑卦，修订版本 2404993",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%85%8C&oldid=2404993&variant=zh-hans",
+    "sourceRevision": 2404993,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "c66aadde0e151188f2c857ca034b031ecf562b693ffddca4ba672ea1d461bfb7",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "兌：亨。利貞。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：和兌，吉。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：孚兌，吉，悔亡。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：來兌，凶。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：商兌，未寧，介疾有喜。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：孚于剝，有厲。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：引兌。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "兌，說也。剛中而柔外，說以利貞，是以順乎天，而應乎人。說以先民，民忘其勞；說以犯難，民忘其死；說之大，民勸矣哉！"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "麗澤，兌；君子以朋友講習。"
+      },
+      {
+        "id": "p12",
+        "text": "和兌之吉，行未疑也。"
+      },
+      {
+        "id": "p13",
+        "text": "孚兌之吉，信志也。"
+      },
+      {
+        "id": "p14",
+        "text": "來兌之凶，位不當也。"
+      },
+      {
+        "id": "p15",
+        "text": "九四之喜，有慶也。"
+      },
+      {
+        "id": "p16",
+        "text": "孚于剝，位正當也。"
+      },
+      {
+        "id": "p17",
+        "text": "上六引兌，未光也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-059",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "涣",
+    "sourceHeading": "周易/渙",
+    "slug": "59",
+    "order": 59,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》涣卦，修订版本 10647580",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%B8%99&oldid=10647580&variant=zh-hans",
+    "sourceRevision": 10647580,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "0b5be666a4195369c1c332854bf6bc827b1e2a250ec32a7893ef71fa34b41b3f",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "渙：亨，王假有廟，利涉大川，利貞。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：用拯馬壯，吉，悔亡。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：渙奔其机，悔亡。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：渙其躬，无悔。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：渙其群，元吉。渙有丘，匪夷所思。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：渙汗其大號，渙王居，无咎。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：渙其血，去逖出，无咎。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "渙，亨。剛來而不窮，柔得位乎外而上同。王假有廟，王乃在中也。利涉大川，乘木有功也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "風行水上，渙；先王以享于帝立廟。"
+      },
+      {
+        "id": "p12",
+        "text": "初六之吉，順也。"
+      },
+      {
+        "id": "p13",
+        "text": "渙奔其机，得愿也。"
+      },
+      {
+        "id": "p14",
+        "text": "渙其躬，志在外也。"
+      },
+      {
+        "id": "p15",
+        "text": "渙其群，元吉；光大也。"
+      },
+      {
+        "id": "p16",
+        "text": "王居无咎，正位也。"
+      },
+      {
+        "id": "p17",
+        "text": "渙其血，遠害也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-060",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "节",
+    "sourceHeading": "周易/節",
+    "slug": "60",
+    "order": 60,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》节卦，修订版本 2405027",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E7%AF%80&oldid=2405027&variant=zh-hans",
+    "sourceRevision": 2405027,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "92f9627db6b404800beeea29b19f155ba3ee92794e3a1f256605fb1d0b2265a5",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "節：亨。苦節不可貞。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：不出戶庭，无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：不出門庭，凶。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：不節若，則嗟若，无咎。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：安節，亨。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：甘節，吉；往有尚。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：苦節，貞凶，悔亡。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "節，亨，剛柔分，而剛得中。苦節不可貞，其道窮也。說以行險，當位以節，中正以通。天地節而四時成，節以制度，不傷財，不害民。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "澤上有水，節；君子以制數度，議德行。"
+      },
+      {
+        "id": "p12",
+        "text": "不出戶庭，知通塞也。"
+      },
+      {
+        "id": "p13",
+        "text": "不出門庭，失時極也。"
+      },
+      {
+        "id": "p14",
+        "text": "不節之嗟，又誰咎也。"
+      },
+      {
+        "id": "p15",
+        "text": "安節之亨，承上道也。"
+      },
+      {
+        "id": "p16",
+        "text": "甘節之吉，居位中也。"
+      },
+      {
+        "id": "p17",
+        "text": "苦節貞凶，其道窮也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-061",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "中孚",
+    "sourceHeading": "周易/中孚",
+    "slug": "61",
+    "order": 61,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》中孚卦，修订版本 10647425",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E4%B8%AD%E5%AD%9A&oldid=10647425&variant=zh-hans",
+    "sourceRevision": 10647425,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "7c1eeb81a5fd30663cf5413323820d7f6cab15c882d507299af42dccb2b3df4a",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "中孚：豚魚吉，利涉大川，利貞。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：虞吉，有不燕。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：鳴鶴在陰，其子和之，我有好爵，吾與爾靡之。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：得敵，或鼓或罷，或泣或歌。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：月望，馬匹亡，无咎。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：有孚攣如，无咎。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：翰音登于天，貞凶。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "中孚，柔在內而剛得中。說而巽，孚，乃化邦也。豚魚吉，信及豚魚也。利涉大川，乘木舟虛也。中孚以利貞，乃應乎天也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "澤上有風，中孚；君子以議獄緩死。"
+      },
+      {
+        "id": "p12",
+        "text": "初九虞吉，志未變也。"
+      },
+      {
+        "id": "p13",
+        "text": "其子和之，中心愿也。"
+      },
+      {
+        "id": "p14",
+        "text": "可鼓或罷，位不當也。"
+      },
+      {
+        "id": "p15",
+        "text": "馬匹亡，絕類上也。"
+      },
+      {
+        "id": "p16",
+        "text": "有孚攣如，位正當也。"
+      },
+      {
+        "id": "p17",
+        "text": "翰音登于天，何可長也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-062",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "小过",
+    "sourceHeading": "周易/小過",
+    "slug": "62",
+    "order": 62,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》小过卦，修订版本 10643238",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E5%B0%8F%E9%81%8E&oldid=10643238&variant=zh-hans",
+    "sourceRevision": 10643238,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "33fed608d8d47a3e3ca85a67c1fe6bcd1ba22d1df06e2d918d4a11e7f31944e4",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "小過：亨。利貞。可小事，不可大事。飛鳥遺之音，不宜上宜下，大吉。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：飛鳥以凶。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：過其祖，遇其妣；不及其君，遇其臣；无咎。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：弗過防之，從或戕之，凶。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：无咎，弗過遇之。往厲必戒，勿用永貞。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：密雲不雨，自我西郊，公弋取彼在穴。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：弗遇過之，飛鳥離之，凶，是謂災眚。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "小過，小者過而亨也。過以利貞，與時行也。柔得中，是以小事吉也。剛失位而不中，是以不可大事也。有飛鳥之象焉，有飛鳥遺之音，不宜上宜下，大吉；上逆而下順也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "山上有雷，小過；君子以行過乎恭，喪過乎哀，用過乎儉。"
+      },
+      {
+        "id": "p12",
+        "text": "飛鳥以凶，不可如何也。"
+      },
+      {
+        "id": "p13",
+        "text": "不及其君，臣不可過也。"
+      },
+      {
+        "id": "p14",
+        "text": "從或戕之，凶如何也。"
+      },
+      {
+        "id": "p15",
+        "text": "弗過遇之，位不當也。往厲必戒，終不可長也。"
+      },
+      {
+        "id": "p16",
+        "text": "密云不雨，已上也。"
+      },
+      {
+        "id": "p17",
+        "text": "弗遇過之，已亢也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-063",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "既济",
+    "sourceHeading": "周易/既濟",
+    "slug": "63",
+    "order": 63,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》既济卦，修订版本 2572417",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%97%A2%E6%BF%9F&oldid=2572417&variant=zh-hans",
+    "sourceRevision": 2572417,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "e2370e14f433b4731ea0513a57f07e93589c0733654d4c1ac99e8ef759bc353c",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "既濟：亨小。利貞。初吉終亂。"
+      },
+      {
+        "id": "p2",
+        "text": "初九：曳其輪，濡其尾，无咎。"
+      },
+      {
+        "id": "p3",
+        "text": "六二：婦喪其茀，勿逐，七日得。"
+      },
+      {
+        "id": "p4",
+        "text": "九三：高宗伐鬼方，三年克之，小人勿用。"
+      },
+      {
+        "id": "p5",
+        "text": "六四：繻有衣袽，終日戒。"
+      },
+      {
+        "id": "p6",
+        "text": "九五：東鄰殺牛，不如西鄰之禴祭，實受其福。"
+      },
+      {
+        "id": "p7",
+        "text": "上六：濡其首，厲。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "既濟，亨，小者亨也。利貞，剛柔正而位當也。初吉，柔得中也。終止則亂，其道窮也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "水在火上，既濟；君子以思患而豫防之。"
+      },
+      {
+        "id": "p12",
+        "text": "曳其輪，義无咎也。"
+      },
+      {
+        "id": "p13",
+        "text": "七日得，以中道也。"
+      },
+      {
+        "id": "p14",
+        "text": "三年克之，憊也。"
+      },
+      {
+        "id": "p15",
+        "text": "終日戒，有所疑也。"
+      },
+      {
+        "id": "p16",
+        "text": "東鄰殺牛，不如西鄰之時也；實受其福，吉大來也。"
+      },
+      {
+        "id": "p17",
+        "text": "濡其首厲，何可久也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "yijing-064",
+    "bookId": "yijing",
+    "volumeId": "xiajing",
+    "title": "未济",
+    "sourceHeading": "周易/未濟",
+    "slug": "64",
+    "order": 64,
+    "sourceEdition": "中文维基文库《周易》六十四卦页面",
+    "sourceCitation": "《周易》未济卦，修订版本 10647450",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%2F%E6%9C%AA%E6%BF%9F&oldid=10647450&variant=zh-hans",
+    "sourceRevision": 10647450,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "0e358b93ab70bf195da9896134c6116b73a5e998fa7766b0d4f212c142c3ac72",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "未濟：亨。小狐汔濟，濡其尾，无攸利。"
+      },
+      {
+        "id": "p2",
+        "text": "初六：濡其尾，吝。"
+      },
+      {
+        "id": "p3",
+        "text": "九二：曳其輪，貞吉。"
+      },
+      {
+        "id": "p4",
+        "text": "六三：未濟，征凶，利涉大川。"
+      },
+      {
+        "id": "p5",
+        "text": "九四：貞吉，悔亡，震用伐鬼方，三年有賞于大。"
+      },
+      {
+        "id": "p6",
+        "text": "六五：貞吉，无悔，君子之光，有孚，吉。"
+      },
+      {
+        "id": "p7",
+        "text": "上九：有孚于飲酒，无咎，濡其首，有孚失是。"
+      },
+      {
+        "id": "p8",
+        "text": "彖曰："
+      },
+      {
+        "id": "p9",
+        "text": "未濟，亨；柔得中也。小狐汔濟，未出中也。濡其尾，无攸利；不續終也。雖不當位，剛柔應也。"
+      },
+      {
+        "id": "p10",
+        "text": "象曰："
+      },
+      {
+        "id": "p11",
+        "text": "火在水上，未濟；君子以慎辨物居方。"
+      },
+      {
+        "id": "p12",
+        "text": "濡其尾，亦不知極也。"
+      },
+      {
+        "id": "p13",
+        "text": "九二貞吉，中以行正也。"
+      },
+      {
+        "id": "p14",
+        "text": "未濟征凶，位不當也。"
+      },
+      {
+        "id": "p15",
+        "text": "貞吉悔亡，志行也。"
+      },
+      {
+        "id": "p16",
+        "text": "君子之光，其暉吉也。"
+      },
+      {
+        "id": "p17",
+        "text": "飲酒濡首，亦不知節也。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  }
+]

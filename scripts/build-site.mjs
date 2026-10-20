@@ -51,6 +51,29 @@ const herbUrls = (result.catalog.herbProfiles || [])
 const herbBlockPattern = new RegExp(`${herbStart}[\\s\\S]*?${herbEnd}`);
 await fs.writeFile(sitemapPath, sitemap.replace(herbBlockPattern, `${herbStart}\n${herbUrls}\n    ${herbEnd}`), 'utf8');
 
+const culturalStart = '<!-- GENERATED CULTURAL CLASSICS START -->';
+const culturalEnd = '<!-- GENERATED CULTURAL CLASSICS END -->';
+const sitemapWithHerbs = await fs.readFile(sitemapPath, 'utf8');
+if (!sitemapWithHerbs.includes(culturalStart) || !sitemapWithHerbs.includes(culturalEnd)) {
+  throw new Error('sitemap.xml 缺少文化经典生成标记');
+}
+const culturalIds = new Set(['yijing', 'daodejing']);
+const culturalBooks = result.catalog.books.filter((book) => culturalIds.has(book.id));
+const culturalUrls = [];
+for (const book of culturalBooks) {
+  culturalUrls.push(`    <url><loc>https://nihaixia.org/guji/${book.slug}/</loc><lastmod>${result.catalog.updatedAt}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`);
+  for (const volume of book.volumes) {
+    culturalUrls.push(`    <url><loc>https://nihaixia.org/guji/${book.slug}/${volume.slug}/</loc><lastmod>${result.catalog.updatedAt}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`);
+  }
+  for (const chapter of result.publishedChapters.filter((item) => item.bookId === book.id)) {
+    const volume = book.volumes.find((item) => item.id === chapter.volumeId);
+    if (!volume) throw new Error(`${book.title}${chapter.title} 缺少分部`);
+    culturalUrls.push(`    <url><loc>https://nihaixia.org/guji/${book.slug}/${volume.slug}/${chapter.slug}/</loc><lastmod>${result.catalog.updatedAt}</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>`);
+  }
+}
+const culturalBlockPattern = new RegExp(`${culturalStart}[\\s\\S]*?${culturalEnd}`);
+await fs.writeFile(sitemapPath, sitemapWithHerbs.replace(culturalBlockPattern, `${culturalStart}\n${culturalUrls.join('\n')}\n    ${culturalEnd}`), 'utf8');
+
 console.log(`站点构建完成：${outDir}`);
 console.log(`古籍审核记录 ${result.reviewed} 条，公开正文 ${result.published} 篇。`);
 

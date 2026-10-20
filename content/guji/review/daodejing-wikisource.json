@@ -1,0 +1,3816 @@
+[
+  {
+    "id": "daodejing-001",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第一章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "01",
+    "order": 1,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》一章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "5a507786fec46f58c83904a5ea8bd86a9d0fdb8ede1bd070bc2de7895d0e22bf",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "道可道，非常道，名可名，非常名；"
+      },
+      {
+        "id": "p2",
+        "text": "无名，天地之始，有名，万物之母。"
+      },
+      {
+        "id": "p3",
+        "text": "故常无欲，以观其妙，"
+      },
+      {
+        "id": "p4",
+        "text": "常有欲，以观其徼；"
+      },
+      {
+        "id": "p5",
+        "text": "此两者，同出而异名，同谓之玄。玄之又玄，众妙之门。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-002",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第二章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "02",
+    "order": 2,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》二章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "325441a4cd23d1074c5b36ccaa18c85fd4b4c17f57387fa6bca2a19db8ba4128",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "天下皆知美之为美，斯恶已。皆知善之为善，斯不善已。故有无相生，难易相成，长短相较，高下相倾，音声相和，前后相随。"
+      },
+      {
+        "id": "p2",
+        "text": "是以圣人处无为之事，"
+      },
+      {
+        "id": "p3",
+        "text": "行不言之教；万物作焉而不辞，生而不有，为而不恃，"
+      },
+      {
+        "id": "p4",
+        "text": "功成而弗居。"
+      },
+      {
+        "id": "p5",
+        "text": "夫唯弗居，是以不去。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-003",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第三章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "03",
+    "order": 3,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》三章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "cc3392a99a15548899fc6ffe4f95a8cced444be808aa4473d603ad96a9ceee6d",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "不尚贤，使民不争；不贵难得之货，使民不为盗；不见可欲，使民心不乱。"
+      },
+      {
+        "id": "p2",
+        "text": "是以圣人之治，虚其心，实其腹，"
+      },
+      {
+        "id": "p3",
+        "text": "弱其志，强其骨。"
+      },
+      {
+        "id": "p4",
+        "text": "常使民无知无欲。"
+      },
+      {
+        "id": "p5",
+        "text": "使夫智者不敢为也。"
+      },
+      {
+        "id": "p6",
+        "text": "为无为，则无不治。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-004",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第四章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "04",
+    "order": 4,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》四章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "df150958b402bcf117725739c9a326cda233e18a5d84d2439485fddc24249ffd",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "道冲而用之或不盈，渊兮似万物之宗；挫其锐，解其纷，和其光，同其尘，湛兮似或存。吾不知谁之子，象帝之先。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-005",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第五章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "05",
+    "order": 5,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》五章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "ae24952bcbdbf779e6357723272ab834d1c3602dc3e4e39c073263bdc7b2104c",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "天地不仁，以万物为刍狗；"
+      },
+      {
+        "id": "p2",
+        "text": "圣人不仁，以百姓为刍狗。"
+      },
+      {
+        "id": "p3",
+        "text": "天地之间，其犹橐籥乎？虚而不屈，动而愈出。"
+      },
+      {
+        "id": "p4",
+        "text": "多言数穷，不如守中。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-006",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第六章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "06",
+    "order": 6,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》六章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "564b38549ef9d46dac1417bceb900782ee7f01b9216e3f08abd9e1b0583bf9df",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "谷神不死，是谓玄牝。玄牝之门，是谓天地根。绵绵若存，用之不勤。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-007",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第七章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "07",
+    "order": 7,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》七章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "191787dab0e8132ac12f3c64fa844741c3f68496791c5e339fb7d737435e665c",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "天长地久。天地所以能长且久者，以其不自生，"
+      },
+      {
+        "id": "p2",
+        "text": "故能长生。是以圣人后其身而身先；外其身而身存。非以其无私邪，故能成其私。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-008",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第八章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "08",
+    "order": 8,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》八章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "f839be3d055e756f45528463e696b698d5593a0c96d71376176ffdc9bc00b0d1",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "上善若水。水善利万物而不争，处众人之所恶，"
+      },
+      {
+        "id": "p2",
+        "text": "故几于道。"
+      },
+      {
+        "id": "p3",
+        "text": "居善地，心善渊，与善仁，言善信，正善治，事善能，动善时。夫唯不争，故无尤。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-009",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第九章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "09",
+    "order": 9,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》九章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "d3cacb841ba8c4bcc0b99635facdade3b51ab437c1570fed1fd71b890fa35f25",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "持而盈之，不如其已；"
+      },
+      {
+        "id": "p2",
+        "text": "揣而棁之，不可长保。"
+      },
+      {
+        "id": "p3",
+        "text": "金玉满堂，莫之能守；"
+      },
+      {
+        "id": "p4",
+        "text": "富贵而骄，自遗其咎。"
+      },
+      {
+        "id": "p5",
+        "text": "功遂身退，天之道。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-010",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第十章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "10",
+    "order": 10,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》十章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "2ecda374cbafd97a90559e1fdf6dc710ae96b98c02e68cd18b9e87d3b8afdf79",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "载营魄抱一，能无离乎？"
+      },
+      {
+        "id": "p2",
+        "text": "专气致柔，能婴儿乎？"
+      },
+      {
+        "id": "p3",
+        "text": "涤除玄览，能无疵乎？"
+      },
+      {
+        "id": "p4",
+        "text": "爱国治民，能无知乎？"
+      },
+      {
+        "id": "p5",
+        "text": "天门开阖，能为雌乎？"
+      },
+      {
+        "id": "p6",
+        "text": "明白四达，能无为乎？"
+      },
+      {
+        "id": "p7",
+        "text": "生之，"
+      },
+      {
+        "id": "p8",
+        "text": "畜之。"
+      },
+      {
+        "id": "p9",
+        "text": "生而不有，为而不恃，长而不宰，是谓玄德。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-011",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第十一章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "11",
+    "order": 11,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》十一章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "3b10928c98fb60b7ce461e8595af6fa8db9248e8dbdb1143718644b48a41f2b5",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "三十辐共一毂，当其无，有车之用。"
+      },
+      {
+        "id": "p2",
+        "text": "埏埴以为器，当其无，有器之用。凿户牖以为室，当其无，有室之用。故有之以为利，无之以为用。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-012",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第十二章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "12",
+    "order": 12,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》十二章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "2e1c448f206be610e9e810d4adb483c8a72eb2433824ed57726ae2dc2f6db323",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "五色令人目盲，五音令人耳聋，五味令人口爽，驰骋畋猎令人心发狂，"
+      },
+      {
+        "id": "p2",
+        "text": "难得之货令人行妨。"
+      },
+      {
+        "id": "p3",
+        "text": "是以圣人为腹不为目，故去彼取此。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-013",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第十三章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "13",
+    "order": 13,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》十三章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "d7606984e01017d3a50741c0ccf561b33735bdec3a7d54ea83aa5346fb280f68",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "宠辱若惊，贵大患若身。何谓宠辱若惊？宠为下，得之若惊，失之若惊，是谓宠辱若惊。"
+      },
+      {
+        "id": "p2",
+        "text": "何谓贵大患若身？"
+      },
+      {
+        "id": "p3",
+        "text": "吾所以有大患者，为吾有身，"
+      },
+      {
+        "id": "p4",
+        "text": "及吾无身，"
+      },
+      {
+        "id": "p5",
+        "text": "吾有何患？故贵以身为天下，若可寄天下；"
+      },
+      {
+        "id": "p6",
+        "text": "爱以身为天下，若可托天下。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-014",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第十四章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "14",
+    "order": 14,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》十四章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "e676d9d22f8d96d5ce41e0c0531058c8be568556ab74b91e35fa803bebce86b7",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "视之不见名曰夷，听之不闻名曰希，搏之不得名曰微。此三者，不可致诘，故混而为一。"
+      },
+      {
+        "id": "p2",
+        "text": "其上不皦，其下不昧。绳绳不可名，复归于无物。是谓无状之状，无物之象，"
+      },
+      {
+        "id": "p3",
+        "text": "是谓惚恍。"
+      },
+      {
+        "id": "p4",
+        "text": "迎之不见其首，随之不见其后。执古之道，以御今之有。"
+      },
+      {
+        "id": "p5",
+        "text": "能知古始，是谓道纪。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-015",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第十五章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "15",
+    "order": 15,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》十五章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "c1e904ad574dd4ab2f8458721b25dcd54e1ff5253358a267d5a91b51f82b39ae",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "古之善为士者，微妙玄通，深不可识。夫唯不可识，故强为之容。豫焉若冬涉川，"
+      },
+      {
+        "id": "p2",
+        "text": "犹兮若畏四邻，"
+      },
+      {
+        "id": "p3",
+        "text": "俨兮其若容，涣兮若冰之将释，敦兮其若朴，旷兮其若谷，混兮其若浊。"
+      },
+      {
+        "id": "p4",
+        "text": "孰能浊以静之徐清？孰能安以久动之徐生？"
+      },
+      {
+        "id": "p5",
+        "text": "保此道者不欲盈，"
+      },
+      {
+        "id": "p6",
+        "text": "夫唯不盈，故能蔽不新成。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-016",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第十六章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "16",
+    "order": 16,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》十六章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "a4a9f5995e97e522c7a0d1427393b4b397aea5cdc4e0a2f290d308d179cb85b9",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "致虚极，守静笃。"
+      },
+      {
+        "id": "p2",
+        "text": "万物并作，吾以观复。"
+      },
+      {
+        "id": "p3",
+        "text": "夫物芸芸，各复归其根。归根曰静，是谓复命。复命曰常，"
+      },
+      {
+        "id": "p4",
+        "text": "知常曰明。不知常，妄作凶。"
+      },
+      {
+        "id": "p5",
+        "text": "知常容，"
+      },
+      {
+        "id": "p6",
+        "text": "容乃公，"
+      },
+      {
+        "id": "p7",
+        "text": "公乃全，"
+      },
+      {
+        "id": "p8",
+        "text": "全乃天，"
+      },
+      {
+        "id": "p9",
+        "text": "天乃道，"
+      },
+      {
+        "id": "p10",
+        "text": "道乃久，"
+      },
+      {
+        "id": "p11",
+        "text": "没身不殆。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-017",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第十七章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "17",
+    "order": 17,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》十七章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "2aaa1e74c2e2375e1ffebf67fe5e2ff8af8a5aac41acc664e9cbbfd632c25c1b",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "太上，下知有之，"
+      },
+      {
+        "id": "p2",
+        "text": "其次，亲而誉之，"
+      },
+      {
+        "id": "p3",
+        "text": "其次，畏之，"
+      },
+      {
+        "id": "p4",
+        "text": "其次，侮之。"
+      },
+      {
+        "id": "p5",
+        "text": "信不足焉，有不信焉。"
+      },
+      {
+        "id": "p6",
+        "text": "悠兮其贵言，功成事遂，百姓皆谓：我自然。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-018",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第十八章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "18",
+    "order": 18,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》十八章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "9a30933fc4d223359d5773d83f38ad019e26ff629c9e85a17dac3d3f1749b73e",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "大道废，有仁义；"
+      },
+      {
+        "id": "p2",
+        "text": "智慧出，有大伪；"
+      },
+      {
+        "id": "p3",
+        "text": "六亲不和，有孝慈；国家昏乱，有忠臣。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-019",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第十九章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "19",
+    "order": 19,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》十九章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "8441ac2eddc92dada24be36374d942b3d518ed7c1114127e367379e93b0c28f4",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "绝圣弃智，民利百倍；绝仁弃义，民复孝慈；绝巧弃利，盗贼无有。此三者以为文不足，故令有所属﹕见素抱朴，少私寡欲。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-020",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第二十章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "20",
+    "order": 20,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》二十章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "fc368d6634a542eb0e566c1bfee3d63c18bcfe75091291a6e5c99d9e6f002acd",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "绝学无忧，唯之与阿，相去几何？善之与恶，相去若何？人之所畏，不可不畏。"
+      },
+      {
+        "id": "p2",
+        "text": "荒兮其未央哉﹗"
+      },
+      {
+        "id": "p3",
+        "text": "众人熙熙，如享太牢，如春登台。"
+      },
+      {
+        "id": "p4",
+        "text": "我独泊兮其未兆，如婴儿之未孩；"
+      },
+      {
+        "id": "p5",
+        "text": "儽儽兮若无所归。"
+      },
+      {
+        "id": "p6",
+        "text": "众人皆有馀，而我独若遗。"
+      },
+      {
+        "id": "p7",
+        "text": "我愚人之心也哉﹗"
+      },
+      {
+        "id": "p8",
+        "text": "沌沌兮，"
+      },
+      {
+        "id": "p9",
+        "text": "俗人昭昭，"
+      },
+      {
+        "id": "p10",
+        "text": "我独昏昏。俗人察察，"
+      },
+      {
+        "id": "p11",
+        "text": "我独闷闷。澹兮其若海，"
+      },
+      {
+        "id": "p12",
+        "text": "飂兮若无止。"
+      },
+      {
+        "id": "p13",
+        "text": "众人皆有以，"
+      },
+      {
+        "id": "p14",
+        "text": "而我独顽似鄙。"
+      },
+      {
+        "id": "p15",
+        "text": "我独异于人，而贵食母。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-021",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第二十一章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "21",
+    "order": 21,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》二十一章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "816406213a2b2918d1e64ecc96807f1a6ab4a1706147d59999c829e87b2d0699",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "孔德之容，惟道是从。"
+      },
+      {
+        "id": "p2",
+        "text": "道之为物，惟恍惟惚。"
+      },
+      {
+        "id": "p3",
+        "text": "惚兮恍兮，其中有象；恍兮惚兮，其中有物。"
+      },
+      {
+        "id": "p4",
+        "text": "窈兮冥兮，其中有精；"
+      },
+      {
+        "id": "p5",
+        "text": "其精甚真，其中有信。"
+      },
+      {
+        "id": "p6",
+        "text": "自今及古，其名不去，"
+      },
+      {
+        "id": "p7",
+        "text": "以阅众甫。"
+      },
+      {
+        "id": "p8",
+        "text": "吾何以知众甫之状哉？以此。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-022",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第二十二章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "22",
+    "order": 22,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》二十二章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "c669b6b5b37501e60e9ffdae8294235267d08b7492a7bd3f92f983d28e71e23e",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "曲则全，"
+      },
+      {
+        "id": "p2",
+        "text": "枉则直，"
+      },
+      {
+        "id": "p3",
+        "text": "洼则盈，"
+      },
+      {
+        "id": "p4",
+        "text": "敝则新，"
+      },
+      {
+        "id": "p5",
+        "text": "少则得，多则惑。"
+      },
+      {
+        "id": "p6",
+        "text": "是以圣人抱一为天下式。"
+      },
+      {
+        "id": "p7",
+        "text": "不自见故明，不自是故彰，不自伐故有功，不自矜故长。夫唯不争，故天下莫能与之争。古之所谓曲则全者，岂虚言哉！诚全而归之。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-023",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第二十三章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "23",
+    "order": 23,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》二十三章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "157e98ec005f480048c0f61da880645083b5e0de375682c2a792e9ed783e3d85",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "希言自然。"
+      },
+      {
+        "id": "p2",
+        "text": "故飘风不终朝，骤雨不终日。孰为此者？天地。天地尚不能久，而况于人乎？"
+      },
+      {
+        "id": "p3",
+        "text": "故从事于道者，道者同于道，"
+      },
+      {
+        "id": "p4",
+        "text": "德者同于德，"
+      },
+      {
+        "id": "p5",
+        "text": "失者同于失。"
+      },
+      {
+        "id": "p6",
+        "text": "同于道者，道亦乐得之；同于德者，德亦乐得之；同于失者，失亦乐得之。"
+      },
+      {
+        "id": "p7",
+        "text": "信不足焉，有不信焉。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-024",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第二十四章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "24",
+    "order": 24,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》二十四章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "4e71d3f159d17466027895b4c85495229d69cc81d10a27db844ae89f18f6411c",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "企者不立，"
+      },
+      {
+        "id": "p2",
+        "text": "跨者不行，自见者不明，自是者不彰，自伐者无功，自矜者不长。其在道也，曰馀食赘行。"
+      },
+      {
+        "id": "p3",
+        "text": "物或恶之，故有道者不处。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-025",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第二十五章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "25",
+    "order": 25,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》二十五章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "74fc8feb9f8ba3bd9796ed0e7d8c84e7fcabd94bf0e8c5fe3d8d982959c7eee9",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "有物混成，先天地生。"
+      },
+      {
+        "id": "p2",
+        "text": "寂兮寥兮，独立而不改，"
+      },
+      {
+        "id": "p3",
+        "text": "周行而不殆，可以为天下母。"
+      },
+      {
+        "id": "p4",
+        "text": "吾不知其名，"
+      },
+      {
+        "id": "p5",
+        "text": "字之曰道，"
+      },
+      {
+        "id": "p6",
+        "text": "强为之名曰大。"
+      },
+      {
+        "id": "p7",
+        "text": "大曰逝，"
+      },
+      {
+        "id": "p8",
+        "text": "逝曰远，远曰反。"
+      },
+      {
+        "id": "p9",
+        "text": "故道大，天大，地大，王亦大。"
+      },
+      {
+        "id": "p10",
+        "text": "域中有四大，"
+      },
+      {
+        "id": "p11",
+        "text": "而王居其一焉。"
+      },
+      {
+        "id": "p12",
+        "text": "人法地，地法天，天法道，道法自然。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-026",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第二十六章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "26",
+    "order": 26,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》二十六章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "18c557b2d33c940fb3a95406c76068a3b9176b5a678db9677b5d1c48dcfcb7a0",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "重为轻根，静为躁君。"
+      },
+      {
+        "id": "p2",
+        "text": "是以圣人终日行不离辎重。"
+      },
+      {
+        "id": "p3",
+        "text": "虽有荣观，燕处超然。"
+      },
+      {
+        "id": "p4",
+        "text": "奈何万乘之主，而以身轻天下？轻则失本，躁则失君。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-027",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第二十七章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "27",
+    "order": 27,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》二十七章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "9b1d420dbd89efca5f8aaf2bf9b91d8cc1a5547e86c0b317f389744bc487d0f7",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "善行无辙迹，"
+      },
+      {
+        "id": "p2",
+        "text": "善言无瑕谪；"
+      },
+      {
+        "id": "p3",
+        "text": "善数不用筹策；"
+      },
+      {
+        "id": "p4",
+        "text": "善闭无关楗而不可开，善结无绳约而不可解。"
+      },
+      {
+        "id": "p5",
+        "text": "是以圣人常善救人，故无弃人；"
+      },
+      {
+        "id": "p6",
+        "text": "常善救物，故无弃物，是谓袭明。故善人者，不善人之师；"
+      },
+      {
+        "id": "p7",
+        "text": "不善人者，善人之资。"
+      },
+      {
+        "id": "p8",
+        "text": "不贵其师，不爱其资，虽智大迷，"
+      },
+      {
+        "id": "p9",
+        "text": "是谓要妙。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-028",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第二十八章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "28",
+    "order": 28,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》二十八章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "08bcf31ad9d9ff5ffd86e78fa51eac1f046e47bf18e67c4ff318b12c3e4c750d",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "知其雄，守其雌，为天下谿。为天下谿，常德不离，复归于婴儿。"
+      },
+      {
+        "id": "p2",
+        "text": "知其白，守其黑，为天下式。"
+      },
+      {
+        "id": "p3",
+        "text": "为天下式，常德不忒，"
+      },
+      {
+        "id": "p4",
+        "text": "复归于无极。"
+      },
+      {
+        "id": "p5",
+        "text": "知其荣，守其辱，为天下谷，常德乃足，复归于朴。"
+      },
+      {
+        "id": "p6",
+        "text": "朴散则为器，圣人用之，则为官长，"
+      },
+      {
+        "id": "p7",
+        "text": "故大制不割。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-029",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第二十九章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "29",
+    "order": 29,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》二十九章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "839a7ae5569897d73ccb550330083d33beebe21f399adab52e7ab060e5d3233a",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "将欲取天下而为之，吾见其不得已。天下神器，"
+      },
+      {
+        "id": "p2",
+        "text": "不可为也，为者败之，执者失之。"
+      },
+      {
+        "id": "p3",
+        "text": "故物或行或随，或歔或吹。或强或羸，或挫或隳。是以圣人去甚，去奢，去泰。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-030",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第三十章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "30",
+    "order": 30,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》三十章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "58ed8356ba2ce1b77f7d5f8deb145e222d41699c4a842663911a662b1523ed6b",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "以道佐人主者，不以兵强天下。"
+      },
+      {
+        "id": "p2",
+        "text": "其事好还。"
+      },
+      {
+        "id": "p3",
+        "text": "师之所处，荆棘生焉。大军之后，必有凶年。"
+      },
+      {
+        "id": "p4",
+        "text": "善有果而已，不敢以取强。"
+      },
+      {
+        "id": "p5",
+        "text": "果而勿矜，果而勿伐，果而勿骄。"
+      },
+      {
+        "id": "p6",
+        "text": "果而不得已，果而勿强。"
+      },
+      {
+        "id": "p7",
+        "text": "物壮则老，是谓不道，不道早已。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-031",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第三十一章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "31",
+    "order": 31,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》三十一章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "17f79c224d00af85d940e3bab4b25fd748c1aa6b18b8696ba9f98ad2a11d859f",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "夫佳兵者，不祥之器，物或恶之，故有道者不处。君子居则贵左，用兵则贵右。兵者不祥之器，非君子之器，不得已而用之，恬淡为上。胜而不美，而美之者，是乐杀人。夫乐杀人者，则不可以得志于天下矣。吉事尚左，凶事尚右。偏将军居左，上将军居右，言以丧礼处之。杀人之众，以哀悲泣之，战胜，以丧礼处之。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-032",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第三十二章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "32",
+    "order": 32,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》三十二章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "8012e7b6917923c48839531ac89bf8db00eeb28d3cf124948dc58b4a40eb9b81",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "道常无名，朴虽小，天下莫能臣也。侯王若能守之，万物将自宾。"
+      },
+      {
+        "id": "p2",
+        "text": "天地相合，以降甘露，民莫之令而自均。"
+      },
+      {
+        "id": "p3",
+        "text": "始制有名，名亦既有，夫亦将知止，知止所以不殆。"
+      },
+      {
+        "id": "p4",
+        "text": "譬道之在天下，犹川谷之于江海。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-033",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第三十三章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "33",
+    "order": 33,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》三十三章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "c4ad4072a2326e0f1031219f2d1926a3ea526b8fc6c9ddccb0102cc13447a240",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "知人者智，自知者明。"
+      },
+      {
+        "id": "p2",
+        "text": "胜人者有力，自胜者强。"
+      },
+      {
+        "id": "p3",
+        "text": "知足者富。"
+      },
+      {
+        "id": "p4",
+        "text": "强行者有志。"
+      },
+      {
+        "id": "p5",
+        "text": "不失其所者久。"
+      },
+      {
+        "id": "p6",
+        "text": "死而不亡者寿。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-034",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第三十四章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "34",
+    "order": 34,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》三十四章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "3291a042b4251008e34c2f58669ed58f1ab4dfb1f2f3b04a298dee99245f657a",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "大道氾兮，其可左右。"
+      },
+      {
+        "id": "p2",
+        "text": "万物恃之而生而不辞，功成不名有。衣养万物而不为主，常无欲，可名于小；"
+      },
+      {
+        "id": "p3",
+        "text": "万物归焉而不为主，可名为大。"
+      },
+      {
+        "id": "p4",
+        "text": "以其终不自为大，故能成其大。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-035",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第三十五章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "35",
+    "order": 35,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》三十五章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "4229a503331045a86dba52fd056b6e8058742dfe8f238498e1b6528a4373bea1",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "执大象，天下往。"
+      },
+      {
+        "id": "p2",
+        "text": "往而不害，安平太。"
+      },
+      {
+        "id": "p3",
+        "text": "乐与饵，过客止。道之出口，淡乎其无味，视之不足见，听之不足闻，用之不足既。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-036",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第三十六章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "36",
+    "order": 36,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》三十六章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "6c0ccc6b875a9f76be038219babefdc7d5266197b85ed6a3a574bdf139133500",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "将欲歙之，必固张之；将欲弱之，必固强之；将欲废之，必固兴之；将欲夺之，必固与之。是谓微明。"
+      },
+      {
+        "id": "p2",
+        "text": "柔弱胜刚强。鱼不可脱于渊，国之利器不可以示人。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-037",
+    "bookId": "daodejing",
+    "volumeId": "daojing",
+    "title": "第三十七章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "37",
+    "order": 37,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》三十七章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "9d313761c8d2c311aecab9346304c620abcb9db1a9d3802d0a017298a21522eb",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "道常无为"
+      },
+      {
+        "id": "p2",
+        "text": "而无不为。"
+      },
+      {
+        "id": "p3",
+        "text": "侯王若能守之，万物将自化。化而欲作，吾将镇之以无名之朴。"
+      },
+      {
+        "id": "p4",
+        "text": "无名之朴，夫亦将无欲。"
+      },
+      {
+        "id": "p5",
+        "text": "不欲以静，天下将自定。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-038",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第三十八章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "38",
+    "order": 38,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》三十八章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "0f689b669cb573b9fd5d21b185fa1042750ceb8259a0d498fa528c6a3a6c35a4",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "上德不德，是以有德；下德不失德，是以无德。上德无为而无以为，下德为之而有以为。上仁为之而无以为，上义为之而有以为。上礼为之而莫之应， 则攘臂而扔之。故失道而后德，失德而后仁，失仁而后义，失义而后礼。夫礼者，忠信之薄，而乱之首。前识者，道之华，而愚之始。是以大丈夫处其厚，不居其薄；处其实，不居其华。故去彼取此。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-039",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第三十九章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "39",
+    "order": 39,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》三十九章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "e269ab58dafa6f1adbf73eb0dcda799b0f506334ca877a6d8e14d5effd82523a",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "昔之得一者，"
+      },
+      {
+        "id": "p2",
+        "text": "天得一以清，地得一以宁，神得一以灵，谷得一以盈，万物得一以生，侯王得一以为天下贞。其致之，"
+      },
+      {
+        "id": "p3",
+        "text": "天无以清将恐裂，"
+      },
+      {
+        "id": "p4",
+        "text": "地无以宁将恐发，神无以灵将恐歇，谷无以盈将恐竭，万物无以生将恐灭，侯王无以贵高将恐蹶。故贵以贱为本，高以下为基。是以侯王自称孤﹑寡﹑不穀。此非以贱为本邪？非乎？故致数舆无舆，不欲琭琭如玉，珞珞如石。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-040",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第四十章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "40",
+    "order": 40,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》四十章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "d9254f8c77bb5c9ad84f5e9c4041d6750c7746419f1539c5e0a68834b3f81cde",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "反者道之动，"
+      },
+      {
+        "id": "p2",
+        "text": "弱者道之用。"
+      },
+      {
+        "id": "p3",
+        "text": "天下万物生于有，有生于无。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-041",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第四十一章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "41",
+    "order": 41,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》四十一章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "ef877a44c7777ec489544737303d79d94af08b304f81739957e8eaf79aa366b5",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "上士闻道，勤而行之；"
+      },
+      {
+        "id": "p2",
+        "text": "中士闻道，若存若亡；下士闻道，大笑之。不笑不足以为道。故建言有之﹕"
+      },
+      {
+        "id": "p3",
+        "text": "明道若昧，"
+      },
+      {
+        "id": "p4",
+        "text": "进道若退，"
+      },
+      {
+        "id": "p5",
+        "text": "夷道若颣，"
+      },
+      {
+        "id": "p6",
+        "text": "上德若谷，"
+      },
+      {
+        "id": "p7",
+        "text": "大白若辱，"
+      },
+      {
+        "id": "p8",
+        "text": "广德若不足，"
+      },
+      {
+        "id": "p9",
+        "text": "建德若偷，"
+      },
+      {
+        "id": "p10",
+        "text": "质真若渝，"
+      },
+      {
+        "id": "p11",
+        "text": "大方无隅，"
+      },
+      {
+        "id": "p12",
+        "text": "大器晚成，"
+      },
+      {
+        "id": "p13",
+        "text": "大音希声，"
+      },
+      {
+        "id": "p14",
+        "text": "大象无形，"
+      },
+      {
+        "id": "p15",
+        "text": "道隐无名。夫唯道，善贷且成。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-042",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第四十二章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "42",
+    "order": 42,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》四十二章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "c154e974ce96969e31ddbb44f8907e48886072bfc99e8739097c642c49b2e53c",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "道生一，一生二，二生三，三生万物。万物负阴而抱阳，冲气以为和。人之所恶，唯孤﹑寡﹑不穀，而王公以为称。故物或损之而益，或益之而损。"
+      },
+      {
+        "id": "p2",
+        "text": "人之所教，我亦教之。"
+      },
+      {
+        "id": "p3",
+        "text": "强梁者不得其死，吾将以为教父。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-043",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第四十三章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "43",
+    "order": 43,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》四十三章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "99fea56fd940ad8b0a0d50dd841200d50fa1199976b64256a2315356a42b85c9",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "天下之至柔，驰骋天下之至坚。"
+      },
+      {
+        "id": "p2",
+        "text": "无有入无间，吾是以知无为之有益。"
+      },
+      {
+        "id": "p3",
+        "text": "不言之教，无为之益，天下希及之。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-044",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第四十四章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "44",
+    "order": 44,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》四十四章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "71aa09091ff5e57251f649e4d24c880577f2e724b7fa09da3041c8a949a75340",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "名与身孰亲？"
+      },
+      {
+        "id": "p2",
+        "text": "身与货孰多？"
+      },
+      {
+        "id": "p3",
+        "text": "得与亡孰病？"
+      },
+      {
+        "id": "p4",
+        "text": "是故甚爱必大费，多藏必厚亡，"
+      },
+      {
+        "id": "p5",
+        "text": "知足不辱，知止不殆，可以长久。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-045",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第四十五章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "45",
+    "order": 45,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》四十五章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "7726323b15c9a61f851b8a89d2a43c3e57d79895022b2f97ef1f7eadca882aa8",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "大成若缺，其用不弊。"
+      },
+      {
+        "id": "p2",
+        "text": "大盈若冲，其用不穷。"
+      },
+      {
+        "id": "p3",
+        "text": "大直若屈，其用不居。"
+      },
+      {
+        "id": "p4",
+        "text": "大巧若拙，其用不辍。"
+      },
+      {
+        "id": "p5",
+        "text": "大辩若讷，其用不差。"
+      },
+      {
+        "id": "p6",
+        "text": "躁胜寒，静胜热。清静为天下正。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-046",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第四十六章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "46",
+    "order": 46,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》四十六章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "8532b709a385f8eefbef78ae0f4e2de9e4f7e4b71066ba3a25a5f5549f2ccd7b",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "天下有道，却走马以粪。"
+      },
+      {
+        "id": "p2",
+        "text": "天下无道，戎马生于郊。"
+      },
+      {
+        "id": "p3",
+        "text": "祸莫大于不知足；咎莫大于欲得。故知足之足，常足矣。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-047",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第四十七章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "47",
+    "order": 47,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》四十七章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "7451bf02f4cdf220ca1c03c46ca799dff0c4c88038bbeb9fcad48cced0129ec3",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "不出户，知天下；不窥牖，见天道。"
+      },
+      {
+        "id": "p2",
+        "text": "其出弥远，其知弥少。"
+      },
+      {
+        "id": "p3",
+        "text": "是以圣人不行而知，不见而名，"
+      },
+      {
+        "id": "p4",
+        "text": "不为而成。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-048",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第四十八章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "48",
+    "order": 48,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》四十八章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "16c387d71088ed60bee078b6d284dfdb3fe64177c5e8b53dccff15261570d68f",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "为学日益，"
+      },
+      {
+        "id": "p2",
+        "text": "为道日损。"
+      },
+      {
+        "id": "p3",
+        "text": "损之又损，以至于无为。无为而无不为。"
+      },
+      {
+        "id": "p4",
+        "text": "取天下常以无事，"
+      },
+      {
+        "id": "p5",
+        "text": "及其有事，"
+      },
+      {
+        "id": "p6",
+        "text": "不足以取天下。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-049",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第四十九章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "49",
+    "order": 49,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》四十九章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "12d97d239c20a8a1e44dc4e132c371cc7192c7a28c208d5373c2bc164798bdcd",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "圣人无常心，以百姓心为心。"
+      },
+      {
+        "id": "p2",
+        "text": "善者，吾善之；不善者，吾亦善之，"
+      },
+      {
+        "id": "p3",
+        "text": "德善。"
+      },
+      {
+        "id": "p4",
+        "text": "信者，吾信之；不信者，吾亦信之，德信。圣人在天下歙歙，为天下浑其心，"
+      },
+      {
+        "id": "p5",
+        "text": "百姓皆注其耳目,\n圣人皆孩之。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-050",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第五十章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "50",
+    "order": 50,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》五十章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "6731ef4cb0235cf20e272ddb3ed15133f3fdf9c0d6cecfbe3d929e8b39675d85",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "出生入死。"
+      },
+      {
+        "id": "p2",
+        "text": "生之徒，十有三；死之徒，十有三；人之生，动之死地，亦十有三。夫何故？以其生生之厚。盖闻善摄生者，陆行不遇兕虎，入军不被甲兵；兕无所投其角，虎无所措其爪，兵无所容其刃。夫何故？以其无死地。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-051",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第五十一章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "51",
+    "order": 51,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》五十一章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "142dba69c8be77f6b3c3e1f6f60b8ad8919087c12a11ca29ec87ac5174fb2412",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "道生之，德畜之，物形之，势成之。"
+      },
+      {
+        "id": "p2",
+        "text": "是以万物莫不尊道而贵德。"
+      },
+      {
+        "id": "p3",
+        "text": "道之尊，德之贵，夫莫之命而常自然。"
+      },
+      {
+        "id": "p4",
+        "text": "故道生之，德畜之。长之育之，亭之毒之，盖之覆之。"
+      },
+      {
+        "id": "p5",
+        "text": "生而不有，为而不恃，"
+      },
+      {
+        "id": "p6",
+        "text": "长而不宰。是谓玄德。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-052",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第五十二章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "52",
+    "order": 52,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》五十二章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "f1c8e7062f6e5b9f0cbe3df5256cd4e7e741d3a534f5351bdaa235fa11c45df1",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "天下有始，以为天下母。"
+      },
+      {
+        "id": "p2",
+        "text": "既得其母，以知其子，既知其子，复守其母，没身不殆。"
+      },
+      {
+        "id": "p3",
+        "text": "塞其兑，闭其门，"
+      },
+      {
+        "id": "p4",
+        "text": "终身不勤。"
+      },
+      {
+        "id": "p5",
+        "text": "开其兑，济其事，终身不救。"
+      },
+      {
+        "id": "p6",
+        "text": "见小曰明，守柔曰强。"
+      },
+      {
+        "id": "p7",
+        "text": "用其光，"
+      },
+      {
+        "id": "p8",
+        "text": "复归其明，"
+      },
+      {
+        "id": "p9",
+        "text": "无遗身殃，是为习常。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-053",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第五十三章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "53",
+    "order": 53,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》五十三章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "7e25ef390749c77e3eec06b54dcd6b58d8c2d3f2948fe94d704474adf3dde87d",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "使我介然有知，行于大道，唯施是畏。"
+      },
+      {
+        "id": "p2",
+        "text": "大道甚夷，而民好径。"
+      },
+      {
+        "id": "p3",
+        "text": "朝甚除，"
+      },
+      {
+        "id": "p4",
+        "text": "田甚芜，仓甚虚；"
+      },
+      {
+        "id": "p5",
+        "text": "服文彩，带利剑，厌饮食，财货有馀；是为盗夸。非道也哉！"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-054",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第五十四章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "54",
+    "order": 54,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》五十四章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "5adae995dd0b730d0a6bddaf364e2d02e5aadbf4709cbca9c1593246adda49bb",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "善建者不拔，"
+      },
+      {
+        "id": "p2",
+        "text": "善抱者不脱，"
+      },
+      {
+        "id": "p3",
+        "text": "子孙以祭祀不辍。"
+      },
+      {
+        "id": "p4",
+        "text": "修之于身，其德乃真；修之于家，其德乃馀；"
+      },
+      {
+        "id": "p5",
+        "text": "修之于乡，其德乃长；修之于国，其德乃丰；修之于天下，其德乃普。故以身观身，以家观家，以乡观乡，以国观国，"
+      },
+      {
+        "id": "p6",
+        "text": "以天下观天下。"
+      },
+      {
+        "id": "p7",
+        "text": "吾何以知天下然哉？以此。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-055",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第五十五章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "55",
+    "order": 55,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》五十五章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "7818fbac79bc667cffee369cae7cb425a74178e8d019ea8d024e167561ea9451",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "含德之厚，比于赤子。蜂虿虺蛇不螫，猛兽不据，攫鸟不搏。"
+      },
+      {
+        "id": "p2",
+        "text": "骨弱筋柔而握固。"
+      },
+      {
+        "id": "p3",
+        "text": "未知牝牡之合而全作，"
+      },
+      {
+        "id": "p4",
+        "text": "精之至也。终日号而不嗄，"
+      },
+      {
+        "id": "p5",
+        "text": "和之至也。知和曰常，"
+      },
+      {
+        "id": "p6",
+        "text": "知常曰明。"
+      },
+      {
+        "id": "p7",
+        "text": "益生曰祥。"
+      },
+      {
+        "id": "p8",
+        "text": "心使气曰强。"
+      },
+      {
+        "id": "p9",
+        "text": "物壮则老，谓之不道，不道早已。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-056",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第五十六章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "56",
+    "order": 56,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》五十六章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "6a5d39e023f21081ac525998bc0289d2ff5e6054c8cf7a0263ec03484fa09ea3",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "知者不言，"
+      },
+      {
+        "id": "p2",
+        "text": "言者不知。"
+      },
+      {
+        "id": "p3",
+        "text": "塞其兑，闭其门，挫其锐，"
+      },
+      {
+        "id": "p4",
+        "text": "解其分，"
+      },
+      {
+        "id": "p5",
+        "text": "和其光，"
+      },
+      {
+        "id": "p6",
+        "text": "同其尘，"
+      },
+      {
+        "id": "p7",
+        "text": "是谓玄同。故不可得而亲，不可得而疏；"
+      },
+      {
+        "id": "p8",
+        "text": "不可得而利，不可得而害；"
+      },
+      {
+        "id": "p9",
+        "text": "不可得而贵，不可得而贱。"
+      },
+      {
+        "id": "p10",
+        "text": "故为天下贵。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-057",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第五十七章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "57",
+    "order": 57,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》五十七章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "1983469bcba6a1cea89440fd167059310c33be8124fd821f144665b0dfab75fe",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "以正治国，以奇用兵，以无事取天下。"
+      },
+      {
+        "id": "p2",
+        "text": "吾何以知其然哉？以此。天下多忌讳，而民弥贫；民多利器，国家滋昏；"
+      },
+      {
+        "id": "p3",
+        "text": "人多伎巧，奇物滋起；"
+      },
+      {
+        "id": "p4",
+        "text": "法令滋彰，盗贼多有。"
+      },
+      {
+        "id": "p5",
+        "text": "故圣人云﹕“我无为而民自化，我好静而民自正，我无事而民自富，我无欲而民自朴。”"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-058",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第五十八章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "58",
+    "order": 58,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》五十八章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "b1fee0292e53e4b1063bc31fb3a5c074ca4b10cc0c620de514674c015a944abd",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "其政闷闷，其民淳淳；"
+      },
+      {
+        "id": "p2",
+        "text": "其政察察，其民缺缺。"
+      },
+      {
+        "id": "p3",
+        "text": "祸兮福之所倚，福兮祸之所伏。孰知其极？其无正。"
+      },
+      {
+        "id": "p4",
+        "text": "正复为奇，"
+      },
+      {
+        "id": "p5",
+        "text": "善复为妖。"
+      },
+      {
+        "id": "p6",
+        "text": "人之迷，其日固久。"
+      },
+      {
+        "id": "p7",
+        "text": "是以圣人方而不割，"
+      },
+      {
+        "id": "p8",
+        "text": "廉而不刿，"
+      },
+      {
+        "id": "p9",
+        "text": "直而不肆，"
+      },
+      {
+        "id": "p10",
+        "text": "光而不燿。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-059",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第五十九章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "59",
+    "order": 59,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》五十九章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "ab0f132573fa7864ce5eb23ed90082585022322de9a8e3591429e42ab80563b8",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "治人事天，莫若啬。"
+      },
+      {
+        "id": "p2",
+        "text": "夫唯啬，是谓早服；"
+      },
+      {
+        "id": "p3",
+        "text": "早服谓之重积德；"
+      },
+      {
+        "id": "p4",
+        "text": "重积德则无不克，无不克则莫知其极；"
+      },
+      {
+        "id": "p5",
+        "text": "莫知其极，可以有国；"
+      },
+      {
+        "id": "p6",
+        "text": "有国之母，可以长久；"
+      },
+      {
+        "id": "p7",
+        "text": "是谓深根固柢，长生久视之道。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-060",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第六十章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "60",
+    "order": 60,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》六十章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "8fb058faa250eb4d81a4c6a42ffe217d2f3b3ece00997895eb6c239d44c84f95",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "治大国，若烹小鲜。"
+      },
+      {
+        "id": "p2",
+        "text": "以道莅天下，其鬼不神；"
+      },
+      {
+        "id": "p3",
+        "text": "非其鬼不神，其神不伤人；"
+      },
+      {
+        "id": "p4",
+        "text": "非其神不伤人，圣人亦不伤人。"
+      },
+      {
+        "id": "p5",
+        "text": "夫两不相伤，故德交归焉。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-061",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第六十一章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "61",
+    "order": 61,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》六十一章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "1f1485a0a627c8d1eee797c63e9666921e011c9ab2cbc0d51529cc0bacf5ae43",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "大国者下流，"
+      },
+      {
+        "id": "p2",
+        "text": "天下之交。"
+      },
+      {
+        "id": "p3",
+        "text": "天下之牝，"
+      },
+      {
+        "id": "p4",
+        "text": "牝常以静胜牡，以静为下。"
+      },
+      {
+        "id": "p5",
+        "text": "故大国以下小国，"
+      },
+      {
+        "id": "p6",
+        "text": "则取小国；"
+      },
+      {
+        "id": "p7",
+        "text": "小国以下大国，则取大国。"
+      },
+      {
+        "id": "p8",
+        "text": "故或下以取，或下而取。"
+      },
+      {
+        "id": "p9",
+        "text": "大国不过欲兼畜人，小国不过欲入事人。夫两者各得其所欲，大者宜为下。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-062",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第六十二章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "62",
+    "order": 62,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》六十二章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "803da7c89cf80ec40131b353ff1fb618ba0c654806d839e8e0e2adae7e9a1db5",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "道者万物之奥。"
+      },
+      {
+        "id": "p2",
+        "text": "善人之宝，"
+      },
+      {
+        "id": "p3",
+        "text": "不善人之所保。"
+      },
+      {
+        "id": "p4",
+        "text": "美言可以市，尊行可以加人。"
+      },
+      {
+        "id": "p5",
+        "text": "人之不善，何弃之有？"
+      },
+      {
+        "id": "p6",
+        "text": "故立天子，置三公，"
+      },
+      {
+        "id": "p7",
+        "text": "虽有拱璧以先驷马，不如坐进此道。"
+      },
+      {
+        "id": "p8",
+        "text": "古之所以贵此道者何？不曰以求得，有罪以免邪？故为天下贵。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-063",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第六十三章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "63",
+    "order": 63,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》六十三章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "2fc0ee5775b3e36ce1778185cc06e6e92d9a07d4df4ac68c607931b0ba8e69e7",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "为无为，事无事，味无味。"
+      },
+      {
+        "id": "p2",
+        "text": "大小多少，报怨以德。"
+      },
+      {
+        "id": "p3",
+        "text": "图难于其易，为大于其细；天下难事必作于易，天下大事必作于细。是以圣人终不为大，故能成其大。夫轻诺必寡信，多易必多难。是以圣人犹难之，"
+      },
+      {
+        "id": "p4",
+        "text": "故终无难矣"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-064",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第六十四章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "64",
+    "order": 64,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》六十四章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "276f8c37fd05f232a7d7caf869e6769e9bdfb2ee9a3dc65f7797903f00d1317a",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "其安易持，其未兆易谋。"
+      },
+      {
+        "id": "p2",
+        "text": "其脆易泮，其微易散。"
+      },
+      {
+        "id": "p3",
+        "text": "为之于未有，"
+      },
+      {
+        "id": "p4",
+        "text": "治之于未乱。"
+      },
+      {
+        "id": "p5",
+        "text": "合抱之木，生于毫末；九层之台，起于累土；千里之行，始于足下。为者败之，执者失之。"
+      },
+      {
+        "id": "p6",
+        "text": "是以圣人无为故无败，无执故无失。民之从事，常于几成而败之。"
+      },
+      {
+        "id": "p7",
+        "text": "慎终如始，则无败事。是以圣人欲不欲，不贵难得之货；"
+      },
+      {
+        "id": "p8",
+        "text": "学不学，复众人之所过。"
+      },
+      {
+        "id": "p9",
+        "text": "以辅万物之自然，而不敢为。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-065",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第六十五章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "65",
+    "order": 65,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》六十五章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "85998c9e01f63f85f4e77bc0168d4d194fb8281c42cd73291ee22a2ba0095e3d",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "古之善为道者，非以明民，将以愚之。"
+      },
+      {
+        "id": "p2",
+        "text": "民之难治，以其智多。"
+      },
+      {
+        "id": "p3",
+        "text": "故以智治国，国之贼，"
+      },
+      {
+        "id": "p4",
+        "text": "不以智治国，国之福。知此两者亦稽式。常知稽式，是谓玄德。玄德深矣，远矣，"
+      },
+      {
+        "id": "p5",
+        "text": "与物反矣，"
+      },
+      {
+        "id": "p6",
+        "text": "然后乃至大顺。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-066",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第六十六章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "66",
+    "order": 66,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》六十六章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "6dcdbb7979cd26b3acb2114cead8291004bcf126735d9729c7cec90a213f9dc4",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "江海所以能为百谷王者，以其善下之，故能为百谷王。是以欲上民，必以言下之。欲先民，必以身后之。是以圣人处上而民不重，处前而民不害。是以天下乐推而不厌，以其不争，故天下莫能与之争。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-067",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第六十七章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "67",
+    "order": 67,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》六十七章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "7f44346c18e2e453e4914a9e02d77ebbcfc88c32f926b410a37ebb0a28e79c13",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "天下皆谓我道大，似不肖。夫唯大，故似不肖。若肖，久矣其细也夫！"
+      },
+      {
+        "id": "p2",
+        "text": "我有三宝，持而保之。一曰慈，二曰俭，三曰不敢为天下先。\n慈故能勇，"
+      },
+      {
+        "id": "p3",
+        "text": "俭故能广，"
+      },
+      {
+        "id": "p4",
+        "text": "不敢为天下先，故能成器长。"
+      },
+      {
+        "id": "p5",
+        "text": "今舍慈且勇，"
+      },
+      {
+        "id": "p6",
+        "text": "舍俭且广，舍后且先，死矣！\n夫慈以战则胜，"
+      },
+      {
+        "id": "p7",
+        "text": "以守则固。天将救之，以慈卫之。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-068",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第六十八章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "68",
+    "order": 68,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》六十八章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "acdc86c79ff0d659603935792a536bcdd85c571f44560fbbb15ccc3b1b3ef714",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "善为士者不武，"
+      },
+      {
+        "id": "p2",
+        "text": "善战者不怒，"
+      },
+      {
+        "id": "p3",
+        "text": "善胜敌者不与，"
+      },
+      {
+        "id": "p4",
+        "text": "善用人者为之下，是谓不争之德，是谓用人之力，"
+      },
+      {
+        "id": "p5",
+        "text": "是谓配天古之极。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-069",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第六十九章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "69",
+    "order": 69,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》六十九章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "1e590076828335dbffacb56355d03d65c0e935ed6e8515104df14e2309f47495",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "用兵有言﹕“吾不敢为主而为客，不敢进寸而退尺。”是谓行无行，"
+      },
+      {
+        "id": "p2",
+        "text": "攘无臂，扔无敌，"
+      },
+      {
+        "id": "p3",
+        "text": "执无兵。\n祸莫大于轻敌，轻敌几丧吾宝。"
+      },
+      {
+        "id": "p4",
+        "text": "故抗兵相加，哀者胜矣。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-070",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第七十章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "70",
+    "order": 70,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》七十章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "00069fd34513203fef30ce04d998b71465c30bcce5bcd9dc69e31ebe87c50665",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "吾言甚易知，甚易行。天下莫能知，莫能行。"
+      },
+      {
+        "id": "p2",
+        "text": "言有宗，事有君。"
+      },
+      {
+        "id": "p3",
+        "text": "夫唯无知，是以不我知。"
+      },
+      {
+        "id": "p4",
+        "text": "知我者希，则我者贵。"
+      },
+      {
+        "id": "p5",
+        "text": "是以圣人被褐怀玉。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-071",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第七十一章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "71",
+    "order": 71,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》七十一章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "8bcd6cb14cf04271606a2718053eaa426979f88ce00b67db753d459113488226",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "知不知上，不知知病。"
+      },
+      {
+        "id": "p2",
+        "text": "夫唯病病，是以不病。圣人不病，以其病病，是以不病。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-072",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第七十二章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "72",
+    "order": 72,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》七十二章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "2aa9feb09610e2bf8f93349dabca185aa440b9145d03c73c4e755843d8bb6b80",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "民不畏威，则大威至。无狎其所居，无厌其所生。"
+      },
+      {
+        "id": "p2",
+        "text": "夫唯不厌，"
+      },
+      {
+        "id": "p3",
+        "text": "是以不厌。"
+      },
+      {
+        "id": "p4",
+        "text": "是以圣人自知不自见，"
+      },
+      {
+        "id": "p5",
+        "text": "自爱不自贵；"
+      },
+      {
+        "id": "p6",
+        "text": "故去彼取此。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-073",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第七十三章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "73",
+    "order": 73,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》七十三章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "8f95af1b4df12f7af7ff6078c23a63d3134a64c1d793ac873c5a3f25f688cf41",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "勇于敢则杀，"
+      },
+      {
+        "id": "p2",
+        "text": "勇于不敢则活。"
+      },
+      {
+        "id": "p3",
+        "text": "此两者，或利或害。"
+      },
+      {
+        "id": "p4",
+        "text": "天之所恶，孰知其故？是以圣人犹难之。"
+      },
+      {
+        "id": "p5",
+        "text": "天之道，不争而善胜，"
+      },
+      {
+        "id": "p6",
+        "text": "不言而善应，"
+      },
+      {
+        "id": "p7",
+        "text": "不召而自来，"
+      },
+      {
+        "id": "p8",
+        "text": "𦈎然而善谋。"
+      },
+      {
+        "id": "p9",
+        "text": "天网恢恢，疏而不失。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-074",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第七十四章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "74",
+    "order": 74,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》七十四章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "edfcbae3d4611739ccea45c998fc2ecace20e8314df290f3c2f03b6fa3a62364",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "民不畏死，奈何以死惧之？若使民常畏死，而为奇者，吾得执而杀之，孰敢？"
+      },
+      {
+        "id": "p2",
+        "text": "常有司杀者杀，夫代司杀者杀，是谓代大匠斲。\n夫代大匠斲者，希有不伤其手矣。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-075",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第七十五章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "75",
+    "order": 75,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》七十五章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "1692d0619121abe4cbde9b32b61708bfe7f7bdbfa87a4c63baa5d8deccd75c41",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "民之饥，以其上食税之多，是以饥。民之难治，以其上之有为，是以难治。民之轻死，以其上求生之厚，是以轻死。夫唯无以生为者，是贤于贵生。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-076",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第七十六章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "76",
+    "order": 76,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》七十六章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "6433a7c06ef0440dd148263118b90930279eb788bb53113a4cf15ea3c076b620",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "人之生也柔弱，其死也坚强。\n万物草木之生也柔脆，其死也枯槁。\n故坚强者死之徒，柔弱者生之徒。\n是以兵强则不胜，"
+      },
+      {
+        "id": "p2",
+        "text": "木强则兵。"
+      },
+      {
+        "id": "p3",
+        "text": "强大处下，"
+      },
+      {
+        "id": "p4",
+        "text": "柔弱处上。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-077",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第七十七章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "77",
+    "order": 77,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》七十七章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "92dcb32c2c6674bcd5e4c6c8628db0b1dc056dee8c5065e84c57c7d67c835cc6",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "天之道，其犹张弓与？高者抑之，下者举之；有馀者损之，不足者补之。天之道，损有馀而补不足。\n人之道则不然，"
+      },
+      {
+        "id": "p2",
+        "text": "损不足以奉有馀。\n孰能有馀以奉天下？唯有道者。\n是以圣人为而不恃，功成而不处，其不欲见贤。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-078",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第七十八章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "78",
+    "order": 78,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》七十八章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "7f614385a1b948f2cef07ae360a2f9afc17caf4e584cf941b6fca19dc223a7ab",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "天下莫柔弱于水，而攻坚强者，莫之能胜，其无以易之。"
+      },
+      {
+        "id": "p2",
+        "text": "弱之胜强，柔之胜刚，天下莫不知莫能行。是以圣人云﹕“受国之垢，是谓社稷主；受国不祥，是为天下王。”正言若反。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-079",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第七十九章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "79",
+    "order": 79,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》七十九章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "71435fbf4ad9f5f232433cee09a9204d35da0a35e5e8c4bed8ebbd0e301672b1",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "和大怨，必有馀怨，"
+      },
+      {
+        "id": "p2",
+        "text": "安可以为善？是以圣人执左契，"
+      },
+      {
+        "id": "p3",
+        "text": "而不责于人。有德司契，"
+      },
+      {
+        "id": "p4",
+        "text": "无德司彻。"
+      },
+      {
+        "id": "p5",
+        "text": "天道无亲，常与善人。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-080",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第八十章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "80",
+    "order": 80,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》八十章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "bb507f7f59867d887e2ab3512f1ef353e1dd31d4d02379199d4587ae02cc9b53",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "小国寡民，"
+      },
+      {
+        "id": "p2",
+        "text": "使有什伯之器而不用，"
+      },
+      {
+        "id": "p3",
+        "text": "使民重死而不远徙。"
+      },
+      {
+        "id": "p4",
+        "text": "虽有舟舆，无所乘之；虽有甲兵，无所陈之。\n使人复结绳而用之，甘其食，美其服，安其居，乐其俗。邻国相望，鸡犬之声相闻，民至老死，不相往来。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  },
+  {
+    "id": "daodejing-081",
+    "bookId": "daodejing",
+    "volumeId": "deijing",
+    "title": "第八十一章",
+    "sourceHeading": "道德經_(王弼本)",
+    "slug": "81",
+    "order": 81,
+    "sourceEdition": "中文维基文库《道德经（王弼本）》原文（简体显示，不含王弼注文）",
+    "sourceCitation": "《道德经（王弼本）》八十一章，修订版本 2354026",
+    "sourceRightsNote": "古籍原文属于公有领域；本页文字转录自中文维基文库，并按知识共享署名—相同方式共享 4.0 协议保留来源与修订版本信息。",
+    "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans",
+    "sourceRevision": 2354026,
+    "sourceQuality": "中文维基文库当前修订版",
+    "sourceLicense": "CC BY-SA 4.0",
+    "sourceLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans",
+    "bodySha256": "e7c3d8c083bb11b1ccc73597c571c910fc8a1f8b0145b869fab611238be4c301",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "信言不美，"
+      },
+      {
+        "id": "p2",
+        "text": "美言不信。"
+      },
+      {
+        "id": "p3",
+        "text": "善者不辩，辩者不善。\n知者不博，"
+      },
+      {
+        "id": "p4",
+        "text": "博者不知。\n圣人不积，"
+      },
+      {
+        "id": "p5",
+        "text": "既以为人己愈有，"
+      },
+      {
+        "id": "p6",
+        "text": "既以与人己愈多。"
+      },
+      {
+        "id": "p7",
+        "text": "天之道，利而不害；"
+      },
+      {
+        "id": "p8",
+        "text": "圣人之道，为而不争。"
+      }
+    ],
+    "sourceVerified": true,
+    "rightsCleared": true,
+    "complianceApproved": true,
+    "reviewStatus": "published",
+    "reviewedBy": "本站来源与文本结构校验（2026-10-21）",
+    "reviewedAt": "2026-10-21"
+  }
+]

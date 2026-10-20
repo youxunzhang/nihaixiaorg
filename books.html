@@ -18,7 +18,7 @@
     <meta name="twitter:description" content="中医入门、经典、针灸、本草、伤寒、温病与养生书目。">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="books.css?v=20260723">
+    <link rel="stylesheet" href="books.css?v=20261021">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -30,12 +30,14 @@
       "about": ["中医", "中医经典", "中医书籍"],
       "mainEntity": {
         "@type": "ItemList",
-        "numberOfItems": 12,
+        "numberOfItems": 14,
         "itemListElement": [
           {"@type":"ListItem","position":1,"name":"黄帝内经"},
           {"@type":"ListItem","position":2,"name":"伤寒论"},
           {"@type":"ListItem","position":3,"name":"金匮要略"},
-          {"@type":"ListItem","position":4,"name":"神农本草经"}
+          {"@type":"ListItem","position":4,"name":"神农本草经"},
+          {"@type":"ListItem","position":5,"name":"易经"},
+          {"@type":"ListItem","position":6,"name":"道德经"}
         ]
       }
     }
@@ -89,8 +91,8 @@
 
         <section class="library-stats" aria-label="书库建设进度">
             <div class="library-container stats-grid">
-                <div><strong>12</strong><span>首批精选书目</span></div>
-                <div><strong>7</strong><span>核心分类</span></div>
+                <div><strong>14</strong><span>首批精选书目</span></div>
+                <div><strong>8</strong><span>核心分类</span></div>
                 <div><strong>6</strong><span>名医入口</span></div>
                 <div><strong>4</strong><span>专题路线</span></div>
             </div>
@@ -111,57 +113,66 @@
                     <button class="filter-chip" type="button" data-filter="伤寒" aria-pressed="false">伤寒</button>
                     <button class="filter-chip" type="button" data-filter="温病" aria-pressed="false">温病</button>
                     <button class="filter-chip" type="button" data-filter="养生" aria-pressed="false">养生</button>
+                    <button class="filter-chip" type="button" data-filter="文化经典" aria-pressed="false">文化经典</button>
                 </div>
 
-                <p class="results-status" id="resultsStatus" aria-live="polite">显示 12 本书</p>
+                <p class="results-status" id="resultsStatus" aria-live="polite">显示 14 本书</p>
                 <div class="book-grid" id="bookGrid">
                     <article class="book-card" data-category="经典 入门" data-search="黄帝内经 佚名 素问 灵枢 经典 入门">
                         <div class="book-cover cover-indigo"><span>医经</span><strong>黄帝内经</strong><small>素问 · 灵枢</small></div>
-                        <div class="book-info"><div class="book-meta"><span>经典</span><span>进阶</span></div><h3>《黄帝内经》</h3><p class="book-author">传世医经 · 佚名</p><p>从阴阳、藏象、经络到治未病，理解中医整体观的根本经典。</p><div class="book-actions"><a href="/guji/huangdi-neijing/">原文目录</a><a href="book-huangdi-neijing.html">阅读指南</a><a class="buy-link" href="go.html?book=huangdi-neijing" rel="nofollow sponsored">购买</a></div></div>
+                        <div class="book-info"><div class="book-meta"><span>经典</span><span>进阶</span></div><h3>《黄帝内经》</h3><p class="book-author">传世医经 · 佚名</p><p>从阴阳、藏象、经络到治未病，理解中医整体观的根本经典。</p><div class="book-actions"><a class="original-link" href="/guji/huangdi-neijing/suwen/">阅读《素问》原文</a><a href="book-huangdi-neijing.html">阅读指南</a></div></div>
                     </article>
                     <article class="book-card" data-category="经典 伤寒" data-search="伤寒论 张仲景 经典 伤寒 辨证论治">
                         <div class="book-cover cover-rust"><span>经方</span><strong>伤寒论</strong><small>辨证论治</small></div>
-                        <div class="book-info"><div class="book-meta"><span>伤寒</span><span>进阶</span></div><h3>《伤寒论》</h3><p class="book-author">汉 · 张仲景</p><p>以六经辨证统摄外感与杂病，是学习方证与临床思维的核心。</p><div class="book-actions"><a href="/guji/shanghanlun/">原文目录</a><a class="buy-link" href="go.html?book=shanghan-lun" rel="nofollow sponsored">购买</a></div></div>
+                        <div class="book-info"><div class="book-meta"><span>伤寒</span><span>进阶</span></div><h3>《伤寒论》</h3><p class="book-author">汉 · 张仲景</p><p>以六经辨证统摄外感与杂病，是学习方证与临床思维的核心。</p><div class="book-actions"><a href="/guji/shanghanlun/">查看篇章目录</a></div></div>
                     </article>
                     <article class="book-card" data-category="经典 伤寒" data-search="金匮要略 张仲景 杂病 经方 伤寒">
                         <div class="book-cover cover-gold"><span>杂病</span><strong>金匮要略</strong><small>方书之祖</small></div>
-                        <div class="book-info"><div class="book-meta"><span>伤寒</span><span>进阶</span></div><h3>《金匮要略》</h3><p class="book-author">汉 · 张仲景</p><p>聚焦内伤杂病的辨证与方治，宜与《伤寒论》相互参读。</p><div class="book-actions"><a href="#topic-classics">阅读路线</a><a class="buy-link" href="go.html?book=jingui-yaolue" rel="nofollow sponsored">购买</a></div></div>
+                        <div class="book-info"><div class="book-meta"><span>伤寒</span><span>进阶</span></div><h3>《金匮要略》</h3><p class="book-author">汉 · 张仲景</p><p>聚焦内伤杂病的辨证与方治，宜与《伤寒论》相互参读。</p><div class="book-actions"><a href="#topic-classics">阅读路线</a></div></div>
                     </article>
                     <article class="book-card" data-category="经典 本草 入门" data-search="神农本草经 佚名 本草 上中下品 古籍目录">
                         <div class="book-cover cover-green"><span>本草</span><strong>神农本草经</strong><small>上中下品</small></div>
-                        <div class="book-info"><div class="book-meta"><span>本草</span><span>基础</span></div><h3>《神农本草经》</h3><p class="book-author">传世本草 · 佚名</p><p>了解传世本草的三品目录、古代名称与版本来源。</p><div class="book-actions"><a href="/guji/shennong-bencao/">古籍名称索引</a><a class="buy-link" href="go.html?book=shennong-bencao" rel="nofollow sponsored">购买</a></div></div>
+                        <div class="book-info"><div class="book-meta"><span>本草</span><span>基础</span></div><h3>《神农本草经》</h3><p class="book-author">传世本草 · 佚名</p><p>了解传世本草的三品目录、古代名称与版本来源。</p><div class="book-actions"><a href="/guji/shennong-bencao/">古籍名称索引</a></div></div>
+                    </article>
+                    <article class="book-card" data-category="文化经典 经典" data-search="易经 周易 六十四卦 乾坤 文化经典 原文">
+                        <div class="book-cover cover-yijing"><span>群经之首</span><strong>易经</strong><small>上经 · 下经</small></div>
+                        <div class="book-info"><div class="book-meta"><span>文化经典</span><span>六十四卦</span></div><h3>《易经》</h3><p class="book-author">先秦经典 · 传世文本</p><p>按上经、下经浏览六十四卦，逐卦阅读卦爻辞及相关传文。</p><div class="book-actions"><a class="original-link" href="/guji/yijing/">阅读六十四卦原文</a></div></div>
+                    </article>
+                    <article class="book-card" data-category="文化经典 经典 入门" data-search="道德经 老子 王弼 道经 德经 八十一章 文化经典 原文">
+                        <div class="book-cover cover-tao"><span>道家经典</span><strong>道德经</strong><small>八十一章</small></div>
+                        <div class="book-info"><div class="book-meta"><span>文化经典</span><span>八十一章</span></div><h3>《道德经》</h3><p class="book-author">老子 · 王弼本章次</p><p>按道经、德经阅读八十一章原文，正文与王弼注文分开呈现。</p><div class="book-actions"><a class="original-link" href="/guji/daodejing/">阅读八十一章原文</a></div></div>
                     </article>
                     <article class="book-card" data-category="针灸 经典" data-search="针灸甲乙经 皇甫谧 针灸 经络 腧穴">
                         <div class="book-cover cover-blue"><span>针经</span><strong>针灸甲乙经</strong><small>经穴之纲</small></div>
-                        <div class="book-info"><div class="book-meta"><span>针灸</span><span>进阶</span></div><h3>《针灸甲乙经》</h3><p class="book-author">晋 · 皇甫谧</p><p>系统整理脏腑经络、腧穴与针灸治疗，是针灸学的重要古典文献。</p><div class="book-actions"><a href="#topics">相关专题</a><a class="buy-link" href="go.html?book=zhenjiu-jiayijing" rel="nofollow sponsored">购买</a></div></div>
+                        <div class="book-info"><div class="book-meta"><span>针灸</span><span>进阶</span></div><h3>《针灸甲乙经》</h3><p class="book-author">晋 · 皇甫谧</p><p>系统整理脏腑经络、腧穴与针灸治疗，是针灸学的重要古典文献。</p><div class="book-actions"><a href="#topics">相关专题</a></div></div>
                     </article>
                     <article class="book-card" data-category="针灸" data-search="针灸大成 杨继洲 针灸 穴位 临床">
                         <div class="book-cover cover-teal"><span>针法</span><strong>针灸大成</strong><small>集针灸之大成</small></div>
-                        <div class="book-info"><div class="book-meta"><span>针灸</span><span>实用</span></div><h3>《针灸大成》</h3><p class="book-author">明 · 杨继洲</p><p>兼收理论、歌赋、穴法与临床经验，适合有基础后查阅研习。</p><div class="book-actions"><a href="#masters">认识作者</a><a class="buy-link" href="go.html?book=zhenjiu-dacheng" rel="nofollow sponsored">购买</a></div></div>
+                        <div class="book-info"><div class="book-meta"><span>针灸</span><span>实用</span></div><h3>《针灸大成》</h3><p class="book-author">明 · 杨继洲</p><p>兼收理论、歌赋、穴法与临床经验，适合有基础后查阅研习。</p><div class="book-actions"><a href="#masters">认识作者</a></div></div>
                     </article>
                     <article class="book-card" data-category="本草" data-search="本草纲目 李时珍 本草 药物 博物">
                         <div class="book-cover cover-forest"><span>本草</span><strong>本草纲目</strong><small>五十二卷</small></div>
-                        <div class="book-info"><div class="book-meta"><span>本草</span><span>工具书</span></div><h3>《本草纲目》</h3><p class="book-author">明 · 李时珍</p><p>集明代以前本草学之大成，适合按药物与主题检索，不必从头通读。</p><div class="book-actions"><a class="buy-link" href="go.html?book=bencao-gangmu" rel="nofollow sponsored">购买</a></div></div>
+                        <div class="book-info"><div class="book-meta"><span>本草</span><span>工具书</span></div><h3>《本草纲目》</h3><p class="book-author">明 · 李时珍</p><p>集明代以前本草学之大成，适合按药物与主题检索，不必从头通读。</p></div>
                     </article>
                     <article class="book-card" data-category="温病 经典" data-search="温病条辨 吴鞠通 温病 三焦辨证">
                         <div class="book-cover cover-plum"><span>温病</span><strong>温病条辨</strong><small>三焦辨证</small></div>
-                        <div class="book-info"><div class="book-meta"><span>温病</span><span>进阶</span></div><h3>《温病条辨》</h3><p class="book-author">清 · 吴鞠通</p><p>以三焦辨证论治温病，宜在中医基础与伤寒框架之后阅读。</p><div class="book-actions"><a href="#topics">相关专题</a><a class="buy-link" href="go.html?book=wenbing-tiaobian" rel="nofollow sponsored">购买</a></div></div>
+                        <div class="book-info"><div class="book-meta"><span>温病</span><span>进阶</span></div><h3>《温病条辨》</h3><p class="book-author">清 · 吴鞠通</p><p>以三焦辨证论治温病，宜在中医基础与伤寒框架之后阅读。</p><div class="book-actions"><a href="#topics">相关专题</a></div></div>
                     </article>
                     <article class="book-card" data-category="温病" data-search="温热论 叶天士 温病 卫气营血">
                         <div class="book-cover cover-coral"><span>温热</span><strong>温热论</strong><small>卫气营血</small></div>
-                        <div class="book-info"><div class="book-meta"><span>温病</span><span>精读</span></div><h3>《温热论》</h3><p class="book-author">清 · 叶天士</p><p>篇幅精炼而义理深密，是理解卫气营血辨证与温病临床的要籍。</p><div class="book-actions"><a href="#masters">认识作者</a><a class="buy-link" href="go.html?book=wenre-lun" rel="nofollow sponsored">购买</a></div></div>
+                        <div class="book-info"><div class="book-meta"><span>温病</span><span>精读</span></div><h3>《温热论》</h3><p class="book-author">清 · 叶天士</p><p>篇幅精炼而义理深密，是理解卫气营血辨证与温病临床的要籍。</p><div class="book-actions"><a href="#masters">认识作者</a></div></div>
                     </article>
                     <article class="book-card" data-category="入门" data-search="医学三字经 陈修园 中医 入门 启蒙">
                         <div class="book-cover cover-sand"><span>启蒙</span><strong>医学三字经</strong><small>医门初阶</small></div>
-                        <div class="book-info"><div class="book-meta"><span>入门</span><span>易读</span></div><h3>《医学三字经》</h3><p class="book-author">清 · 陈修园</p><p>以韵文提纲挈领介绍医学源流与常见病证，适合建立第一张知识地图。</p><div class="book-actions"><a href="#topic-starter">入门路线</a><a class="buy-link" href="go.html?book=yixue-sanzijing" rel="nofollow sponsored">购买</a></div></div>
+                        <div class="book-info"><div class="book-meta"><span>入门</span><span>易读</span></div><h3>《医学三字经》</h3><p class="book-author">清 · 陈修园</p><p>以韵文提纲挈领介绍医学源流与常见病证，适合建立第一张知识地图。</p><div class="book-actions"><a href="#topic-starter">入门路线</a></div></div>
                     </article>
                     <article class="book-card" data-category="入门 经典" data-search="濒湖脉学 李时珍 脉诊 入门">
                         <div class="book-cover cover-ink"><span>脉学</span><strong>濒湖脉学</strong><small>二十七脉</small></div>
-                        <div class="book-info"><div class="book-meta"><span>入门</span><span>脉诊</span></div><h3>《濒湖脉学》</h3><p class="book-author">明 · 李时珍</p><p>以歌诀归纳常用脉象，建议结合教师指导与实际切脉反复体会。</p><div class="book-actions"><a href="#topic-starter">入门路线</a><a class="buy-link" href="go.html?book=binhu-maixue" rel="nofollow sponsored">购买</a></div></div>
+                        <div class="book-info"><div class="book-meta"><span>入门</span><span>脉诊</span></div><h3>《濒湖脉学》</h3><p class="book-author">明 · 李时珍</p><p>以歌诀归纳常用脉象，建议结合教师指导与实际切脉反复体会。</p><div class="book-actions"><a href="#topic-starter">入门路线</a></div></div>
                     </article>
                     <article class="book-card" data-category="养生 经典" data-search="养生四要 万全 养生 寡欲 慎动 法时 却疾">
                         <div class="book-cover cover-bamboo"><span>养生</span><strong>养生四要</strong><small>法时 · 慎动</small></div>
-                        <div class="book-info"><div class="book-meta"><span>养生</span><span>通读</span></div><h3>《养生四要》</h3><p class="book-author">明 · 万全</p><p>从寡欲、慎动、法时、却疾讨论日常养护，篇幅适中，适合专题阅读。</p><div class="book-actions"><a href="#topics">相关专题</a><a class="buy-link" href="go.html?book=yangsheng-siyao" rel="nofollow sponsored">购买</a></div></div>
+                        <div class="book-info"><div class="book-meta"><span>养生</span><span>通读</span></div><h3>《养生四要》</h3><p class="book-author">明 · 万全</p><p>从寡欲、慎动、法时、却疾讨论日常养护，篇幅适中，适合专题阅读。</p><div class="book-actions"><a href="#topics">相关专题</a></div></div>
                     </article>
                 </div>
                 <div class="empty-state" id="emptyState" hidden><strong>没有找到对应书目</strong><p>换一个关键词，或选择“全部”分类再试。</p></div>
@@ -204,9 +215,9 @@
             <div><strong>倪海厦中医传承 · 中医书库</strong><p>聚焦中医经典、医家著作与可靠的阅读路线。</p></div>
             <div><a href="index.html">返回首页</a><a href="sitemap.html">网站地图</a><a href="rss.xml">RSS</a></div>
         </div>
-        <p class="copyright">© 2026 倪海厦中医传承网站 · 购买链接可能包含联盟推广标识</p>
+        <p class="copyright">© 2026 倪海厦中医传承网站 · 古籍正文均标注公开文献来源</p>
     </footer>
     <button class="library-top" type="button" aria-label="返回顶部">↑</button>
-    <script src="books.js?v=20260723" defer></script>
+    <script src="books.js?v=20261021" defer></script>
 </body>
 </html>

@@ -87,11 +87,15 @@ button, input { font: inherit; }
 .classic-card::before { content: ""; position: absolute; inset: 0 0 auto; height: 4px; background: var(--green); }
 .classic-card-2::before { background: var(--rust); }
 .classic-card-3::before { background: var(--gold); }
+.classic-card-4::before { background: #465a4f; }
+.classic-card-5::before { background: #435c68; }
 .classic-card:hover, .classic-card:focus-within { transform: translateY(-5px); border-color: rgba(32,93,73,.4); box-shadow: 0 24px 48px rgba(41, 53, 44, .13); }
 .classic-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.1rem; }
 .classic-card-mark { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; color: #fff; background: var(--green); font: 700 1.45rem KaiTi, serif; box-shadow: 0 8px 18px rgba(32,93,73,.18); }
 .classic-card-2 .classic-card-mark { background: var(--rust); box-shadow-color: rgba(180,72,54,.18); }
 .classic-card-3 .classic-card-mark { background: var(--gold); box-shadow-color: rgba(183,134,56,.2); }
+.classic-card-4 .classic-card-mark { background: #465a4f; box-shadow-color: rgba(70,90,79,.2); }
+.classic-card-5 .classic-card-mark { background: #435c68; box-shadow-color: rgba(67,92,104,.2); }
 .classic-card-number { color: #d8cfbd; font: 700 1.15rem/1 Georgia, serif; letter-spacing: .08em; }
 .classic-card-copy { flex: 1; }
 .classic-card-kicker { margin: 0; color: var(--muted); font-size: .8rem; letter-spacing: .12em; }
@@ -108,6 +112,8 @@ button, input { font: inherit; }
 .classic-link-arrow { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; color: #fff; background: var(--green); transition: transform .2s ease; }
 .classic-card-2 .classic-link-arrow { background: var(--rust); }
 .classic-card-3 .classic-link-arrow { background: var(--gold); }
+.classic-card-4 .classic-link-arrow { background: #465a4f; }
+.classic-card-5 .classic-link-arrow { background: #435c68; }
 .classic-card .guji-primary-link:hover .classic-link-arrow, .classic-card .guji-primary-link:focus-visible .classic-link-arrow { transform: translateX(3px); }
 .classic-catalog-note { margin: 1.2rem 0 0; color: var(--muted); text-align: center; font-size: .86rem; }
 .classic-empty { padding: 1.5rem; border: 1px dashed var(--line); text-align: center; }
