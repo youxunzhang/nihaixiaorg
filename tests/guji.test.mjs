@@ -293,6 +293,32 @@ test('中医工具提供由审核原文生成的周易学习辅助工具', async
   assert.match(sitemap, /https:\/\/nihaixia\.org\/yijing-tool\.html/);
 });
 
+test('中医工具提供第三方经方辨证 Skill 的安全安装入口', async () => {
+  const [mainJs, skillHtml, skillJs, sitemap, acupointsHtml, herbsHtml, ziwuHtml, readerHtml, yijingHtml] = await Promise.all([
+    fs.readFile(path.resolve('main.js'), 'utf8'),
+    fs.readFile(path.resolve('jingfang-skill.html'), 'utf8'),
+    fs.readFile(path.resolve('jingfang-skill.js'), 'utf8'),
+    fs.readFile(path.resolve('dist/sitemap.xml'), 'utf8'),
+    fs.readFile(path.resolve('acupoints.html'), 'utf8'),
+    fs.readFile(path.resolve('herbs.html'), 'utf8'),
+    fs.readFile(path.resolve('ziwu.html'), 'utf8'),
+    fs.readFile(path.resolve('read-daodejing.html'), 'utf8'),
+    fs.readFile(path.resolve('yijing-tool.html'), 'utf8')
+  ]);
+
+  assert.match(skillHtml, /经方辨证，[\s\S]*从经典里找依据/);
+  assert.match(skillHtml, /用于学习，不替人诊疗/);
+  assert.match(skillHtml, /不要据此自行诊断、抓药、调整剂量或延误就医/);
+  assert.match(skillHtml, /本站不托管其知识库/);
+  assert.match(skillHtml, /https:\/\/skillhub\.cn\/skills\/user_ff4d9420\/nihaixia-pro/);
+  assert.match(skillJs, /@user_ff4d9420\/nihaixia-pro/);
+  assert.match(mainJs, /href="jingfang-skill\.html" class="dropdown-item">倪海厦中医经方辨证 Skill/);
+  for (const page of [acupointsHtml, herbsHtml, ziwuHtml, readerHtml, yijingHtml]) {
+    assert.match(page, /href="jingfang-skill\.html">经方 Skill/);
+  }
+  assert.match(sitemap, /https:\/\/nihaixia\.org\/jingfang-skill\.html/);
+});
+
 test('首页人物经历与资料共建入口使用中性可信表述', async () => {
   const home = await fs.readFile(path.resolve('index.html'), 'utf8');
   assert.doesNotMatch(home, /治愈众多|疑难杂症患者|未经核实的疗效/);

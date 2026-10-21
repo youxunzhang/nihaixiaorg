@@ -93,6 +93,7 @@ function initGlobalNavigationStructure() {
                 <li><a href="herbs.html" class="dropdown-item">认识中药材</a></li>
                 <li><a href="read-daodejing.html" class="dropdown-item">读《道德经》</a></li>
                 <li><a href="yijing-tool.html" class="dropdown-item">周易学习辅助工具</a></li>
+                <li><a href="jingfang-skill.html" class="dropdown-item">倪海厦中医经方辨证 Skill</a></li>
             </ul>
         </li>
         <li class="nav-item"><a href="news.html" class="nav-link">资讯动态</a></li>

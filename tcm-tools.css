@@ -137,6 +137,12 @@
 .tool-footer { padding: 35px 0; color: #c6d3cc; background: var(--tool-jade-dark); text-align: center; }
 .tool-footer a { color: #f1d18d; }
 
+@media (max-width: 1120px) {
+    .tool-menu { display: block; }
+    .tool-links { position: absolute; display: none; top: 76px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 20px 22px; background: #fbfaf6; border-bottom: 1px solid var(--tool-border); box-shadow: 0 16px 28px rgba(26,49,38,.08); }
+    .tool-links.open { display: flex; }
+    .tool-links a { padding: 11px 0; }
+}
 @media (max-width: 980px) {
     .period-grid { grid-template-columns: repeat(2, 1fr); }
     .model-workspace { grid-template-columns: 200px 1fr; }
