@@ -124,7 +124,7 @@ test('古籍首页使用五部经典卡片，网站首页保留三部中医经�
   assert.match(homeHtml, /href="\/guji\/shanghanlun\/"/);
   assert.match(homeHtml, /href="\/guji\/shennong-bencao\/"/);
   assert.match(homeHtml, /32 条名称资料/);
-  assert.match(homeHtml, /需要目录，可以微信联系/);
+  assert.match(homeHtml, /关于本站 · 资料共建/);
   assert.doesNotMatch(homeHtml, /<ol><li><span>1<\/span>添加好友/);
   assert.ok(
     homeHtml.indexOf('倪海厦老师简介') < homeHtml.indexOf('id="classics"'),
@@ -232,6 +232,45 @@ test('中医工具提供认识中药材入口与非诊疗型名称档案', async
   assert.equal((herbsJs.match(/slug: '/g) || []).length, 15);
   assert.doesNotMatch(herbsJs, /effects:|usage:|contraindications:|<h3>功效|<h3>主治|用法用量/);
   assert.doesNotMatch(redirects, /^\/herbs(?:\.html)?\s/m);
+});
+
+test('中医工具提供由审核原文生成的道德经互动阅读器', async () => {
+  const [mainJs, readerHtml, readerJs, readerData, sitemap, acupointsHtml, herbsHtml, ziwuHtml] = await Promise.all([
+    fs.readFile(path.resolve('main.js'), 'utf8'),
+    fs.readFile(path.resolve('read-daodejing.html'), 'utf8'),
+    fs.readFile(path.resolve('read-daodejing.js'), 'utf8'),
+    fs.readFile(path.resolve('dist/data/daodejing-reader.json'), 'utf8'),
+    fs.readFile(path.resolve('dist/sitemap.xml'), 'utf8'),
+    fs.readFile(path.resolve('acupoints.html'), 'utf8'),
+    fs.readFile(path.resolve('herbs.html'), 'utf8'),
+    fs.readFile(path.resolve('ziwu.html'), 'utf8')
+  ]);
+  const payload = JSON.parse(readerData);
+
+  assert.equal(payload.chapters.length, 81);
+  assert.equal(payload.chapters[0].title, '第一章');
+  assert.equal(payload.chapters.at(-1).title, '第八十一章');
+  assert.equal(payload.book.sourceRevision, 2354026);
+  assert.equal(payload.book.sourceLicense, 'CC BY-SA 4.0');
+  assert.match(readerHtml, /八十一章 · 王弼本/);
+  assert.match(readerHtml, /浏览器即时生成/);
+  assert.match(readerJs, /SpeechSynthesisUtterance/);
+  assert.match(readerJs, /wakeLock\.request\('screen'\)/);
+  assert.match(readerJs, /daodejing-reader-preferences/);
+  assert.match(mainJs, /href="read-daodejing\.html" class="dropdown-item">读《道德经》/);
+  assert.match(acupointsHtml, /href="read-daodejing\.html">读《道德经》/);
+  assert.match(herbsHtml, /href="read-daodejing\.html">读《道德经》/);
+  assert.match(ziwuHtml, /href="read-daodejing\.html">读《道德经》/);
+  assert.match(sitemap, /https:\/\/nihaixia\.org\/read-daodejing\.html/);
+});
+
+test('首页人物经历与资料共建入口使用中性可信表述', async () => {
+  const home = await fs.readFile(path.resolve('index.html'), 'utf8');
+  assert.doesNotMatch(home, /治愈众多|疑难杂症患者|未经核实的疗效/);
+  assert.match(home, /关于本站 · 资料共建/);
+  assert.match(home, /让珍贵的中医知识，更容易被找到/);
+  assert.match(home, /添加微信完全自愿，站内公开内容可直接浏览/);
+  assert.match(home, /反馈勘误/);
 });
 
 async function fileExists(file) {

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>读《道德经》｜八十一章原文与浏览器朗读</title>
+    <meta name="description" content="按道经、德经阅读《道德经》王弼本八十一章原文，支持章节检索、浏览器朗读、字号、主题、自动续读和阅读进度。">
+    <meta name="keywords" content="道德经原文,道德经八十一章,老子,王弼本,道德经朗读">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://nihaixia.org/read-daodejing.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="tcm-tools.css?v=20261021">
+    <link rel="stylesheet" href="read-daodejing.css?v=20261021">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LearningResource",
+        "name": "读《道德经》",
+        "url": "https://nihaixia.org/read-daodejing.html",
+        "description": "《道德经》王弼本八十一章互动阅读工具。",
+        "inLanguage": "zh-CN",
+        "educationalUse": "经典阅读",
+        "isBasedOn": "https://zh.wikisource.org/wiki/道德經_(王弼本)"
+    }
+    </script>
+</head>
+<body class="tcm-tool-page daodejing-reader-page">
+    <header class="tool-header">
+        <div class="tool-container tool-nav">
+            <a class="tool-brand" href="index.html">
+                <span class="tool-brand-mark">医</span>
+                <span><strong>倪海厦中医传承</strong><small>互动学习工具</small></span>
+            </a>
+            <button class="tool-menu" type="button" aria-expanded="false" aria-controls="toolLinks">目录</button>
+            <nav class="tool-links" id="toolLinks" aria-label="中医工具导航">
+                <a href="index.html">首页</a>
+                <a href="ziwu.html">子午流注</a>
+                <a href="acupoints.html">经络穴位模型</a>
+                <a href="herbs.html">认识中药材</a>
+                <a href="read-daodejing.html" class="active" aria-current="page">读《道德经》</a>
+                <a href="books.html">中医书籍</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dao-reader-main">
+        <section class="dao-reader-intro">
+            <div class="tool-container dao-intro-grid">
+                <div>
+                    <p class="tool-eyebrow">中医工具 · 经典诵读</p>
+                    <h1>读《道德经》</h1>
+                </div>
+                <div class="dao-intro-note">
+                    <span>八十一章 · 王弼本</span>
+                    <p>不急着解释，先把原文读完。选一章，听一遍，再按自己的节奏重读。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dao-reader-section" aria-label="道德经互动阅读器">
+            <div class="tool-container dao-workspace">
+                <aside class="dao-directory" aria-labelledby="daoDirectoryTitle">
+                    <div class="dao-directory-head">
+                        <p>八十一章</p>
+                        <h2 id="daoDirectoryTitle">章目</h2>
+                        <span id="readingProgressLabel">读取原文中…</span>
+                    </div>
+                    <label class="dao-search">
+                        <span class="sr-only">搜索章节</span>
+                        <input id="chapterSearch" type="search" placeholder="搜索章数，如 18" inputmode="numeric" autocomplete="off">
+                        <span aria-hidden="true">⌕</span>
+                    </label>
+                    <div class="dao-volume-tabs" role="group" aria-label="按篇目筛选">
+                        <button type="button" class="active" data-volume="all">全部</button>
+                        <button type="button" data-volume="daojing">道经</button>
+                        <button type="button" data-volume="deijing">德经</button>
+                    </div>
+                    <div class="dao-chapter-list" id="chapterList" aria-label="道德经章节列表"></div>
+                    <p class="dao-directory-empty" id="directoryEmpty" hidden>没有找到对应章节。</p>
+                </aside>
+
+                <article class="dao-reading-card" id="readingCard" data-theme="paper" aria-labelledby="chapterTitle">
+                    <div class="dao-progress-track" aria-hidden="true"><span id="readingProgress"></span></div>
+                    <header class="dao-reading-head">
+                        <div class="dao-chapter-identity">
+                            <span class="dao-chapter-seal" id="chapterSeal">一</span>
+                            <div>
+                                <p id="volumeName">道经 · 第一篇</p>
+                                <h2 id="chapterTitle">第一章</h2>
+                            </div>
+                        </div>
+                        <div class="dao-primary-actions">
+                            <button class="dao-listen-button" id="listenButton" type="button" disabled><span aria-hidden="true">▷</span><span>朗读本章</span></button>
+                            <button class="dao-stop-button" id="stopButton" type="button" disabled aria-label="停止朗读">■</button>
+                            <details class="dao-settings" id="readerSettings">
+                                <summary aria-label="打开阅读设置">阅读设置</summary>
+                                <div class="dao-settings-panel">
+                                    <div class="dao-setting-row">
+                                        <span>字号</span>
+                                        <div class="dao-segmented" role="group" aria-label="调整正文字号">
+                                            <button type="button" id="fontDecrease" aria-label="减小字号">小</button>
+                                            <output id="fontSizeValue">26</output>
+                                            <button type="button" id="fontIncrease" aria-label="增大字号">大</button>
+                                        </div>
+                                    </div>
+                                    <div class="dao-setting-row">
+                                        <span>纸色</span>
+                                        <div class="dao-theme-options" role="group" aria-label="选择阅读主题">
+                                            <button type="button" class="active" data-theme="paper" aria-label="宣纸色"></button>
+                                            <button type="button" data-theme="white" aria-label="白色"></button>
+                                            <button type="button" data-theme="ink" aria-label="深色"></button>
+                                        </div>
+                                    </div>
+                                    <label class="dao-setting-row"><span>语速</span><select id="speechRate"><option value="0.8">舒缓</option><option value="1" selected>标准</option><option value="1.2">稍快</option></select></label>
+                                    <label class="dao-setting-switch"><input id="autoNext" type="checkbox"><span>朗读后自动进入下一章</span></label>
+                                    <label class="dao-setting-row"><span>定时停止</span><select id="sleepTimer"><option value="0">关闭</option><option value="10">10 分钟</option><option value="20">20 分钟</option><option value="30">30 分钟</option></select></label>
+                                    <button class="dao-wake-button" id="wakeLockButton" type="button">保持屏幕常亮</button>
+                                </div>
+                            </details>
+                        </div>
+                    </header>
+
+                    <div class="dao-reading-status" aria-live="polite">
+                        <span class="dao-status-dot"></span>
+                        <span id="speechStatus">选择章节，静心阅读</span>
+                    </div>
+                    <div class="dao-chapter-body" id="chapterBody">
+                        <p class="dao-loading">正在载入已审核原文…</p>
+                    </div>
+
+                    <footer class="dao-chapter-footer">
+                        <button id="previousChapter" type="button"><span aria-hidden="true">←</span><span><small>上一篇</small><strong id="previousLabel">—</strong></span></button>
+                        <a id="chapterSourceLink" href="/guji/daodejing/" aria-label="查看本章来源与古籍页面">查看版本来源</a>
+                        <button id="nextChapter" type="button"><span><small>下一篇</small><strong id="nextLabel">第二章</strong></span><span aria-hidden="true">→</span></button>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+        <section class="dao-source-section" aria-labelledby="daoSourceTitle">
+            <div class="tool-container dao-source-card">
+                <div><p class="tool-eyebrow">版本有据</p><h2 id="daoSourceTitle">原文从哪里来</h2></div>
+                <div>
+                    <p>本站使用中文维基文库《道德经（王弼本）》原文，简体显示，不含王弼注文。页面朗读由你的浏览器即时生成，不上传阅读记录，也不使用第三方音频。</p>
+                    <p><a id="sourceEditionLink" href="https://zh.wikisource.org/w/index.php?title=%E9%81%93%E5%BE%B7%E7%B6%93_(%E7%8E%8B%E5%BC%BC%E6%9C%AC)&oldid=2354026&variant=zh-hans" target="_blank" rel="noopener">核对中文维基文库修订版本 2354026</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="tool-footer">
+        <div class="tool-container">传统文化学习资料 · <a href="/guji/daodejing/">查看《道德经》古籍目录</a></div>
+    </footer>
+    <script src="read-daodejing.js?v=20261021"></script>
+</body>
+</html>

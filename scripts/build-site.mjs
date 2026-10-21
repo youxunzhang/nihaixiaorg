@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildGuji } from './build-guji.mjs';
+import { buildDaodejingReader } from './build-daodejing-reader.mjs';
 import { isPublishableHerbProfile } from './guji-lib.mjs';
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -31,6 +32,7 @@ for (const entry of await fs.readdir(root, { withFileTypes: true })) {
 }
 
 const result = await buildGuji({ outDir: path.join(outDir, 'guji') });
+const daodejingReader = await buildDaodejingReader({ outDir: path.join(outDir, 'data') });
 
 const sitemapPath = path.join(outDir, 'sitemap.xml');
 const sitemap = await fs.readFile(sitemapPath, 'utf8');
@@ -76,4 +78,5 @@ await fs.writeFile(sitemapPath, sitemapWithHerbs.replace(culturalBlockPattern, `
 
 console.log(`站点构建完成：${outDir}`);
 console.log(`古籍审核记录 ${result.reviewed} 条，公开正文 ${result.published} 篇。`);
+console.log(`《道德经》互动阅读数据 ${daodejingReader.chapters.length} 章。`);
 
