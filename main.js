@@ -90,6 +90,7 @@ function initGlobalNavigationStructure() {
             <ul class="dropdown-menu">
                 <li><a href="ziwu.html" class="dropdown-item">子午流注时辰钟</a></li>
                 <li><a href="acupoints.html" class="dropdown-item">经络穴位模型</a></li>
+                <li><a href="acupuncture.html" class="dropdown-item">针灸经典学习</a></li>
                 <li><a href="herbs.html" class="dropdown-item">认识中药材</a></li>
                 <li><a href="read-daodejing.html" class="dropdown-item">读《道德经》</a></li>
                 <li><a href="yijing-tool.html" class="dropdown-item">周易学习辅助工具</a></li>

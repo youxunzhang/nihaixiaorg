@@ -319,6 +319,35 @@ test('中医工具提供第三方经方辨证 Skill 的安全安装入口', asyn
   assert.match(sitemap, /https:\/\/nihaixia\.org\/jingfang-skill\.html/);
 });
 
+test('中医工具提供非诊疗型针灸经典学习页面', async () => {
+  const [mainJs, pageHtml, pageJs, sitemap, acupointsHtml, herbsHtml, ziwuHtml, readerHtml, yijingHtml, skillHtml] = await Promise.all([
+    fs.readFile(path.resolve('main.js'), 'utf8'),
+    fs.readFile(path.resolve('acupuncture.html'), 'utf8'),
+    fs.readFile(path.resolve('acupuncture.js'), 'utf8'),
+    fs.readFile(path.resolve('dist/sitemap.xml'), 'utf8'),
+    fs.readFile(path.resolve('acupoints.html'), 'utf8'),
+    fs.readFile(path.resolve('herbs.html'), 'utf8'),
+    fs.readFile(path.resolve('ziwu.html'), 'utf8'),
+    fs.readFile(path.resolve('read-daodejing.html'), 'utf8'),
+    fs.readFile(path.resolve('yijing-tool.html'), 'utf8'),
+    fs.readFile(path.resolve('jingfang-skill.html'), 'utf8')
+  ]);
+
+  assert.match(pageHtml, /先识经络，[\s\S]*再读针灸原典/);
+  assert.match(pageHtml, /不提供病症判断、治疗方案、取穴处方、针刺深度或自行操作指导/);
+  assert.match(pageHtml, /针刺属于专业操作/);
+  assert.match(pageHtml, /guji\/huangdi-neijing\/suwen/);
+  assert.match(pageHtml, /guji\/huangdi-neijing\/lingshu/);
+  assert.equal((pageJs.match(/order:/g) || []).length, 6);
+  assert.equal((pageJs.match(/\['(?:LU|LI|ST|SP|HT|SI|BL|KI|PC|TE|GB|LR|REN|DU)'/g) || []).length, 14);
+  assert.doesNotMatch(pageHtml, /高效取穴|治疗系列|病症常用方/);
+  assert.match(mainJs, /href="acupuncture\.html" class="dropdown-item">针灸经典学习/);
+  for (const page of [acupointsHtml, herbsHtml, ziwuHtml, readerHtml, yijingHtml, skillHtml]) {
+    assert.match(page, /href="acupuncture\.html">针灸入门/);
+  }
+  assert.match(sitemap, /https:\/\/nihaixia\.org\/acupuncture\.html/);
+});
+
 test('首页人物经历与资料共建入口使用中性可信表述', async () => {
   const home = await fs.readFile(path.resolve('index.html'), 'utf8');
   assert.doesNotMatch(home, /治愈众多|疑难杂症患者|未经核实的疗效/);
