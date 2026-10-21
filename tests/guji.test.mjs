@@ -357,6 +357,17 @@ test('首页人物经历与资料共建入口使用中性可信表述', async ()
   assert.match(home, /反馈勘误/);
 });
 
+test('经典视频页收录已核验课程并保持中性说明', async () => {
+  const resources = await fs.readFile(path.resolve('resources.html'), 'utf8');
+  assert.match(resources, /youtube\.com\/watch\?v=gvWlQ3twOL0/);
+  assert.match(resources, /youtube\.com\/watch\?v=WtD331OIoe4/);
+  assert.match(resources, /YouTube · 国学迷/);
+  assert.match(resources, /YouTube · Hsugo/);
+  assert.match(resources, /不重新托管视频/);
+  assert.match(resources, /不构成医疗建议/);
+  assert.doesNotMatch(resources, /捏住这三指|老毛病竟/);
+});
+
 async function fileExists(file) {
   try { await fs.access(file); return true; } catch (_) { return false; }
 }
