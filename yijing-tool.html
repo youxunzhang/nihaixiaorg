@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周易学习辅助工具｜八卦与六十四卦原文查询</title>
+    <meta name="description" content="周易学习辅助工具：认识八卦类象，通过上下卦组合查询六十四卦，并阅读有来源记录的《周易》原文。">
+    <meta name="keywords" content="周易学习,八卦,六十四卦,易经原文,卦象查询">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://nihaixia.org/yijing-tool.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="tcm-tools.css?v=20261021">
+    <link rel="stylesheet" href="yijing-tool.css?v=20261021">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LearningResource",
+        "name": "周易学习辅助工具",
+        "url": "https://nihaixia.org/yijing-tool.html",
+        "description": "八卦基础、上下卦组合与六十四卦原文学习工具。",
+        "inLanguage": "zh-CN",
+        "educationalUse": "经典学习"
+    }
+    </script>
+</head>
+<body class="tcm-tool-page yijing-tool-page">
+    <header class="tool-header">
+        <div class="tool-container tool-nav">
+            <a class="tool-brand" href="index.html">
+                <span class="tool-brand-mark">医</span>
+                <span><strong>倪海厦中医传承</strong><small>互动学习工具</small></span>
+            </a>
+            <button class="tool-menu" type="button" aria-expanded="false" aria-controls="toolLinks">目录</button>
+            <nav class="tool-links" id="toolLinks" aria-label="中医工具导航">
+                <a href="index.html">首页</a>
+                <a href="ziwu.html">子午流注</a>
+                <a href="acupoints.html">经络穴位模型</a>
+                <a href="herbs.html">认识中药材</a>
+                <a href="read-daodejing.html">读《道德经》</a>
+                <a href="yijing-tool.html" class="active" aria-current="page">周易学习</a>
+                <a href="books.html">中医书籍</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="yi-main">
+        <section class="yi-hero">
+            <div class="tool-container yi-hero-grid">
+                <div class="yi-hero-copy">
+                    <p class="tool-eyebrow">中医工具 · 周易入门</p>
+                    <h1>先识八卦，<br>再读六十四卦</h1>
+                    <p>从三爻卦的基本结构出发，组合上卦与下卦，找到对应卦象，再回到《周易》原文逐句阅读。</p>
+                    <nav class="yi-hero-actions" aria-label="本页快速入口">
+                        <a href="#combine">组合查卦</a>
+                        <a href="#basics">认识八卦</a>
+                        <a href="#catalog">六十四卦</a>
+                    </nav>
+                    <aside>本工具只用于卦象结构与古籍原文学习，不提供起卦、占断、运势或现实决策建议。</aside>
+                </div>
+
+                <div class="yi-bagua-stage" aria-label="先天八卦结构示意">
+                    <div class="yi-bagua-ring">
+                        <span class="yi-trigram yi-trigram-qian"><b>☰</b><small>乾 · 天</small></span>
+                        <span class="yi-trigram yi-trigram-dui"><b>☱</b><small>兑 · 泽</small></span>
+                        <span class="yi-trigram yi-trigram-li"><b>☲</b><small>离 · 火</small></span>
+                        <span class="yi-trigram yi-trigram-zhen"><b>☳</b><small>震 · 雷</small></span>
+                        <span class="yi-trigram yi-trigram-xun"><b>☴</b><small>巽 · 风</small></span>
+                        <span class="yi-trigram yi-trigram-kan"><b>☵</b><small>坎 · 水</small></span>
+                        <span class="yi-trigram yi-trigram-gen"><b>☶</b><small>艮 · 山</small></span>
+                        <span class="yi-trigram yi-trigram-kun"><b>☷</b><small>坤 · 地</small></span>
+                        <div class="yi-taiji" aria-hidden="true"></div>
+                    </div>
+                    <p>三爻成卦 · 两卦相重 · 六爻成象</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="yi-combine-section" id="combine" aria-labelledby="combineTitle">
+            <div class="tool-container">
+                <div class="yi-section-heading">
+                    <div><p class="tool-eyebrow">上下卦组合查询</p><h2 id="combineTitle">选两卦，看一卦</h2></div>
+                    <p>上卦在外、在上；下卦在内、在下。选择后会自动匹配文王卦序，并显示本站已核对的原文。</p>
+                </div>
+
+                <div class="yi-study-workspace">
+                    <aside class="yi-selector-panel">
+                        <div class="yi-selector-group">
+                            <header><span>01</span><div><small>UPPER TRIGRAM</small><h3>选择上卦</h3></div></header>
+                            <div class="yi-trigram-selector" id="upperTrigrams" aria-label="选择上卦"></div>
+                        </div>
+                        <div class="yi-selector-divider"><span>相重为卦</span></div>
+                        <div class="yi-selector-group">
+                            <header><span>02</span><div><small>LOWER TRIGRAM</small><h3>选择下卦</h3></div></header>
+                            <div class="yi-trigram-selector" id="lowerTrigrams" aria-label="选择下卦"></div>
+                        </div>
+                    </aside>
+
+                    <article class="yi-result-card" id="hexagramResult" aria-labelledby="resultTitle">
+                        <div class="yi-result-watermark" aria-hidden="true">易</div>
+                        <header class="yi-result-head">
+                            <div class="yi-hexagram-lines" id="resultLines" aria-label="六爻卦象"></div>
+                            <div>
+                                <p id="resultPosition">上乾 · 下乾</p>
+                                <h3 id="resultTitle">乾为天</h3>
+                                <span id="resultOrder">第一卦</span>
+                            </div>
+                        </header>
+                        <dl class="yi-result-facts">
+                            <div><dt>上卦</dt><dd id="upperFact">乾 · 天</dd></div>
+                            <div><dt>下卦</dt><dd id="lowerFact">乾 · 天</dd></div>
+                            <div><dt>卦序</dt><dd id="orderFact">01</dd></div>
+                        </dl>
+                        <section class="yi-judgment">
+                            <span>卦辞原文</span>
+                            <p id="judgmentText">正在载入《周易》原文…</p>
+                        </section>
+                        <div class="yi-result-actions">
+                            <button type="button" id="openHexagram">阅读本卦完整原文</button>
+                            <a id="classicPageLink" href="/guji/yijing/">打开古籍页面 <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="yi-basics-section" id="basics" aria-labelledby="basicsTitle">
+            <div class="tool-container">
+                <div class="yi-section-heading yi-section-heading-light">
+                    <div><p class="tool-eyebrow">八卦基础</p><h2 id="basicsTitle">一张卡，认识一卦</h2></div>
+                    <p>卦名、卦象、自然类象与三爻结构放在一起看，建立最基础的对应关系。</p>
+                </div>
+                <div class="yi-trigram-card-grid" id="trigramCards"></div>
+            </div>
+        </section>
+
+        <section class="yi-catalog-section" id="catalog" aria-labelledby="catalogTitle">
+            <div class="tool-container">
+                <div class="yi-catalog-head">
+                    <div><p class="tool-eyebrow">文王卦序</p><h2 id="catalogTitle">六十四卦速查</h2></div>
+                    <label class="yi-search"><span class="sr-only">搜索卦名或卦序</span><input id="hexagramSearch" type="search" placeholder="搜索卦名或卦序，如 乾、11" autocomplete="off"><span aria-hidden="true">⌕</span></label>
+                </div>
+                <div class="yi-catalog-meta"><span id="catalogCount">正在整理 64 卦…</span><span>点击任一卦，回到上方查看结构与原文</span></div>
+                <div class="yi-hexagram-grid" id="hexagramGrid"></div>
+                <p class="yi-empty" id="hexagramEmpty" hidden>没有找到对应卦名或卦序。</p>
+            </div>
+        </section>
+
+        <section class="yi-source-section" aria-labelledby="yiSourceTitle">
+            <div class="tool-container yi-source-card">
+                <div><p class="tool-eyebrow">原文有据</p><h2 id="yiSourceTitle">保留版本与来源</h2></div>
+                <div><p>六十四卦正文来自中文维基文库《周易》对应卦页，本站保留每一卦的来源链接、修订版本和许可信息。工具展示原文，不添加现代占断或吉凶推演。</p><p><a href="/guji/yijing/">查看《周易》古籍总目录</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noopener">CC BY-SA 4.0</a></p></div>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="yi-dialog" id="hexagramDialog" aria-labelledby="dialogTitle">
+        <button class="yi-dialog-close" id="dialogClose" type="button" aria-label="关闭完整原文">×</button>
+        <div id="dialogContent"></div>
+    </dialog>
+
+    <footer class="tool-footer"><div class="tool-container">传统文化学习工具 · <a href="/guji/yijing/">查看《周易》古籍目录</a></div></footer>
+    <script src="yijing-tool.js?v=20261021"></script>
+</body>
+</html>

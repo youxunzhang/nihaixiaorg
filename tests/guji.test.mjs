@@ -264,6 +264,35 @@ test('中医工具提供由审核原文生成的道德经互动阅读器', async
   assert.match(sitemap, /https:\/\/nihaixia\.org\/read-daodejing\.html/);
 });
 
+test('中医工具提供由审核原文生成的周易学习辅助工具', async () => {
+  const [mainJs, toolHtml, toolJs, toolData, sitemap, acupointsHtml, herbsHtml, ziwuHtml, readerHtml] = await Promise.all([
+    fs.readFile(path.resolve('main.js'), 'utf8'),
+    fs.readFile(path.resolve('yijing-tool.html'), 'utf8'),
+    fs.readFile(path.resolve('yijing-tool.js'), 'utf8'),
+    fs.readFile(path.resolve('dist/data/yijing-tool.json'), 'utf8'),
+    fs.readFile(path.resolve('dist/sitemap.xml'), 'utf8'),
+    fs.readFile(path.resolve('acupoints.html'), 'utf8'),
+    fs.readFile(path.resolve('herbs.html'), 'utf8'),
+    fs.readFile(path.resolve('ziwu.html'), 'utf8'),
+    fs.readFile(path.resolve('read-daodejing.html'), 'utf8')
+  ]);
+  const payload = JSON.parse(toolData);
+
+  assert.equal(payload.hexagrams.length, 64);
+  assert.equal(payload.hexagrams[0].title, '乾');
+  assert.equal(payload.hexagrams.at(-1).title, '未济');
+  assert.equal(payload.book.sourceLicense, 'CC BY-SA 4.0');
+  assert.match(toolHtml, /先识八卦，[\s\S]*再读六十四卦/);
+  assert.match(toolHtml, /不提供起卦、占断、运势或现实决策建议/);
+  assert.match(toolJs, /\['kun','qian'\]/);
+  assert.match(toolJs, /\['li','kan'\]/);
+  assert.match(mainJs, /href="yijing-tool\.html" class="dropdown-item">周易学习辅助工具/);
+  for (const page of [acupointsHtml, herbsHtml, ziwuHtml, readerHtml]) {
+    assert.match(page, /href="yijing-tool\.html">周易学习/);
+  }
+  assert.match(sitemap, /https:\/\/nihaixia\.org\/yijing-tool\.html/);
+});
+
 test('首页人物经历与资料共建入口使用中性可信表述', async () => {
   const home = await fs.readFile(path.resolve('index.html'), 'utf8');
   assert.doesNotMatch(home, /治愈众多|疑难杂症患者|未经核实的疗效/);
