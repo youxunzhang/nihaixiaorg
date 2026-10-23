@@ -63,8 +63,8 @@ function initGlobalNavigationStructure() {
     navMenu.innerHTML = `
         <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
         <li class="nav-item"><a href="/books" class="nav-link">中医书籍</a></li>
-        <li class="nav-item"><a href="/guji/" class="nav-link">经典原文</a></li>
-        <li class="nav-item"><a href="resources.html" class="nav-link">经典视频</a></li>
+        <li class="nav-item"><a href="/guji/" class="nav-link">古籍原文</a></li>
+        <li class="nav-item"><a href="resources.html" class="nav-link">中医视频</a></li>
         <li class="nav-item dropdown" data-nav-group="materials">
             <a href="#" class="nav-link dropdown-toggle">资料</a>
             <ul class="dropdown-menu">
@@ -75,7 +75,7 @@ function initGlobalNavigationStructure() {
             </ul>
         </li>
         <li class="nav-item dropdown" data-nav-group="gongfu">
-            <a href="#" class="nav-link dropdown-toggle">功夫</a>
+            <a href="#" class="nav-link dropdown-toggle">养生</a>
             <ul class="dropdown-menu">
                 <li><a href="badajingang.html" class="dropdown-item">八部金刚功</a></li>
                 <li><a href="baduanjin.html" class="dropdown-item">八段锦</a></li>
@@ -84,17 +84,17 @@ function initGlobalNavigationStructure() {
                 <li><a href="adjustment.html" class="dropdown-item">调整状态</a></li>
             </ul>
         </li>
-        <li class="nav-item"><a href="index.html#breathing" class="nav-link">呼吸</a></li>
         <li class="nav-item dropdown" data-nav-group="tcm-tools">
             <a href="#" class="nav-link dropdown-toggle">中医工具</a>
             <ul class="dropdown-menu">
                 <li><a href="ziwu.html" class="dropdown-item">子午流注时辰钟</a></li>
                 <li><a href="acupoints.html" class="dropdown-item">经络穴位模型</a></li>
-                <li><a href="acupuncture.html" class="dropdown-item">针灸经典学习</a></li>
+                <li><a href="index.html#breathing" class="dropdown-item">呼吸</a></li>
+                <li><a href="acupuncture.html" class="dropdown-item">针灸入门</a></li>
                 <li><a href="herbs.html" class="dropdown-item">认识中药材</a></li>
                 <li><a href="read-daodejing.html" class="dropdown-item">读《道德经》</a></li>
-                <li><a href="yijing-tool.html" class="dropdown-item">周易学习辅助工具</a></li>
-                <li><a href="jingfang-skill.html" class="dropdown-item">倪海厦中医经方辨证 Skill</a></li>
+                <li><a href="yijing-tool.html" class="dropdown-item">周易学习</a></li>
+                <li><a href="jingfang-skill.html" class="dropdown-item">经方 Skill</a></li>
             </ul>
         </li>
         <li class="nav-item"><a href="news.html" class="nav-link">资讯动态</a></li>
@@ -200,6 +200,7 @@ function initScrollAnimations() {
 function initMobileMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
+    const dropdownToggles = navMenu ? navMenu.querySelectorAll('.dropdown-toggle') : [];
     
     if (!hamburger || !navMenu) return;
     
@@ -207,6 +208,7 @@ function initMobileMenu() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
         hamburger.setAttribute('aria-expanded', navMenu.classList.contains('active') ? 'true' : 'false');
+        if (!navMenu.classList.contains('active')) closeMobileDropdowns();
     });
 
     hamburger.addEventListener('keydown', function(event) {
@@ -216,12 +218,38 @@ function initMobileMenu() {
         }
     });
     
-    // 点击菜单项时关闭菜单
+    function closeMobileDropdowns(except) {
+        navMenu.querySelectorAll('.dropdown.open').forEach(dropdown => {
+            if (dropdown === except) return;
+            dropdown.classList.remove('open');
+            dropdown.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+        });
+    }
+
+    dropdownToggles.forEach(toggle => {
+        toggle.setAttribute('aria-haspopup', 'true');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.addEventListener('click', function(event) {
+            if (window.innerWidth > 768) return;
+            event.preventDefault();
+            event.stopPropagation();
+            const dropdown = this.closest('.dropdown');
+            const willOpen = !dropdown.classList.contains('open');
+            closeMobileDropdowns(dropdown);
+            dropdown.classList.toggle('open', willOpen);
+            this.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+        });
+    });
+
+    // 点击普通菜单项时关闭菜单；二级目录标题只负责展开和收起
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
+            if (window.innerWidth <= 768 && this.classList.contains('dropdown-toggle')) return;
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            closeMobileDropdowns();
         });
     });
     
@@ -230,6 +258,8 @@ function initMobileMenu() {
         if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            closeMobileDropdowns();
         }
     });
 }

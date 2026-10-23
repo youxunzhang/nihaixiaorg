@@ -31,6 +31,9 @@ test('统一阅读器包含来源、设置、段落锚点和目录导航', async
   assert.match(html, /class="classic-settings"/);
   assert.match(html, /data-font="up"/);
   assert.match(html, /data-theme="toggle"/);
+  assert.match(html, /data-share="chapter"/);
+  assert.match(html, /data-copy="text"/);
+  assert.match(html, /aria-live="polite"/);
   assert.match(html, /class="paragraph-anchor"/);
   assert.match(html, /测试底本/);
   assert.match(html, /返回目录/);
@@ -124,7 +127,7 @@ test('古籍首页使用五部经典卡片，网站首页保留三部中医经�
   assert.match(homeHtml, /href="\/guji\/shanghanlun\/"/);
   assert.match(homeHtml, /href="\/guji\/shennong-bencao\/"/);
   assert.match(homeHtml, /32 条名称资料/);
-  assert.match(homeHtml, /关于本站 · 资料共建/);
+  assert.match(homeHtml, /反馈与交流/);
   assert.doesNotMatch(homeHtml, /<ol><li><span>1<\/span>添加好友/);
   assert.ok(
     homeHtml.indexOf('倪海厦老师简介') < homeHtml.indexOf('id="classics"'),
@@ -196,6 +199,21 @@ test('上品本草名称页完整覆盖目录且只提供目录、异名和版�
 
 test('公开 sitemap 只包含目录页，不包含未审核正文', async () => {
   const sitemap = await fs.readFile(path.resolve('dist/sitemap.xml'), 'utf8');
+  for (const publicPage of [
+    'books.html',
+    'tao.html',
+    'ziwu.html',
+    'acupoints.html',
+    'acupuncture.html',
+    'herbs.html',
+    'read-daodejing.html',
+    'yijing-tool.html',
+    'jingfang-skill.html',
+    'resources.html',
+    'sitemap.html'
+  ]) {
+    assert.match(sitemap, new RegExp(`https:\\/\\/nihaixia\\.org\\/${publicPage.replace('.', '\\.')}`));
+  }
   assert.match(sitemap, /https:\/\/nihaixia\.org\/guji\//);
   assert.match(sitemap, /\/guji\/huangdi-neijing\/suwen\//);
   assert.match(sitemap, /\/guji\/shennong-bencao\/xiapin\//);
@@ -209,6 +227,7 @@ test('公开 sitemap 只包含目录页，不包含未审核正文', async () =>
   assert.match(sitemap, /\/guji\/daodejing\/daojing\/01\//);
   assert.match(sitemap, /\/guji\/daodejing\/deijing\/81\//);
   assert.doesNotMatch(sitemap, /review-workflow-example/);
+  assert.doesNotMatch(sitemap, /https:\/\/nihaixia\.org\/(?:404|test|go|courses|bookmarks)(?:\.html)?/);
 });
 
 test('中医工具提供认识中药材入口与非诊疗型名称档案', async () => {
@@ -286,7 +305,7 @@ test('中医工具提供由审核原文生成的周易学习辅助工具', async
   assert.match(toolHtml, /不提供起卦、占断、运势或现实决策建议/);
   assert.match(toolJs, /\['kun','qian'\]/);
   assert.match(toolJs, /\['li','kan'\]/);
-  assert.match(mainJs, /href="yijing-tool\.html" class="dropdown-item">周易学习辅助工具/);
+  assert.match(mainJs, /href="yijing-tool\.html" class="dropdown-item">周易学习/);
   for (const page of [acupointsHtml, herbsHtml, ziwuHtml, readerHtml]) {
     assert.match(page, /href="yijing-tool\.html">周易学习/);
   }
@@ -312,7 +331,7 @@ test('中医工具提供第三方经方辨证 Skill 的安全安装入口', asyn
   assert.match(skillHtml, /本站不托管其知识库/);
   assert.match(skillHtml, /https:\/\/skillhub\.cn\/skills\/user_ff4d9420\/nihaixia-pro/);
   assert.match(skillJs, /@user_ff4d9420\/nihaixia-pro/);
-  assert.match(mainJs, /href="jingfang-skill\.html" class="dropdown-item">倪海厦中医经方辨证 Skill/);
+  assert.match(mainJs, /href="jingfang-skill\.html" class="dropdown-item">经方 Skill/);
   for (const page of [acupointsHtml, herbsHtml, ziwuHtml, readerHtml, yijingHtml]) {
     assert.match(page, /href="jingfang-skill\.html">经方 Skill/);
   }
@@ -341,7 +360,7 @@ test('中医工具提供非诊疗型针灸经典学习页面', async () => {
   assert.equal((pageJs.match(/order:/g) || []).length, 6);
   assert.equal((pageJs.match(/\['(?:LU|LI|ST|SP|HT|SI|BL|KI|PC|TE|GB|LR|REN|DU)'/g) || []).length, 14);
   assert.doesNotMatch(pageHtml, /高效取穴|治疗系列|病症常用方/);
-  assert.match(mainJs, /href="acupuncture\.html" class="dropdown-item">针灸经典学习/);
+  assert.match(mainJs, /href="acupuncture\.html" class="dropdown-item">针灸入门/);
   for (const page of [acupointsHtml, herbsHtml, ziwuHtml, readerHtml, yijingHtml, skillHtml]) {
     assert.match(page, /href="acupuncture\.html">针灸入门/);
   }
@@ -350,11 +369,53 @@ test('中医工具提供非诊疗型针灸经典学习页面', async () => {
 
 test('首页人物经历与资料共建入口使用中性可信表述', async () => {
   const home = await fs.readFile(path.resolve('index.html'), 'utf8');
+  const homeCss = await fs.readFile(path.resolve('home-unified.css'), 'utf8');
+  const mainJs = await fs.readFile(path.resolve('main.js'), 'utf8');
+  assert.match(home, /class="home-page"/);
+  assert.match(home, /home-unified\.css/);
+  assert.match(home, /人物小传 · 学术经历/);
+  assert.match(home, /class="timeline" role="list"/);
+  assert.equal((home.match(/class="timeline-item" role="listitem"/g) || []).length, 8);
+  assert.equal((home.match(/class="back-to-top"/g) || []).length, 1);
+  assert.equal((home.match(/class="timeline-step" aria-hidden="true"/g) || []).length, 8);
+  assert.match(homeCss, /\.home-page \.timeline \{[\s\S]*?flex-direction: column/);
+  assert.match(homeCss, /\.home-page \.timeline::before \{[\s\S]*?linear-gradient/);
+  assert.match(homeCss, /dropdown\.open \.dropdown-menu/);
+  assert.match(mainJs, /closeMobileDropdowns/);
+  assert.match(mainJs, /href="index\.html#breathing" class="dropdown-item">呼吸/);
+  assert.match(mainJs, /href="\/guji\/" class="nav-link">古籍原文/);
+  assert.match(mainJs, /href="resources\.html" class="nav-link">中医视频/);
+  assert.match(mainJs, /class="nav-link dropdown-toggle">养生/);
+  assert.doesNotMatch(mainJs, /href="index\.html#breathing" class="nav-link">呼吸/);
   assert.doesNotMatch(home, /治愈众多|疑难杂症患者|未经核实的疗效/);
-  assert.match(home, /关于本站 · 资料共建/);
   assert.match(home, /让珍贵的中医知识，更容易被找到/);
-  assert.match(home, /添加微信完全自愿，站内公开内容可直接浏览/);
-  assert.match(home, /反馈勘误/);
+  assert.match(home, /paid-purchase-panel paid-purchase-panel-simple/);
+  assert.match(home, /反馈与交流/);
+  assert.doesNotMatch(home, /站内公开内容均可直接浏览/);
+  assert.doesNotMatch(home, /反馈失效链接|指出文字疏漏|补充可靠来源/);
+  assert.doesNotMatch(home, /class="paid-qr"/);
+  assert.match(home, /联系我们/);
+  assert.match(home, /微信扫码联系/);
+  assert.match(home, /id="siteShareBtn"/);
+  assert.match(home, /data-share-target="native"/);
+  assert.match(home, /data-share-target="weibo"/);
+  assert.match(home, /data-share-target="qq"/);
+  assert.match(home, /data-share-target="copy"/);
+  assert.match(home, /navigator\.share/);
+  assert.match(home, /href="acupuncture\.html">针灸入门/);
+  assert.match(home, /href="herbs\.html">认识中药材/);
+  assert.match(home, /href="read-daodejing\.html">读《道德经》/);
+  assert.match(home, /href="yijing-tool\.html">周易学习/);
+  assert.match(home, /href="jingfang-skill\.html">经方 Skill/);
+});
+
+test('公开页面统一使用新的联系邮箱', async () => {
+  const pages = ['index.html', 'about.html', 'adjustment.html', 'bookmarks.html', 'breathing.html', 'courses.html', 'news.html', 'resources.html'];
+  for (const page of pages) {
+    const html = await fs.readFile(path.resolve(page), 'utf8');
+    assert.doesNotMatch(html, /zhangyouxun2024@qq\.com/i);
+    assert.match(html, /youxun2023@gmail\.com/i);
+  }
 });
 
 test('经典视频页收录已核验课程并保持中性说明', async () => {
@@ -366,6 +427,19 @@ test('经典视频页收录已核验课程并保持中性说明', async () => {
   assert.match(resources, /不重新托管视频/);
   assert.match(resources, /不构成医疗建议/);
   assert.doesNotMatch(resources, /捏住这三指|老毛病竟/);
+});
+
+test('中医书籍页区分倪海厦课程体系、古籍与后人整理资料', async () => {
+  const books = await fs.readFile(path.resolve('books.html'), 'utf8');
+  assert.match(books, /倪海厦书籍与课程资料/);
+  assert.match(books, /《天纪》系列/);
+  assert.match(books, /《人纪》系列/);
+  assert.match(books, /《地纪》系列/);
+  assert.match(books, /上述五部均为古代经典，并非倪海厦原创著作/);
+  assert.match(books, /24册与44册有什么区别/);
+  assert.match(books, /册数增加不等于内容增加/);
+  assert.match(books, /不能据此自行诊断、开方、用药或操作针灸/);
+  assert.doesNotMatch(books, /购买|buy-link|go\.html\?book=/);
 });
 
 async function fileExists(file) {

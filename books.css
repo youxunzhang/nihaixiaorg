@@ -90,6 +90,54 @@
 .empty-state { padding: 70px 20px; border: 1px dashed #cfc6b5; border-radius: 12px; text-align: center; color: var(--ink-soft); }
 .empty-state strong { color: var(--ink); font-size: 22px; }
 
+/* 倪海厦书籍与课程资料专题 */
+.ni-works-section { position: relative; overflow: hidden; background: #f2ecdf; }
+.ni-works-section::before { content: "天 · 人 · 地"; position: absolute; top: 40px; right: -20px; color: rgba(35,91,70,.045); font: 700 clamp(72px, 13vw, 180px)/1 KaiTi, serif; letter-spacing: .13em; white-space: nowrap; pointer-events: none; }
+.ni-works-hero { position: relative; display: grid; grid-template-columns: minmax(0,.85fr) minmax(420px,1.15fr); gap: 72px; align-items: end; margin-bottom: 48px; padding-bottom: 35px; border-bottom: 1px solid #d4c7b1; }
+.ni-works-hero h2 { margin: 0; font: 700 clamp(38px,5vw,58px)/1.2 KaiTi, serif; }
+.ni-works-subtitle { margin: 12px 0 0; color: var(--cinnabar); font-size: 17px; font-weight: 700; letter-spacing: .05em; }
+.ni-works-lead { margin: 0; padding-left: 28px; border-left: 3px solid var(--gold); color: var(--ink-soft); font-size: 16px; line-height: 2; }
+.ni-series-grid { position: relative; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }
+.ni-series-card { min-width: 0; padding: 30px; border: 1px solid #d9cdb8; border-top: 4px solid var(--jade); border-radius: 13px; background: rgba(255,255,255,.72); box-shadow: 0 14px 38px rgba(42,48,39,.06); }
+.ni-series-card { display: grid; grid-template-columns: 52px minmax(0,1fr); gap: 18px; }
+.ni-series-human { border-top-color: var(--cinnabar); }
+.ni-series-earth { border-top-color: var(--gold); }
+.ni-series-index { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.ni-series-index span { color: #948975; font: 700 12px/1 Georgia,serif; }
+.ni-series-index strong { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: #fff; background: var(--jade); font: 700 24px/1 KaiTi,serif; box-shadow: 0 8px 18px rgba(35,91,70,.18); }
+.ni-series-human .ni-series-index strong { background: var(--cinnabar); }
+.ni-series-earth .ni-series-index strong { background: var(--gold); }
+.ni-series-label { margin: 0 0 8px; color: #887e6e; font-size: 11px; font-weight: 800; letter-spacing: .14em; }
+.ni-series-card h3 { margin: 0 0 15px; font: 700 29px/1.25 KaiTi,serif; }
+.ni-series-card p, .ni-series-card li { color: var(--ink-soft); font-size: 14px; line-height: 1.82; }
+.ni-series-card ul { margin: 18px 0; padding-left: 18px; }
+.ni-series-note { margin: 20px 0 0; padding-top: 16px; border-top: 1px solid #e4dac9; color: #7a5b43 !important; font-size: 12px !important; }
+.ni-humanities-panel { margin-top: 28px; padding: 42px; color: #eff5f1; background: var(--jade-dark); border-radius: 15px; }
+.ni-panel-heading { display: grid; grid-template-columns: .8fr 1.2fr; gap: 50px; align-items: end; margin-bottom: 30px; }
+.ni-panel-heading .section-kicker { color: #e4b75f; }
+.ni-panel-heading h3 { margin: 0; font: 700 35px/1.25 KaiTi,serif; }
+.ni-panel-heading > p { margin: 0; color: #b8c9c1; line-height: 1.85; }
+.ni-classics-grid { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); border-top: 1px solid rgba(255,255,255,.14); border-left: 1px solid rgba(255,255,255,.14); }
+.ni-classics-grid article { min-width: 0; padding: 24px 20px; border-right: 1px solid rgba(255,255,255,.14); border-bottom: 1px solid rgba(255,255,255,.14); }
+.ni-classics-grid span { color: #e4b75f; font-size: 12px; }
+.ni-classics-grid h4 { margin: 12px 0; font: 700 22px/1.3 KaiTi,serif; }
+.ni-classics-grid p { min-height: 96px; margin: 0 0 18px; color: #b8c9c1; font-size: 13px; line-height: 1.7; }
+.ni-classics-grid a { color: #f0cc83; font-size: 12px; font-weight: 700; text-underline-offset: 4px; }
+.ni-reference-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 28px; }
+.ni-reference-card { padding: 34px; border: 1px solid #d7cbb6; border-radius: 13px; background: rgba(255,255,255,.72); }
+.ni-reference-card h3 { margin: 0 0 16px; font: 700 30px/1.25 KaiTi,serif; }
+.ni-reference-card > p:not(.section-kicker) { color: var(--ink-soft); line-height: 1.85; }
+.ni-tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 23px 0; padding: 0; list-style: none; }
+.ni-tag-list li { padding: 7px 11px; border: 1px solid #c9bda7; border-radius: 999px; color: var(--jade); background: #fff; font-size: 12px; }
+.ni-caution { margin-top: 22px !important; padding-top: 18px; border-top: 1px solid #ded3c1; font-size: 13px; }
+.ni-edition-row { display: grid; grid-template-columns: 120px minmax(0,1fr); gap: 20px; padding: 17px 0; border-top: 1px solid #ded3c1; }
+.ni-edition-row strong { color: var(--cinnabar); }
+.ni-edition-row span { color: var(--ink-soft); font-size: 14px; line-height: 1.75; }
+.ni-safety-note { display: grid; grid-template-columns: auto minmax(0,1fr) auto; gap: 22px; align-items: center; margin-top: 28px; padding: 22px 26px; border-left: 4px solid var(--cinnabar); background: #fff; box-shadow: 0 10px 28px rgba(42,48,39,.05); }
+.ni-safety-note strong { color: var(--cinnabar); white-space: nowrap; }
+.ni-safety-note p { margin: 0; color: var(--ink-soft); font-size: 13px; line-height: 1.75; }
+.ni-safety-note a { color: var(--jade); font-weight: 700; white-space: nowrap; text-underline-offset: 4px; }
+
 .masters-section { color: #eef5f1; background: var(--jade-dark); }
 .light-heading .section-kicker { color: #e5b65d; }
 .light-heading > p { color: #bdcbc4; }
@@ -130,6 +178,8 @@
 
 @media (max-width: 1050px) {
     .book-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .ni-series-grid { grid-template-columns: 1fr; }
+    .ni-classics-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
     .topic-grid { grid-template-columns: 1fr 1fr; }
     .topic-featured { grid-row: span 2; }
 }
@@ -154,6 +204,12 @@
     .section-heading { display: block; }
     .section-heading > p { margin-top: 14px; }
     .book-grid, .master-grid, .topic-grid { grid-template-columns: 1fr; }
+    .ni-works-hero, .ni-panel-heading, .ni-reference-grid { grid-template-columns: 1fr; gap: 22px; }
+    .ni-works-lead { padding-left: 20px; }
+    .ni-humanities-panel { padding: 28px 22px; }
+    .ni-classics-grid { grid-template-columns: 1fr 1fr; }
+    .ni-classics-grid p { min-height: 0; }
+    .ni-safety-note { grid-template-columns: 1fr; gap: 10px; }
     .master-grid { border-left: 0; }
     .master-grid article { border-left: 1px solid rgba(255,255,255,.14); }
     .topic-featured { grid-row: auto; min-height: 390px; }
@@ -172,6 +228,12 @@
     .book-info h3 { font-size: 21px; }
     .book-info > p:not(.book-author) { display: none; }
     .book-actions { flex-wrap: wrap; }
+    .ni-series-card { grid-template-columns: 42px minmax(0,1fr); padding: 23px 18px; }
+    .ni-series-index strong { width: 38px; height: 38px; font-size: 21px; }
+    .ni-classics-grid { grid-template-columns: 1fr; border-left: 0; }
+    .ni-classics-grid article { border-left: 1px solid rgba(255,255,255,.14); }
+    .ni-reference-card { padding: 26px 20px; }
+    .ni-edition-row { grid-template-columns: 1fr; gap: 6px; }
     .note-inner { padding: 30px 24px; }
 }
 @media (prefers-reduced-motion: reduce) {

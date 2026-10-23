@@ -37,7 +37,8 @@
     
     <!-- 样式表 -->
     <link rel="stylesheet" href="style.css?v=20261020-3">
-    <link rel="stylesheet" href="home-paid-materials.css?v=20261019-2">
+    <link rel="stylesheet" href="home-paid-materials.css?v=20261022-1">
+    <link rel="stylesheet" href="home-unified.css?v=20261023-1">
     
     <!-- 网站图标 -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -415,11 +416,185 @@
                 font-size: 14px;
             }
         }
+
+        /* 顶部收藏与分享操作组 */
+        .bookmark-container {
+            position: relative;
+            gap: 10px;
+        }
+
+        .header-action-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 86px;
+            height: 42px;
+            gap: 8px;
+            padding: 0 15px;
+            border: 1px solid transparent;
+            border-radius: 999px;
+            cursor: pointer;
+            font: 600 14px/1 'SimSun', '宋体', serif;
+            transition: transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+        }
+
+        .header-action-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        .header-action-btn:focus-visible,
+        .site-share-menu button:focus-visible {
+            outline: 3px solid rgba(173, 63, 47, .22);
+            outline-offset: 3px;
+        }
+
+        .header-action-icon {
+            display: grid;
+            width: 18px;
+            height: 18px;
+            place-items: center;
+        }
+
+        .header-action-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: none;
+            stroke: currentColor;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 1.8;
+        }
+
+        .bookmark-btn {
+            min-width: 86px;
+            height: 42px;
+            padding: 0 15px;
+            border-radius: 999px;
+            background: #ad3f2f;
+            box-shadow: 0 8px 20px rgba(173, 63, 47, .18);
+        }
+
+        .bookmark-btn:hover {
+            background: #963326;
+            box-shadow: 0 10px 24px rgba(173, 63, 47, .24);
+        }
+
+        .bookmark-btn.bookmarked,
+        .bookmark-btn.bookmarked:hover {
+            background: #245947;
+            box-shadow: 0 8px 20px rgba(36, 89, 71, .2);
+        }
+
+        .bookmark-filled {
+            display: none;
+            fill: currentColor !important;
+        }
+
+        .bookmark-btn.bookmarked .bookmark-outline { display: none; }
+        .bookmark-btn.bookmarked .bookmark-filled { display: block; }
+
+        .site-share-wrap {
+            position: relative;
+        }
+
+        .site-share-btn {
+            color: #245947;
+            border-color: rgba(36, 89, 71, .22);
+            background: #fbf7ef;
+            box-shadow: 0 8px 20px rgba(35, 54, 45, .1);
+        }
+
+        .site-share-btn:hover,
+        .site-share-btn[aria-expanded="true"] {
+            color: #fff;
+            border-color: #245947;
+            background: #245947;
+            box-shadow: 0 10px 24px rgba(36, 89, 71, .2);
+        }
+
+        .site-share-menu {
+            position: absolute;
+            z-index: 1200;
+            top: calc(100% + 12px);
+            right: 0;
+            width: 210px;
+            padding: 8px;
+            border: 1px solid #dfd4c2;
+            border-radius: 14px;
+            background: rgba(255, 253, 248, .98);
+            box-shadow: 0 18px 44px rgba(25, 48, 39, .18);
+        }
+
+        .site-share-menu::before {
+            position: absolute;
+            top: -7px;
+            right: 31px;
+            width: 12px;
+            height: 12px;
+            content: '';
+            transform: rotate(45deg);
+            border-top: 1px solid #dfd4c2;
+            border-left: 1px solid #dfd4c2;
+            background: #fffdf8;
+        }
+
+        .site-share-menu button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 10px;
+            padding: 10px 11px;
+            border: 0;
+            border-radius: 9px;
+            color: #24352e;
+            background: transparent;
+            cursor: pointer;
+            font: 500 14px/1.2 'SimSun', '宋体', serif;
+            text-align: left;
+        }
+
+        .site-share-menu button:hover {
+            color: #173d31;
+            background: #f1eadf;
+        }
+
+        .site-share-menu button span {
+            display: grid;
+            width: 24px;
+            height: 24px;
+            place-items: center;
+            border-radius: 50%;
+            color: #fff;
+            background: #ad3f2f;
+            font: 700 12px/1 sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .header-action-btn {
+                min-width: 38px;
+                width: 38px;
+                height: 38px;
+                padding: 0;
+            }
+
+            .bookmark-text,
+            .share-text { display: none; }
+
+            .site-share-menu {
+                position: fixed;
+                top: 72px;
+                right: 14px;
+                width: min(230px, calc(100vw - 28px));
+            }
+
+            .site-share-menu::before { right: 22px; }
+        }
     </style>
 </head>
-<body>
+<body class="home-page">
     <!-- 返回顶部按钮 -->
-    <button class="back-to-top" id="backToTop" title="返回顶部">↑</button>
+    <button class="back-to-top" id="backToTop" type="button" title="返回顶部" aria-label="返回页面顶部">↑</button>
 
     <!-- 导航栏 -->
     <nav class="navbar">
@@ -435,10 +610,10 @@
                     <a href="/books" class="nav-link">中医书籍</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/guji/" class="nav-link">经典原文</a>
+                    <a href="/guji/" class="nav-link">古籍原文</a>
                 </li>
                 <li class="nav-item">
-                    <a href="resources.html" class="nav-link">经典视频</a>
+                    <a href="resources.html" class="nav-link">中医视频</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle">资料</a>
@@ -450,7 +625,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">功夫</a>
+                    <a href="#" class="nav-link dropdown-toggle">养生</a>
                     <ul class="dropdown-menu">
                         <li><a href="badajingang.html" class="dropdown-item">八部金刚功</a></li>
                         <li><a href="baduanjin.html" class="dropdown-item">八段锦</a></li>
@@ -461,8 +636,18 @@
                 <li class="nav-item">
                     <a href="adjustment.html" class="nav-link">调整状态</a>
                 </li>
-                <li class="nav-item">
-                    <a href="breathing.html" class="nav-link">呼吸</a>
+                <li class="nav-item dropdown" data-nav-group="tcm-tools">
+                    <a href="#" class="nav-link dropdown-toggle">中医工具</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ziwu.html" class="dropdown-item">子午流注时辰钟</a></li>
+                        <li><a href="acupoints.html" class="dropdown-item">经络穴位模型</a></li>
+                        <li><a href="index.html#breathing" class="dropdown-item">呼吸</a></li>
+                        <li><a href="acupuncture.html" class="dropdown-item">针灸入门</a></li>
+                        <li><a href="herbs.html" class="dropdown-item">认识中药材</a></li>
+                        <li><a href="read-daodejing.html" class="dropdown-item">读《道德经》</a></li>
+                        <li><a href="yijing-tool.html" class="dropdown-item">周易学习</a></li>
+                        <li><a href="jingfang-skill.html" class="dropdown-item">经方 Skill</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="news.html" class="nav-link">资讯动态</a>
@@ -477,13 +662,27 @@
             
             <!-- 收藏按钮 -->
             <div class="bookmark-container">
-                <button id="bookmarkBtn" class="bookmark-btn" title="收藏网站">
-                    <span class="bookmark-icon">🔖</span>
+                <button id="bookmarkBtn" class="bookmark-btn header-action-btn" type="button" title="收藏网站" aria-label="收藏当前页面">
+                    <span class="bookmark-icon header-action-icon" aria-hidden="true">
+                        <svg class="bookmark-outline" viewBox="0 0 24 24" focusable="false"><path d="M6.5 4.75c0-.97.78-1.75 1.75-1.75h7.5c.97 0 1.75.78 1.75 1.75V21l-5.5-3.55L6.5 21V4.75Z"/></svg>
+                        <svg class="bookmark-filled" viewBox="0 0 24 24" focusable="false"><path d="M6.5 4.75c0-.97.78-1.75 1.75-1.75h7.5c.97 0 1.75.78 1.75 1.75V21l-5.5-3.55L6.5 21V4.75Z"/></svg>
+                    </span>
                     <span class="bookmark-text">收藏</span>
                 </button>
-                <a href="bookmarks.html" class="bookmark-manage-btn" title="管理收藏">
-                    <span class="manage-icon">📋</span>
-                </a>
+                <div class="site-share-wrap">
+                    <button id="siteShareBtn" class="site-share-btn header-action-btn" type="button" title="分享当前页面" aria-label="分享当前页面" aria-haspopup="menu" aria-expanded="false" aria-controls="siteShareMenu">
+                        <span class="header-action-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false"><circle cx="18" cy="5" r="2.25"/><circle cx="6" cy="12" r="2.25"/><circle cx="18" cy="19" r="2.25"/><path d="m8 11 7.9-4.6M8 13l7.9 4.6"/></svg>
+                        </span>
+                        <span class="share-text">分享</span>
+                    </button>
+                    <div id="siteShareMenu" class="site-share-menu" role="menu" aria-label="分享到社交媒体" hidden>
+                        <button type="button" role="menuitem" data-share-target="native"><span aria-hidden="true">↗</span>系统分享</button>
+                        <button type="button" role="menuitem" data-share-target="weibo"><span aria-hidden="true">微</span>新浪微博</button>
+                        <button type="button" role="menuitem" data-share-target="qq"><span aria-hidden="true">Q</span>QQ好友</button>
+                        <button type="button" role="menuitem" data-share-target="copy"><span aria-hidden="true">链</span>复制链接</button>
+                    </div>
+                </div>
             </div>
             
             <div class="hamburger">
@@ -528,10 +727,15 @@
         <!-- 倪海厦老师简介 -->
         <section class="intro-section">
             <div class="container">
-                <h2 class="section-title">倪海厦老师简介</h2>
+                <header class="home-section-heading intro-heading">
+                    <p class="home-section-kicker">人物小传 · 学术经历</p>
+                    <h2 class="section-title">倪海厦老师简介</h2>
+                    <p>从早年研习、临床实践到海外讲学，按时间了解其学习与传播经历。</p>
+                </header>
                 <div class="timeline-container">
-                    <div class="timeline">
-                        <div class="timeline-item">
+                    <div class="timeline" role="list" aria-label="倪海厦老师学术经历时间线">
+                        <div class="timeline-item" role="listitem">
+                            <span class="timeline-step" aria-hidden="true">01</span>
                             <div class="timeline-date">1954年</div>
                             <div class="timeline-content">
                                 <h3>出生</h3>
@@ -539,7 +743,8 @@
                             </div>
                         </div>
                         
-                        <div class="timeline-item">
+                        <div class="timeline-item" role="listitem">
+                            <span class="timeline-step" aria-hidden="true">02</span>
                             <div class="timeline-date">1970年代</div>
                             <div class="timeline-content">
                                 <h3>学医之路</h3>
@@ -547,7 +752,8 @@
                             </div>
                         </div>
                         
-                        <div class="timeline-item">
+                        <div class="timeline-item" role="listitem">
+                            <span class="timeline-step" aria-hidden="true">03</span>
                             <div class="timeline-date">1980年代</div>
                             <div class="timeline-content">
                                 <h3>临床实践</h3>
@@ -555,7 +761,8 @@
                             </div>
                         </div>
                         
-                        <div class="timeline-item">
+                        <div class="timeline-item" role="listitem">
+                            <span class="timeline-step" aria-hidden="true">04</span>
                             <div class="timeline-date">1990年代</div>
                             <div class="timeline-content">
                                 <h3>赴美发展</h3>
@@ -563,7 +770,8 @@
                             </div>
                         </div>
                         
-                        <div class="timeline-item">
+                        <div class="timeline-item" role="listitem">
+                            <span class="timeline-step" aria-hidden="true">05</span>
                             <div class="timeline-date">2000年代</div>
                             <div class="timeline-content">
                                 <h3>学术成就</h3>
@@ -571,7 +779,8 @@
                             </div>
                         </div>
                         
-                        <div class="timeline-item">
+                        <div class="timeline-item" role="listitem">
+                            <span class="timeline-step" aria-hidden="true">06</span>
                             <div class="timeline-date">2005-2010年</div>
                             <div class="timeline-content">
                                 <h3>持续讲学</h3>
@@ -579,15 +788,17 @@
                             </div>
                         </div>
                         
-                        <div class="timeline-item">
+                        <div class="timeline-item" role="listitem">
+                            <span class="timeline-step" aria-hidden="true">07</span>
                             <div class="timeline-date">2012年</div>
                             <div class="timeline-content">
-                                <h3>离世</h3>
-                                <p>倪海厦老师因病离世，享年58岁，留下课程、讲座与著述资料</p>
+                                <h3>辞世</h3>
+                                <p>倪海厦老师因病辞世，享年58岁，留下课程、讲座与著述资料</p>
                             </div>
                         </div>
                         
-                        <div class="timeline-item">
+                        <div class="timeline-item" role="listitem">
+                            <span class="timeline-step" aria-hidden="true">08</span>
                             <div class="timeline-date">至今</div>
                             <div class="timeline-content">
                                 <h3>传承影响</h3>
@@ -768,7 +979,7 @@
         <section class="breath-trainer" id="breathing" aria-labelledby="breath-trainer-title">
             <div class="container">
                 <div class="breath-trainer-heading">
-                    <span class="breath-trainer-kicker">🧘 呼吸片刻</span>
+                    <span class="breath-trainer-kicker">呼吸练习 · 自定节奏</span>
                     <h2 id="breath-trainer-title">跟随节奏，给自己一个安静呼吸的片刻</h2>
                     <p>圆环会按照“吸气—屏息—呼气”的节奏变化。先调整适合自己的时长，再开始练习。</p>
                 </div>
@@ -850,7 +1061,7 @@
 
                 <div class="paid-materials-grid">
                     <article class="paid-material-card ni-card">
-                        <div class="paid-card-cover text-cover"><span>医</span><div><small>NI HAIXIA ARCHIVE</small><strong>倪海厦资料</strong><p>课程・笔记・音频・专题</p></div></div>
+                        <div class="paid-card-cover image-cover"><img src="assets/nihaixia-zhenjiu-dacheng-44.jpeg" alt="倪海厦针灸大成44集课程资料缩略图合集" width="973" height="669" loading="lazy" decoding="async"></div>
                         <div class="paid-card-body">
                             <div class="paid-card-top"><span>20+ 类主题</span><b>目录可查</b></div>
                             <h3>倪海厦中医学习资料</h3>
@@ -883,17 +1094,10 @@
                     </article>
                 </div>
 
-                <div class="paid-purchase-panel">
-                    <div class="paid-purchase-copy">
-                        <p class="paid-eyebrow">关于本站 · 资料共建</p>
-                        <h3>让珍贵的中医知识，更容易被找到</h3>
-                        <p>本站仍在不断完善。如果你发现资料遗漏、链接失效，或者有值得补充的内容，欢迎与我交流。一个人可以整理资料，一群人可以让资料更加完善。</p>
-                        <p class="paid-contact-note">添加微信完全自愿，站内公开内容可直接浏览。</p>
-                    </div>
-                    <figure class="paid-qr"><img src="assets/tao-wechat-qr.png?v=20261019" alt="网站整理者微信二维码" width="972" height="1444" loading="lazy" decoding="async"><figcaption>交流目录 · 反馈勘误 · 分享建议</figcaption></figure>
+                <div class="paid-purchase-panel paid-purchase-panel-simple">
+                    <h3>让珍贵的中医知识，更容易被找到</h3>
+                    <button type="button" class="contact-author-btn paid-contact-button">反馈与交流</button>
                 </div>
-
-                <p class="paid-materials-note">资料目录与整理说明会持续更新；仅收录原创整理、公共领域或已取得合法授权的内容。</p>
             </div>
         </section>
 
@@ -915,19 +1119,21 @@
                 <div class="footer-section">
                     <h3>快速链接</h3>
                     <ul>
-                        <li><a href="books.html">中医书库</a></li>
-                        <li><a href="resources.html">油管视频</a></li>
-                        <li><a href="adjustment.html">调整状态</a></li>
-                        <li><a href="#breathing">呼吸练习</a></li>
+                        <li><a href="/guji/">经典原文</a></li>
+                        <li><a href="acupuncture.html">针灸入门</a></li>
+                        <li><a href="herbs.html">认识中药材</a></li>
+                        <li><a href="read-daodejing.html">读《道德经》</a></li>
+                        <li><a href="yijing-tool.html">周易学习</a></li>
+                        <li><a href="jingfang-skill.html">经方 Skill</a></li>
                     </ul>
                 </div>
                 <div class="footer-section footer-contact-qr">
-                    <h3>资料共建</h3>
+                    <h3>联系我们</h3>
                     <div class="wechat-qr">
                         <img src="assets/tao-wechat-qr.png?v=20261019" alt="张优勋微信二维码" class="qr-code" loading="lazy">
-                        <p class="qr-tip">交流建议或反馈勘误</p>
+                        <p class="qr-tip">微信扫码联系</p>
                     </div>
-                    <p class="contact-email">📧 zhangyouxun2024@qq.com</p>
+                    <p class="contact-email">📧 youxun2023@gmail.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -937,9 +1143,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- 返回顶部按钮 -->
-    <button id="back-to-top" class="back-to-top">↑</button>
 
     <!-- 页面加载和返回顶部功能 -->
     <script>
@@ -991,23 +1194,28 @@
         // 收藏功能
         document.addEventListener('DOMContentLoaded', function() {
             const bookmarkBtn = document.getElementById('bookmarkBtn');
-            const bookmarkIcon = bookmarkBtn.querySelector('.bookmark-icon');
             const bookmarkText = bookmarkBtn.querySelector('.bookmark-text');
+            const siteShareBtn = document.getElementById('siteShareBtn');
+            const siteShareMenu = document.getElementById('siteShareMenu');
             
             // 检查是否已收藏
             function checkBookmarkStatus() {
                 const bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
                 const currentUrl = window.location.href;
-                const isBookmarked = bookmarks.includes(currentUrl);
+                const isBookmarked = bookmarks.some(item =>
+                    typeof item === 'string' ? item === currentUrl : item.url === currentUrl
+                );
                 
                 if (isBookmarked) {
                     bookmarkBtn.classList.add('bookmarked');
-                    bookmarkIcon.textContent = '📖';
                     bookmarkText.textContent = '已收藏';
+                    bookmarkBtn.setAttribute('aria-label', '取消收藏当前页面');
+                    bookmarkBtn.title = '取消收藏';
                 } else {
                     bookmarkBtn.classList.remove('bookmarked');
-                    bookmarkIcon.textContent = '🔖';
                     bookmarkText.textContent = '收藏';
+                    bookmarkBtn.setAttribute('aria-label', '收藏当前页面');
+                    bookmarkBtn.title = '收藏网站';
                 }
             }
             
@@ -1083,6 +1291,81 @@
             
             // 绑定点击事件
             bookmarkBtn.addEventListener('click', toggleBookmark);
+
+            function setShareMenu(open) {
+                siteShareMenu.hidden = !open;
+                siteShareBtn.setAttribute('aria-expanded', String(open));
+            }
+
+            async function copyShareLink() {
+                try {
+                    await navigator.clipboard.writeText(window.location.href);
+                    showNotification('页面链接已复制，可以粘贴到微信或其他社交平台。', 'success');
+                } catch (error) {
+                    const input = document.createElement('textarea');
+                    input.value = window.location.href;
+                    input.style.position = 'fixed';
+                    input.style.opacity = '0';
+                    document.body.appendChild(input);
+                    input.select();
+                    document.execCommand('copy');
+                    input.remove();
+                    showNotification('页面链接已复制。', 'success');
+                }
+            }
+
+            async function openSystemShare() {
+                if (navigator.share) {
+                    try {
+                        await navigator.share({
+                            title: document.title,
+                            text: '倪海厦中医传承网站',
+                            url: window.location.href
+                        });
+                    } catch (error) {
+                        if (error.name !== 'AbortError') {
+                            await copyShareLink();
+                        }
+                    }
+                } else {
+                    await copyShareLink();
+                }
+            }
+
+            siteShareBtn.addEventListener('click', function(event) {
+                event.stopPropagation();
+                setShareMenu(siteShareMenu.hidden);
+            });
+
+            siteShareMenu.addEventListener('click', async function(event) {
+                const target = event.target.closest('[data-share-target]');
+                if (!target) return;
+                const shareTarget = target.dataset.shareTarget;
+                const url = encodeURIComponent(window.location.href);
+                const title = encodeURIComponent(document.title);
+                setShareMenu(false);
+
+                if (shareTarget === 'native') {
+                    await openSystemShare();
+                } else if (shareTarget === 'weibo') {
+                    window.open(`https://service.weibo.com/share/share.php?url=${url}&title=${title}`, '_blank', 'noopener,noreferrer,width=720,height=620');
+                } else if (shareTarget === 'qq') {
+                    window.open(`https://connect.qq.com/widget/shareqq/index.html?url=${url}&title=${title}`, '_blank', 'noopener,noreferrer,width=720,height=620');
+                } else if (shareTarget === 'copy') {
+                    await copyShareLink();
+                }
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.site-share-wrap')) setShareMenu(false);
+            });
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    setShareMenu(false);
+                    siteShareBtn.focus();
+                }
+            });
             
             // 初始化检查收藏状态
             checkBookmarkStatus();
@@ -1135,7 +1418,7 @@
     
     <!-- 延迟加载非关键JavaScript -->
     <script src="ziwu-data.js?v=20260724" defer></script>
-    <script src="main.js?v=20261019" defer></script>
+    <script src="main.js?v=20261022-2" defer></script>
     <script>
         // 呼吸练习位于首屏之后，在浏览器空闲时再加载交互脚本。
         window.addEventListener('load', function () {

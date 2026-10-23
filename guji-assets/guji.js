@@ -63,7 +63,7 @@
 
   document.querySelector('[data-theme="toggle"]')?.setAttribute('aria-pressed', String(body.classList.contains('reader-dark')));
   document.querySelectorAll('.classic-settings button').forEach(function (button) {
-    button.addEventListener('click', function () {
+    button.addEventListener('click', async function () {
       if (button.dataset.font) {
         const current = parseFloat(getComputedStyle(page).getPropertyValue('--reader-size')) || 18.88;
         const next = Math.min(30, Math.max(16, current + (button.dataset.font === 'up' ? 2 : -2)));
@@ -82,8 +82,69 @@
         button.textContent = dark ? '日间' : '夜间';
         storageSet('guji:theme', dark ? 'dark' : 'light');
       }
+      if (button.dataset.share) await shareChapter();
+      if (button.dataset.copy) await copyReaderText();
     });
   });
+
+  const actionStatus = document.querySelector('.reader-action-status');
+  let statusTimer;
+
+  function showActionStatus(message) {
+    if (!actionStatus) return;
+    window.clearTimeout(statusTimer);
+    actionStatus.textContent = message;
+    statusTimer = window.setTimeout(function () { actionStatus.textContent = ''; }, 3200);
+  }
+
+  async function writeClipboard(value) {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(value);
+      return;
+    }
+    const helper = document.createElement('textarea');
+    helper.value = value;
+    helper.setAttribute('readonly', '');
+    helper.style.position = 'fixed';
+    helper.style.opacity = '0';
+    document.body.appendChild(helper);
+    helper.select();
+    const copied = document.execCommand('copy');
+    helper.remove();
+    if (!copied) throw new Error('copy failed');
+  }
+
+  async function shareChapter() {
+    const data = { title: document.title, text: document.querySelector('h1')?.textContent?.trim() || document.title, url: window.location.href };
+    try {
+      if (navigator.share) {
+        await navigator.share(data);
+        showActionStatus('已打开分享');
+      } else {
+        await writeClipboard(data.url);
+        showActionStatus('篇章链接已复制');
+      }
+    } catch (error) {
+      if (error?.name !== 'AbortError') showActionStatus('分享未完成，请复制浏览器地址');
+    }
+  }
+
+  async function copyReaderText() {
+    const title = document.querySelector('.reader-heading h1')?.textContent?.trim() || '';
+    const paragraphs = Array.from(reader.querySelectorAll('.reader-text p')).map(function (paragraph) {
+      const clone = paragraph.cloneNode(true);
+      clone.querySelector('.paragraph-anchor')?.remove();
+      return clone.textContent.trim();
+    }).filter(Boolean);
+    const source = Array.from(reader.querySelectorAll('header dd')).slice(0, 2).map(function (item) { return item.textContent.trim(); }).filter(Boolean);
+    const value = [title, ...paragraphs, source.length ? `底本与出处：${source.join('；')}` : '', window.location.href].filter(Boolean).join('\n\n');
+    try {
+      await writeClipboard(value);
+      showActionStatus('已复制审核原文与出处');
+    } catch (_) {
+      showActionStatus('复制失败，请长按正文选择复制');
+    }
+  }
 
   const readerKey = `guji:position:${reader.dataset.readerKey}`;
   if (!window.location.hash) {
